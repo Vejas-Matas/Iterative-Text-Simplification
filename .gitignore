@@ -169,3 +169,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+
+# My own folders
+dataset/
+evaluations/
+graphs/
+runs/
