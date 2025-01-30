@@ -1,0 +1,86 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) – a desired complexity of the simplified text, and ILT (Information Loss Tolerance) – a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it – if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the original and simplified passages\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nWith the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too."
+  },
+  {
+    "role": "system",
+    "content": "DC: High school student\nILT: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Is the current version of the passage suitable for the given DC (High school student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The phrase \"unmanned aerial vehicles getting involved in activities in the civilian and commercial domain\" is complicated and above the desired complexity for a high school student."
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"drone aircraft being used in civilian and business activities\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "With the ever increasing number of drone aircraft being used in civilian and business activities, there is an increased need for autonomy in these systems too."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original"
+  },
+  {
+    "role": "assistant",
+    "content": "The simplification retains the main ideas of the original passage by mentioning the increase in drone aircraft and the need for autonomy. However, it loses some specific context by not using the term \"unmanned aerial vehicles\" and omitting \"commercial domain.\" \n\nSeverity of information loss:\n1. Definition of \"drone aircraft\": Loss of specificity compared to \"unmanned aerial vehicles\" – Medium severity.\n2. The term \"commercial domain\" is replaced with \"business activities,\" which is a broader term but still relevant – Low severity.\n\nOverall, the severity of information loss is acceptable as it does not exceed the ILT threshold (Medium). Therefore, the change can be accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified? Is it higher than ILT (Medium)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "If needed, adjust the passage to maintain readabily and flow of text"
+  },
+  {
+    "role": "assistant",
+    "content": "With the ever-increasing number of drone aircraft being used for civilian and business activities, there is a growing need for autonomy in these systems as well."
+  },
+  {
+    "role": "user",
+    "content": "Is the current version of the passage suitable for the given DC (High school student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Provide the final version of the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "With the ever-increasing number of drone aircraft being used for civilian and business activities, there is a growing need for autonomy in these systems as well."
+  }
+]

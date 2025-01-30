@@ -1,0 +1,38 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) – a desired complexity of the simplified text, and ILT (Information Loss Tolerance) – a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it – if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the original and simplified passages\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nAbstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.). An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field."
+  },
+  {
+    "role": "system",
+    "content": "DC: Child\nILT: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Identify the complexity level of the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The passage is complex, containing detailed technical language and concepts related to mobile applications, artificial intelligence, and wildfire management. It would likely be considered above the desired complexity (DC) for a child’s level."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Child)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Provide the final version of the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Original Passage:\nAbstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.). An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.\n\nSimplified Passage:\nThis paper talks about new technology in mobile devices that helps fight wildfires. It explains a mobile app for Windows Phone called AEGIS that helps manage wildfire information. Users can do tasks like find the nearest firefighting resources, check the weather, and see important fire data (like where water sources and evacuation sites are). A special feature of the AEGIS App is that it uses a digital assistant named Cortana, which can understand voice commands. This app is meant for firefighters in Greece and could help improve how information is shared between firefighting teams and operation centers."
+  }
+]

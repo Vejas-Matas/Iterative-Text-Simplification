@@ -1,0 +1,1038 @@
+{
+  "iterative": [
+    {
+      "SARI": 35.85172910790331,
+      "BLEU": 0.16393113196022369,
+      "FKGL": 13.522
+    },
+    [
+      {
+        "source": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+        "prediction": "In today's world of automation and robotics, self-driving cars are the focus of both academic and industrial research",
+        "reference": "Current academic and industrial research is interested in autonomous vehicles."
+      },
+      {
+        "source": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+        "prediction": "With the ever-increasing number of unmanned aerial vehicles being used in civilian and commercial activities, there is a growing need for autonomy in these systems as well",
+        "reference": "Drones are increasingly used in the civilian and commercial domain and need to be autonomous."
+      },
+      {
+        "source": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+        "prediction": "Due to the rules created by governments about how high civil drones can fly there is growing interest in road-tracking based navigation",
+        "reference": "Governments set guidelines on the operation ceiling of civil drones. So, road-tracking based navigation is attracting interest."
+      },
+      {
+        "source": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+        "prediction": "In an attempt to achieve the above mentioned tasks, we suggest using a method that learns from data and mimics an expert pilot to help drones autonomously navigate city streets",
+        "reference": "Researchers propose data-driven solutions allowing drones to autonomously navigate city streets, learning to fly by imitating an expert pilot."
+      },
+      {
+        "source": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+        "prediction": "Derived from classic image classification algorithms our classifier is built as a fast and efficient model with 39 layers It evaluates the presence of roads using tomographic reconstructions of the input frames",
+        "reference": "The algorithm, based on the Inception model, detects roads using tomographic reconstructions. The Inception model is an extension of classic image classification algorithms."
+      },
+      {
+        "source": "Based on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.",
+        "prediction": "Our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning using a popular deep learning model called Inception-v3",
+        "reference": "The Inception-v3 architecture has better accuracy than many existing models of imitation learning."
+      },
+      {
+        "source": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+        "prediction": "The data used to train the system was captured from the drone by flying it in urban areas and nearby suburban areas by experts with 6 to 8 years of flying experience",
+        "reference": "The data used for training the system was captured from the drone over urban streets, navigated by an expert pilot."
+      },
+      {
+        "source": "Permissions were taken from required authorities who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+        "prediction": "Permissions were obtained from the necessary authorities to ensure that the data collection process involves minimal risk to pedestrians",
+        "reference": "Data collection requires special permission to ensure pedestrian security."
+      },
+      {
+        "source": "With the extensive amount of drone data that we collected, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%.",
+        "prediction": "We collected a lot of drone data, which helped us navigate roads successfully without crashing or overshooting, achieving an accuracy of 98.44%",
+        "reference": "The drone can navigate successfully through roads without crashing or overshooting; its accuracy is 98.44%."
+      },
+      {
+        "source": "The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.",
+        "prediction": "The MAVNet system allows the drone to fly quickly at speeds of up to 6 meters per second",
+        "reference": "MAVNet computational efficiency enables the drone to fly up to 6m/sec."
+      },
+      {
+        "source": "We present the same results in this research and compare them with other state-of-the-art methods of vision and learning based navigation.",
+        "prediction": "In this research we present our results and compare them with the best current methods for navigation using vision and learning",
+        "reference": "The solution is compared with other recent methods."
+      },
+      {
+        "source": "Recognizing Traffic Signs using intelligent systems can drastically reduce the number of accidents happening world-wide.",
+        "prediction": "Using smart technology to recognize traffic signs can significantly reduce the number of accidents happening worldwide",
+        "reference": "If intelligent systems recognize traffic signs, it can reduce car accidents."
+      },
+      {
+        "source": "With the arrival of Self-driving cars it has become a staple challenge to solve the automatic recognition of Traffic and Hand-held signs in the major streets.",
+        "prediction": "With the arrival of self-driving cars a key challenge has become recognizing traffic and hand-held signs on the streets",
+        "reference": "For self-driving cars, we need automatic recognition of traffic and hand signs."
+      },
+      {
+        "source": "Various machine learning techniques like Random Forest, SVM as well as deep learning models has been proposed for classifying traffic signs.",
+        "prediction": "Various machine learning techniques such as Random Forest, Support Vector Machines, and deep learning models have been proposed for classifying traffic signs",
+        "reference": "Machine learning techniques  could be used to classify traffic signs."
+      },
+      {
+        "source": "Though they reach state-of-the-art performance on a particular data-set, but fall short of tackling multiple Traffic Sign Recognition benchmarks.",
+        "prediction": "Though they reach top performance on a particular data-set, they fall short of dealing with various Traffic Sign Recognition tests",
+        "reference": "They perform well on a particular dataset, but fail on multiple traffic sign recognition test datasets."
+      },
+      {
+        "source": "In this paper, we propose a novel and one-for-all architecture that aces multiple benchmarks with better overall score than the state-of-the-art architectures.",
+        "prediction": "In this paper, we propose a new, versatile architecture that performs excellently on many tests and has a higher overall score than the best existing architectures",
+        "reference": "We proposed a new and better method."
+      },
+      {
+        "source": "Our model is made of residual convolutional blocks with hierarchical dilated skip connections joined in steps.",
+        "prediction": "Our model consists of residual convolutional blocks with hierarchical dilated skip connections, assembled step by step.",
+        "reference": "This model is based on enhanced convolutional neural networks (a deep-learning approach often used for image recognition)."
+      },
+      {
+        "source": "With this we score 99.33% Accuracy in German sign recognition benchmark and 99.17% Accuracy in Belgian traffic sign classification benchmark.",
+        "prediction": "With this, we achieved 99.33% accuracy in recognizing German sign language and 99.17% accuracy in classifying Belgian traffic signs, demonstrating our strong performance in these areas",
+        "reference": "This model was more than 99% correct on German and Belgian sign recognition datasets."
+      },
+      {
+        "source": "Moreover, we propose a newly devised dilated residual learning representation technique which is very low in both memory and computational complexity.",
+        "prediction": "Moreover, we propose a newly devised dilated residual learning representation technique that uses little memory and is easy to compute.",
+        "reference": "This new model is very low in both memory and computational complexity."
+      },
+      {
+        "source": "We introduce Ignition: an end-to-end neural network architecture for training unconstrained self-driving vehicles in simulated environments.",
+        "prediction": "We introduce Ignition a complete neural network design for training self-driving cars in simulated environments",
+        "reference": "Ignition is a neural network for training unconstrained self-driving vehicles in simulated environments."
+      },
+      {
+        "source": "The model is a ResNet-18 variant, which is fed in images from the front of a simulated F1 car, and outputs optimal labels for steering, throttle, braking.",
+        "prediction": "The model is a specific kind of computer program that learns from data and takes images from the front of a simulated F1 car to output the best actions for steering acceleration and braking",
+        "reference": "This ResNet-18 variant model receives images from the front of a simulated car and uses them to steer, throttle, or brake appropriately."
+      },
+      {
+        "source": "Importantly, we never explicitly train the model to detect road features like the outline of a track or distance to other cars; instead, we illustrate that these latent features can be automatically encapsulated by the network.",
+        "prediction": "Importantly we never explicitly train the model to detect road features like the outline of a track or the distance to other cars. Instead we show that these hidden patterns can be automatically captured by the system",
+        "reference": "The model is not explicitly trained to detect road features such as track outline or distance to other cars, as these features can automatically be calculated by the network."
+      },
+      {
+        "source": "In this paper, we present a transfer learning method for the end-to-end control of self-driving cars, which enables a convolutional neural network (CNN) trained on a source domain to be utilized for the same task in a different target domain.",
+        "prediction": "In this paper, we present a transfer learning method for the overall control of self-driving cars. This method allows a neural network (CNN) that learned from one area to be used for the same job in another area.",
+        "reference": "A transfer learning method to control self-driving cars is proposed, in which a convolutional neural network (CNN) is trained on one domain then used for the same task in a different domain."
+      },
+      {
+        "source": "A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.",
+        "prediction": "A usual neural network designed for end-to-end control processes a single front-facing camera image and converts it into a steering command",
+        "reference": "A conventional CNN is designed to map a single front-facing camera image to control a car."
+      },
+      {
+        "source": "To enable the transfer learning, we let the CNN produce not only a steering command but also a lane departure level (LDL) by adding a new task module, which takes the output of the last convolutional layer as input.",
+        "prediction": "To enable transfer learning, we allow the CNN to give both a steering command and a lane departure level (LDL). This is achieved by adding a new module that uses the output from the last layer of the network.",
+        "reference": "CNN produces a steering command and a lane departure level (LDL, mechanism designed to warn the driver when the vehicle begins to move out of its lane). To enable the transfer learning, a new task module takes the output of the last convolutional layer as input."
+      },
+      {
+        "source": "The CNN trained on the source domain, called source network, is then utilized to train another task module called target network, which also takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain.",
+        "prediction": "The CNN known as the source network is used to train another network called the target network. The target network takes the results from the last convolutional layer of the source network and learns to give a steering command for the target domain",
+        "reference": "The CNN trained on the source domain is then used to train the target network. It takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain."
+      },
+      {
+        "source": "The steering commands from the source and target network are finally merged according to the LDL and the merged command is utilized for controlling a car in the target domain.",
+        "prediction": "The steering commands from the source and target networks are finally combined with the LDL. This combined command is then used to control a car in the target domain.",
+        "reference": "The steering commands from the source and target network are merged and used for car control in the target domain."
+      },
+      {
+        "source": "To demonstrate the effectiveness of the proposed method, we utilized two simulators, TORCS and GTAV, for the source and the target domains, respectively.",
+        "prediction": "To demonstrate the effectiveness of the proposed method, we used two simulators, TORCS and GTAV, for the source and target domains.",
+        "reference": "Two simulators were used to evaluate the proposed method."
+      },
+      {
+        "source": "Experimental results show that the proposed method outperforms other baseline methods in terms of stable and safe control of cars.",
+        "prediction": "Experimental results show that the new method works better than other baseline methods for safely and steadily controlling cars",
+        "reference": "The proposed method is more stable and safer for car control."
+      },
+      {
+        "source": "A significant problem of using deep learning techniques is the limited amount of data available for training.",
+        "prediction": "A major issue with using deep learning methods is the limited amount of data available for training",
+        "reference": "Limited data available for training affects the use of deep learning techniques."
+      },
+      {
+        "source": "There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.",
+        "prediction": "There are some datasets for common issues like recognizing items and classifying objects in self-driving cars; however, datasets are very limited for the field of industrial robotics",
+        "reference": "Datasets are available for problems such as item recognition and classification for self-driving cars, but very limited for industrial robotics."
+      },
+      {
+        "source": "In previous work, we have trained a multi-objective Convolutional Neural Network (CNN) to identify the robot body in the image and estimate 3D positions of the joints by using just a 2D image, but it was limited to a range of robots produced by Universal Robots (UR).",
+        "prediction": "In previous work we trained a type of artificial intelligence called a Convolutional Neural Network CNN to find the robot's body in an image and determine where the robot's joints are in three dimensions using only a two-dimensional image. However this approach was limited to a range of robots produced by Universal Robots UR",
+        "reference": "A multi-objective Convolutional Neural Network (CNN) was first trained to identify the robot in the image and find 3D positions of the joints using just a 2D image. But this only used robots made by Universal Robots (UR)."
+      },
+      {
+        "source": "In this work, we extend our method to work with a new robot arm - Kuka LBR iiwa, which has a significantly different appearance and an additional joint.",
+        "prediction": "In this work we extend our method to work with a new robot arm the Kuka LBR iiwa which looks very different and has one more joint",
+        "reference": "Here we work with a new robot arm - Kuka LBR iiwa which looks very different and has an additional joint."
+      },
+      {
+        "source": "However, instead of collecting large datasets once again, we collect a number of smaller datasets containing a few hundred frames each and use transfer learning techniques on the CNN trained on UR robots to adapt it to a new robot having different shapes and visual features.",
+        "prediction": "However instead of collecting large datasets once again we gather several smaller datasets with a few hundred images each. We apply transfer learning methods on the CNN trained with UR robots to adjust it for a new robot that has different shapes and appearances",
+        "reference": "We collect a number of smaller datasets and use transfer learning techniques on the CNN trained on UR robots to adapt it to a robot that looks different."
+      },
+      {
+        "source": "We have proven that transfer learning is not only applicable in this field, but it requires smaller well-prepared training datasets, trains significantly faster and reaches similar accuracy compared to the original method, even improving it on some aspects.",
+        "prediction": "We have proven that transfer learning can be used in this area and needs smaller, carefully prepared training datasets. Additionally, it trains significantly faster and achieves similar accuracy compared to the original method, even improving in some aspects",
+        "reference": "Transfer learning requires smaller training datasets, learns faster and reaches similar or even better accuracy."
+      },
+      {
+        "source": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+        "prediction": "Moral responsibility is an important issue in decisions made by machines especially in applications like self-driving cars and kidney exchanges",
+        "reference": "Moral responsibility is a major concern in automated decision-making, from self-driving cars to kidney transplants."
+      },
+      {
+        "source": "In this paper we present queueing-theoretical methods for the modeling, analysis, and control of autonomous mobility-on-demand MOD systems wherein robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure acceptable quality of service throughout the network.",
+        "prediction": "In this paper, we present methods for studying and managing on-demand self-driving vehicle systems where robotic vehicles transport customers within an urban environment and rebalance themselves to ensure a good quality of service throughout the network",
+        "reference": "Queueing models are used for autonomous mobility-on-demand MOD systems. A queueing model is constructed so that queue lengths and waiting time can be predicted. In MOD systems,  robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure quality of service."
+      },
+      {
+        "source": "We first cast an autonomous MOD system within a closed Jackson network model with passenger loss.",
+        "prediction": "We first cast an independent transportation system within a closed network model with passenger loss",
+        "reference": "We first cast an autonomous MOD system within a closed Jackson network model,a class of queueing network, with passenger loss."
+      },
+      {
+        "source": "The theoretical insights are used to design a robust, real-time rebalancing algorithm, which is applied to a case study of New York City and implemented on an eight-vehicle mobile robot testbed.",
+        "prediction": "The theoretical insights are used to design a robust, real-time rebalancing algorithm which is applied to an example focusing on New York City and tested on an eight-vehicle mobile robot",
+        "reference": "A real-time rebalancing algorithm is applied to a case study of New York City. It is implemented on an eight-vehicle mobile robot testbed."
+      },
+      {
+        "source": "The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.",
+        "prediction": "The case study of New York shows that the demand for taxis in Manhattan can be met by about 8,000 robotic vehicles, which are around 70% the size of the current taxi fleet",
+        "reference": "The current taxi demand in Manhattan can be met with about 8,000 robotic vehicles. It represents roughly 70% of the size of the current taxi fleet in Manhattan."
+      },
+      {
+        "source": "Finally, we extend our queueing-theoretical setup to include congestion effects, and study the impact of autonomously rebalancing vehicles on overall congestion.",
+        "prediction": "Finally we extend our theory of queues to examine the effects of congestion and study how autonomously rebalancing vehicles impact overall congestion",
+        "reference": "Congestion effects are also included to study the impact of autonomously rebalancing vehicles on overall traffic jams."
+      },
+      {
+        "source": "Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.",
+        "prediction": "Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.",
+        "reference": "This paper describes the sustainability benefits of robotic transportation networks."
+      },
+      {
+        "source": "In the wake of the on-going digital revolution, we will see a dramatic transformation of our economy and most of our societal institutions.",
+        "prediction": "As we experience current digital changes we will see a dramatic transformation of our economy and many of our societal institutions",
+        "reference": "The on-going digital revolution will dramatically transform our economy and societal institutions."
+      },
+      {
+        "source": "While the benefits of this transformation can be massive, there are also tremendous risks to our society.",
+        "prediction": "Although this change can have big benefits there are also significant risks to our society",
+        "reference": "But this also presents risks for our society."
+      },
+      {
+        "source": "After the automation of many production processes and the creation of self-driving vehicles, the automation of society is next.",
+        "prediction": "After automating many production processes and creating self-driving vehicles the next step is to make society run automatically",
+        "reference": "Automation of society is coming."
+      },
+      {
+        "source": "This is moving us to a tipping point and to a crossroads: we must decide between a society in which the actions are determined in a top-down way and then implemented by coercion or manipulative technologies (such as personalized ads and nudging) or a society, in which decisions are taken in a free and participatory way and mutually coordinated.",
+        "prediction": "This is moving us to a tipping point and to a crossroads we must decide between a society where actions are decided by those in power and carried out using force or manipulative methods like targeted ads and nudging or a society where decisions are made in a free and participatory way and mutually coordinated",
+        "reference": "We must choose either between a society in which the actions are determined top-down by coercion or manipulative technologies (such as personalized ads) or in which decisions are taken freely and cooperatively."
+      },
+      {
+        "source": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits.",
+        "prediction": "Modern information and communication systems ICT support both uses however the second one has economic and strategic advantages",
+        "reference": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits."
+      },
+      {
+        "source": "The fundaments of human dignity, autonomous decision-making, and democracies are shaking, but I believe that they need to be vigorously defended, as they are not only core principles of livable societies, but also the basis of greater efficiency and success.",
+        "prediction": "The fundaments of human dignity autonomous decision-making and democracies are shaking but I think they should be strongly protected because they are important for good societies and lead to better outcomes",
+        "reference": "Foundations of human dignity, autonomous decision-making, and democracies are weakening. These core principles of society and the basis of greater efficiency and success need to be defended."
+      },
+      {
+        "source": "Once self-driving car becomes a reality and passengers are no longer worry about it, they will need to find new ways of entertainment.",
+        "prediction": "Once self-driving cars become a reality and passengers no longer have to worry about them they will need to find new ways to have fun",
+        "reference": "Once self-driving cars become reality and passengers no longer worry about it, they will need to find other forms of entertainment."
+      },
+      {
+        "source": "However, retrieving entertainment contents at the Data Center (DC) can hinder content delivery service due to high delay of car-to-DC communication.",
+        "prediction": "However getting entertainment content from the Data Center can slow down service due to long delays in communication between cars and the Data Center",
+        "reference": "However, high communication delay can slow retrieval of entertainment content from Data Centers (DC)."
+      }
+    ]
+  ],
+  "non_iterative": [
+    {
+      "SARI": 36.99046153433811,
+      "BLEU": 0.1578819445449471,
+      "FKGL": 12.386
+    },
+    [
+      {
+        "source": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+        "prediction": "Today, researchers in universities and industries are focusing on autonomous vehicles in the field of automation and robotics",
+        "reference": "Current academic and industrial research is interested in autonomous vehicles."
+      },
+      {
+        "source": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+        "prediction": "As more unmanned aerial vehicles are used in civilian and commercial areas, there is a greater need for them to operate autonomously.",
+        "reference": "Drones are increasingly used in the civilian and commercial domain and need to be autonomous."
+      },
+      {
+        "source": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+        "prediction": "Governments have set rules about how high drones can fly, so there is growing interest in using road-tracking for navigation.",
+        "reference": "Governments set guidelines on the operation ceiling of civil drones. So, road-tracking based navigation is attracting interest."
+      },
+      {
+        "source": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+        "prediction": "We suggest using imitation learning to help drones navigate city streets by copying how an expert pilot flies.",
+        "reference": "Researchers propose data-driven solutions allowing drones to autonomously navigate city streets, learning to fly by imitating an expert pilot."
+      },
+      {
+        "source": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+        "prediction": "Our classifier is a fast 39-layer Inception model that checks for roads using the 3D images created from the input frames.",
+        "reference": "The algorithm, based on the Inception model, detects roads using tomographic reconstructions. The Inception model is an extension of classic image classification algorithms."
+      },
+      {
+        "source": "Based on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.",
+        "prediction": "Our system, which is based on the Inception-v3 design, is more efficient and accurate than many current models used for imitation learning",
+        "reference": "The Inception-v3 architecture has better accuracy than many existing models of imitation learning."
+      },
+      {
+        "source": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+        "prediction": "The data for training the system was collected using a drone flown by experts with 6 to 8 years of flying experience in urban and semi-urban areas.",
+        "reference": "The data used for training the system was captured from the drone over urban streets, navigated by an expert pilot."
+      },
+      {
+        "source": "Permissions were taken from required authorities who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+        "prediction": "Permissions were obtained from the necessary authorities to ensure that collecting data involved minimal risk to pedestrians",
+        "reference": "Data collection requires special permission to ensure pedestrian security."
+      },
+      {
+        "source": "With the extensive amount of drone data that we collected, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%.",
+        "prediction": "We gathered a lot of drone data, which helped us drive on roads without accidents or missing turns, achieving an accuracy of 98.44%",
+        "reference": "The drone can navigate successfully through roads without crashing or overshooting; its accuracy is 98.44%."
+      },
+      {
+        "source": "The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.",
+        "prediction": "MAVNet allows the drone to fly quickly at speeds reaching 6 meters per second",
+        "reference": "MAVNet computational efficiency enables the drone to fly up to 6m/sec."
+      },
+      {
+        "source": "We present the same results in this research and compare them with other state-of-the-art methods of vision and learning based navigation.",
+        "prediction": "We show our research results and compare them with other advanced methods for navigation using vision and learning.",
+        "reference": "The solution is compared with other recent methods."
+      },
+      {
+        "source": "Recognizing Traffic Signs using intelligent systems can drastically reduce the number of accidents happening world-wide.",
+        "prediction": "Using smart systems to recognize traffic signs can significantly lower the number of accidents around the world",
+        "reference": "If intelligent systems recognize traffic signs, it can reduce car accidents."
+      },
+      {
+        "source": "With the arrival of Self-driving cars it has become a staple challenge to solve the automatic recognition of Traffic and Hand-held signs in the major streets.",
+        "prediction": "Self-driving cars have made it important to develop systems that can automatically recognize traffic and handheld signs on busy streets",
+        "reference": "For self-driving cars, we need automatic recognition of traffic and hand signs."
+      },
+      {
+        "source": "Various machine learning techniques like Random Forest, SVM as well as deep learning models has been proposed for classifying traffic signs.",
+        "prediction": "Different machine learning methods such as Random Forest and SVM, along with deep learning models, have been suggested for classifying traffic signs",
+        "reference": "Machine learning techniques  could be used to classify traffic signs."
+      },
+      {
+        "source": "Though they reach state-of-the-art performance on a particular data-set, but fall short of tackling multiple Traffic Sign Recognition benchmarks.",
+        "prediction": "Even though they perform very well on one data set, they do not perform as well on several Traffic Sign Recognition tests.",
+        "reference": "They perform well on a particular dataset, but fail on multiple traffic sign recognition test datasets."
+      },
+      {
+        "source": "In this paper, we propose a novel and one-for-all architecture that aces multiple benchmarks with better overall score than the state-of-the-art architectures.",
+        "prediction": "In this paper, we introduce a new architecture that performs exceptionally well on various benchmarks, achieving better scores than current top architectures.",
+        "reference": "We proposed a new and better method."
+      },
+      {
+        "source": "Our model is made of residual convolutional blocks with hierarchical dilated skip connections joined in steps.",
+        "prediction": "Our model consists of residual convolutional blocks that have dilated skip connections organized in steps.",
+        "reference": "This model is based on enhanced convolutional neural networks (a deep-learning approach often used for image recognition)."
+      },
+      {
+        "source": "With this we score 99.33% Accuracy in German sign recognition benchmark and 99.17% Accuracy in Belgian traffic sign classification benchmark.",
+        "prediction": "We achieved 99.33% accuracy in recognizing German signs and 99.17% accuracy in classifying Belgian traffic signs",
+        "reference": "This model was more than 99% correct on German and Belgian sign recognition datasets."
+      },
+      {
+        "source": "Moreover, we propose a newly devised dilated residual learning representation technique which is very low in both memory and computational complexity.",
+        "prediction": "We suggest a new technique for representing dilated residual learning that uses very little memory and is easy to compute",
+        "reference": "This new model is very low in both memory and computational complexity."
+      },
+      {
+        "source": "We introduce Ignition: an end-to-end neural network architecture for training unconstrained self-driving vehicles in simulated environments.",
+        "prediction": "We present Ignition, a complete neural network system designed for training self-driving cars in simulated settings.",
+        "reference": "Ignition is a neural network for training unconstrained self-driving vehicles in simulated environments."
+      },
+      {
+        "source": "The model is a ResNet-18 variant, which is fed in images from the front of a simulated F1 car, and outputs optimal labels for steering, throttle, braking.",
+        "prediction": "The model is a modified version of ResNet-18 that takes images from the front of a simulated F1 car and produces the best labels for steering, throttle, and braking.",
+        "reference": "This ResNet-18 variant model receives images from the front of a simulated car and uses them to steer, throttle, or brake appropriately."
+      },
+      {
+        "source": "Importantly, we never explicitly train the model to detect road features like the outline of a track or distance to other cars; instead, we illustrate that these latent features can be automatically encapsulated by the network.",
+        "prediction": "We do not train the model specifically to recognize road features such as the shape of a track or the space between cars. Instead, we show that the network can automatically capture these hidden features.",
+        "reference": "The model is not explicitly trained to detect road features such as track outline or distance to other cars, as these features can automatically be calculated by the network."
+      },
+      {
+        "source": "In this paper, we present a transfer learning method for the end-to-end control of self-driving cars, which enables a convolutional neural network (CNN) trained on a source domain to be utilized for the same task in a different target domain.",
+        "prediction": "This paper introduces a method that allows a neural network to learn from one type of environment and be used for self-driving cars in a different environment.",
+        "reference": "A transfer learning method to control self-driving cars is proposed, in which a convolutional neural network (CNN) is trained on one domain then used for the same task in a different domain."
+      },
+      {
+        "source": "A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.",
+        "prediction": "A standard CNN is made to take a picture from a front-facing camera and turn it into a steering action.",
+        "reference": "A conventional CNN is designed to map a single front-facing camera image to control a car."
+      },
+      {
+        "source": "To enable the transfer learning, we let the CNN produce not only a steering command but also a lane departure level (LDL) by adding a new task module, which takes the output of the last convolutional layer as input.",
+        "prediction": "To facilitate transfer learning, we modified the CNN to generate both a steering command and a lane departure level (LDL) by adding a new task module that uses the output from the last convolutional layer as input.",
+        "reference": "CNN produces a steering command and a lane departure level (LDL, mechanism designed to warn the driver when the vehicle begins to move out of its lane). To enable the transfer learning, a new task module takes the output of the last convolutional layer as input."
+      },
+      {
+        "source": "The CNN trained on the source domain, called source network, is then utilized to train another task module called target network, which also takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain.",
+        "prediction": "The CNN that was trained on the source domain, known as the source network, is used to train a different task module called the target network. The target network also uses the output from the last layer of the source network and is trained to give a steering command for the target domain.",
+        "reference": "The CNN trained on the source domain is then used to train the target network. It takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain."
+      },
+      {
+        "source": "The steering commands from the source and target network are finally merged according to the LDL and the merged command is utilized for controlling a car in the target domain.",
+        "prediction": "The steering instructions from the source and target networks are combined based on the LDL, and this combined command is used to control a car in the target area",
+        "reference": "The steering commands from the source and target network are merged and used for car control in the target domain."
+      },
+      {
+        "source": "To demonstrate the effectiveness of the proposed method, we utilized two simulators, TORCS and GTAV, for the source and the target domains, respectively.",
+        "prediction": "We used two simulators, TORCS and GTAV, to show how effective our method is for different areas.",
+        "reference": "Two simulators were used to evaluate the proposed method."
+      },
+      {
+        "source": "Experimental results show that the proposed method outperforms other baseline methods in terms of stable and safe control of cars.",
+        "prediction": "The experimental results indicate that the new method is better than the other basic methods for controlling cars safely and steadily.",
+        "reference": "The proposed method is more stable and safer for car control."
+      },
+      {
+        "source": "A significant problem of using deep learning techniques is the limited amount of data available for training.",
+        "prediction": "A major issue with deep learning methods is having too little data for training",
+        "reference": "Limited data available for training affects the use of deep learning techniques."
+      },
+      {
+        "source": "There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.",
+        "prediction": "There are some datasets for common issues like recognizing items and classifying for self-driving cars, but there are very few for industrial robotics.",
+        "reference": "Datasets are available for problems such as item recognition and classification for self-driving cars, but very limited for industrial robotics."
+      },
+      {
+        "source": "In previous work, we have trained a multi-objective Convolutional Neural Network (CNN) to identify the robot body in the image and estimate 3D positions of the joints by using just a 2D image, but it was limited to a range of robots produced by Universal Robots (UR).",
+        "prediction": "In earlier work, we trained a special type of Convolutional Neural Network (CNN) to recognize the robot's body in images and estimate the 3D positions of its joints using only 2D images. However, this approach was only effective for robots made by Universal Robots (UR).",
+        "reference": "A multi-objective Convolutional Neural Network (CNN) was first trained to identify the robot in the image and find 3D positions of the joints using just a 2D image. But this only used robots made by Universal Robots (UR)."
+      },
+      {
+        "source": "In this work, we extend our method to work with a new robot arm - Kuka LBR iiwa, which has a significantly different appearance and an additional joint.",
+        "prediction": "In this study, we broaden our method to include a new robot arm called Kuka LBR iiwa, which looks different and has an extra joint.",
+        "reference": "Here we work with a new robot arm - Kuka LBR iiwa which looks very different and has an additional joint."
+      },
+      {
+        "source": "However, instead of collecting large datasets once again, we collect a number of smaller datasets containing a few hundred frames each and use transfer learning techniques on the CNN trained on UR robots to adapt it to a new robot having different shapes and visual features.",
+        "prediction": "Instead of gathering large datasets again, we collect several smaller datasets with a few hundred frames each. We then use transfer learning methods on the CNN trained on UR robots to modify it for a new robot that has different shapes and visual features.",
+        "reference": "We collect a number of smaller datasets and use transfer learning techniques on the CNN trained on UR robots to adapt it to a robot that looks different."
+      },
+      {
+        "source": "We have proven that transfer learning is not only applicable in this field, but it requires smaller well-prepared training datasets, trains significantly faster and reaches similar accuracy compared to the original method, even improving it on some aspects.",
+        "prediction": "We have shown that transfer learning works in this area and needs smaller, well-prepared training datasets. It trains much faster and achieves similar accuracy to the original method, while even improving in some areas.",
+        "reference": "Transfer learning requires smaller training datasets, learns faster and reaches similar or even better accuracy."
+      },
+      {
+        "source": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+        "prediction": "Moral responsibility is an important issue in automated decision-making, which is used in things like self-driving cars and kidney exchanges",
+        "reference": "Moral responsibility is a major concern in automated decision-making, from self-driving cars to kidney transplants."
+      },
+      {
+        "source": "In this paper we present queueing-theoretical methods for the modeling, analysis, and control of autonomous mobility-on-demand MOD systems wherein robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure acceptable quality of service throughout the network.",
+        "prediction": "This paper discusses methods for analyzing and managing on-demand transportation systems where self-driving vehicles carry passengers in cities and adjust their locations to maintain good service quality.",
+        "reference": "Queueing models are used for autonomous mobility-on-demand MOD systems. A queueing model is constructed so that queue lengths and waiting time can be predicted. In MOD systems,  robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure quality of service."
+      },
+      {
+        "source": "We first cast an autonomous MOD system within a closed Jackson network model with passenger loss.",
+        "prediction": "We start by modeling an autonomous MOD system using a closed Jackson network that includes passenger loss.",
+        "reference": "We first cast an autonomous MOD system within a closed Jackson network model,a class of queueing network, with passenger loss."
+      },
+      {
+        "source": "The theoretical insights are used to design a robust, real-time rebalancing algorithm, which is applied to a case study of New York City and implemented on an eight-vehicle mobile robot testbed.",
+        "prediction": "The theoretical ideas are used to create a strong, real-time rebalancing method. This method is tested in a case study of New York City and used on a test program with eight mobile robots.",
+        "reference": "A real-time rebalancing algorithm is applied to a case study of New York City. It is implemented on an eight-vehicle mobile robot testbed."
+      },
+      {
+        "source": "The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.",
+        "prediction": "A study of New York reveals that about 8,000 robotic vehicles can fulfill the taxi demand in Manhattan. This is roughly 70% of the size of the current taxi fleet in the area.",
+        "reference": "The current taxi demand in Manhattan can be met with about 8,000 robotic vehicles. It represents roughly 70% of the size of the current taxi fleet in Manhattan."
+      },
+      {
+        "source": "Finally, we extend our queueing-theoretical setup to include congestion effects, and study the impact of autonomously rebalancing vehicles on overall congestion.",
+        "prediction": "We expand our study on queueing theory to look at congestion effects and examine how self-balancing vehicles affect overall traffic congestion",
+        "reference": "Congestion effects are also included to study the impact of autonomously rebalancing vehicles on overall traffic jams."
+      },
+      {
+        "source": "Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.",
+        "prediction": "This paper offers a strict method for managing how self-driving vehicles work together and highlights some of the sustainability advantages of robotic transportation systems",
+        "reference": "This paper describes the sustainability benefits of robotic transportation networks."
+      },
+      {
+        "source": "In the wake of the on-going digital revolution, we will see a dramatic transformation of our economy and most of our societal institutions.",
+        "prediction": "The ongoing digital revolution will lead to significant changes in our economy and many social institutions",
+        "reference": "The on-going digital revolution will dramatically transform our economy and societal institutions."
+      },
+      {
+        "source": "While the benefits of this transformation can be massive, there are also tremendous risks to our society.",
+        "prediction": "This change can bring great benefits, but it also poses significant risks to our society",
+        "reference": "But this also presents risks for our society."
+      },
+      {
+        "source": "After the automation of many production processes and the creation of self-driving vehicles, the automation of society is next.",
+        "prediction": "After automating many production processes and developing self-driving vehicles, the next step is to automate society.",
+        "reference": "Automation of society is coming."
+      },
+      {
+        "source": "This is moving us to a tipping point and to a crossroads: we must decide between a society in which the actions are determined in a top-down way and then implemented by coercion or manipulative technologies (such as personalized ads and nudging) or a society, in which decisions are taken in a free and participatory way and mutually coordinated.",
+        "prediction": "We are at a crucial moment where we need to choose between two types of societies: one where decisions are made by higher authorities and enforced through pressure or manipulative methods like targeted ads, and another where decisions are made freely and collaboratively by everyone.",
+        "reference": "We must choose either between a society in which the actions are determined top-down by coercion or manipulative technologies (such as personalized ads) or in which decisions are taken freely and cooperatively."
+      },
+      {
+        "source": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits.",
+        "prediction": "Modern information and communication systems support both areas, but the economic and strategic advantages are more significant in the latter.",
+        "reference": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits."
+      },
+      {
+        "source": "The fundaments of human dignity, autonomous decision-making, and democracies are shaking, but I believe that they need to be vigorously defended, as they are not only core principles of livable societies, but also the basis of greater efficiency and success.",
+        "prediction": "The principles of human dignity, independent decision-making, and democracy are under threat, but they must be strongly protected because they are essential for good societies and the foundation for greater efficiency and success",
+        "reference": "Foundations of human dignity, autonomous decision-making, and democracies are weakening. These core principles of society and the basis of greater efficiency and success need to be defended."
+      },
+      {
+        "source": "Once self-driving car becomes a reality and passengers are no longer worry about it, they will need to find new ways of entertainment.",
+        "prediction": "Once self-driving cars are common and passengers feel safe, they will need to discover new forms of entertainment.",
+        "reference": "Once self-driving cars become reality and passengers no longer worry about it, they will need to find other forms of entertainment."
+      },
+      {
+        "source": "However, retrieving entertainment contents at the Data Center (DC) can hinder content delivery service due to high delay of car-to-DC communication.",
+        "prediction": "Getting entertainment content from the Data Center can slow down the delivery service because it takes a long time for the car to communicate with the Data Center.",
+        "reference": "However, high communication delay can slow retrieval of entertainment content from Data Centers (DC)."
+      }
+    ]
+  ],
+  "aiir_mistral_prompt": [
+    {
+      "SARI": 36.014212703909685,
+      "BLEU": 0.1337469589760846,
+      "FKGL": 14.727999999999998
+    },
+    [
+      {
+        "source": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+        "prediction": "In the modern era of automation and robotics, which involves the use of technology to perform tasks without human intervention, autonomous vehicles, or self-driving cars, are currently the focus of academic and industrial research.",
+        "reference": "Current academic and industrial research is interested in autonomous vehicles."
+      },
+      {
+        "source": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+        "prediction": "With the growing number of unmanned aerial vehicles, which are aircraft operated without a human pilot on board, being used in civilian (non-military) and commercial (business-related) activities, there is a greater requirement for these systems to operate independently without direct human control.",
+        "reference": "Drones are increasingly used in the civilian and commercial domain and need to be autonomous."
+      },
+      {
+        "source": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+        "prediction": "Due to rules established by governments about the maximum altitude that civilian drones can operate, navigation systems that track roads are becoming more popular",
+        "reference": "Governments set guidelines on the operation ceiling of civil drones. So, road-tracking based navigation is attracting interest."
+      },
+      {
+        "source": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+        "prediction": "In order to accomplish the tasks stated earlier, we suggest a solution that uses imitation learning, which is a technique in artificial intelligence where a machine learns to perform tasks by observing and copying an expert. This solution is focused on the autonomous operation of Unmanned Aerial Vehicles (UAVs), commonly known as drones, as they navigate through city streets by mimicking the flying behavior of a skilled pilot.",
+        "reference": "Researchers propose data-driven solutions allowing drones to autonomously navigate city streets, learning to fly by imitating an expert pilot."
+      },
+      {
+        "source": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+        "prediction": "Our classifier is based on traditional image classification methods and is designed as a fast 39-layered Inception model. This model checks for the presence of roads by analyzing the detailed 3D images created from the input frames.",
+        "reference": "The algorithm, based on the Inception model, detects roads using tomographic reconstructions. The Inception model is an extension of classic image classification algorithms."
+      },
+      {
+        "source": "Based on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.",
+        "prediction": "Based on the Inception-v3 architecture our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning",
+        "reference": "The Inception-v3 architecture has better accuracy than many existing models of imitation learning."
+      },
+      {
+        "source": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+        "prediction": "The data used for training the system has been collected from the drone by flying it in and around city and suburban streets by experts who have at least 6 to 8 years of flying experience",
+        "reference": "The data used for training the system was captured from the drone over urban streets, navigated by an expert pilot."
+      },
+      {
+        "source": "Permissions were taken from required authorities who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+        "prediction": "Permissions were obtained from the necessary authorities who ensured that there is minimal risk to pedestrians during the data collection process",
+        "reference": "Data collection requires special permission to ensure pedestrian security."
+      },
+      {
+        "source": "With the extensive amount of drone data that we collected, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%.",
+        "prediction": "With the large amount of information obtained from drones we have been able to move through roads successfully without crashing or going too far with an accuracy of 98.44%",
+        "reference": "The drone can navigate successfully through roads without crashing or overshooting; its accuracy is 98.44%."
+      },
+      {
+        "source": "The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.",
+        "prediction": "The computational efficiency of MAVNet, which refers to the ability of a system to perform calculations quickly and effectively, allows the drone to fly at high speeds of up to 6 meters per second.",
+        "reference": "MAVNet computational efficiency enables the drone to fly up to 6m/sec."
+      },
+      {
+        "source": "We present the same results in this research and compare them with other state-of-the-art methods of vision and learning based navigation.",
+        "prediction": "We present the same results in this research and compare them with other advanced methods of navigation that rely on vision and learning",
+        "reference": "The solution is compared with other recent methods."
+      },
+      {
+        "source": "Recognizing Traffic Signs using intelligent systems can drastically reduce the number of accidents happening world-wide.",
+        "prediction": "Recognizing Traffic Signs using intelligent systems can significantly lower the number of accidents occurring around the world",
+        "reference": "If intelligent systems recognize traffic signs, it can reduce car accidents."
+      },
+      {
+        "source": "With the arrival of Self-driving cars it has become a staple challenge to solve the automatic recognition of Traffic and Hand-held signs in the major streets.",
+        "prediction": "With the arrival of self-driving cars, it has become a common challenge to solve the automatic recognition of traffic and hand-held signs on major streets.",
+        "reference": "For self-driving cars, we need automatic recognition of traffic and hand signs."
+      },
+      {
+        "source": "Various machine learning techniques like Random Forest, SVM as well as deep learning models has been proposed for classifying traffic signs.",
+        "prediction": "Various machine learning techniques, such as Random Forest and Support Vector Machine (SVM), as well as deep learning models, have been proposed for classifying traffic signs.",
+        "reference": "Machine learning techniques  could be used to classify traffic signs."
+      },
+      {
+        "source": "Though they reach state-of-the-art performance on a particular data-set, but fall short of tackling multiple Traffic Sign Recognition benchmarks.",
+        "prediction": "Though they achieve high performance on a specific data set, they do not meet the requirements of several Traffic Sign Recognition tests",
+        "reference": "They perform well on a particular dataset, but fail on multiple traffic sign recognition test datasets."
+      },
+      {
+        "source": "In this paper, we propose a novel and one-for-all architecture that aces multiple benchmarks with better overall score than the state-of-the-art architectures.",
+        "prediction": "In this paper, we suggest a new architecture that excels in various tests with a better overall score than the best current architectures",
+        "reference": "We proposed a new and better method."
+      },
+      {
+        "source": "Our model is made of residual convolutional blocks with hierarchical dilated skip connections joined in steps.",
+        "prediction": "Our model is made of residual convolutional blocks. Residual blocks are a type of neural network architecture that helps prevent issues like vanishing gradients by allowing some connections to skip over certain layers. Hierarchical dilated skip connections mean that these connections are arranged in levels and allow the model to cover a broader context without losing information by skipping layers. These blocks are joined in steps, indicating that they are connected in a sequential manner to form the overall model.",
+        "reference": "This model is based on enhanced convolutional neural networks (a deep-learning approach often used for image recognition)."
+      },
+      {
+        "source": "With this we score 99.33% Accuracy in German sign recognition benchmark and 99.17% Accuracy in Belgian traffic sign classification benchmark.",
+        "prediction": "With this we achieve 99.33% accuracy in recognizing German sign language and 99.17% accuracy in classifying Belgian traffic signs",
+        "reference": "This model was more than 99% correct on German and Belgian sign recognition datasets."
+      },
+      {
+        "source": "Moreover, we propose a newly devised dilated residual learning representation technique which is very low in both memory and computational complexity.",
+        "prediction": "Moreover, we propose a new technique for representing information called dilated residual learning. This technique is designed to use very little memory and requires few computing resources to function effectively.",
+        "reference": "This new model is very low in both memory and computational complexity."
+      },
+      {
+        "source": "We introduce Ignition: an end-to-end neural network architecture for training unconstrained self-driving vehicles in simulated environments.",
+        "prediction": "We introduce Ignition: a complete system of artificial neural networks designed for teaching self-driving cars to operate without restrictions in computer-generated environments.",
+        "reference": "Ignition is a neural network for training unconstrained self-driving vehicles in simulated environments."
+      },
+      {
+        "source": "The model is a ResNet-18 variant, which is fed in images from the front of a simulated F1 car, and outputs optimal labels for steering, throttle, braking.",
+        "prediction": "The model is a ResNet-18 variant which is a specific type of neural network architecture designed to improve image recognition. It is fed images from the front of a simulated Formula 1 (F1) car and outputs the best labels for steering, throttle, and braking. Steering refers to the direction the car should go, throttle refers to the acceleration or speed of the car, and braking refers to reducing the car's speed.",
+        "reference": "This ResNet-18 variant model receives images from the front of a simulated car and uses them to steer, throttle, or brake appropriately."
+      },
+      {
+        "source": "Importantly, we never explicitly train the model to detect road features like the outline of a track or distance to other cars; instead, we illustrate that these latent features can be automatically encapsulated by the network.",
+        "prediction": "Importantly, we never explicitly teach the model to recognize road features such as the shape of a track or the distance to other cars; instead, we show that these hidden features can be automatically captured by the network",
+        "reference": "The model is not explicitly trained to detect road features such as track outline or distance to other cars, as these features can automatically be calculated by the network."
+      },
+      {
+        "source": "In this paper, we present a transfer learning method for the end-to-end control of self-driving cars, which enables a convolutional neural network (CNN) trained on a source domain to be utilized for the same task in a different target domain.",
+        "prediction": "In this paper, we present a method called transfer learning for controlling self-driving cars from start to finish. This method allows a convolutional neural network, which is a type of artificial intelligence model designed to recognize patterns in visual data, trained in one area (source domain) to be used for the same task in another area (target domain).",
+        "reference": "A transfer learning method to control self-driving cars is proposed, in which a convolutional neural network (CNN) is trained on one domain then used for the same task in a different domain."
+      },
+      {
+        "source": "A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.",
+        "prediction": "A conventional Convolutional Neural Network (CNN) for the end-to-end control is designed to take an image from a single front-facing camera and turn it into a steering command",
+        "reference": "A conventional CNN is designed to map a single front-facing camera image to control a car."
+      },
+      {
+        "source": "To enable the transfer learning, we let the CNN produce not only a steering command but also a lane departure level (LDL) by adding a new task module, which takes the output of the last convolutional layer as input.",
+        "prediction": "To enable transfer learning, we let the Convolutional Neural Network (CNN) produce not only a steering command but also a lane departure level (LDL). We do this by adding a new task module that takes the output of the last convolutional layer as its input.",
+        "reference": "CNN produces a steering command and a lane departure level (LDL, mechanism designed to warn the driver when the vehicle begins to move out of its lane). To enable the transfer learning, a new task module takes the output of the last convolutional layer as input."
+      },
+      {
+        "source": "The CNN trained on the source domain, called source network, is then utilized to train another task module called target network, which also takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain.",
+        "prediction": "The Convolutional Neural Network (CNN) that has been trained on a specific area, known as the source domain, is referred to as the source network. This source network is then used to train another module called the target network. The target network also uses the output from the final layer called the last convolutional layer of the source network. Its purpose is to create a steering command for a different area, known as the target domain.",
+        "reference": "The CNN trained on the source domain is then used to train the target network. It takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain."
+      },
+      {
+        "source": "The steering commands from the source and target network are finally merged according to the LDL and the merged command is utilized for controlling a car in the target domain.",
+        "prediction": "The steering commands from the source network and the target network are combined according to the LDL, which stands for Learning from Demonstrations. The combined command is then used to control a car in the target area.",
+        "reference": "The steering commands from the source and target network are merged and used for car control in the target domain."
+      },
+      {
+        "source": "To demonstrate the effectiveness of the proposed method, we utilized two simulators, TORCS and GTAV, for the source and the target domains, respectively.",
+        "prediction": "To show how well the proposed method works, we used two simulators. TORCS is a racing simulator that represents the source domain, and GTAV, which stands for Grand Theft Auto V, is a video game simulator that represents the target domain.",
+        "reference": "Two simulators were used to evaluate the proposed method."
+      },
+      {
+        "source": "Experimental results show that the proposed method outperforms other baseline methods in terms of stable and safe control of cars.",
+        "prediction": "Experimental results show that the suggested method works better than other standard methods for keeping cars stable and safe while controlling them",
+        "reference": "The proposed method is more stable and safer for car control."
+      },
+      {
+        "source": "A significant problem of using deep learning techniques is the limited amount of data available for training.",
+        "prediction": "A significant problem of using deep learning techniques is the limited amount of data available for training deep learning techniques are methods in artificial intelligence that learn from large amounts of data to make predictions or decisions data refers to information used for analysis or training purposes",
+        "reference": "Limited data available for training affects the use of deep learning techniques."
+      },
+      {
+        "source": "There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.",
+        "prediction": "There are some collections of data available for common problems like identifying and classifying objects for self-driving cars, however, the availability is very limited for the field of industrial robotics",
+        "reference": "Datasets are available for problems such as item recognition and classification for self-driving cars, but very limited for industrial robotics."
+      },
+      {
+        "source": "In previous work, we have trained a multi-objective Convolutional Neural Network (CNN) to identify the robot body in the image and estimate 3D positions of the joints by using just a 2D image, but it was limited to a range of robots produced by Universal Robots (UR).",
+        "prediction": "In previous work, we have trained a multi-objective Convolutional Neural Network (CNN) to identify the robot body in the image and estimate three-dimensional (3D) positions of the joints by using just a two-dimensional (2D) image, but it was limited to a range of robots produced by Universal Robots (UR)",
+        "reference": "A multi-objective Convolutional Neural Network (CNN) was first trained to identify the robot in the image and find 3D positions of the joints using just a 2D image. But this only used robots made by Universal Robots (UR)."
+      },
+      {
+        "source": "In this work, we extend our method to work with a new robot arm - Kuka LBR iiwa, which has a significantly different appearance and an additional joint.",
+        "prediction": "In this work, we extend our method to work with a new robot arm called Kuka LBR iiwa. This robot arm has a significantly different appearance and an additional joint.",
+        "reference": "Here we work with a new robot arm - Kuka LBR iiwa which looks very different and has an additional joint."
+      },
+      {
+        "source": "However, instead of collecting large datasets once again, we collect a number of smaller datasets containing a few hundred frames each and use transfer learning techniques on the CNN trained on UR robots to adapt it to a new robot having different shapes and visual features.",
+        "prediction": "However, instead of collecting large sets of data all at once, we gather several smaller sets of data that contain a few hundred images each. We then use transfer learning techniques on the Convolutional Neural Network, which is a type of artificial intelligence model, that has been trained on UR robots to adapt it for a new robot that has different shapes and visual features.",
+        "reference": "We collect a number of smaller datasets and use transfer learning techniques on the CNN trained on UR robots to adapt it to a robot that looks different."
+      },
+      {
+        "source": "We have proven that transfer learning is not only applicable in this field, but it requires smaller well-prepared training datasets, trains significantly faster and reaches similar accuracy compared to the original method, even improving it on some aspects.",
+        "prediction": "We have shown that transfer learning can be used in this area. Transfer learning needs smaller and well-organized training data. It trains much faster and achieves similar accuracy to the original method. In some cases, it even improves accuracy.",
+        "reference": "Transfer learning requires smaller training datasets, learns faster and reaches similar or even better accuracy."
+      },
+      {
+        "source": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+        "prediction": "Moral responsibility is an important issue in automated decision-making. This includes situations such as self-driving cars, which are vehicles that operate without human drivers, and kidney exchanges, where donated kidneys are swapped between patients to improve the chances of successful transplants.",
+        "reference": "Moral responsibility is a major concern in automated decision-making, from self-driving cars to kidney transplants."
+      },
+      {
+        "source": "In this paper we present queueing-theoretical methods for the modeling, analysis, and control of autonomous mobility-on-demand MOD systems wherein robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure acceptable quality of service throughout the network.",
+        "prediction": "In this paper we present methods from queueing theory which is the mathematical study of waiting lines for modeling, analyzing, and controlling systems where autonomous mobility-on-demand MOD systems operate. In these systems, robotic self-driving vehicles transport customers within a city and adjust their own locations to maintain a good quality of service across the network.",
+        "reference": "Queueing models are used for autonomous mobility-on-demand MOD systems. A queueing model is constructed so that queue lengths and waiting time can be predicted. In MOD systems,  robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure quality of service."
+      },
+      {
+        "source": "We first cast an autonomous MOD system within a closed Jackson network model with passenger loss.",
+        "prediction": "We first create an independent MOD system within a specific type of network model called a closed Jackson network model that accounts for passenger loss",
+        "reference": "We first cast an autonomous MOD system within a closed Jackson network model,a class of queueing network, with passenger loss."
+      },
+      {
+        "source": "The theoretical insights are used to design a robust, real-time rebalancing algorithm, which is applied to a case study of New York City and implemented on an eight-vehicle mobile robot testbed.",
+        "prediction": "The theoretical insights are used to create a strong algorithm that adjusts things in real-time. This algorithm is used in a study focused on New York City and is tested on a mobile robot setup with eight vehicles.",
+        "reference": "A real-time rebalancing algorithm is applied to a case study of New York City. It is implemented on an eight-vehicle mobile robot testbed."
+      },
+      {
+        "source": "The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.",
+        "prediction": "The case study of New York shows that the current demand for taxis in Manhattan can be met with about 8,000 robotic vehicles. This number is approximately 70% of the size of the current taxi fleet that is operating in Manhattan.",
+        "reference": "The current taxi demand in Manhattan can be met with about 8,000 robotic vehicles. It represents roughly 70% of the size of the current taxi fleet in Manhattan."
+      },
+      {
+        "source": "Finally, we extend our queueing-theoretical setup to include congestion effects, and study the impact of autonomously rebalancing vehicles on overall congestion.",
+        "prediction": "Finally, we expand our theoretical framework for analyzing queues, which are lines of waiting items, to consider the effects of congestion, or overcrowding. We examine how vehicles that can independently adjust their positions or routes to maintain balance affect overall traffic congestion.",
+        "reference": "Congestion effects are also included to study the impact of autonomously rebalancing vehicles on overall traffic jams."
+      },
+      {
+        "source": "Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.",
+        "prediction": "This paper takes a detailed look at how to coordinate self-driving vehicles across a whole system. It also examines the advantages for sustainability that come from using robotic transportation networks.",
+        "reference": "This paper describes the sustainability benefits of robotic transportation networks."
+      },
+      {
+        "source": "In the wake of the on-going digital revolution, we will see a dramatic transformation of our economy and most of our societal institutions.",
+        "prediction": "In the wake of the ongoing digital revolution, we will see a dramatic transformation of our economy and most of our societal institutions",
+        "reference": "The on-going digital revolution will dramatically transform our economy and societal institutions."
+      },
+      {
+        "source": "While the benefits of this transformation can be massive, there are also tremendous risks to our society.",
+        "prediction": "While the benefits of this transformation can be very large, there are also significant risks to our society",
+        "reference": "But this also presents risks for our society."
+      },
+      {
+        "source": "After the automation of many production processes and the creation of self-driving vehicles, the automation of society is next.",
+        "prediction": "After the automation, which means the use of technology to perform tasks without human intervention, of many production processes, and the creation of self-driving vehicles, which are cars that can drive themselves without human input, the automation of society is next.",
+        "reference": "Automation of society is coming."
+      },
+      {
+        "source": "This is moving us to a tipping point and to a crossroads: we must decide between a society in which the actions are determined in a top-down way and then implemented by coercion or manipulative technologies (such as personalized ads and nudging) or a society, in which decisions are taken in a free and participatory way and mutually coordinated.",
+        "prediction": "This is moving us to a tipping point and to a crossroads we must decide between a society in which actions are determined in a top-down way and then implemented by coercion or manipulative technologies such as personalized ads and nudging or a society in which decisions are taken in a free and participatory way and mutually coordinated",
+        "reference": "We must choose either between a society in which the actions are determined top-down by coercion or manipulative technologies (such as personalized ads) or in which decisions are taken freely and cooperatively."
+      },
+      {
+        "source": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits.",
+        "prediction": "Modern information and communication systems also known as ICT enable both types of activities but the latter has economic and strategic benefits",
+        "reference": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits."
+      },
+      {
+        "source": "The fundaments of human dignity, autonomous decision-making, and democracies are shaking, but I believe that they need to be vigorously defended, as they are not only core principles of livable societies, but also the basis of greater efficiency and success.",
+        "prediction": "The foundations of human dignity, the ability to make independent choices, and democratic systems are being challenged, but I believe that they need to be strongly protected, as they are not only essential elements of viable societies, but also the foundation for increased effectiveness and achievement",
+        "reference": "Foundations of human dignity, autonomous decision-making, and democracies are weakening. These core principles of society and the basis of greater efficiency and success need to be defended."
+      },
+      {
+        "source": "Once self-driving car becomes a reality and passengers are no longer worry about it, they will need to find new ways of entertainment.",
+        "prediction": "Once self-driving cars become a reality and passengers no longer worry about driving, they will need to find new ways of entertainment",
+        "reference": "Once self-driving cars become reality and passengers no longer worry about it, they will need to find other forms of entertainment."
+      },
+      {
+        "source": "However, retrieving entertainment contents at the Data Center (DC) can hinder content delivery service due to high delay of car-to-DC communication.",
+        "prediction": "However retrieving entertainment content at the Data Center (DC) can hinder content delivery service due to high delay of car-to-Data Center communication",
+        "reference": "However, high communication delay can slow retrieval of entertainment content from Data Centers (DC)."
+      }
+    ]
+  ],
+  "aiir_llama_run_1_prompt": [
+    {
+      "SARI": 38.25398599272555,
+      "BLEU": 0.15614091621499993,
+      "FKGL": 7.855999999999999
+    },
+    [
+      {
+        "source": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+        "prediction": "Today, automation and robotics are important. Autonomous vehicles are a big topic in research at schools and in industries.",
+        "reference": "Current academic and industrial research is interested in autonomous vehicles."
+      },
+      {
+        "source": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+        "prediction": "More unmanned aerial vehicles are used in civilian and commercial areas. This means we need more autonomy in these systems.",
+        "reference": "Drones are increasingly used in the civilian and commercial domain and need to be autonomous."
+      },
+      {
+        "source": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+        "prediction": "Government rules on how high civil drones can fly are making road-tracking navigation more popular",
+        "reference": "Governments set guidelines on the operation ceiling of civil drones. So, road-tracking based navigation is attracting interest."
+      },
+      {
+        "source": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+        "prediction": "We suggest using imitation learning to help drones fly through city streets. This method learns from an expert pilot to improve drone autonomy.",
+        "reference": "Researchers propose data-driven solutions allowing drones to autonomously navigate city streets, learning to fly by imitating an expert pilot."
+      },
+      {
+        "source": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+        "prediction": "Based on classic image classification methods, our classifier is a quick 39-layer Inception model. It checks for roads using the tomographic reconstructions of the input frames.",
+        "reference": "The algorithm, based on the Inception model, detects roads using tomographic reconstructions. The Inception model is an extension of classic image classification algorithms."
+      },
+      {
+        "source": "Based on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.",
+        "prediction": "Our system uses the Inception-v3 design. It works better than many current models for imitation learning. It is good at processing complexity and accuracy.",
+        "reference": "The Inception-v3 architecture has better accuracy than many existing models of imitation learning."
+      },
+      {
+        "source": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+        "prediction": "The data used to train the system comes from a drone. Experts with 6-8 years of flying experience collected this data. They flew the drone in urban and semi-urban streets.",
+        "reference": "The data used for training the system was captured from the drone over urban streets, navigated by an expert pilot."
+      },
+      {
+        "source": "Permissions were taken from required authorities who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+        "prediction": "Permissions were obtained from the necessary authorities. They ensured that there was little risk to pedestrians during the data collection process",
+        "reference": "Data collection requires special permission to ensure pedestrian security."
+      },
+      {
+        "source": "With the extensive amount of drone data that we collected, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%.",
+        "prediction": "We collected a lot of drone data. This data helps us drive on roads safely without crashing or missing turns. We have an accuracy of 98.44%",
+        "reference": "The drone can navigate successfully through roads without crashing or overshooting; its accuracy is 98.44%."
+      },
+      {
+        "source": "The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.",
+        "prediction": "MAVNet makes the drone very efficient. This allows it to fly fast, reaching speeds of 6 meters per second.",
+        "reference": "MAVNet computational efficiency enables the drone to fly up to 6m/sec."
+      },
+      {
+        "source": "We present the same results in this research and compare them with other state-of-the-art methods of vision and learning based navigation.",
+        "prediction": "We show the same results in this research. We compare them with other advanced methods for vision and learning in navigation.",
+        "reference": "The solution is compared with other recent methods."
+      },
+      {
+        "source": "Recognizing Traffic Signs using intelligent systems can drastically reduce the number of accidents happening world-wide.",
+        "prediction": "Using smart systems to recognize traffic signs can greatly lower accident rates around the world",
+        "reference": "If intelligent systems recognize traffic signs, it can reduce car accidents."
+      },
+      {
+        "source": "With the arrival of Self-driving cars it has become a staple challenge to solve the automatic recognition of Traffic and Hand-held signs in the major streets.",
+        "prediction": "Self-driving cars need to recognize traffic signs and hand-held signs on busy streets. This is a big challenge that must be solved.",
+        "reference": "For self-driving cars, we need automatic recognition of traffic and hand signs."
+      },
+      {
+        "source": "Various machine learning techniques like Random Forest, SVM as well as deep learning models has been proposed for classifying traffic signs.",
+        "prediction": "Many machine learning methods, like Random Forest and SVM, along with deep learning models, have been suggested to classify traffic signs",
+        "reference": "Machine learning techniques  could be used to classify traffic signs."
+      },
+      {
+        "source": "Though they reach state-of-the-art performance on a particular data-set, but fall short of tackling multiple Traffic Sign Recognition benchmarks.",
+        "prediction": "They perform very well on one data-set but do not do as well on several Traffic Sign Recognition tests.",
+        "reference": "They perform well on a particular dataset, but fail on multiple traffic sign recognition test datasets."
+      },
+      {
+        "source": "In this paper, we propose a novel and one-for-all architecture that aces multiple benchmarks with better overall score than the state-of-the-art architectures.",
+        "prediction": "In this paper, we suggest a new all-in-one design. This design performs better on many tests than the best current designs.",
+        "reference": "We proposed a new and better method."
+      },
+      {
+        "source": "Our model is made of residual convolutional blocks with hierarchical dilated skip connections joined in steps.",
+        "prediction": "Our model uses residual convolutional blocks. It has dilated skip connections that are connected in steps.",
+        "reference": "This model is based on enhanced convolutional neural networks (a deep-learning approach often used for image recognition)."
+      },
+      {
+        "source": "With this we score 99.33% Accuracy in German sign recognition benchmark and 99.17% Accuracy in Belgian traffic sign classification benchmark.",
+        "prediction": "We achieved 99.33% accuracy in German sign recognition and 99.17% accuracy in Belgian traffic sign classification.",
+        "reference": "This model was more than 99% correct on German and Belgian sign recognition datasets."
+      },
+      {
+        "source": "Moreover, we propose a newly devised dilated residual learning representation technique which is very low in both memory and computational complexity.",
+        "prediction": "We have a new method called dilated residual learning. This method uses very little memory and is easy to compute.",
+        "reference": "This new model is very low in both memory and computational complexity."
+      },
+      {
+        "source": "We introduce Ignition: an end-to-end neural network architecture for training unconstrained self-driving vehicles in simulated environments.",
+        "prediction": "We present Ignition. It is a complete neural network design. It helps in training self-driving cars without limits. This training happens in simulated environments.",
+        "reference": "Ignition is a neural network for training unconstrained self-driving vehicles in simulated environments."
+      },
+      {
+        "source": "The model is a ResNet-18 variant, which is fed in images from the front of a simulated F1 car, and outputs optimal labels for steering, throttle, braking.",
+        "prediction": "The model is a type of ResNet-18. It takes images from the front of a simulated F1 car. It gives the best labels for steering, throttle, and braking.",
+        "reference": "This ResNet-18 variant model receives images from the front of a simulated car and uses them to steer, throttle, or brake appropriately."
+      },
+      {
+        "source": "Importantly, we never explicitly train the model to detect road features like the outline of a track or distance to other cars; instead, we illustrate that these latent features can be automatically encapsulated by the network.",
+        "prediction": "We do not train the model to find road features like track outlines or distance to cars. We show that the network can automatically capture these hidden features.",
+        "reference": "The model is not explicitly trained to detect road features such as track outline or distance to other cars, as these features can automatically be calculated by the network."
+      },
+      {
+        "source": "In this paper, we present a transfer learning method for the end-to-end control of self-driving cars, which enables a convolutional neural network (CNN) trained on a source domain to be utilized for the same task in a different target domain.",
+        "prediction": "In this paper, we show a transfer learning method for controlling self-driving cars. This allows a convolutional neural network (CNN) trained in one area to be used for the same task in another area.",
+        "reference": "A transfer learning method to control self-driving cars is proposed, in which a convolutional neural network (CNN) is trained on one domain then used for the same task in a different domain."
+      },
+      {
+        "source": "A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.",
+        "prediction": "A regular CNN is set up to take one image from a front camera and turn it into a steering command.",
+        "reference": "A conventional CNN is designed to map a single front-facing camera image to control a car."
+      },
+      {
+        "source": "To enable the transfer learning, we let the CNN produce not only a steering command but also a lane departure level (LDL) by adding a new task module, which takes the output of the last convolutional layer as input.",
+        "prediction": "To enable transfer learning we let the CNN produce a steering command and a lane departure level (LDL) We do this by adding a new task module that takes the output of the last convolutional layer as input",
+        "reference": "CNN produces a steering command and a lane departure level (LDL, mechanism designed to warn the driver when the vehicle begins to move out of its lane). To enable the transfer learning, a new task module takes the output of the last convolutional layer as input."
+      },
+      {
+        "source": "The CNN trained on the source domain, called source network, is then utilized to train another task module called target network, which also takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain.",
+        "prediction": "The CNN trained on the first task is called the source network. This source network helps train another part called the target network. The target network also uses the output from the last layer of the source network. It is trained to give a steering command for the new task.",
+        "reference": "The CNN trained on the source domain is then used to train the target network. It takes the output of the last convolutional layer of the source network and is trained to produce a steering command for the target domain."
+      },
+      {
+        "source": "The steering commands from the source and target network are finally merged according to the LDL and the merged command is utilized for controlling a car in the target domain.",
+        "prediction": "The steering commands from the source and target networks are combined using the LDL. The combined command is used to control a car in the target area.",
+        "reference": "The steering commands from the source and target network are merged and used for car control in the target domain."
+      },
+      {
+        "source": "To demonstrate the effectiveness of the proposed method, we utilized two simulators, TORCS and GTAV, for the source and the target domains, respectively.",
+        "prediction": "We tested our method using two simulators. We used TORCS for the source domain and GTAV for the target domain.",
+        "reference": "Two simulators were used to evaluate the proposed method."
+      },
+      {
+        "source": "Experimental results show that the proposed method outperforms other baseline methods in terms of stable and safe control of cars.",
+        "prediction": "The test results show that the new method works better than other standard methods. It gives more stable and safe control of cars.",
+        "reference": "The proposed method is more stable and safer for car control."
+      },
+      {
+        "source": "A significant problem of using deep learning techniques is the limited amount of data available for training.",
+        "prediction": "A big problem with deep learning is the small amount of data for training",
+        "reference": "Limited data available for training affects the use of deep learning techniques."
+      },
+      {
+        "source": "There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.",
+        "prediction": "Some datasets exist for popular tasks like item recognition and classification in self-driving cars. However, there are very few datasets for industrial robotics.",
+        "reference": "Datasets are available for problems such as item recognition and classification for self-driving cars, but very limited for industrial robotics."
+      },
+      {
+        "source": "In previous work, we have trained a multi-objective Convolutional Neural Network (CNN) to identify the robot body in the image and estimate 3D positions of the joints by using just a 2D image, but it was limited to a range of robots produced by Universal Robots (UR).",
+        "prediction": "We trained a multi-task Convolutional Neural Network (CNN) to find the robot body in images. It also estimates the 3D positions of the robot's joints using only a 2D image. However, it only works with robots made by Universal Robots (UR)",
+        "reference": "A multi-objective Convolutional Neural Network (CNN) was first trained to identify the robot in the image and find 3D positions of the joints using just a 2D image. But this only used robots made by Universal Robots (UR)."
+      },
+      {
+        "source": "In this work, we extend our method to work with a new robot arm - Kuka LBR iiwa, which has a significantly different appearance and an additional joint.",
+        "prediction": "In this work, we improve our method for a new robot arm called Kuka LBR iiwa. This arm looks different and has one extra joint.",
+        "reference": "Here we work with a new robot arm - Kuka LBR iiwa which looks very different and has an additional joint."
+      },
+      {
+        "source": "However, instead of collecting large datasets once again, we collect a number of smaller datasets containing a few hundred frames each and use transfer learning techniques on the CNN trained on UR robots to adapt it to a new robot having different shapes and visual features.",
+        "prediction": "We do not collect big datasets again. Instead, we gather smaller datasets with a few hundred frames each. We use transfer learning on the CNN trained on UR robots. This helps adapt it to a new robot with different shapes and features.",
+        "reference": "We collect a number of smaller datasets and use transfer learning techniques on the CNN trained on UR robots to adapt it to a robot that looks different."
+      },
+      {
+        "source": "We have proven that transfer learning is not only applicable in this field, but it requires smaller well-prepared training datasets, trains significantly faster and reaches similar accuracy compared to the original method, even improving it on some aspects.",
+        "prediction": "We have shown that transfer learning works in this field. It needs smaller and better training datasets. It trains much faster and reaches similar accuracy to the original method. In some cases, it even improves the results.",
+        "reference": "Transfer learning requires smaller training datasets, learns faster and reaches similar or even better accuracy."
+      },
+      {
+        "source": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+        "prediction": "Moral responsibility is an important issue in automated decision-making. This includes things like self-driving cars and kidney exchanges.",
+        "reference": "Moral responsibility is a major concern in automated decision-making, from self-driving cars to kidney transplants."
+      },
+      {
+        "source": "In this paper we present queueing-theoretical methods for the modeling, analysis, and control of autonomous mobility-on-demand MOD systems wherein robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure acceptable quality of service throughout the network.",
+        "prediction": "In this paper we show methods from queueing theory for modeling, analyzing, and controlling on-demand mobility systems. These systems use self-driving robots to transport customers in cities. The vehicles also move themselves to keep service quality good across the network.",
+        "reference": "Queueing models are used for autonomous mobility-on-demand MOD systems. A queueing model is constructed so that queue lengths and waiting time can be predicted. In MOD systems,  robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure quality of service."
+      },
+      {
+        "source": "We first cast an autonomous MOD system within a closed Jackson network model with passenger loss.",
+        "prediction": "We created an independent MOD system in a closed Jackson network model that includes passenger loss",
+        "reference": "We first cast an autonomous MOD system within a closed Jackson network model,a class of queueing network, with passenger loss."
+      },
+      {
+        "source": "The theoretical insights are used to design a robust, real-time rebalancing algorithm, which is applied to a case study of New York City and implemented on an eight-vehicle mobile robot testbed.",
+        "prediction": "The theoretical ideas help create a strong real-time rebalancing algorithm. This algorithm is tested using a case study on New York City. It is run on an eight-vehicle mobile robot setup.",
+        "reference": "A real-time rebalancing algorithm is applied to a case study of New York City. It is implemented on an eight-vehicle mobile robot testbed."
+      },
+      {
+        "source": "The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.",
+        "prediction": "A study in New York shows that Manhattan needs about 8,000 robotic vehicles. This number is about 70% of the current taxi fleet in Manhattan.",
+        "reference": "The current taxi demand in Manhattan can be met with about 8,000 robotic vehicles. It represents roughly 70% of the size of the current taxi fleet in Manhattan."
+      },
+      {
+        "source": "Finally, we extend our queueing-theoretical setup to include congestion effects, and study the impact of autonomously rebalancing vehicles on overall congestion.",
+        "prediction": "We add congestion effects to our queueing theory. We look at how self-balancing vehicles affect overall congestion.",
+        "reference": "Congestion effects are also included to study the impact of autonomously rebalancing vehicles on overall traffic jams."
+      },
+      {
+        "source": "Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.",
+        "prediction": "This paper takes a careful look at how to coordinate self-driving cars. It also describes some of the benefits of using robotic transport systems for the environment.",
+        "reference": "This paper describes the sustainability benefits of robotic transportation networks."
+      },
+      {
+        "source": "In the wake of the on-going digital revolution, we will see a dramatic transformation of our economy and most of our societal institutions.",
+        "prediction": "The digital revolution is changing our economy and many parts of society.",
+        "reference": "The on-going digital revolution will dramatically transform our economy and societal institutions."
+      },
+      {
+        "source": "While the benefits of this transformation can be massive, there are also tremendous risks to our society.",
+        "prediction": "This change can have big benefits, but it also brings huge risks to our society",
+        "reference": "But this also presents risks for our society."
+      },
+      {
+        "source": "After the automation of many production processes and the creation of self-driving vehicles, the automation of society is next.",
+        "prediction": "After machines took over many production tasks and self-driving cars were made, now society is next for automation",
+        "reference": "Automation of society is coming."
+      },
+      {
+        "source": "This is moving us to a tipping point and to a crossroads: we must decide between a society in which the actions are determined in a top-down way and then implemented by coercion or manipulative technologies (such as personalized ads and nudging) or a society, in which decisions are taken in a free and participatory way and mutually coordinated.",
+        "prediction": "We are at a key moment. We must choose between two types of societies. One society makes choices from the top down using force or manipulative tools like ads and nudges. The other society allows people to decide together in a free and open way.",
+        "reference": "We must choose either between a society in which the actions are determined top-down by coercion or manipulative technologies (such as personalized ads) or in which decisions are taken freely and cooperatively."
+      },
+      {
+        "source": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits.",
+        "prediction": "Modern information and communication systems help with both tasks. The second task has economic and strategic benefits.",
+        "reference": "Modern information and communication systems (ICT) enable both, but the latter has economic and strategic benefits."
+      },
+      {
+        "source": "The fundaments of human dignity, autonomous decision-making, and democracies are shaking, but I believe that they need to be vigorously defended, as they are not only core principles of livable societies, but also the basis of greater efficiency and success.",
+        "prediction": "Human dignity, the right to make choices, and democracies are under threat. We must defend these ideas. They are important for good societies and are key to better success and efficiency.",
+        "reference": "Foundations of human dignity, autonomous decision-making, and democracies are weakening. These core principles of society and the basis of greater efficiency and success need to be defended."
+      },
+      {
+        "source": "Once self-driving car becomes a reality and passengers are no longer worry about it, they will need to find new ways of entertainment.",
+        "prediction": "Once self-driving cars are real and passengers don't worry about driving, they will need new ways to be entertained",
+        "reference": "Once self-driving cars become reality and passengers no longer worry about it, they will need to find other forms of entertainment."
+      },
+      {
+        "source": "However, retrieving entertainment contents at the Data Center (DC) can hinder content delivery service due to high delay of car-to-DC communication.",
+        "prediction": "Retrieving entertainment content at the Data Center can slow down the delivery service. This happens because car-to-Data Center communication has a high delay.",
+        "reference": "However, high communication delay can slow retrieval of entertainment content from Data Centers (DC)."
+      }
+    ]
+  ]
+}

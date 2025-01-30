@@ -170,10 +170,12 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+# Other things
+.idea/
 
+# My files
+matas@130.209.242.12.txt
 
-# My own folders
+# My folders
 dataset/
-evaluations/
 graphs/
-runs/
