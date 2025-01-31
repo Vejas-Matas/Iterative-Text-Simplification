@@ -3,7 +3,7 @@
 
 # ## Convert **.ipynb** to **.py**
 
-# In[2]:
+# In[ ]:
 
 
 # !jupyter nbconvert --to python "Iterative Simplification.ipynb"
@@ -23,7 +23,7 @@
 # %pip install textstat
 
 
-# In[3]:
+# In[ ]:
 
 
 import openai
@@ -59,9 +59,9 @@ vllm_model = "meta-llama/Llama-3.1-8B-Instruct"
 
 
 class OpenAIChatBot:
-    def __init__(self, model, api_key):
+    def __init__(self, model_name, api_key):
         self.client = openai.OpenAI(api_key=api_key)
-        self.model = model
+        self.model_name = model_name
         self.chat_log = []
 
     def add_system_prompt(self, prompt):
@@ -70,7 +70,7 @@ class OpenAIChatBot:
     def send_prompt(self, prompt):
         self.chat_log.append({"role": "user", "content": prompt}) 
         response = self.client.chat.completions.create(
-            model=self.model,
+            model=self.model_name,
             messages=self.chat_log
         )
         self.chat_log.append({"role": "assistant", "content": response.choices[0].message.content})
@@ -374,7 +374,7 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
         #     api_key=api_key,
         # )
         chat_bot = VllmChatBot(
-            model=vllm_model,
+            model_name=vllm_model,
         )
 
         prediction = algorithm_fn(chat_bot, system_prompt, parameters, sources[i], max_iter)
