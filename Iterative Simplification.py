@@ -3,7 +3,7 @@
 
 # ## Convert **.ipynb** to **.py**
 
-# In[1]:
+# In[2]:
 
 
 # !jupyter nbconvert --to python "Iterative Simplification.ipynb"
@@ -23,7 +23,7 @@
 # %pip install textstat
 
 
-# In[2]:
+# In[3]:
 
 
 import openai
@@ -81,7 +81,8 @@ class OpenAIChatBot:
     def print_chat(self):
         for message in self.chat_log:
             role = message["role"].upper()
-            print(f"{role}: {message["content"]}", end="\n\n")
+            content = message["content"]
+            print(f"{role}: {content}", end="\n\n")
 
     def save_chat(self):
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
@@ -118,7 +119,8 @@ class VllmChatBot:
     def print_chat(self):
         for message in self.chat_log:
             role = message["role"].upper()
-            print(f"{role}: {message["content"]}", end="\n\n")
+            content = message["content"]
+            print(f"{role}: {content}", end="\n\n")
 
     def save_chat(self):
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
