@@ -3,7 +3,7 @@
 
 # ## Convert **.ipynb** to **.py**
 
-# In[ ]:
+# In[1]:
 
 
 # !jupyter nbconvert --to python "Iterative Simplification.ipynb"
@@ -109,7 +109,7 @@ class VllmChatBot:
         self.chat_log.append({"role": "user", "content": prompt}) 
         response = self.model.chat(
             messages=self.chat_log,
-            sampling_params=SamplingParams(max_tokens=8192), # Make this nicer !!!
+            sampling_params=vllm.SamplingParams(max_tokens=8192), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
 
