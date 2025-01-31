@@ -80,7 +80,8 @@ class OpenAIChatBot:
     
     def print_chat(self):
         for message in self.chat_log:
-            print(f"{message["role"].upper()}: {message["content"]}", end="\n\n")
+            role = message["role"].upper()
+            print(f"{role}: {message["content"]}", end="\n\n")
 
     def save_chat(self):
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
@@ -116,7 +117,8 @@ class VllmChatBot:
     
     def print_chat(self):
         for message in self.chat_log:
-            print(f"{message["role"].upper()}: {message["content"]}", end="\n\n")
+            role = message["role"].upper()
+            print(f"{role}: {message["content"]}", end="\n\n")
 
     def save_chat(self):
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
