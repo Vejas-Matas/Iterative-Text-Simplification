@@ -3,7 +3,7 @@
 
 # ## Convert **.ipynb** to **.py**
 
-# In[1]:
+# In[2]:
 
 
 # !jupyter nbconvert --to python "Iterative Simplification.ipynb"
@@ -277,6 +277,8 @@ The algorithm is as follows:
 5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.
 
 When the algorithm terminates, you print the final simplified passage
+
+When responding to prompts, only respond to the given question and do not proceed to the next step
 """
 
 
