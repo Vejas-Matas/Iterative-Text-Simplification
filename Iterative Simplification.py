@@ -3,7 +3,11 @@
 
 # ## Convert **.ipynb** to **.py**
 
+# In[1]:
+
+
 # !jupyter nbconvert --to python "Iterative Simplification.ipynb"
+
 
 # ## ChatBot setup
 
@@ -23,6 +27,7 @@
 
 
 import openai
+import vllm
 import datetime
 import json
 import numpy as np
@@ -36,7 +41,7 @@ import nltk
 import textstat
 
 
-# In[3]:
+# In[ ]:
 
 
 nltk.download("punkt_tab")
@@ -47,12 +52,13 @@ nltk.download("punkt_tab")
 
 openai_api_key = ""
 openai_model = "gpt-4o-mini"
+vllm_model = "meta-llama/Llama-3.1-8B-Instruct"
 
 
 # In[5]:
 
 
-class ChatBot:
+class OpenAIChatBot:
     def __init__(self, model, api_key):
         self.client = openai.OpenAI(api_key=api_key)
         self.model = model
@@ -68,6 +74,42 @@ class ChatBot:
             messages=self.chat_log
         )
         self.chat_log.append({"role": "assistant", "content": response.choices[0].message.content})
+
+    def get_last_response(self):
+        return self.chat_log[-1]["content"]
+    
+    def print_chat(self):
+        for message in self.chat_log:
+            print(f"{message["role"].upper()}: {message["content"]}", end="\n\n")
+
+    def save_chat(self):
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
+        file_name = f"./runs/chat-log_{current_datetime}.json"
+        with open(file_name, "w") as file:
+            json.dump(self.chat_log, file)
+
+    def clear_chat(self):
+        self.chat_log = []
+
+
+# In[ ]:
+
+
+class VllmChatBot:
+    def __init__(self, model_name):
+        self.model = vllm.LLM(model_name, max_model_len=8192) # Make this nicer !!!
+        self.chat_log = []
+
+    def add_system_prompt(self, prompt):
+        self.chat_log.append({"role": "system", "content": prompt})
+    
+    def send_prompt(self, prompt):
+        self.chat_log.append({"role": "user", "content": prompt}) 
+        response = self.model.chat(
+            messages=self.chat_log,
+            sampling_params=SamplingParams(max_tokens=8192), # Make this nicer !!!
+        )
+        self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
 
     def get_last_response(self):
         return self.chat_log[-1]["content"]
@@ -113,7 +155,7 @@ algorithm_results = {}
 
 # #### Dataset
 
-# In[8]:
+# In[ ]:
 
 
 # Rewrite to class?
@@ -323,9 +365,12 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
     results = []
     
     for i in range(len(sources)):
-        chat_bot = ChatBot(
-            model=openai_model,
-            api_key=api_key,
+        # chat_bot = OpenAIChatBot(
+        #     model=openai_model,
+        #     api_key=api_key,
+        # )
+        chat_bot = VllmChatBot(
+            model=vllm_model,
         )
 
         prediction = algorithm_fn(chat_bot, system_prompt, parameters, sources[i], max_iter)
@@ -355,7 +400,7 @@ algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively,
 # algorithm_results["aiir_llama_run_1_prompt"] = simplify_passages(simplify_passage_iteratively, aiir_llama_run_1_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
 
 
-# In[27]:
+# In[ ]:
 
 
 print("METRICS:")
@@ -363,20 +408,20 @@ for algorithm, results in algorithm_results.items():
     print(f"{algorithm.upper()}: {results[0]}")
 
 
-# In[28]:
+# In[ ]:
 
 
-print("SIMPLIFICATION EXAMPLES:")
-print(200*"–")
-for i in range(5):
-    print(f"{i}:")
-    print(f"SOURCE: {algorithm_results["iterative"][1][i]["source"]}")
-    print(f"REFERENCE: {algorithm_results["iterative"][1][i]["reference"]}")
-    for algorithm, results in algorithm_results.items():
-        print(f"{algorithm.upper()}:")
-        print(results[1][i]["prediction"])
-    print(200*"–")
-    print()
+# print("SIMPLIFICATION EXAMPLES:")
+# print(200*"–")
+# for i in range(5):
+#     print(f"{i}:")
+#     print(f"SOURCE: {algorithm_results["iterative"][1][i]["source"]}")
+#     print(f"REFERENCE: {algorithm_results["iterative"][1][i]["reference"]}")
+#     for algorithm, results in algorithm_results.items():
+#         print(f"{algorithm.upper()}:")
+#         print(results[1][i]["prediction"])
+#     print(200*"–")
+#     print()
 
 
 # In[32]:
@@ -392,164 +437,51 @@ for i in range(5):
 # In[54]:
 
 
-with open('evaluations/abstracts_university_medium_max20_2024-12-12_21-37-41.106794') as f:
-    old_simplifications = json.load(f)
+# with open('evaluations/abstracts_university_medium_max20_2024-12-12_21-37-41.106794') as f:
+#     old_simplifications = json.load(f)
 
 
-# In[96]:
+# In[ ]:
 
 
-old_fkgl_scores = np.array([(textstat.flesch_kincaid_grade(passage_set["source"]), textstat.flesch_kincaid_grade(passage_set["prediction"])) for passage_set in old_simplifications["iterative"][1]])
-# old_fkgl_scores = np.array([(readability.Readability(passage_set["source"]).flesch_kincaid().score, readability.Readability(passage_set["prediction"]).flesch_kincaid().score) for passage_set in old_simplifications["iterative"][1]])
-print(old_fkgl_scores)
+# old_fkgl_scores = np.array([(textstat.flesch_kincaid_grade(passage_set["source"]), textstat.flesch_kincaid_grade(passage_set["prediction"])) for passage_set in old_simplifications["iterative"][1]])
+# # old_fkgl_scores = np.array([(readability.Readability(passage_set["source"]).flesch_kincaid().score, readability.Readability(passage_set["prediction"]).flesch_kincaid().score) for passage_set in old_simplifications["iterative"][1]])
+# print(old_fkgl_scores)
 
-# for passage_set in old_simplifications["iterative"][1][:20]:
-#     print(textstat.flesch_kincaid_grade(passage_set["source"]), end="")
-#     print(" –> ", end="")
-#     print(textstat.flesch_kincaid_grade(passage_set["prediction"]))
-
-
-# In[101]:
+# # for passage_set in old_simplifications["iterative"][1][:20]:
+# #     print(textstat.flesch_kincaid_grade(passage_set["source"]), end="")
+# #     print(" –> ", end="")
+# #     print(textstat.flesch_kincaid_grade(passage_set["prediction"]))
 
 
-diff = old_fkgl_scores[:, 0] - old_fkgl_scores[:, 1]
-dir = diff >= 0
+# In[ ]:
 
-plt.scatter(old_fkgl_scores[:, 0], old_fkgl_scores[:, 1], abs(diff), np.where(dir, "b", "r"))
-plt.title("Abstract complexity change")
-plt.xlabel("Original passage FKGL")
-plt.ylabel("Simplified passage FKGL")
-plt.xscale("log")
-plt.yscale("log")
-plt.show()
+
+# diff = old_fkgl_scores[:, 0] - old_fkgl_scores[:, 1]
+# dir = diff >= 0
+
+# plt.scatter(old_fkgl_scores[:, 0], old_fkgl_scores[:, 1], abs(diff), np.where(dir, "b", "r"))
+# plt.title("Abstract complexity change")
+# plt.xlabel("Original passage FKGL")
+# plt.ylabel("Simplified passage FKGL")
+# plt.xscale("log")
+# plt.yscale("log")
+# plt.show()
 
 
 # In[76]:
 
 
-outliers = []
-for passage_set, scores in zip(old_simplifications["iterative"][1], old_fkgl_scores):
-    if scores[0] - scores[1] < -20:
-        outliers.append((passage_set, scores))
-
-
-# In[77]:
-
-
-pprint.pprint(outliers)
+# outliers = []
+# for passage_set, scores in zip(old_simplifications["iterative"][1], old_fkgl_scores):
+#     if scores[0] - scores[1] < -20:
+#         outliers.append((passage_set, scores))
 
 
 # In[ ]:
 
 
-metrics = compute_metrics(
-    [dataset["train"]["sentence"]["source"][0]["source_snt"]],
-    ["Currently the main research topic is self-driving cars"],
-    [dataset["train"]["sentence"]["reference"][0]["simplified_snt"]],
-)
-
-
-# In[ ]:
-
-
-metrics
-
-
-# In[ ]:
-
-
-readability.Readability(dataset["train"]["abstract"]["source"][0]["source_abs"]).flesch_kincaid().score
-
-
-# In[22]:
-
-
-# def temp_simplify_passages(name, algorithm_fn, system_prompt, parameters, passage_type, max_iter, n=None):
-#     if passage_type == "abstract":
-#         sources, references = get_sources_and_references("abs", n)
-#     elif passage_type == "sentence":
-#         sources, references = get_sources_and_references("snt", n)
-#     else:
-#         raise ValueError('Passage type should be "abstract" or "sentence"')
-
-#     predictions = []
-#     results = []
-    
-#     for i in range(len(sources)):
-#         chat_bot = ChatBot(
-#             model=openai_model,
-#             api_key=api_key,
-#         )
-
-#         # prediction = simplify_passage_iteratively(chat_bot, system_prompt, sources[i], parameters, max_iter)
-#         prediction = algorithm_fn(chat_bot, system_prompt, parameters, sources[i], max_iter)
-#         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
-
-#         predictions.append(prediction)
-#         results.append({
-#             "source": sources[i],
-#             "prediction": prediction,
-#             "reference": references[i],
-#             # "metrics": metrics,
-#         })
-
-#         if ((i+1) % 100 == 0) or (i == len(sources) - 1):
-#             current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
-#             with open(f"./evaluations/separated_runs/{name}_i={i}_{passage_type}s_university_medium_max20_{current_datetime}", "w") as file:
-#                 json.dump(results, file)
-
-#     overall_metrics = compute_metrics(sources, predictions, references)
-#     return (overall_metrics, results)
-
-
-# In[23]:
-
-
-# passages_to_simplify = None
-# passage_type_to_simplify = "sentence"
-
-# algorithm_results["iterative"] = temp_simplify_passages("iterative", simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# # algorithm_results["non_iterative"] = temp_simplify_passages("non_iterative", simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
-# # algorithm_results["aiir_mistral_prompt"] = temp_simplify_passages("aiir_mistral_prompt", simplify_passage_iteratively, aiir_mistral_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
-# # algorithm_results["aiir_llama_run_1_prompt"] = temp_simplify_passages("aiir_llama_run_1_prompt", simplify_passage_iteratively, aiir_llama_run_1_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
-
-
-# In[ ]:
-
-
-
-
-
-# In[15]:
-
-
-abs_sources, abs_references = get_sources_and_references("abs", None)
-snt_sources, snt_references = get_sources_and_references("snt", None)
-# def compute_metrics(sources, predictions, references):
-
-
-# In[16]:
-
-
-compute_metrics(abs_sources, abs_references, abs_references)
-
-
-# In[17]:
-
-
-compute_metrics(snt_sources, snt_references, snt_references)
-
-
-# In[18]:
-
-
-compute_metrics(abs_sources, abs_sources, abs_references)
-
-
-# In[19]:
-
-
-compute_metrics(snt_sources, snt_sources, snt_references)
+# pprint.pprint(outliers)
 
 
 # ## Graphs
@@ -557,48 +489,48 @@ compute_metrics(snt_sources, snt_sources, snt_references)
 # In[ ]:
 
 
-def my_exp(x, k, a):
-    return a * (np.exp(-k * (x-0.8)) - 1)
+# def my_exp(x, k, a):
+#     return a * (np.exp(-k * (x-0.8)) - 1)
 
-# Define the range of x values
-x = np.linspace(0, 1, 500)
+# # Define the range of x values
+# x = np.linspace(0, 1, 500)
 
-# Define the functions
-exp_1 = my_exp(x, k=1, a=0.816)
-exp_2 = my_exp(x, k=2, a=0.253)
-exp_3 = my_exp(x, k=10, a=0.00033559)
-linear = 1 - 1.25 * x
+# # Define the functions
+# exp_1 = my_exp(x, k=1, a=0.816)
+# exp_2 = my_exp(x, k=2, a=0.253)
+# exp_3 = my_exp(x, k=10, a=0.00033559)
+# linear = 1 - 1.25 * x
 
-nullifier = np.where(x > 0.8, 0, 1)
+# nullifier = np.where(x > 0.8, 0, 1)
 
-# Horizontal and vertical constants
-horizontal_constant = 0.25
-vertical_constant = 0.5
+# # Horizontal and vertical constants
+# horizontal_constant = 0.25
+# vertical_constant = 0.5
 
-plt.figure(figsize=(10, 6))
+# plt.figure(figsize=(10, 6))
 
-# Functions
-plt.plot(x, linear * nullifier, color="red")
-plt.plot(x, exp_1 * nullifier, color="red")
-plt.plot(x, exp_2 * nullifier, color="red")
-plt.plot(x, exp_3 * nullifier, color="red")
+# # Functions
+# plt.plot(x, linear * nullifier, color="red")
+# plt.plot(x, exp_1 * nullifier, color="red")
+# plt.plot(x, exp_2 * nullifier, color="red")
+# plt.plot(x, exp_3 * nullifier, color="red")
 
-# Parameters
-plt.axhline(y=horizontal_constant, color="blue", linestyle="--")
-plt.axvline(x=vertical_constant, color="blue", linestyle="--")
-plt.fill_between(x, horizontal_constant, 1, color="blue", alpha=0.4)
+# # Parameters
+# plt.axhline(y=horizontal_constant, color="blue", linestyle="--")
+# plt.axvline(x=vertical_constant, color="blue", linestyle="--")
+# plt.fill_between(x, horizontal_constant, 1, color="blue", alpha=0.4)
 
-# Customize the plot
-plt.title("Complexity and Information Loss Trade-Off with Parameters")
-plt.xlabel("Complexity")
-plt.ylabel("Information loss")
-plt.axhline(0, color="black", linewidth=0.5, linestyle="-")  # x-axis
-plt.axvline(0, color="black", linewidth=0.5, linestyle="-")  # y-axis
-plt.grid(True, linestyle="--", alpha=0.7)
+# # Customize the plot
+# plt.title("Complexity and Information Loss Trade-Off with Parameters")
+# plt.xlabel("Complexity")
+# plt.ylabel("Information loss")
+# plt.axhline(0, color="black", linewidth=0.5, linestyle="-")  # x-axis
+# plt.axvline(0, color="black", linewidth=0.5, linestyle="-")  # y-axis
+# plt.grid(True, linestyle="--", alpha=0.7)
 
 
-plt.show()
-# plt.savefig("graphs/trade_off_parameters.pdf")
+# plt.show()
+# # plt.savefig("graphs/trade_off_parameters.pdf")
 
 
 # In[ ]:
