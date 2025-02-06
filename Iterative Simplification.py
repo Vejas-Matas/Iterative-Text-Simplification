@@ -3,7 +3,7 @@
 
 # ## Convert **.ipynb** to **.py**
 
-# In[2]:
+# In[3]:
 
 
 # !jupyter nbconvert --to python "Iterative Simplification.ipynb"
@@ -28,6 +28,7 @@
 
 import openai
 import vllm
+import torch
 import datetime
 import json
 import numpy as np
@@ -47,12 +48,13 @@ import textstat
 nltk.download("punkt_tab")
 
 
-# In[4]:
+# In[1]:
 
 
 openai_api_key = ""
 openai_model = "gpt-4o-mini"
-vllm_model = "meta-llama/Llama-3.1-8B-Instruct"
+# vllm_model = "meta-llama/Llama-3.1-8B-Instruct"
+vllm_model = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
 
 
 # In[5]:
@@ -99,7 +101,7 @@ class OpenAIChatBot:
 
 class VllmChatBot:
     def __init__(self, model_name):
-        self.model = vllm.LLM(model_name, max_model_len=8192) # Make this nicer !!!
+        self.model = vllm.LLM(model_name, max_model_len=4096, dtype=torch.float16, quantization="awq", tensor_parallel_size=1) # Make this nicer !!!
         self.chat_log = []
 
     def add_system_prompt(self, prompt):
@@ -109,7 +111,7 @@ class VllmChatBot:
         self.chat_log.append({"role": "user", "content": prompt}) 
         response = self.model.chat(
             messages=self.chat_log,
-            sampling_params=vllm.SamplingParams(max_tokens=8192), # Make this nicer !!!
+            sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
 
@@ -397,7 +399,7 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
 # In[32]:
 
 
-passages_to_simplify = 1
+passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
 algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
