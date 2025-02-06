@@ -277,7 +277,7 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
             # "metrics": metrics,
         })
 
-        torch.cuda.empty_cache()
+        # torch.cuda.empty_cache()
 
     overall_metrics = compute_metrics(sources, predictions, references)
     return (overall_metrics, results)
