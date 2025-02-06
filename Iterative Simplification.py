@@ -72,7 +72,7 @@ class OpenAIChatBot:
 
 class VllmChatBot:
     def __init__(self, model_name):
-        self.model = vllm.LLM(model_name, max_model_len=512, dtype=torch.float16, quantization="awq", tensor_parallel_size=2) # Make this nicer !!!
+        self.model = vllm.LLM(model_name, max_model_len=1024, dtype=torch.float16, quantization="awq", tensor_parallel_size=1) # Make this nicer !!!
         self.chat_log = []
 
     def add_system_prompt(self, prompt):
