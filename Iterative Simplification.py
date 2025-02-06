@@ -1,18 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ## Convert **.ipynb** to **.py**
-
-# In[3]:
-
-
-# !jupyter nbconvert --to python "Iterative Simplification.ipynb"
-
 
 # ## ChatBot setup
-
-# In[1]:
-
 
 # %pip install openai
 # %pip install evaluate
@@ -21,10 +8,6 @@
 # %pip install sacremoses
 # %pip install nltk
 # %pip install textstat
-
-
-# In[ ]:
-
 
 import openai
 import vllm
@@ -42,22 +25,13 @@ import nltk
 import textstat
 
 
-# In[ ]:
-
-
 nltk.download("punkt_tab")
-
-
-# In[1]:
 
 
 openai_api_key = ""
 openai_model = "gpt-4o-mini"
 # vllm_model = "meta-llama/Llama-3.1-8B-Instruct"
 vllm_model = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
-
-
-# In[5]:
 
 
 class OpenAIChatBot:
@@ -96,9 +70,6 @@ class OpenAIChatBot:
         self.chat_log = []
 
 
-# In[ ]:
-
-
 class VllmChatBot:
     def __init__(self, model_name):
         self.model = vllm.LLM(model_name, max_model_len=4096, dtype=torch.float16, quantization="awq", tensor_parallel_size=1) # Make this nicer !!!
@@ -134,35 +105,12 @@ class VllmChatBot:
         self.chat_log = []
 
 
-# In[6]:
-
-
-# # chat_bot = ChatBot(
-# #     model="gpt-4o-mini",
-# #     api_key=api_key,
-# # )
-
-# temp_bot = ChatBot(
-#     model="gpt-4o-mini",
-#     api_key=api_key,
-# )
-# temp_bot.add_system_prompt("You solve math equations")
-# temp_bot.send_prompt("What is 2+3?")
-# temp_bot.print_chat()
-
-
-# In[7]:
-
-
 algorithm_results = {}
 
 
 # ## Evaluation
 
 # #### Dataset
-
-# In[ ]:
-
 
 # Rewrite to class?
 
@@ -190,12 +138,6 @@ for data_type in ["train", "test"]:
             dataset[data_type][passage_length][passage_type] = data
 
 
-# In[ ]:
-
-
-
-
-
 # #### Metrics
 
 # Mssing metrics:
@@ -208,14 +150,9 @@ for data_type in ["train", "test"]:
 # - Deletions proportion
 # - Lexical complexity score
 
-# In[9]:
-
 
 bleu = evaluate.load("bleu")
 sari = evaluate.load("sari")
-
-
-# In[10]:
 
 
 def compute_metrics(sources, predictions, references):
@@ -231,40 +168,10 @@ def compute_metrics(sources, predictions, references):
     return results
 
 
-# In[11]:
-
-
-# >>> predictions = ["hello there general kenobi", "foo bar foobar"]
-# >>> references = [
-# ...     ["hello there general kenobi", "hello there !"],
-# ...     ["foo bar foobar"]
-# ... ]
-# >>> bleu = evaluate.load("bleu")
-# >>> results = bleu.compute(predictions=predictions, references=references)
-
-
-# In[12]:
-
-
-# sources=["About 95 species are currently accepted."]
-# predictions=["About 95 you now get in."]
-# references=[["About 95 species are currently known.","About 95 species are now accepted.","95 species are now accepted."]]
-# sari_score = sari.compute(sources=sources, predictions=predictions, references=references)
-
-
-# ## Algorithm
-
-# In[13]:
-
-
 algorithm_parameters = {
     "DC": "University student",
     "ILT": "Medium"
 }
-
-
-# In[14]:
-
 
 system_prompt = """
 You are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.
@@ -283,10 +190,6 @@ When the algorithm terminates, you print the final simplified passage
 When responding to prompts, only respond to the given question and do not proceed to the next step
 """
 
-
-# In[15]:
-
-
 non_iterative_system_prompt = """
 You are a reader assistant. You simplify a passage from a scientific paper to make it more readable.
 
@@ -295,10 +198,6 @@ You are also given two parameters: DC (Desired Complexity) – a desired complex
 Only print the simplified passage
 """
 
-
-# In[16]:
-
-
 aiir_mistral_system_prompt = """
 You are a skilled editor, known for your ability to simplify complex text while preserving it. You explain the technical terms, defining what they are (e.g., terms like Blockchain, Cryptojacking, all abbreviations), without removing sentences or summarizing them.
 """
@@ -306,15 +205,6 @@ You are a skilled editor, known for your ability to simplify complex text while 
 aiir_llama_run_1_system_prompt = """
 Simplify this text for English speaking science students in college. Maximize the use of simple words and short sentences, but include keywords from the original text. Optimize the output ROUGE, SARI, and BLEU scores
 """
-
-
-# In[ ]:
-
-
-
-
-
-# In[29]:
 
 
 def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, max_iter=20):
@@ -348,17 +238,12 @@ def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, m
     return chat_bot.get_last_response()
 
 
-# In[30]:
-
-
 def get_sources_and_references(passage_type_abbreviation, n):    
     sources = [entry[f"source_{passage_type_abbreviation}"] for entry in dataset["train"][passage_type_abbreviation]["source"][:n] ]
     references = [entry[f"simplified_{passage_type_abbreviation}"] for entry in dataset["train"][passage_type_abbreviation]["reference"][:n] ]
 
     return (sources, references)
 
-
-# In[31]:
 
 
 def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max_iter, n=None):
@@ -392,11 +277,10 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
             # "metrics": metrics,
         })
 
+        torch.cuda.empty_cache()
+
     overall_metrics = compute_metrics(sources, predictions, references)
     return (overall_metrics, results)
-
-
-# In[32]:
 
 
 passages_to_simplify = 10
@@ -408,15 +292,9 @@ algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively,
 # algorithm_results["aiir_llama_run_1_prompt"] = simplify_passages(simplify_passage_iteratively, aiir_llama_run_1_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
 
 
-# In[ ]:
-
-
 print("METRICS:")
 for algorithm, results in algorithm_results.items():
     print(f"{algorithm.upper()}: {results[0]}")
-
-
-# In[ ]:
 
 
 # print("SIMPLIFICATION EXAMPLES:")
@@ -431,124 +309,6 @@ for algorithm, results in algorithm_results.items():
 #     print(200*"–")
 #     print()
 
-
-# In[32]:
-
-
 # current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
 # with open(f"./evaluations/{passage_type_to_simplify}s_university_medium_max20_{current_datetime}", "w") as file:
 #     json.dump(algorithm_results, file)
-
-
-# ## Playground
-
-# In[54]:
-
-
-# with open('evaluations/abstracts_university_medium_max20_2024-12-12_21-37-41.106794') as f:
-#     old_simplifications = json.load(f)
-
-
-# In[ ]:
-
-
-# old_fkgl_scores = np.array([(textstat.flesch_kincaid_grade(passage_set["source"]), textstat.flesch_kincaid_grade(passage_set["prediction"])) for passage_set in old_simplifications["iterative"][1]])
-# # old_fkgl_scores = np.array([(readability.Readability(passage_set["source"]).flesch_kincaid().score, readability.Readability(passage_set["prediction"]).flesch_kincaid().score) for passage_set in old_simplifications["iterative"][1]])
-# print(old_fkgl_scores)
-
-# # for passage_set in old_simplifications["iterative"][1][:20]:
-# #     print(textstat.flesch_kincaid_grade(passage_set["source"]), end="")
-# #     print(" –> ", end="")
-# #     print(textstat.flesch_kincaid_grade(passage_set["prediction"]))
-
-
-# In[ ]:
-
-
-# diff = old_fkgl_scores[:, 0] - old_fkgl_scores[:, 1]
-# dir = diff >= 0
-
-# plt.scatter(old_fkgl_scores[:, 0], old_fkgl_scores[:, 1], abs(diff), np.where(dir, "b", "r"))
-# plt.title("Abstract complexity change")
-# plt.xlabel("Original passage FKGL")
-# plt.ylabel("Simplified passage FKGL")
-# plt.xscale("log")
-# plt.yscale("log")
-# plt.show()
-
-
-# In[76]:
-
-
-# outliers = []
-# for passage_set, scores in zip(old_simplifications["iterative"][1], old_fkgl_scores):
-#     if scores[0] - scores[1] < -20:
-#         outliers.append((passage_set, scores))
-
-
-# In[ ]:
-
-
-# pprint.pprint(outliers)
-
-
-# ## Graphs
-
-# In[ ]:
-
-
-# def my_exp(x, k, a):
-#     return a * (np.exp(-k * (x-0.8)) - 1)
-
-# # Define the range of x values
-# x = np.linspace(0, 1, 500)
-
-# # Define the functions
-# exp_1 = my_exp(x, k=1, a=0.816)
-# exp_2 = my_exp(x, k=2, a=0.253)
-# exp_3 = my_exp(x, k=10, a=0.00033559)
-# linear = 1 - 1.25 * x
-
-# nullifier = np.where(x > 0.8, 0, 1)
-
-# # Horizontal and vertical constants
-# horizontal_constant = 0.25
-# vertical_constant = 0.5
-
-# plt.figure(figsize=(10, 6))
-
-# # Functions
-# plt.plot(x, linear * nullifier, color="red")
-# plt.plot(x, exp_1 * nullifier, color="red")
-# plt.plot(x, exp_2 * nullifier, color="red")
-# plt.plot(x, exp_3 * nullifier, color="red")
-
-# # Parameters
-# plt.axhline(y=horizontal_constant, color="blue", linestyle="--")
-# plt.axvline(x=vertical_constant, color="blue", linestyle="--")
-# plt.fill_between(x, horizontal_constant, 1, color="blue", alpha=0.4)
-
-# # Customize the plot
-# plt.title("Complexity and Information Loss Trade-Off with Parameters")
-# plt.xlabel("Complexity")
-# plt.ylabel("Information loss")
-# plt.axhline(0, color="black", linewidth=0.5, linestyle="-")  # x-axis
-# plt.axvline(0, color="black", linewidth=0.5, linestyle="-")  # y-axis
-# plt.grid(True, linestyle="--", alpha=0.7)
-
-
-# plt.show()
-# # plt.savefig("graphs/trade_off_parameters.pdf")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
