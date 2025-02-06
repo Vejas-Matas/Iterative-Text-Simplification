@@ -72,7 +72,7 @@ class OpenAIChatBot:
 
 class VllmChatBot:
     def __init__(self, model_name):
-        self.model = vllm.LLM(model_name, max_model_len=4096, dtype=torch.float16, quantization="awq", tensor_parallel_size=1) # Make this nicer !!!
+        self.model = vllm.LLM(model_name, max_model_len=512, dtype=torch.float16, quantization="awq", tensor_parallel_size=2) # Make this nicer !!!
         self.chat_log = []
 
     def add_system_prompt(self, prompt):
@@ -82,7 +82,7 @@ class VllmChatBot:
         self.chat_log.append({"role": "user", "content": prompt}) 
         response = self.model.chat(
             messages=self.chat_log,
-            sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
+            sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=256), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
 
