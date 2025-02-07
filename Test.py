@@ -1,16 +1,40 @@
 from vllm import LLM, SamplingParams
 
-MODEL_NAME = 'meta-llama/Llama-3.1-8B-Instruct'
+# Initialize LLaMa model with vLLM
+llm = LLM(model="meta-llama/Llama-2-7b-chat-hf")  # Use your specific model
 
-llm = LLM(MODEL_NAME, max_model_len=8192) # you probably want to adjust max_model_len
-generation_args = SamplingParams(max_tokens=8192) # a bunch of things to adjust here too
+# Define sampling parameters
+sampling_params = SamplingParams(max_tokens=100)  # Adjust as needed
 
-PROMPT = '''
-What is 2 + 2?
-'''
+# Example list of chat-based tasks
+tasks = [
+    [{"role": "user", "content": "Summarize the following text..."}],
+    [{"role": "user", "content": "Translate this sentence into Spanish..."}],
+    [{"role": "user", "content": "Explain the concept of entropy..."}]
+]
 
-result = llm.generate([PROMPT], generation_args)
+token_counts = []
+cumulative_tokens = 0  # Initialize cumulative token counter
 
-print(result[0].outputs[0].text)
+for idx, task in enumerate(tasks):
+    # Run inference
+    outputs = llm.chat(task, sampling_params)
 
-# result[0].outputs[0].text
+    # Extract and update token counts
+    for output in outputs:
+        num_prompt_tokens = len(output.prompt_token_ids)  # Input tokens
+        num_generated_tokens = sum(len(o.token_ids) for o in output.outputs)  # Output tokens
+        num_tokens = num_prompt_tokens + num_generated_tokens  # Total tokens
+
+        token_counts.append(num_tokens)
+        cumulative_tokens += num_tokens  # Update cumulative count
+
+        print(f"Task {idx+1}: {task[0]['content']}")
+        print(f"Prompt Tokens: {num_prompt_tokens}")
+        print(f"Generated Tokens: {num_generated_tokens}")
+        print(f"Total Processed Tokens: {num_tokens}")
+        print(f"Cumulative Tokens: {cumulative_tokens}\n")
+
+# Final token usage summary
+print("Token usage per task:", token_counts)
+print("Total cumulative tokens:", cumulative_tokens)
