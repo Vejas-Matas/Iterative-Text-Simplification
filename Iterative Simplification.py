@@ -103,7 +103,7 @@ class VllmChatBot:
 
     def print_token_usage_log(self):
         for entry in self.token_counts:
-            print("IN = " + entry["in"] + ", OUT = " + entry["out"])
+            print("IN = " + str(entry["in"]) + ", OUT = " + str(entry["out"]))
 
     def save_chat(self):
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
