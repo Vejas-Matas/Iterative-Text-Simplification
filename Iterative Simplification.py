@@ -72,7 +72,7 @@ class OpenAIChatBot:
 
 class VllmChatBot:
     def __init__(self, model_name):
-        self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=2, max_num_seqs=1) # Make this nicer !!!
+        self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1) # Make this nicer !!!
         self.chat_log = []
         self.token_counts = []
 
@@ -294,7 +294,7 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
     return (overall_metrics, results)
 
 
-passages_to_simplify = 1
+passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
 algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
