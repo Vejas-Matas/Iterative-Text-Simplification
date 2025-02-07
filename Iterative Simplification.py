@@ -86,7 +86,11 @@ class VllmChatBot:
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=256), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
-        self.token_counts.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].usage.generated_tokens)})
+
+        num_prompt_tokens = len(response[0].prompt_token_ids)
+        num_generated_tokens = len(response[0].outputs[0].token_ids) # sum(len(o.token_ids) for o in response[0].outputs)
+        self.token_counts.append({"in": num_prompt_tokens, "out": num_generated_tokens})
+        # self.token_counts.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].usage.generated_tokens)})
 
     def get_last_response(self):
         return self.chat_log[-1]["content"]
