@@ -227,14 +227,14 @@ def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, m
         chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in parameters.items()))
 
     for _ in range(max_iter):
-        chat_bot.send_prompt("Identify which parts of the text are the most complex, then the complexity level of the passage")
+        chat_bot.send_prompt("Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences")
         chat_bot.send_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})? Answer "Yes" or "No"')
         if "NO" in chat_bot.get_last_response().upper():
             break
         chat_bot.send_prompt(f'Identify a single complicated section of the passage. Remember to respect the ILT ({algorithm_parameters["ILT"]}) contraint. Only provide the identified section')
         chat_bot.send_prompt("Simplify this section. Only provide the proposed simplification")
         chat_bot.send_prompt("Reincorporate the simplified section into the passage")
-        chat_bot.send_prompt("Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version")
+        chat_bot.send_prompt("Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences")
         chat_bot.send_prompt(f'What is the highest severity level identified in your last answer? Is it higher than ILT ({algorithm_parameters["ILT"]})? Provide the highest severity level, followed by an answer to the ILT question as "Yes" or "No"')
         if "YES" in chat_bot.get_last_response().upper():
             chat_bot.send_prompt("Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways")
@@ -297,8 +297,8 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
 passages_to_simplify = 1
 passage_type_to_simplify = "sentence"
 
-# algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-algorithm_results["non_iterative"] = simplify_passages(simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+# algorithm_results["non_iterative"] = simplify_passages(simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 # algorithm_results["aiir_mistral_prompt"] = simplify_passages(simplify_passage_iteratively, aiir_mistral_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
 # algorithm_results["aiir_llama_run_1_prompt"] = simplify_passages(simplify_passage_iteratively, aiir_llama_run_1_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
 

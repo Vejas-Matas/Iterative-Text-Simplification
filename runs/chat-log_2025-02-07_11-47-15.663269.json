@@ -1,1 +1,22 @@
-[{"role": "system", "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage.\n\nOnly print the simplified passage\n"}, {"role": "system", "content": "The passage:\nIn the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research."}, {"role": "system", "content": "DC: University student\nILT: Medium"}, {"role": "user", "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"}, {"role": "assistant", "content": "Autonomous vehicles are a focus of research today."}]
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable.\n\nYou are also given two parameters: DC (Desired Complexity) – a desired complexity of the simplified text, and ILT (Information Loss Tolerance) – a threshold for information loss compared to original passage.\n\nOnly print the simplified passage\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nIn the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research."
+  },
+  {
+    "role": "system",
+    "content": "DC: University student\nILT: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Autonomous vehicles are a focus of research today."
+  }
+]
