@@ -81,7 +81,7 @@ class VllmChatBot:
     
     def send_prompt(self, prompt):
         self.chat_log.append({"role": "user", "content": prompt}) 
-        response = self.model.generate(
+        response = self.model.chat(
             prompts=self.chat_log,
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=256), # Make this nicer !!!
         )
