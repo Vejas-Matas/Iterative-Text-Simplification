@@ -74,6 +74,7 @@ class VllmChatBot:
     def __init__(self, model_name):
         self.model = vllm.LLM(model_name, max_model_len=1024, dtype=torch.float16, quantization="awq", tensor_parallel_size=1) # Make this nicer !!!
         self.chat_log = []
+        self.token_counts = []
 
     def add_system_prompt(self, prompt):
         self.chat_log.append({"role": "system", "content": prompt})
@@ -85,6 +86,7 @@ class VllmChatBot:
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=256), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
+        self.token_counts.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].token_ids)})
 
     def get_last_response(self):
         return self.chat_log[-1]["content"]
@@ -94,6 +96,10 @@ class VllmChatBot:
             role = message["role"].upper()
             content = message["content"]
             print(f"{role}: {content}", end="\n\n")
+
+    def print_token_usage_log(self):
+        for entry in self.token_counts:
+            print("IN = " + entry["in"] + ", OUT = " + entry["out"])
 
     def save_chat(self):
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
