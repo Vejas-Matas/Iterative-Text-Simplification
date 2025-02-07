@@ -81,12 +81,12 @@ class VllmChatBot:
     
     def send_prompt(self, prompt):
         self.chat_log.append({"role": "user", "content": prompt}) 
-        response = self.model.chat(
+        response = self.model.generate(
             messages=self.chat_log,
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=256), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
-        self.token_counts.append({"in": len(response[0].usage.prompt_tokens), "out": len(response[0].usage.generated_tokens)})
+        self.token_counts.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].usage.generated_tokens)})
 
     def get_last_response(self):
         return self.chat_log[-1]["content"]
