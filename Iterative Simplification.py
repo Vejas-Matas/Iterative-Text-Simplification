@@ -98,8 +98,8 @@ class VllmChatBot:
 
     def get_token_usage(self):
         return {
-            "in": sum[counts["in"] for counts in self.token_counts],
-            "out": sum[counts["out"] for counts in self.token_counts]
+            "in": sum([counts["in"] for counts in self.token_counts]),
+            "out": sum([counts["out"] for counts in self.token_counts])
         }
     
     def print_chat(self):
@@ -312,8 +312,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
 
 
     overall_metrics = {
-        "in_tokens": sum[counts["in"] for counts in self.token_counts],
-        "out_tokens": sum[counts["out"] for counts in self.token_counts]
+        "in_tokens": sum([counts["in"] for counts in self.token_counts]),
+        "out_tokens": sum([counts["out"] for counts in self.token_counts])
     }
 
     file_io_utils.convert_dict_to_json(predictions_file_name + "_metrics.json", overall_metrics)
