@@ -80,10 +80,13 @@ class VllmChatBot:
     def add_system_prompt(self, prompt):
         self.chat_log.append({"role": "system", "content": prompt})
     
-    def send_prompt(self, prompt):
+    def send_prompt(self, prompt, context_message_count=None):
+        if context_message_count is not None:
+            context_message_count = -context_message_count
+
         self.chat_log.append({"role": "user", "content": prompt}) 
         response = self.model.chat(
-            messages=self.chat_log,
+            messages=self.chat_log[:context_message_count],
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
@@ -169,21 +172,21 @@ for data_type in ["train", "test"]:
 # - Lexical complexity score
 
 
-bleu = evaluate.load("bleu")
-sari = evaluate.load("sari")
+# bleu = evaluate.load("bleu")
+# sari = evaluate.load("sari")
 
 
-def compute_metrics(sources, predictions, references):
-    # sources – original passages, predictions – simplified passages, references – target simplifications
-    sari_nested_references = [[reference] for reference in references]
+# def compute_metrics(sources, predictions, references):
+#     # sources – original passages, predictions – simplified passages, references – target simplifications
+#     sari_nested_references = [[reference] for reference in references]
     
-    results = {}
-    results["SARI"] = sari.compute(sources=sources, predictions=predictions, references=sari_nested_references)["sari"]
-    results["BLEU"] = bleu.compute(predictions=predictions, references=references)["bleu"]
-    # results["FKGL"] = readability.Readability(simplified_passage).flesch_kincaid() # Should I use score or grade.level?
-    results["FKGL"] = np.mean([textstat.flesch_kincaid_grade(passage) for passage in predictions])
+#     results = {}
+#     results["SARI"] = sari.compute(sources=sources, predictions=predictions, references=sari_nested_references)["sari"]
+#     results["BLEU"] = bleu.compute(predictions=predictions, references=references)["bleu"]
+#     # results["FKGL"] = readability.Readability(simplified_passage).flesch_kincaid() # Should I use score or grade.level?
+#     results["FKGL"] = np.mean([textstat.flesch_kincaid_grade(passage) for passage in predictions])
 
-    return results
+#     return results
 
 
 algorithm_parameters = {
@@ -250,6 +253,34 @@ def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, m
         #     chat_bot.send_prompt("If needed, adjust the passage to maintain readabily and flow of text")
 
     chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
+    # chat_bot.print_chat()
+    # chat_bot.save_chat()
+    # chat_bot.print_token_usage_log()
+
+    return chat_bot.get_last_response()
+
+def simplify_passage_iteratively_condensed(chat_bot, system_prompt, parameters, passage, max_iter=20):
+    chat_bot.clear()
+    
+    chat_bot.add_system_prompt(system_prompt)
+    chat_bot.add_system_prompt(f"The passage:\n{passage}")
+
+    if parameters is not None and parameters != {}:
+        chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in parameters.items()))
+
+    for _ in range(max_iter):
+        chat_bot.send_prompt(f'Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC ({algorithm_parameters["DC"]})? Answer "Yes" or "No"', 1)
+        if "NO" in chat_bot.get_last_response().upper():
+            break
+        chat_bot.send_prompt(f'Identify a single complicated section of the passage. Remember to respect the ILT ({algorithm_parameters["ILT"]}) contraint. Simplify this section. Reincorporate the simplified section into the passage. Only provide the reincorporated version', 2)
+        chat_bot.send_prompt(f'Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT ({algorithm_parameters["ILT"]})? Provide the highest severity level, followed by an answer to the ILT question as "Yes" or "No"', 3)
+        if "YES" in chat_bot.get_last_response().upper():
+            chat_bot.send_prompt("Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage.", 4)
+        else:
+            chat_bot.send_prompt("Accept the proposed simplification. Print the updated version of the passage", 4)
+        #     chat_bot.send_prompt("If needed, adjust the passage to maintain readabily and flow of text")
+
+    chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", 1)
     # chat_bot.print_chat()
     # chat_bot.save_chat()
     # chat_bot.print_token_usage_log()
