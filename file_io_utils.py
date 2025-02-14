@@ -18,3 +18,7 @@ def append_to_txt(path, line):
         # .replace("\n", "\\n") preserves one entry-one line structure
         preserved_line = line.replace("\n", "\\n")
         file.write(f"{preserved_line}\n")
+
+def convert_dict_to_json(path, dictionary):
+    with open(path, encoding="utf8") as f:
+        json.dump(dictionary, file, indent=2)

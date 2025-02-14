@@ -65,7 +65,7 @@ class OpenAIChatBot:
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
         file_name = f"./runs/chat-log_{current_datetime}.json"
         with open(file_name, "w") as file:
-            json.dump(self.chat_log, file)
+            json.dump(self.chat_log, file, indent=2)
 
     def clear_chat(self):
         self.chat_log = []
@@ -95,6 +95,12 @@ class VllmChatBot:
 
     def get_last_response(self):
         return self.chat_log[-1]["content"]
+
+    def get_token_usage(self):
+        return {
+            "in": sum[counts["in"] for counts in self.token_counts],
+            "out": sum[counts["out"] for counts in self.token_counts]
+        }
     
     def print_chat(self):
         for message in self.chat_log:
@@ -112,8 +118,9 @@ class VllmChatBot:
         with open(file_name, "w") as file:
             json.dump(self.chat_log, file, indent=2)
 
-    def clear_chat(self):
+    def clear(self):
         self.chat_log = []
+        self.token_counts = []
 
 
 algorithm_results = {}
@@ -258,7 +265,7 @@ def get_sources_and_references(passage_type_abbreviation, n):
 
 
 
-def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max_iter, n=None):
+def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, passage_type, max_iter, n=None):
     if passage_type == "abstract":
         sources, references = get_sources_and_references("abs", n)
     elif passage_type == "sentence":
@@ -268,10 +275,11 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace(" ", "_")
-    predictions_file_name = f"predictions/type={passage_type}_{parameter_string}_i={max_iter}_timestamp={timestamp}"
+    predictions_file_name = f"predictions/algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_timestamp={timestamp}"
 
     predictions = []
     results = []
+    token_usage = []
 
     # chat_bot = OpenAIChatBot(
     #     model=openai_model,
@@ -285,6 +293,7 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
 
         prediction = algorithm_fn(chat_bot, system_prompt, parameters, sources[i], max_iter)
         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
+        token_usage.append(chat_got.get_token_usage())
 
         predictions.append(prediction)
         results.append({
@@ -296,39 +305,29 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
 
         file_io_utils.append_to_txt(predictions_file_name, prediction)
 
-        chat_bot.clear_chat()
+        chat_bot.clear()
 
     # overall_metrics = compute_metrics(sources, predictions, references)
     # return (overall_metrics, results)
-    return results
+
+
+    overall_metrics = {
+        "in_tokens": sum[counts["in"] for counts in self.token_counts],
+        "out_tokens": sum[counts["out"] for counts in self.token_counts]
+    }
+
+    file_io_utils.convert_dict_to_json(predictions_file_name + "_metrics.json", overall_metrics)
+
+    return (results, overall_metrics)
 
 
 passages_to_simplify = 50
 passage_type_to_simplify = "sentence"
 
-algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+# simplify_passages("iterative", simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("non_iterative", simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+
+# algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 # algorithm_results["non_iterative"] = simplify_passages(simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 # algorithm_results["aiir_mistral_prompt"] = simplify_passages(simplify_passage_iteratively, aiir_mistral_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
 # algorithm_results["aiir_llama_run_1_prompt"] = simplify_passages(simplify_passage_iteratively, aiir_llama_run_1_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
-
-
-print("METRICS:")
-for algorithm, results in algorithm_results.items():
-    print(f"{algorithm.upper()}: {results[0]}")
-
-
-# print("SIMPLIFICATION EXAMPLES:")
-# print(200*"–")
-# for i in range(5):
-#     print(f"{i}:")
-#     print(f"SOURCE: {algorithm_results["iterative"][1][i]["source"]}")
-#     print(f"REFERENCE: {algorithm_results["iterative"][1][i]["reference"]}")
-#     for algorithm, results in algorithm_results.items():
-#         print(f"{algorithm.upper()}:")
-#         print(results[1][i]["prediction"])
-#     print(200*"–")
-#     print()
-
-# current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
-# with open(f"./evaluations/{passage_type_to_simplify}s_university_medium_max20_{current_datetime}", "w") as file:
-#     json.dump(algorithm_results, file)
