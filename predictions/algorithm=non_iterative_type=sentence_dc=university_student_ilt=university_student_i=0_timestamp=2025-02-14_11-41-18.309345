@@ -1,0 +1,6 @@
+Autonomous vehicles are a focus of research today.
+As drones become more common in civilian and commercial use there is a growing need for them to operate on their own.
+Civil drones are being navigated using road-tracking due to government regulations.
+We propose a data-driven solution for UAVs to navigate city streets by learning to fly like an expert pilot.
+Our classifier is based on a 39-layered model that looks at images to see if they contain roads.
+Our system performs better than many existing models for imitation learning.

@@ -353,10 +353,10 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
     return (results, overall_metrics)
 
 
-passages_to_simplify = 10
+passages_to_simplify = 50
 passage_type_to_simplify = "sentence"
 
-# simplify_passages("iterative", simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("iterative", simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("non_iterative", simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 # algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
