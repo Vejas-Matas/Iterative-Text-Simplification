@@ -20,5 +20,5 @@ def append_to_txt(path, line):
         file.write(f"{preserved_line}\n")
 
 def convert_dict_to_json(path, dictionary):
-    with open(path, encoding="utf8") as f:
+    with open(path, "w", encoding="utf8") as file:
         json.dump(dictionary, file, indent=2)

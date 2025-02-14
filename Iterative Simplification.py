@@ -316,13 +316,13 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
         "out_tokens": sum([counts["out"] for counts in token_usage])
     }
 
-    # file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
-    file_io_utils.convert_dict_to_json(f"dummy_metrics.json", overall_metrics)
+    file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
+    # file_io_utils.convert_dict_to_json(f"dummy_metrics.json", overall_metrics)
 
     return (results, overall_metrics)
 
 
-passages_to_simplify = 50
+passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
 # simplify_passages("iterative", simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
