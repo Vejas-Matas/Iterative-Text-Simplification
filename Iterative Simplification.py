@@ -312,8 +312,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
 
 
     overall_metrics = {
-        "in_tokens": sum([counts["in"] for counts in self.token_counts]),
-        "out_tokens": sum([counts["out"] for counts in self.token_counts])
+        "in_tokens": sum([counts["in"] for counts in token_usage]),
+        "out_tokens": sum([counts["out"] for counts in token_usage])
     }
 
     file_io_utils.convert_dict_to_json(predictions_file_name + "_metrics.json", overall_metrics)
