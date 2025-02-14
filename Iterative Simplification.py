@@ -316,7 +316,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
         "out_tokens": sum([counts["out"] for counts in token_usage])
     }
 
-    file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
+    # file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
+    file_io_utils.convert_dict_to_json(f"metrics/dummy_metrics.json", overall_metrics)
 
     return (results, overall_metrics)
 
