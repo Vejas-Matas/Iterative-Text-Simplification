@@ -293,7 +293,7 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
         chat_bot.clear_chat()
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
-    parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace("", "_")
+    parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace(" ", "_")
     file_io_utils.convert_list_to_txt(f"predictions/{passage_type}_{parameter_string}_i={max_iter}_{timestamp}", predictions)
 
     # overall_metrics = compute_metrics(sources, predictions, references)
