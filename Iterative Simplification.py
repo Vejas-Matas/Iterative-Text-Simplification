@@ -293,7 +293,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
 
         prediction = algorithm_fn(chat_bot, system_prompt, parameters, sources[i], max_iter)
         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
-        token_usage.append(chat_got.get_token_usage())
+        token_usage.append(chat_bot.get_token_usage())
 
         predictions.append(prediction)
         results.append({
