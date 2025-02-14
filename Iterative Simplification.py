@@ -303,7 +303,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
             # "metrics": metrics,
         })
 
-        file_io_utils.append_to_txt(f"predictions/{predictions_file_name}", prediction)
+        file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
 
         chat_bot.clear()
 
@@ -316,7 +316,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
         "out_tokens": sum([counts["out"] for counts in token_usage])
     }
 
-    file_io_utils.convert_dict_to_json(f"metrics/{predictions_file_name}_metrics.json", overall_metrics)
+    file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
 
     return (results, overall_metrics)
 
