@@ -6,11 +6,11 @@ def extract_predictions_from_json(path):
         return [outputs["prediction"] for outputs in contents["iterative"][1]]
 
 def convert_list_to_txt(path, lines_list):
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf8") as file:
         for line in lines_list:
             # .replace("\n", "\\n") preserves one entry-one line structure
             preserved_line = line.replace("\n", "\\n")
-            f.write(f"{preserved_line}\n") 
+            file.write(f"{preserved_line}\n") 
 
 # preds = extract_predictions_from_json("evaluations/abstracts_university_medium_max20_2024-12-12_21-37-41.106794")[:10]
 # convert_list_to_txt("dummy_test_pred.txt", preds)

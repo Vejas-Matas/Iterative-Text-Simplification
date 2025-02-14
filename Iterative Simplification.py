@@ -110,7 +110,7 @@ class VllmChatBot:
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
         file_name = f"./runs/chat-log_{current_datetime}.json"
         with open(file_name, "w") as file:
-            json.dump(self.chat_log, file)
+            json.dump(self.chat_log, file, indent=2)
 
     def clear_chat(self):
         self.chat_log = []
@@ -294,7 +294,7 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace(" ", "_")
-    file_io_utils.convert_list_to_txt(f"predictions/{passage_type}_{parameter_string}_i={max_iter}_{timestamp}", predictions)
+    file_io_utils.convert_list_to_txt(f"predictions/type={passage_type}_{parameter_string}_i={max_iter}_timestamp={timestamp}", predictions)
 
     # overall_metrics = compute_metrics(sources, predictions, references)
     # return (overall_metrics, results)
