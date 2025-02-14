@@ -1,0 +1,150 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nThereby, we specifically shed light into the extensive amount of filings for which no a priori categorization of their content exists."
+  },
+  {
+    "role": "system",
+    "content": "DC: University student\nILT: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"extensive amount\" (this phrase is a complex word choice)\n- \"a priori categorization\" (this phrase has a formal and technical tone)\n- \"thereby\" (this word is an adverb that requires some context to understand)\n\nThe complexity level of the passage is around 8 out of 10, which is likely too high for a university student (DC = 8)."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"a priori categorization of their content exists\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"a priori categorization\" can be simplified to \"initial categorization\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Thereby, we specifically shed light into the extensive amount of filings for which no initial categorization of their content exists."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentioned \"for which no a priori categorization of their content exists\", while the simplified version says \"for which no initial categorization of their content exists\". The information loss is that the original passage used the term \"a priori\", which is a technical term that conveys a specific meaning. The severity of this information loss is Medium, as it may be important for those familiar with the term, but can be understood in context. However, the change is within the ILT (Medium) threshold, so it is acceptable."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"shed light into\" (this phrase is an idiomatic expression)\n- \"extensive amount\" (this phrase is a complex word choice)\n- \"initial categorization\" (this phrase is a formal and technical term)\n\nThe complexity level of the passage is now around 6 out of 10, which is still higher than the DC (University student)."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"shed light into\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"shed light into\" can be simplified to \"explain\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Thereby, we explain the extensive amount of filings for which no initial categorization of their content exists."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentioned \"shed light into\", while the simplified version says \"explain\". The information loss is that the original passage used an idiomatic expression that conveys a more nuanced meaning, but the change is still somewhat vague. The severity of this information loss is Low, as the change is relatively minor and the meaning is still conveyed. However, the change is within the ILT (Medium) threshold, so it is acceptable."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Low\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the text is:\n\n- \"initial categorization\" (this phrase is a formal and technical term)\n\nThe complexity level of the passage is now around 4 out of 10, which is below the DC (University student)."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Thereby, we explain the extensive amount of filings for which no initial categorization of their content exists."
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nWe first cast an autonomous MOD system within a closed Jackson network model with passenger loss."
+  },
+  {
+    "role": "system",
+    "content": "DC: University student\nILT: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n- \"autonomous MOD system\" (technical term)\n- \"closed Jackson network model\" (specific model type)\n- \"passenger loss\" (technical term)\n\nThe complexity level of the passage is around High."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"autonomous MOD system within a closed Jackson network model\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"a self-contained transportation system within a specific network\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "We first cast a self-contained transportation system within a specific network with passenger loss."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions an \"autonomous MOD system\", which is a specific type of system, whereas the simplified passage uses a more general term \"self-contained transportation system\". This represents a loss of information about the type of system. The severity of this loss is Medium, as it changes the nuance of the system being described, but still conveys the general idea. The original passage also mentions a \"closed Jackson network model\", which is a specific type of network model, and this is completely lost in the simplified passage, resulting in a High severity of information loss. Overall, the updated passage loses some precision and specificity."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n- \"We first cast\" (formal, technical verb)\n- \"a self-contained transportation system\" (technical term)\n\nThe complexity level of the passage is around Low."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "We first cast a self-contained transportation system within a specific network with passenger loss."
+  }
+]

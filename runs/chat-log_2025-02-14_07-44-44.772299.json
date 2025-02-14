@@ -1,0 +1,150 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nThe steering commands from the source and target network are finally merged according to the LDL and the merged command is utilized for controlling a car in the target domain."
+  },
+  {
+    "role": "system",
+    "content": "DC: University student\nILT: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n- \"merged according to the LDL\" (technical term \"LDL\" might be unfamiliar to a university student)\n- \"the target domain\" (this term requires some background knowledge in computer science or robotics)\n\nThe complexity level of the passage is: High (due to the use of technical terms and abstract concepts)"
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "merged according to the LDL"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "merged according to a specific rule"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The steering commands from the source and target network are finally merged according to a specific rule and the merged command is utilized for controlling a car in the target domain."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentioned \"LDL\" which is a technical term that might be unfamiliar to a university student. In the simplified passage, this term is replaced by a generic phrase \"a specific rule\", resulting in a loss of information about the specific criteria used for merging commands. The severity of this information loss is High. This loss is more than the ILT (Medium), so the change should be rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n- \"the steering commands from the source and target network\" (abstract concept)\n- \"the target domain\" (this term requires some background knowledge in computer science or robotics)\n\nThe complexity level of the passage is: High (due to the use of abstract concepts and technical terms)"
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the steering commands from the source and target network"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the steering commands from the source and target"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The steering commands from the source and target are finally merged according to a specific rule and the merged command is utilized for controlling a car in the target domain."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentioned \"steering commands from the source and target network\", which implies a detailed process of merging commands from multiple sources. In the simplified passage, this is reduced to \"the steering commands from the source and target\", resulting in a loss of information about the multiple sources. The severity of this information loss is Medium. This loss is within the ILT (Medium), so the change is acceptable."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n- \"the merged command is utilized for controlling a car in the target domain\" (abstract concept and technical term)\n\nThe complexity level of the passage is: Medium (due to the use of abstract concepts and some technical terms)"
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The steering commands from the source and target are finally merged according to a specific rule and the merged command is utilized for controlling a car in the target domain."
+  }
+]

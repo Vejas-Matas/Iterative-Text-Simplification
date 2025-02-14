@@ -1,0 +1,94 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nSecond, in order to cache entertainment contents stylized for car passengers\u2019 features such as age and gender, Convolutional Neural Network (CNN) is used to predict age and gender of passengers."
+  },
+  {
+    "role": "system",
+    "content": "DC: University student\nILT: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"Convolutional Neural Network (CNN)\" ( technical term)\n- \"predict age and gender of passengers\" ( requires prior knowledge of the topic)\n\nThe complexity level of the passage is approximately 6/10 (with 1 being the simplest and 10 being the most complex). This is because it contains some technical terms and requires some background knowledge to understand."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"Convolutional Neural Network (CNN)\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"A specialized computer algorithm\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Second, in order to cache entertainment contents stylized for car passengers' features such as age and gender, a specialized computer algorithm is used to predict age and gender of passengers."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage specifically mentioned the use of Convolutional Neural Network (CNN), which is a key concept in the field. The severity of this information loss is High (8/10), as the term CNN is a crucial detail that provides context and accuracy to the statement. The original passage also mentioned \"entertainment contents stylized for car passengers' features\", which implies a level of personalization, but the simplified version does not convey this nuance. The original passage also has a more precise and technical tone, which is lost in the simplified version. Overall, the simplified passage loses some technical accuracy and precision."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "8\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"cache entertainment contents stylized for car passengers' features such as age and gender\" ( requires some understanding of the concept of personalization)\n- \"predict age and gender of passengers\" ( requires some understanding of the task)\n\nThe complexity level of the passage is approximately 4/10 (with 1 being the simplest and 10 being the most complex). This is because it still contains some nuanced language and requires some prior knowledge to understand, but the simplification process has brought it down to a more accessible level."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (University student)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Second in order to cache entertainment contents stylized for car passengers features such as age and gender a specialized computer algorithm is used to predict age and gender of passengers."
+  }
+]
