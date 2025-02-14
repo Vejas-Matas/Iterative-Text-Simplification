@@ -317,7 +317,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
     }
 
     # file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
-    file_io_utils.convert_dict_to_json(f"metrics/dummy_metrics.json", overall_metrics)
+    file_io_utils.convert_dict_to_json(f"dummy_metrics.json", overall_metrics)
 
     return (results, overall_metrics)
 
