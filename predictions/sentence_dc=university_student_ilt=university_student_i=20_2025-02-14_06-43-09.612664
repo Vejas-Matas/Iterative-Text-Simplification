@@ -1,0 +1,10 @@
+autonomous vehicles are currently the focus of academic and industrial research
+There is an increased need for autonomy in unmanned aerial vehicles.
+Due to rules set by the government for drone usage, road-tracking based navigation is garnering interest.
+In an attempt to achieve the above mentioned tasks, we propose a learning from data approach to UAV autonomy for driving through city streets by learning to fly by imitating an expert pilot.
+Derived from traditional image classification methods, our classifier has been constructed in the form of a deep neural network that evaluates the presence of roads using computer-generated images.
+Based on the Modified Inception, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.
+The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts with significant flying experience.
+Permissions were taken from authorities who made sure that minimal risk to pedestrians is involved in the data collection process.
+With a large amount of data from drones, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%
+MAVNet allows the drone to fly quickly up to 6 meters per second.
