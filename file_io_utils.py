@@ -1,5 +1,6 @@
 import json
 
+# Refers to old results structure
 def extract_predictions_from_json(path):
     with open(path, encoding="utf8") as f:
         contents = json.load(f)
@@ -10,7 +11,10 @@ def convert_list_to_txt(path, lines_list):
         for line in lines_list:
             # .replace("\n", "\\n") preserves one entry-one line structure
             preserved_line = line.replace("\n", "\\n")
-            file.write(f"{preserved_line}\n") 
+            file.write(f"{preserved_line}\n")
 
-# preds = extract_predictions_from_json("evaluations/abstracts_university_medium_max20_2024-12-12_21-37-41.106794")[:10]
-# convert_list_to_txt("dummy_test_pred.txt", preds)
+def append_to_txt(path, line):
+    with open(path, "a", encoding="utf8") as file:
+        # .replace("\n", "\\n") preserves one entry-one line structure
+        preserved_line = line.replace("\n", "\\n")
+        file.write(f"{preserved_line}\n")

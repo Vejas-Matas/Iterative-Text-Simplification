@@ -244,8 +244,8 @@ def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, m
 
     chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
     # chat_bot.print_chat()
-    chat_bot.save_chat()
-    chat_bot.print_token_usage_log()
+    # chat_bot.save_chat()
+    # chat_bot.print_token_usage_log()
 
     return chat_bot.get_last_response()
 
@@ -265,6 +265,10 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
         sources, references = get_sources_and_references("snt", n)
     else:
         raise ValueError('Passage type should be "abstract" or "sentence"')
+
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
+    parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace(" ", "_")
+    predictions_file_name = f"predictions/type={passage_type}_{parameter_string}_i={max_iter}_timestamp={timestamp}"
 
     predictions = []
     results = []
@@ -290,18 +294,16 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
             # "metrics": metrics,
         })
 
-        chat_bot.clear_chat()
+        file_io_utils.append_to_txt(predictions_file_name, prediction)
 
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
-    parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace(" ", "_")
-    file_io_utils.convert_list_to_txt(f"predictions/type={passage_type}_{parameter_string}_i={max_iter}_timestamp={timestamp}", predictions)
+        chat_bot.clear_chat()
 
     # overall_metrics = compute_metrics(sources, predictions, references)
     # return (overall_metrics, results)
     return results
 
 
-passages_to_simplify = 10
+passages_to_simplify = 50
 passage_type_to_simplify = "sentence"
 
 algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
