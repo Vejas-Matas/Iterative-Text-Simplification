@@ -67,7 +67,7 @@ class OpenAIChatBot:
         with open(file_name, "w") as file:
             json.dump(self.chat_log, file, indent=2)
 
-    def clear_chat(self):
+    def clear(self):
         self.chat_log = []
 
 
@@ -226,7 +226,7 @@ Simplify this text for English speaking science students in college. Maximize th
 
 
 def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, max_iter=20):
-    chat_bot.clear_chat()
+    chat_bot.clear()
     
     chat_bot.add_system_prompt(system_prompt)
     chat_bot.add_system_prompt(f"The passage:\n{passage}")
