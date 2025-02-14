@@ -1,4 +1,3 @@
-
 # ## ChatBot setup
 
 # %pip install openai
@@ -24,6 +23,8 @@ import readability
 import nltk
 import textstat
 
+# My own files
+import file_io_utils
 
 nltk.download("punkt_tab")
 
@@ -268,18 +269,15 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
     predictions = []
     results = []
 
+    # chat_bot = OpenAIChatBot(
+    #     model=openai_model,
+    #     api_key=api_key,
+    # )
     chat_bot = VllmChatBot(
         model_name=vllm_model,
     )
     
     for i in range(len(sources)):
-        # chat_bot = OpenAIChatBot(
-        #     model=openai_model,
-        #     api_key=api_key,
-        # )
-        # chat_bot = VllmChatBot(
-        #     model_name=vllm_model,
-        # )
 
         prediction = algorithm_fn(chat_bot, system_prompt, parameters, sources[i], max_iter)
         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
@@ -292,11 +290,15 @@ def simplify_passages(algorithm_fn, system_prompt, parameters, passage_type, max
             # "metrics": metrics,
         })
 
-        chat_bot.chat_log = []
-        # torch.cuda.empty_cache()
+        chat_bot.clear_chat()
 
-    overall_metrics = compute_metrics(sources, predictions, references)
-    return (overall_metrics, results)
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
+    parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace("", "_")
+    file_io_utils.convert_list_to_txt(f"predictions/{passage_type}_{parameter_string}_i={max_iter}_{timestamp}", predictions)
+
+    # overall_metrics = compute_metrics(sources, predictions, references)
+    # return (overall_metrics, results)
+    return results
 
 
 passages_to_simplify = 10
