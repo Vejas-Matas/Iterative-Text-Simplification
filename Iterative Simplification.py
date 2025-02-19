@@ -32,7 +32,8 @@ nltk.download("punkt_tab")
 openai_api_key = ""
 openai_model = "gpt-4o-mini"
 # vllm_model = "meta-llama/Llama-3.1-8B-Instruct"
-vllm_model = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
+# vllm_model = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
+vllm_model = "hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4"
 
 
 class OpenAIChatBot:
@@ -306,7 +307,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace(" ", "_")
-    results_file_name = f"algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_timestamp={timestamp}"
+    results_file_name = f"algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}_timestamp={timestamp}"
 
     predictions = []
     results = []
@@ -353,12 +354,12 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
     return (results, overall_metrics)
 
 
-passages_to_simplify = 50
+passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
-simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("iterative", simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-simplify_passages("non_iterative", simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+# simplify_passages("non_iterative", simplify_passage_iteratively, non_iterative_system_prompt, algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 
 # algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, system_prompt, algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
