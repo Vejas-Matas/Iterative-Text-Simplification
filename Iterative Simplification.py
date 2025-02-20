@@ -38,14 +38,14 @@ algorithm_results = {}
 dataset = dataset_utils.read_dataset()
 
 
-def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, max_iter=20):
+def simplify_passage_iteratively(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
     chat_bot.clear()
     
     chat_bot.add_system_prompt(system_prompt)
     chat_bot.add_system_prompt(f"The passage:\n{passage}")
 
-    if parameters is not None and parameters != {}:
-        chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in parameters.items()))
+    if algorithm_parameters is not None and algorithm_parameters != {}:
+        chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
 
     for _ in range(max_iter):
         chat_bot.send_prompt("Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences")
@@ -69,14 +69,14 @@ def simplify_passage_iteratively(chat_bot, system_prompt, parameters, passage, m
 
     return chat_bot.get_last_response()
 
-def simplify_passage_iteratively_condensed(chat_bot, system_prompt, parameters, passage, max_iter=20):
+def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
     chat_bot.clear()
     
     chat_bot.add_system_prompt(system_prompt)
     chat_bot.add_system_prompt(f"The passage:\n{passage}")
 
-    if parameters is not None and parameters != {}:
-        chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in parameters.items()))
+    if algorithm_parameters is not None and algorithm_parameters != {}:
+        chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
 
     for _ in range(max_iter):
         chat_bot.send_prompt(f'Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC ({parameters.algorithm_parameters["DC"]})? Answer "Yes" or "No"', 1)
@@ -99,7 +99,7 @@ def simplify_passage_iteratively_condensed(chat_bot, system_prompt, parameters, 
 
 
 
-def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, passage_type, max_iter, n=None):
+def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_parameters, passage_type, max_iter, n=None):
     if passage_type == "abstract":
         sources, references = dataset_utils.get_sources_and_references("abs", n)
     elif passage_type == "sentence":
@@ -108,7 +108,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
         raise ValueError('Passage type should be "abstract" or "sentence"')
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
-    parameter_string = ("dc=" + parameters["DC"] + "_" + "ilt=" + parameters["DC"]).lower().replace(" ", "_")
+    parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["DC"]).lower().replace(" ", "_")
     results_file_name = f"algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}_timestamp={timestamp}"
 
     predictions = []
@@ -125,7 +125,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, parameters, p
     
     for i in range(len(sources)):
 
-        prediction = algorithm_fn(chat_bot, system_prompt, parameters, sources[i], max_iter)
+        prediction = algorithm_fn(chat_bot, system_prompt, algorithm_parameters, sources[i], max_iter)
         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
         token_usage.append(chat_bot.get_token_usage())
 
