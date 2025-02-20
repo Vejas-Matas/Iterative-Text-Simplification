@@ -1,0 +1,10 @@
+autonomous vehicles are currently the focus of academic and industrial research
+There is an increased need for autonomy in unmanned aerial vehicles.
+
+
+Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads from the input frames.
+
+
+Permissions were taken from required authorities who made sure that low risk to pedestrians is involved in the data collection process.
+With a large amount of data from drones, we have been able to navigate successfully through roads without crashing or
+
