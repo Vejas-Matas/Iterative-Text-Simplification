@@ -8,9 +8,6 @@ import chat_bots
 import parameters
 import plotting
 
-
-algorithm_results = {}
-
 # Rewrite to class?
 dataset = dataset_utils.read_dataset()
 
@@ -41,7 +38,7 @@ def simplify_passage_iteratively(chat_bot, system_prompt, algorithm_parameters, 
 
     chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
     # chat_bot.print_chat()
-    # chat_bot.save_chat()
+    chat_bot.save_chat()
     # chat_bot.print_token_usage_log()
 
     return chat_bot.get_last_response()
@@ -136,12 +133,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
-simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
-plotting.make_token_usage_graphs(datetime.timedelta(minutes=30))
+# simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
-# algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# algorithm_results["non_iterative"] = simplify_passages(simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
-# algorithm_results["aiir_mistral_prompt"] = simplify_passages(simplify_passage_iteratively, parameters.aiir_mistral_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
-# algorithm_results["aiir_llama_run_1_prompt"] = simplify_passages(simplify_passage_iteratively, parameters.aiir_llama_run_1_system_prompt, {}, passage_type_to_simplify, 0, passages_to_simplify)
+# plotting.make_token_usage_graphs(datetime.timedelta(minutes=30))
