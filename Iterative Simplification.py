@@ -139,7 +139,7 @@ passage_type_to_simplify = "sentence"
 simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
-
+plotting.make_token_usage_graphs(datetime.timedelta(minutes=30))
 
 # algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 # algorithm_results["non_iterative"] = simplify_passages(simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)

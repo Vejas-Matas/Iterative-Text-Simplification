@@ -56,7 +56,7 @@ def restructure_token_data(data):
 def graph_token_usage(algorithms, token_counts, bar_width=0.5):
     fig, ax = plt.subplots(figsize=(20,12))
     bar_bottom = np.zeros(len(algorithms))
-    wrapped_x_labels = [textwrap.fill(label, width=10) for label in algorithms]
+    wrapped_x_labels = [textwrap.fill(label, width=10) for label in algorithms] # Instead, I could extract common parameters and move them to the title, shortening the column names
 
     for type_label, token_count in token_counts.items():
         ax.bar(wrapped_x_labels, token_count, bar_width, label=type_label, bottom=bar_bottom)
@@ -65,7 +65,7 @@ def graph_token_usage(algorithms, token_counts, bar_width=0.5):
 
     ax.set_title("Token usage by algorithm")
     ax.legend(loc="upper right")
-    ax.tick_params("x", rotation=80) # Instead, I could extract common parameters and move them to the title, shortening the column names
+    ax.tick_params("x", rotation=80)
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     plt.savefig(f"graphs/token_usage_{timestamp}.png")
