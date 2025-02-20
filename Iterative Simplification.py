@@ -1,38 +1,15 @@
-# ## ChatBot setup
-
-# %pip install openai
-# %pip install evaluate
-# %pip install py-readability-metrics
-# %pip install sacrebleu
-# %pip install sacremoses
-# %pip install nltk
-# %pip install textstat
-
-import openai
-import vllm
-import torch
+# Libraries
 import datetime
-import json
-import numpy as np
-import matplotlib.pyplot as plt
-import pprint
-
-# NLP packages
-import evaluate
-import readability
-import nltk
-import textstat
 
 # My own files
 import file_io_utils
 import dataset_utils
 import chat_bots
 import parameters
+import plotting
 
-nltk.download("punkt_tab")
 
 algorithm_results = {}
-
 
 # Rewrite to class?
 dataset = dataset_utils.read_dataset()
@@ -159,9 +136,9 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
-# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 
 # algorithm_results["iterative"] = simplify_passages(simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)

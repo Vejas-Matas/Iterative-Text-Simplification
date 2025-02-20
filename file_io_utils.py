@@ -2,8 +2,8 @@ import json
 
 # Refers to old results structure
 def extract_predictions_from_json(path):
-    with open(path, encoding="utf8") as f:
-        contents = json.load(f)
+    with open(path, encoding="utf8") as file:
+        contents = json.load(file)
         return [outputs["prediction"] for outputs in contents["iterative"][1]]
 
 def convert_list_to_txt(path, lines_list):
