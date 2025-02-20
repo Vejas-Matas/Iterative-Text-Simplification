@@ -1,8 +1,8 @@
 openai_api_key = ""
 openai_model = "gpt-4o-mini"
 # vllm_model = "meta-llama/Llama-3.1-8B-Instruct"
-# vllm_model = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
-vllm_model = "hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4"
+vllm_model = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
+# vllm_model = "hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4"
 
 algorithm_parameters = {
     "DC": "University student",
