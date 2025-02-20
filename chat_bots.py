@@ -2,6 +2,7 @@ import openai
 import vllm
 import datetime
 import json
+import torch
 
 class OpenAIChatBot:
     def __init__(self, model_name, api_key):
