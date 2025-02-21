@@ -1,0 +1,50 @@
+Autonomous vehicles are a focus of research today.
+As drones become more common in civilian and commercial use there's a growing need for them to operate on their own.
+Civil drones are being navigated using road-tracking due to government regulations.
+We propose a solution to help drones navigate city streets by learning to fly like an expert pilot.
+Our classifier is based on a 39-layered model that looks at pictures to see if they show roads.
+Our system performs better than many existing models for imitation learning.
+The data was captured by experienced drone pilots while flying in urban and semi-urban areas.
+Permissions were taken from the authorities to ensure minimal risk to pedestrians.
+We successfully navigated through roads without crashing or overshooting with an accuracy of 98.44%.
+The drone can fly at speeds of up to 6 meters per second.
+We present the same results in this research and compare them with other methods.
+Traffic signs can help reduce accidents.
+Recognizing traffic and hand-held signs is a big challenge with self-driving cars.
+Machine learning techniques are used to classify traffic signs.
+They perform well on one data-set but struggle with others.
+We propose a new architecture that performs well on many tasks and better than current best approaches.
+Our model is made of blocks with skip connections that help the information flow.
+We scored 99% accuracy in a German sign recognition test and 99% accuracy in a Belgian traffic sign test.
+We propose a new learning technique that uses less memory and computation.
+We introduce a new system for training self-driving cars in a virtual environment.
+A car racing model is fed images of a car's front and tells the driver how to steer, accelerate and brake.
+The model doesn't learn to recognize specific road features like track outlines or distances to other cars but can still figure out these details.
+We present a new method for teaching a computer to control self-driving cars using a type of neural network.
+A CNN is used for steering control that takes a single camera image.
+We added a new task to the CNN to predict a lane departure level.
+A source network is trained on a specific task. Then another network is trained to perform a different task using the source network's output.
+The commands from the source and target network are combined and used to control a car.
+We used two simulators to test the method. One was for the original environment and the other for the new environment.
+The proposed method outperforms other methods in controlling cars safely and stably.
+Limited data is a major issue with deep learning.
+There are limited datasets available for industrial robotics.
+We previously trained a computer model to identify the robot in an image and estimate its moving parts but it only worked with a specific type of robot.
+We extended our method to work with a new robot arm.
+Instead of collecting large datasets we collect smaller ones with a few hundred frames each and adapt a pre-trained model to a new robot with different shapes and features.
+Transfer learning is faster and more efficient than the original method.
+Moral responsibility is a concern in automated decision-making.
+We present methods for modeling and controlling systems where self-driving vehicles transport people in cities and move to areas of high demand.
+We cast a self-driving system in a closed network.
+A robust rebalancing algorithm is used in a study of New York City and tested on an eight-vehicle robot.
+In New York, 8,000 robotic taxis could meet the current taxi demand in Manhattan.
+We study how vehicles rebalancing affects traffic congestion.
+This paper provides a way to coordinate many self-driving cars and shows the benefits of using them.
+Our economy and many of our societal institutions will change dramatically.
+There are also tremendous risks to our society.
+Automation is the next step in many areas of life after production and transportation.
+We're at a crossroads where we can choose between a society where decisions are made by a few and enforced or one where people make their own decisions freely.
+Modern technology enables both communication and information systems but the latter has economic and strategic benefits.
+Human dignity and democracy are important principles of a livable society.
+When self-driving cars become common, people will need to find new things to do while riding.
+Retrieving entertainment content from a central location can slow down its delivery.

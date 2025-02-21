@@ -1,0 +1,50 @@
+In the modern era of automation, autonomous vehicles are the focus of research.
+With more drones being used in civilian and commercial activities, there is an increased need for autonomy in these systems too.
+Due to government rules for drones, drone navigation is getting attention
+We propose a solution that lets a drone learn to fly like an expert by observing how they do it and it should be able to drive through city streets.
+Derived from the classic image classification algorithms our classifier has been constructed in the form of a special computer model that looks for roads in images
+Our system performs better than many existing models
+The data used for training the system has been captured from the drone by flying it in urban areas by experts with a lot of flying experience.
+Permission was taken from the right authorities who made sure that minimal risk to pedestrians is involved in the data collection process.
+We have been able to navigate successfully through roads without crashing or overshooting.
+A system enables the drone to fly fast The drone flies fast
+We present the same results in this research and compare them with other methods of navigation.
+Recognizing Traffic Signs can reduce accidents.
+It has become a challenge to recognize traffic signs in the streets.
+Various machine learning techniques like Random Forest and deep learning models have been proposed for classifying traffic signs.
+They perform well on a particular data-set, but struggle with multiple Traffic Sign Recognition benchmarks.
+This paper proposes a new architecture that does better than other top architectures.
+Our model is made of blocks with skip connections joined in steps.
+We scored very high accuracy in both German and Belgian sign recognition benchmarks.
+we propose a new technique that is very low in both memory and computational complexity
+We introduce Ignition a special computer system for training self-driving cars in virtual worlds
+The model is a special type of neural network that is trained on images from a virtual F1 car, and gives the best directions for steering, acceleration, and braking.
+we illustrate that these features can be automatically detected by the network
+we present a way to use a trained model to control a self-driving car even if it was trained on a different place like a special kind of AI that uses a special kind of image recognition to make decisions for cars on the road
+A CNN maps a camera image to a steering command
+To help the model learn from existing knowledge we modified it to also predict whether the car is leaving its lane.
+A network is trained on a source domain. It is then used to train another task module for a target domain. This module takes the output of the last layer of the source network and produces a steering command for the target domain.
+The steering commands from the source and target network are merged and used to control a car.
+We used two simulators TORCS and GTAV to demonstrate the effectiveness of our method for both the source and target domains.
+The proposed method outperforms other methods in controlling cars.
+A significant problem of using deep learning is the limited amount of data available for training.
+There aren't many datasets for robots and their tasks especially for factories recognizing objects in cars
+In previous work we have trained a multi-objective Convolutional Neural Network that can identify the robot body in the image and estimate 3D positions of the joints by using just a 2D image but it was limited to a range of robots produced by Universal Robots
+we extend our method to work with a new robot arm Kuka LBR iiwa
+However instead of collecting large datasets once again we collect a number of smaller datasets containing a few hundred frames each and use a special method to adapt the trained model to a new robot having different shapes and visual features.
+transfer learning is a process that uses existing knowledge to learn new things quickly and it requires smaller training datasets trains quickly and reaches similar accuracy to the original method even improving it on some aspects
+People are concerned about making good choices when machines make decisions such as in self-driving cars or organ swaps
+We present methods for modeling and control of systems where robotic vehicles transport customers in urban environments and balance themselves to provide good service.
+We cast a system within a closed network model.
+A real-time rebalancing algorithm is applied to a case study of New York City and implemented on an eight-vehicle mobile robot testbed.
+The case study of New York shows that the taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly the size of the current taxi fleet.
+We study the impact of autonomously rebalancing vehicles on traffic.
+This paper provides a rigorous approach to the problem of coordinating autonomously driving vehicles and shows the benefits of robotic transportation.
+Because of the digital revolution, we will see a dramatic transformation of our economy and most of our societal institutions.
+While the benefits can be massive, there are also risks to our society.
+The automation of many production processes and the creation of self-driving vehicles is next.
+This is a crossroads between a society where actions are decided by others and implemented by coercion or technology and a society where decisions are made freely and together.
+Information systems enable both, but the latter has economic and strategic benefits.
+lived societies but also the basis of greater efficiency and success
+When cars become self-driving and people are no longer worried, they will need to find new ways of entertainment.
+However getting content from a central server can slow down streaming due to a slow connection

@@ -38,7 +38,7 @@ def simplify_passage_iteratively(chat_bot, system_prompt, algorithm_parameters, 
 
     chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
     # chat_bot.print_chat()
-    chat_bot.save_chat()
+    # chat_bot.save_chat()
     # chat_bot.print_token_usage_log()
 
     return chat_bot.get_last_response()
@@ -66,7 +66,7 @@ def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_pa
 
     chat_bot.send_limited_context_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", None) # Try None and numbers
     # chat_bot.print_chat()
-    chat_bot.save_chat()
+    # chat_bot.save_chat()
     # chat_bot.print_token_usage_log()
 
     return chat_bot.get_last_response()
@@ -130,11 +130,11 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     return (results, overall_metrics)
 
 
-passages_to_simplify = 10
+passages_to_simplify = 50
 passage_type_to_simplify = "sentence"
 
 simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
-# plotting.make_token_usage_graphs(datetime.timedelta(minutes=30))
+plotting.make_token_usage_graphs(datetime.timedelta(minutes=30))

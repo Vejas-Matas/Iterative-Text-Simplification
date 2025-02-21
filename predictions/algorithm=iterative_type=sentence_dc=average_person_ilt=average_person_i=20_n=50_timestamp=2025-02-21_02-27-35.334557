@@ -1,0 +1,50 @@
+In the modern age of automation autonomous vehicles are currently a focus of research.
+With the ever increasing number of drones getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.
+Due to guidelines set by the governments regarding the operation ceiling of civil drones Navigation is popular
+In an attempt to achieve the above mentioned tasks, we propose a data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.
+Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using specialized images of the input frames.
+Based on a specific computer model, our system performs better in terms of performance and quality than many existing models for imitation learning.
+The data used for training the system has been captured from the drone, by flying it in urban areas, by experts having at least 6-8 years of flying experience.
+Permissions were taken from the authorities to minimize the risk to pedestrians during data collection.
+We collected a lot of data from our drones, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%.
+The efficiency of the drone's system enables the drone to fly at high speeds of up to 6 meters per second.
+We present the same results in this research and compare them with other methods of navigation.
+Recognizing Traffic Signs can drastically reduce the number of accidents happening worldwide.
+With the arrival of Self-driving cars it has become a staple challenge to solve the recognition of traffic signs in the major streets.
+Various machine learning techniques, including Random Forest and deep learning models has been proposed for classifying traffic signs.
+Though they reach best performance on a particular data-set, but fall short of tackling multiple Traffic Sign Recognition benchmarks.
+In this paper, we propose a novel and all-in-one architecture that aces multiple benchmarks with better overall score than the state-of-the-art architectures.
+
+With this we score 99.33% Accuracy in German and Belgian traffic sign recognition benchmarks.
+Moreover we propose a new technique which uses low resources
+We introduce Ignition: a neural network system for training self-driving vehicles in simulated environments.
+The model is a ResNet-18 variant, which is fed in images from the front of a simulated F1 car, and outputs best driving instructions for steering, throttle, braking.
+we never explicitly train the model to detect road features like the outline of a track or distance to other cars; instead we show that these features are naturally learned by the network
+In this paper we present a transfer learning method for full control of cars which enables a neural network trained locally
+A standard computer vision system for direct control is designed to map a single front-facing camera image to a steering command.
+To enable learning from past experiences, we let a type of neural network produce not only the steering direction but also a lane departure level (LDL) by adding a new module that uses the final layer's output.
+The CNN trained on the source domain, is then utilized to train another task module called target network, which also uses the output of the source network's final layer and is trained to produce a steering command for the target domain.
+The steering commands from the source and target systems are finally merged according to the LDL and the merged command is utilized for controlling a car in the new environment.
+
+The results show that a new approach outperforms other baseline methods in terms of stable and safe control of cars.
+A significant problem of using machine learning techniques is the limited amount of data available for training.
+There are some datasets available for self-driving cars, however, it is very limited for industrial robotics.
+we used a special type of artificial intelligence called a Convolutional Neural Network (CNN) to identify the robot body in the image and estimate 3D positions of the joints by using just a 2D image but it was limited to a range of robots produced by Universal Robots (UR)
+In this work, we extend our method to work with a new robot arm - Kuka LBR iiwa, which has a different appearance and an extra joint.
+However, instead of collecting large datasets once again, we collect a number of smaller datasets containing a few hundred images each and use adapting the existing model to a new robot having different shapes and visual features.
+Transfer learning is applicable in this field and requires smaller training datasets, trains faster and achieving similar accuracy to the original method. Transfer learning is applicable in this field and requires smaller training datasets, trains faster and achieving similar accuracy to the original method, even improving it on some aspects.
+Automated decisions raise moral concerns in areas like self-driving cars and kidney exchanges.
+In this paper we present specialized mathematical methods for planning and managing self-driving taxis wherein self-driving vehicles transport people within cities and rebalance themselves to ensure good service across the city
+We first cast an autonomous system within a closed network model with passenger loss.
+The theoretical insights are used to design a robust real-time rebalancing algorithm which is applied to a case study of New York City and tested on a fleet of eight vehicles.
+New York's taxi demand in Manhattan can be met with 8,000 robotic vehicles, which is about 70% of the current taxi fleet.
+Finally, we extend our basic traffic system to account for traffic jams, and study the impact of autonomously rebalancing vehicles on overall traffic congestion.
+This paper presents a systematic way to coordinate self-driving cars, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.
+After the digital revolution, we will see changes in our economy and society.
+While the benefits of this transformation can be big, there are also risks to our society.
+After the automation of production processes and the creation of self-driving vehicles, the automation of society is next.
+This is moving us to a tipping point and to a crossroads we must decide between a society where decisions are made from the top and enforced or a society in which decisions are made in a free and fair way
+Modern technology and communication systems work together, but has economic and strategic benefits.
+The foundations of human dignity, democracy, and making our own decisions, but I believe that they need to be vigorously defended, as they are not only key principles of a good society, but also the basis of greater efficiency and success.
+Once self-driving cars become a reality passengers will need to find new ways of entertainment.
+However, getting entertainment from a central location can hinder content delivery service due to high delay of car-to-DC communication.
