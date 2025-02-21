@@ -53,18 +53,18 @@ def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_pa
         chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
 
     for _ in range(max_iter):
-        chat_bot.send_prompt(f'Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC ({parameters.algorithm_parameters["DC"]})? Answer "Yes" or "No"', 1)
+        chat_bot.send_limited_context_prompt(f'Identify which parts of the text are the most complex. Based on this information, identify the complexity of the passage. Is determined complexity higher than DC ({parameters.algorithm_parameters["DC"]})? Answer "Yes" or "No"', 1)
         if "NO" in chat_bot.get_last_response().upper():
             break
-        chat_bot.send_prompt(f'Identify a single complicated section of the passage. Remember to respect the ILT ({parameters.algorithm_parameters["ILT"]}) contraint. Simplify this section. Reincorporate the simplified section into the passage. Only provide the reincorporated version', 2)
-        chat_bot.send_prompt(f'Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT ({parameters.algorithm_parameters["ILT"]})? Provide the highest severity level, followed by an answer to the ILT question as "Yes" or "No"', 3)
+        chat_bot.send_limited_context_prompt(f'Identify a single complicated section of the passage. Remember to respect the ILT ({parameters.algorithm_parameters["ILT"]}) contraint. Simplify this section. Reincorporate the simplified section into the passage. Only provide the reincorporated version', 2)
+        chat_bot.send_limited_context_prompt(f'Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT ({parameters.algorithm_parameters["ILT"]})? Provide the highest severity level, followed by an answer to the ILT question as "Yes" or "No"', 3)
         if "YES" in chat_bot.get_last_response().upper():
-            chat_bot.send_prompt("Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage.", 4)
+            chat_bot.send_limited_context_prompt("Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage.", 4)
         else:
-            chat_bot.send_prompt("Accept the proposed simplification. Print the updated version of the passage", 4)
-        #     chat_bot.send_prompt("If needed, adjust the passage to maintain readabily and flow of text")
+            chat_bot.send_limited_context_prompt("Accept the proposed simplification. Print the updated version of the passage", 4)
+        #     chat_bot.send_limited_context_prompt("If needed, adjust the passage to maintain readabily and flow of text")
 
-    chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", 1)
+    chat_bot.send_limited_context_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", 1)
     # chat_bot.print_chat()
     chat_bot.save_chat()
     # chat_bot.print_token_usage_log()
