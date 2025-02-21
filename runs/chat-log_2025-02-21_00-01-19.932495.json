@@ -1,0 +1,342 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nDerived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "system",
+    "content": "DC: Average person\nILT: Medium-High"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"39-layered Inception model\" (technical term)\n- \"tomographic reconstructions\" (technical term)\n- \"the form of a\" (phrase that requires some understanding of the context)\n\nThe overall complexity level of the passage is: High\n\nNote: This complexity level is based on the assumption that the target audience is an \"average person\" as specified in the DC parameter."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"39-layered Inception model\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"A complex Inception model\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a complex Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss: The original passage mentioned that the model is \"fast\", which is not present in the simplified version. Severity: High (the original passage specifically highlights the speed of the model, which is an important aspect of its design). The original passage also mentions \"the form of a\", which is a minor loss but still relevant. The term \"39-layered\" is also lost, which might be significant for some readers. Overall, the information loss is moderate to high."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"tomographic reconstructions\" (technical term)\n- \"evaluates the presence of roads\" (requires some understanding of the context)\n\nThe overall complexity level of the passage remains as High, as the simplified section did not significantly reduce the complexity."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"tomographic reconstructions\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"computer-generated images\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a complex Inception model, that evaluates the presence of roads using computer-generated images of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss: The original passage mentioned \"tomographic reconstructions\", which is a specific and technical term for a process, that has been replaced with a more general term \"computer-generated images\". Severity: High (the original term provides a clear idea of the method used, while the simplified term is more vague). The original passage also mentioned that the model evaluates \"the presence of roads\", but the simplified version does not convey the same level of specificity. The term \"input frames\" is also a minor loss, as the original passage used \"input frames\" as a more specific and technical term. Overall, the information loss is High."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways"
+  },
+  {
+    "role": "assistant",
+    "content": "I reverted the change, and the passage now reads:\n\nDerived from the classic image classification algorithms, our classifier has been constructed in the form of a complex Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"39-layered Inception model\" (technical term)\n- \"tomographic reconstructions\" (technical term)\n- \"the form of a\" (phrase that requires some understanding of the context)\n\nThe overall complexity level of the passage is: High"
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"39-layered Inception model\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"A powerful Inception model\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a powerful Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss: The original passage mentioned that the model is \"fast\", which is not present in the simplified version. Severity: High (the original passage specifically highlights the speed of the model, which is an important aspect of its design). The original passage also mentions \"the form of a\", which is a minor loss but still relevant. The term \"39-layered\" is also lost, which might be significant for some readers. Overall, the information loss is Moderate to High."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways"
+  },
+  {
+    "role": "assistant",
+    "content": "I reverted the change, and the passage now reads:\n\nDerived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"39-layered Inception model\" (technical term)\n- \"tomographic reconstructions\" (technical term)\n\nThe overall complexity level of the passage is: High"
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"tomographic reconstructions\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"computer-generated images\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using computer-generated images of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss: The original passage mentioned \"tomographic reconstructions\", which is a specific and technical term for a process, that has been replaced with a more general term \"computer-generated images\". Severity: High (the original term provides a clear idea of the method used, while the simplified term is more vague). The term \"input frames\" is also a minor loss, as the original passage used it as a more specific and technical term. Overall, the information loss is Moderate to High."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways"
+  },
+  {
+    "role": "assistant",
+    "content": "I reverted the change, and the passage now reads:\n\nDerived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"39-layered Inception model\" (technical term)\n- \"tomographic reconstructions\" (technical term)\n\nThe overall complexity level of the passage is: High"
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"tomographic reconstructions of the input frames\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"specialized images of the input\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using specialized images of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss: The original passage mentioned \"tomographic reconstructions\", which is a specific and technical term for a process, that has been replaced with a more general term \"specialized images\". Severity: Medium (the original term provides a clear idea of the method used, while the simplified term is still somewhat technical). The term \"input frames\" is also a minor loss, as the original passage used it as a more specific and technical term. Overall, the information loss is Low to Medium."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the text are:\n\n- \"39-layered Inception model\" (technical term)\n- \"specialized images of the input\" (somewhat technical term)\n\nThe overall complexity level of the passage is: Medium"
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using specialized images of the input frames."
+  }
+]

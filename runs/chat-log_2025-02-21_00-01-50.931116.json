@@ -1,0 +1,206 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nThe computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec."
+  },
+  {
+    "role": "system",
+    "content": "DC: Average person\nILT: Medium-High"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The text \"The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec\" is most complex due to the technical term \"computational efficiency\" and the specific unit \"m/sec\". The complexity of the passage is around 3 out of 10, with 1 being very simple and 10 being very complex. This is because the passage requires some background knowledge of technical terms and units to fully understand. The complexity is at a level that may be challenging for an \"Average person\" (DC=2), but the ILT is set to \"Medium-High\", which suggests that some complexity can be tolerated."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"computational efficiency\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"efficiency\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentioned \"computational efficiency\", which is a specific technical term. The simplified passage only mentions \"efficiency\", which is a more general term. The information loss is that the original passage provided more precise information about the drone's performance. The severity of the information loss is Medium, as the general term \"efficiency\" still conveys the main idea but lacks the nuance of the original term. The severity is within the ILT threshold of Medium-High, so the change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The text \"The efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec\" is most complex due to the unit \"m/sec\". The complexity of the passage is around 2 out of 10, with 1 being very simple and 10 being very complex. This is because the passage still requires some understanding of technical units, but the term \"efficiency\" is more accessible than \"computational efficiency\". The complexity is lower than the original passage, but still slightly above the DC for \"Average person\". The complexity is still above the DC, so the algorithm continues."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"high speeds of up to 6m/sec\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"high speeds of up to 6 meters per second\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The efficiency of MAVNet enables the drone to fly at high speeds of up to 6 meters per second."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentioned \"6m/sec\" as a unit of measurement, which is a specific and technical unit. The simplified passage uses the more verbose and clear \"6 meters per second\", which is a more understandable unit for the general public. The information loss is that the simplified passage uses a more verbose unit, but still conveys the same information. The severity of the information loss is Low, as the original unit was still somewhat unclear to non-experts. The severity is within the ILT threshold of Medium-High, so the change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Low\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The text \"The efficiency of MAVNet enables the drone to fly at high speeds of up to 6 meters per second\" is most complex due to the technical term \"MAVNet\" and the unit \"meters per second\". The complexity of the passage is around 2 out of 10, with 1 being very simple and 10 being very complex. This is because the passage still requires some understanding of technical terms and units, but the language is more accessible than before. The complexity is still slightly above the DC for \"Average person\", but the ILT allows for some complexity. The algorithm continues to simplify the passage."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"MAVNet\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"the drone's system\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The efficiency of the drone's system enables the drone to fly at high speeds of up to 6 meters per second."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentioned \"MAVNet\", which is a specific technical term. The simplified passage uses the more general term \"the drone's system\", which is more understandable to non-experts. The information loss is that the original passage provided more specific information about the drone's system. The severity of the information loss is Medium, as the general term \"the drone's system\" still conveys the main idea but lacks the nuance of the original term. The severity is within the ILT threshold of Medium-High, so the change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The text \"The efficiency of the drone's system enables the drone to fly at high speeds of up to 6 meters per second\" is most complex due to the unit \"meters per second\". The complexity of the passage is around 1 out of 10, with 1 being very simple and 10 being very complex. This is because the passage is now simple and easy to understand, even for an \"Average person\". The complexity is now below the DC for \"Average person\", meeting the target. The algorithm terminates."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The efficiency of the drone's system enables the drone to fly at high speeds of up to 6 meters per second."
+  }
+]
