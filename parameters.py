@@ -5,8 +5,8 @@ vllm_model = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
 # vllm_model = "hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4"
 
 algorithm_parameters = {
-    "DC": "University student",
-    "ILT": "Medium"
+    "DC": "Average person",
+    "ILT": "Medium-High"
 }
 
 system_prompt = """

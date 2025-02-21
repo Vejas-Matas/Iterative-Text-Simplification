@@ -42,7 +42,7 @@ class OpenAIChatBot:
 
 class VllmChatBot:
     def __init__(self, model_name):
-        self.model = vllm.LLM(model_name, max_model_len=1024, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1) # Make this nicer !!!
+        self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1) # Make this nicer !!!
         self.chat_log = []
         self.token_counts = []
 
@@ -56,7 +56,7 @@ class VllmChatBot:
         self.chat_log.append({"role": "user", "content": prompt}) 
         response = self.model.chat(
             messages=self.chat_log[:context_message_count],
-            sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=256), # Make this nicer !!!
+            sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
 
