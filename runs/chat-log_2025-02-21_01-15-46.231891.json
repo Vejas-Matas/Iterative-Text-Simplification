@@ -1,0 +1,30 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nIn the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research."
+  },
+  {
+    "role": "system",
+    "content": "DC: Average person\nILT: Medium-High"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex. Based on this information, identify the complexity of the passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The passage \"In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research\" has a complexity of 4.5 out of 10, with the most complex part being the phrase \"academic and industrial research\" and the term \"era of automation and robotics\" which is somewhat technical.\n\nSince the determined complexity (4.5) is lower than the desired complexity (Average person, which is around 6), the answer is: No"
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "In the modern era of automation, autonomous vehicles are the focus of research."
+  }
+]

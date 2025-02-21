@@ -1,0 +1,10 @@
+In the modern era of automation, autonomous vehicles are the focus of research.
+With more drones being used in civilian and commercial activities, there is an increased need for autonomy in these systems too.
+Due to government rules for drones, drone navigation is getting attention
+We propose a solution that lets a drone learn to fly like an expert by observing how they do it and it should be able to drive through city streets.
+Derived from the classic image classification algorithms our classifier has been constructed in the form of a special computer model that looks for roads in images
+Our system performs better than many existing models
+The data used for training the system has been captured from the drone by flying it in urban areas by experts with a lot of flying experience.
+Permission was taken from the right authorities who made sure that minimal risk to pedestrians is involved in the data collection process.
+We have been able to navigate successfully through roads without crashing or overshooting.
+A system enables the drone to fly fast The drone flies fast
