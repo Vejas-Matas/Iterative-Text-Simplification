@@ -23,7 +23,7 @@ FILES=$(ls "./predictions" -t | head -n ${FILE_COUNT})
 # Execute the command on each file path
 for FILE in $FILES; do
     echo "FILE: ${FILE}"
-    # easse ${COMMAND} -q -t custom --refs_sents_paths "dataset/simpletext_lines/sentence_train_references_50.txt" --orig_sents_path "dataset/simpletext_lines/sentence_train_sources_50.txt" --sys_sents_path ${FILE}
+    easse ${COMMAND} -q -t custom --refs_sents_paths "dataset/simpletext_lines/sentence_train_references_50.txt" --orig_sents_path "dataset/simpletext_lines/sentence_train_sources_50.txt" --sys_sents_path "./predictions/${FILE}"
 done
 
 
