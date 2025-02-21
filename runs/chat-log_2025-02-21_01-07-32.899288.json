@@ -1,0 +1,30 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nBased on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning."
+  },
+  {
+    "role": "system",
+    "content": "DC: Average person\nILT: Medium-High"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex. Based on this information, identify the complexity of the passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "To simplify the passage to a \"Average person\" complexity, I'll analyze the current passage.\n\nThe current complexity of the passage is high due to the use of technical terms like \"Inception-v3 architecture\" and \"imitation learning.\" The ILT is set to \"Medium-High,\" so I'll aim to simplify the passage without losing crucial information.\n\nThe first section of the passage that stands out as complex is the phrase \"Inception-v3 architecture.\" This is a specific type of neural network architecture that might be unfamiliar to the average person. \n\nA possible simplification of this section could be: \"our system is based on a powerful neural network.\"\n\nHowever, this simplification might result in some information loss. The original passage implies that the system's performance is being compared to other models, but the simplified version doesn't convey this comparison. The severity of this information loss is high, as it changes the context of the statement.\n\nSince the severity of the information loss is higher than the ILT, I will not update the passage with this simplification."
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The determined complexity of the passage is higher than DC (Average person). Answer is: Yes"
+  }
+]
