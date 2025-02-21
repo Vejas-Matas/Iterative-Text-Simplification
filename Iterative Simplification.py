@@ -66,7 +66,7 @@ def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_pa
 
     chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", 1)
     # chat_bot.print_chat()
-    # chat_bot.save_chat()
+    chat_bot.save_chat()
     # chat_bot.print_token_usage_log()
 
     return chat_bot.get_last_response()

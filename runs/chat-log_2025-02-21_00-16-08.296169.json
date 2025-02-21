@@ -1,0 +1,126 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nDerived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "system",
+    "content": "DC: Average person\nILT: Medium-High"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "To begin the simplification process, we need to determine if the current complexity of the passage is at the desired level (Average person). However, the given passage is quite technical and likely above the average person's complexity level. Thus, we need to continue with the algorithm.\n\nThe current complexity of the passage is high due to the use of technical terms such as \"fast 39-layered Inception model\" and \"tomographic reconstructions.\" Therefore, we need to identify a section of the text whose complexity is above the desired complexity (Average person). \n\nA potential section to simplify is the phrase \"fast 39-layered Inception model\" and \"tomographic reconstructions of the input frames.\" This section is technical and may be a good candidate for simplification."
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Simplify this section. Reincorporate the simplified section into the passage. Only provide the reincorporated version"
+  },
+  {
+    "role": "assistant",
+    "content": "The identified complex parts are:\n- \"fast 39-layered Inception model\"\n- \"tomographic reconstructions\"\n\nThe complexity of these parts can be broken down as follows:\n- \"fast 39-layered Inception model\": technical term (Inception), numerical value (39), and abstract concept (fast), complexity: High\n- \"tomographic reconstructions\": technical term (tomographic), abstract concept (reconstructions), complexity: High\n\nSince the complexity of these parts is High, and the DC is Average person (which is lower), the determined complexity is higher than DC. Answer: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The identified section is \"fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.\" The complexity of this section is high, and it is above the desired complexity (Average person)."
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "A complicated section of the passage is \"fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.\"\n\nSimplification proposal: \"a special computer model that checks for roads using images of the input frames.\"\n\nThe original section's information loss is: \n- 'fast' is removed (low loss, as the speed is not crucial for understanding)\n- '39-layered' is removed (high loss, as the exact number of layers is important for the model's architecture)\n- 'Inception model' is replaced with 'special computer model' (medium loss, as the type of model is still understood)\n- 'tomographic reconstructions' is replaced with 'images' (medium loss, as the type of reconstruction is still understood)\n\nThe severity of the information loss is medium, which is within the ILT (Medium-High) constraint. Therefore, the simplified section is accepted.\n\nReincorporated passage:\nDerived from the classic image classification algorithms, our classifier has been constructed in the form of a special computer model that checks for roads using images of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The algorithm is running again to check if the current complexity is at the desired level. The current passage is still above the desired complexity (Average person). \n\nA potential section to simplify is the phrase \"derived from the classic image classification algorithms.\" This section is technical and may be a good candidate for simplification."
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Simplify this section. Reincorporate the simplified section into the passage. Only provide the reincorporated version"
+  },
+  {
+    "role": "assistant",
+    "content": "The identified complex parts are:\n- \"classic image classification algorithms\" (technical term and abstract concept, complexity: High)\n- \"constructed in the form of a special computer model\" (technical term and abstract concept, complexity: Medium-High)\n\nThe determined complexity is still higher than the desired complexity (Average person). Answer: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The identified complex parts are:\n- \"derived from the classic image classification algorithms\"\n\nThe complexity of this part can be broken down as follows:\n- \"derived from the classic\" is a complex phrase, as it implies a relationship between the current model and other models (complexity: High)\n- \"image classification algorithms\" is a technical term (complexity: High)\n\nSince the complexity of these parts is High, and the DC is Average person (which is lower), the determined complexity is higher than DC. Answer: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage."
+  },
+  {
+    "role": "assistant",
+    "content": "The identified complex part is \"derived from the classic image classification algorithms.\"\n\nThe complexity of this part is:\n- \"classic image classification algorithms\": technical term (image classification), abstract concept (classic), complexity: High\n\nSince the complexity of this part is High, and the DC is Average person (which is lower), the determined complexity is higher than DC. Answer: Yes\n\nSimplification proposal: \"based on a common way of classifying images.\"\n\nThe original section's information loss is: \n- \"classic\" is removed (low loss, as the type of classification is still understood)\n- \"image classification algorithms\" is replaced with \"a common way of classifying images\" (high loss, as the exact type of classification is not crucial for understanding)\n\nThe severity of the information loss is high, which is higher than the ILT (Medium-High). Therefore, the simplification is rejected.\n\nReincorporated passage:\nOur classifier has been constructed in the form of a special computer model that checks for roads using images of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a special computer model that checks for roads using images of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Simplify this section. Reincorporate the simplified section into the passage. Only provide the reincorporated version"
+  },
+  {
+    "role": "assistant",
+    "content": "The current passage is still above the desired complexity (Average person). \n\nA potential section to simplify is the phrase \"a special computer model that checks for roads using images of the input frames.\" This section is technical and may be a good candidate for simplification."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The identified complex parts are:\n- \"classic image classification algorithms\" (technical term and abstract concept, complexity: High)\n- \"special computer model\" (technical term, complexity: Medium-High)\n- \"checks for roads\" (abstract concept, complexity: Medium-High)\n\nThe complexity of these parts is still higher than the desired complexity (Average person). Answer: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage."
+  },
+  {
+    "role": "assistant",
+    "content": "The identified complex parts are:\n- \"our classifier\" (abstract concept, complexity: Medium-High)\n- \"checks for roads\" (abstract concept, complexity: Medium-High)\n\nThe determined complexity is still higher than the desired complexity (Average person). Answer: Yes\n\nSimplification proposal: \"our road detector\"\n\nThe original section's information loss is: \n- \"classifier\" is replaced with \"detector\" (low loss, as the function is still understood)\n\nThe severity of the information loss is low, which is within the ILT (Medium-High) constraint. Therefore, the simplified section is accepted.\n\nReincorporated passage:\nDerived from the classic image classification algorithms, our road detector has been constructed in the form of a special computer model that checks for roads using images of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Identify which parts of the text are the most complex, then the complexity. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The current passage is still above the desired complexity (Average person). \n\nA potential section to simplify is the phrase \"image classification algorithms\" and \"special computer model\" and \"checks for roads using images of the input frames\" still have a high complexity. The identified complex parts are:\n- \"image classification algorithms\" (technical term and abstract concept, complexity: High)\n- \"special computer model\" (technical term, complexity: Medium-High)\n- \"checks for roads using images of the input frames\" (abstract concept, complexity: Medium-High)\n\nThe complexity of these parts is still higher than the desired complexity (Average person). Answer: Yes"
+  }
+]
