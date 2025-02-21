@@ -27,6 +27,8 @@ class VllmChatBot:
         # self.token_counts.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].usage.generated_tokens)})
 
     def send_limited_context_prompt(self, prompt, context_message_count=None):
+        self.chat_log.append({"role": "user", "content": prompt}) 
+        
         if context_message_count is not None:
             context_message_count = -context_message_count
 
@@ -36,7 +38,6 @@ class VllmChatBot:
         last_messages = self.chat_log[initial_message_count:][context_message_count:]
         context = intial_messages + last_messages
 
-        self.chat_log.append({"role": "user", "content": prompt}) 
         response = self.model.chat(
             messages=context,
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
