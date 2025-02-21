@@ -3,9 +3,15 @@
 # PREDICTION_FILE_NAME="type=sentence_dc=university_student_ilt=university_student_i=20_timestamp=2025-02-14_08-13-22.551088"
 
 # I want to allow 2 params, then use all assages
-if [ "$#" -ne 4 ]; then
+if [ "$#" -lt 3 ]; then
     echo "Usage: $0 <evaluate/report> <number of files to read> <sentence/abstract> <number of passages used>"
     exit 1
+fi
+
+if [ "$#" == 3 ]; then
+    PASSAGE_COUNT_SUFFIX=""
+else
+    PASSAGE_COUNT_SUFFIX="_$4"
 fi
 
 
@@ -13,7 +19,6 @@ fi
 COMMAND="$1"
 FILE_COUNT="$2"
 PASSAGE_TYPE="$3"
-PASSAGE_COUNT="$4"
 
 # Validate that the second & fourth arguments is an integer
 if ! [[ ${FILE_COUNT} =~ ^[0-9]+$ ]]; then
@@ -26,13 +31,15 @@ if ! [[ ${PASSAGE_COUNT} =~ ^[0-9]+$ ]]; then
     exit 1
 fi
 
+
+
 # Get the list of n most recent file paths in the directory
 FILES=$(ls "./predictions" -t | head -n ${FILE_COUNT})
 
 # Execute the command on each file path
 for FILE in $FILES; do
     echo "FILE: ${FILE}"
-    easse ${COMMAND} -q -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references_${PASSAGE_COUNT}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources_${PASSAGE_COUNT}.txt" --sys_sents_path "./predictions/${FILE}"
+    easse ${COMMAND} -q -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${FILE}"
 done
 
 
