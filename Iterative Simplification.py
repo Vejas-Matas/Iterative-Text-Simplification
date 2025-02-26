@@ -13,14 +13,6 @@ dataset = dataset_utils.read_dataset()
 
 
 def simplify_passage_iteratively(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
-    chat_bot.clear()
-    
-    chat_bot.add_system_prompt(system_prompt)
-    chat_bot.add_system_prompt(f"The passage:\n{passage}")
-
-    if algorithm_parameters is not None and algorithm_parameters != {}:
-        chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
-
     for _ in range(max_iter):
         chat_bot.send_prompt("Identify which parts of the text are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences")
         chat_bot.send_prompt(f'Is determined complexity higher than DC ({parameters.algorithm_parameters["DC"]})? Answer "Yes" or "No"')
@@ -37,21 +29,10 @@ def simplify_passage_iteratively(chat_bot, system_prompt, algorithm_parameters, 
         #     chat_bot.send_prompt("If needed, adjust the passage to maintain readabily and flow of text")
 
     chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
-    # chat_bot.print_chat()
-    # chat_bot.save_chat()
-    chat_bot.print_token_usage_log()
 
     return chat_bot.get_last_response()
 
 def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
-    chat_bot.clear()
-    
-    chat_bot.add_system_prompt(system_prompt)
-    chat_bot.add_system_prompt(f"The passage:\n{passage}")
-
-    if algorithm_parameters is not None and algorithm_parameters != {}:
-        chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
-
     for _ in range(max_iter):
         chat_bot.send_limited_context_prompt(f'Identify which parts of the text are the most complex. Based on this information, identify the complexity of the passage. Is determined complexity higher than DC ({parameters.algorithm_parameters["DC"]})? Answer "Yes" or "No"', 3)
         if "NO" in chat_bot.get_last_response().upper():
@@ -64,16 +45,15 @@ def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_pa
             chat_bot.send_limited_context_prompt("Accept the proposed simplification. Print the updated version of the passage", 9)
         #     chat_bot.send_limited_context_prompt("If needed, adjust the passage to maintain readabily and flow of text")
 
-    chat_bot.send_limited_context_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", None) # Try None and numbers
-    # chat_bot.print_chat()
-    # chat_bot.save_chat()
-    chat_bot.print_token_usage_log()
-
+    # Try None and numbers
+    chat_bot.send_limited_context_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", None)
+    
     return chat_bot.get_last_response()
 
 
 
 def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_parameters, passage_type, max_iter, n=None):
+    ### Setup
     if passage_type == "abstract":
         sources, references = dataset_utils.get_sources_and_references("abs", n)
     elif passage_type == "sentence":
@@ -93,12 +73,23 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         model_name=parameters.vllm_model,
     )
     
+    ### Simplifying passages one-by-one
     for i in range(len(sources)):
+        ### Initialise
+        chat_bot.clear()
+    
+        chat_bot.add_system_prompt(system_prompt)
+        chat_bot.add_system_prompt(f"The passage:\n{passage}")
 
+        if algorithm_parameters is not None and algorithm_parameters != {}:
+            chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
+
+        ### Simplify
         prediction = algorithm_fn(chat_bot, system_prompt, algorithm_parameters, sources[i], max_iter)
+
+        ### Collect intermediary results
         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
         token_usage.append(chat_bot.get_total_token_usage())
-
         predictions.append(prediction)
         results.append({
             "source": sources[i],
@@ -107,11 +98,14 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
             # "metrics": metrics,
         })
 
+        ### Save / display results
+        # chat_bot.print_chat()
+        # chat_bot.save_chat()
+        chat_bot.print_token_usage_log()
+
         file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
 
-        chat_bot.clear()
-
-
+    ### Overall results / metrics
     overall_metrics = {
         "in_tokens": sum([counts["in"] for counts in token_usage]),
         "out_tokens": sum([counts["out"] for counts in token_usage])
