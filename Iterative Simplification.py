@@ -78,6 +78,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         ### Initialise
         chat_bot.clear()
     
+        passage = sources[i]
         chat_bot.add_system_prompt(system_prompt)
         chat_bot.add_system_prompt(f"The passage:\n{passage}")
 
@@ -85,7 +86,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
             chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
 
         ### Simplify
-        prediction = algorithm_fn(chat_bot, system_prompt, algorithm_parameters, sources[i], max_iter)
+        prediction = algorithm_fn(chat_bot, system_prompt, algorithm_parameters, passage, max_iter)
 
         ### Collect intermediary results
         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
