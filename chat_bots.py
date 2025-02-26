@@ -46,7 +46,7 @@ class VllmChatBot:
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
         self.increment_token_usage(response)
 
-    def increment_token_usage(response):
+    def increment_token_usage(self, response):
         num_prompt_tokens = len(response[0].prompt_token_ids)
         num_generated_tokens = len(response[0].outputs[0].token_ids) # sum(len(o.token_ids) for o in response[0].outputs)
         self.token_count_log.append({"in": num_prompt_tokens, "out": num_generated_tokens})
