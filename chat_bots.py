@@ -60,7 +60,7 @@ class VllmChatBot:
 
     def add_iteration_results(self):
         results = {
-            "prediction": self.get_last_response()
+            "prediction": self.get_last_response(),
             "metrics": {
                 "bleu": 0,
                 "sari": 0,
@@ -69,7 +69,7 @@ class VllmChatBot:
                 "out_tokens": self.total_token_counts["out"],
             }
         }
-        
+
         self.iteration_results.append(results)
 
     ### Getters
