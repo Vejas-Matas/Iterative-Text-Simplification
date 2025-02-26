@@ -5,6 +5,7 @@ import json
 import torch
 
 class VllmChatBot:
+    ### Setup
     def __init__(self, model_name):
         self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1) # Make this nicer !!!
         self.clear()
@@ -12,9 +13,11 @@ class VllmChatBot:
     def clear(self):
         self.chat_log = []
         self.token_count_log = []
-        self.total_token_counts= {"in": 0, "out": 0}
+        self.total_token_counts = {"in": 0, "out": 0}
+        self.iteration_results = []
 
 
+    ### Chat
     def add_system_prompt(self, prompt):
         self.chat_log.append({"role": "system", "content": prompt})
     
@@ -46,6 +49,7 @@ class VllmChatBot:
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
         self.increment_token_usage(response)
 
+    ### Internal variable updates
     def increment_token_usage(self, response):
         num_prompt_tokens = len(response[0].prompt_token_ids)
         num_generated_tokens = len(response[0].outputs[0].token_ids) # sum(len(o.token_ids) for o in response[0].outputs)
@@ -54,12 +58,31 @@ class VllmChatBot:
         self.total_token_counts["in"] += num_prompt_tokens
         self.total_token_counts["out"] += num_generated_tokens
 
+    def add_iteration_results(self):
+        results = {
+            "prediction": self.get_last_response()
+            "metrics": {
+                "bleu": 0,
+                "sari": 0,
+                "fkgl": 0,
+                "in_tokens": self.total_token_counts["in"],
+                "out_tokens": self.total_token_counts["out"],
+            }
+        }
+        
+        self.iteration_results.append(results)
+
+    ### Getters
     def get_last_response(self):
         return self.chat_log[-1]["content"]
 
     def get_total_token_usage(self):
         return self.total_token_counts.copy()
     
+    def get_iteration_results(self):
+        return self.iteration_results.copy()
+
+    ### Saving / displaying results
     def print_chat(self):
         for message in self.chat_log:
             role = message["role"].upper()
