@@ -11,12 +11,6 @@ import plotting
 # Rewrite to class?
 dataset = dataset_utils.read_dataset()
 
-# I MIGHT BE ABLE TO MOVE THIS TO chatbots.py
-def get_iteration_metrics(chat_bot):
-    # Metrics
-    # Token metrics
-    # Iteration number?
-
 # def simplify_passage_iteratively(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
 def simplify_passage_iteratively(chat_bot, algorithm_parameters, max_iter=20):
     for _ in range(max_iter):
