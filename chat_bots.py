@@ -58,7 +58,7 @@ class VllmChatBot:
         return self.chat_log[-1]["content"]
 
     def get_total_token_usage(self):
-        return self.total_token_usage.copy()
+        return self.total_token_counts.copy()
     
     def print_chat(self):
         for message in self.chat_log:
