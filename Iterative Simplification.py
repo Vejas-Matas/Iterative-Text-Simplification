@@ -131,7 +131,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
 
 passages_to_simplify = None
-passage_type_to_simplify = "sentence"
+passage_type_to_simplify = "abstract"
 
 simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
