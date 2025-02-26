@@ -7,8 +7,13 @@ import torch
 class VllmChatBot:
     def __init__(self, model_name):
         self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1) # Make this nicer !!!
+        self.clear()
+    
+    def clear(self):
         self.chat_log = []
-        self.token_counts = []
+        self.token_count_log = []
+        self.total_token_counts= {"in": 0, "out": 0}
+
 
     def add_system_prompt(self, prompt):
         self.chat_log.append({"role": "system", "content": prompt})
@@ -20,11 +25,7 @@ class VllmChatBot:
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
-
-        num_prompt_tokens = len(response[0].prompt_token_ids)
-        num_generated_tokens = len(response[0].outputs[0].token_ids) # sum(len(o.token_ids) for o in response[0].outputs)
-        self.token_counts.append({"in": num_prompt_tokens, "out": num_generated_tokens})
-        # self.token_counts.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].usage.generated_tokens)})
+        self.increment_token_usage(response)
 
     def send_limited_context_prompt(self, prompt, context_message_count=None):
         self.chat_log.append({"role": "user", "content": prompt}) 
@@ -43,20 +44,21 @@ class VllmChatBot:
             sampling_params=vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
         )
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
+        self.increment_token_usage(response)
 
+    def increment_token_usage(response):
         num_prompt_tokens = len(response[0].prompt_token_ids)
         num_generated_tokens = len(response[0].outputs[0].token_ids) # sum(len(o.token_ids) for o in response[0].outputs)
-        self.token_counts.append({"in": num_prompt_tokens, "out": num_generated_tokens})
-        # self.token_counts.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].usage.generated_tokens)})
+        self.token_count_log.append({"in": num_prompt_tokens, "out": num_generated_tokens})
+        # self.token_count_log.append({"in": len(response[0].prompt_token_ids), "out": len(response[0].usage.generated_tokens)})
+        self.total_token_counts["in"] += num_prompt_tokens
+        self.total_token_counts["out"] += num_generated_tokens
 
     def get_last_response(self):
         return self.chat_log[-1]["content"]
 
-    def get_token_usage(self):
-        return {
-            "in": sum([counts["in"] for counts in self.token_counts]),
-            "out": sum([counts["out"] for counts in self.token_counts])
-        }
+    def get_total_token_usage(self):
+        return self.total_token_usage.copy()
     
     def print_chat(self):
         for message in self.chat_log:
@@ -65,7 +67,7 @@ class VllmChatBot:
             print(f"{role}: {content}", end="\n\n")
 
     def print_token_usage_log(self):
-        for entry in self.token_counts:
+        for entry in self.token_count_log:
             print("IN = " + str(entry["in"]) + ", OUT = " + str(entry["out"]))
 
     def save_chat(self):
@@ -74,11 +76,8 @@ class VllmChatBot:
         with open(file_name, "w") as file:
             json.dump(self.chat_log, file, indent=2)
 
-    def clear(self):
-        self.chat_log = []
-        self.token_counts = []
 
-
+# Outdated
 class OpenAIChatBot:
     def __init__(self, model_name, api_key):
         self.client = openai.OpenAI(api_key=api_key)

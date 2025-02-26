@@ -89,10 +89,6 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     results = []
     token_usage = []
 
-    # chat_bot = chat_bots.OpenAIChatBot(
-    #     model=parameters.openai_model,
-    #     api_key=parameters.openai_api_key,
-    # )
     chat_bot = chat_bots.VllmChatBot(
         model_name=parameters.vllm_model,
     )
@@ -101,7 +97,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
         prediction = algorithm_fn(chat_bot, system_prompt, algorithm_parameters, sources[i], max_iter)
         # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
-        token_usage.append(chat_bot.get_token_usage())
+        token_usage.append(chat_bot.get_total_token_usage())
 
         predictions.append(prediction)
         results.append({
@@ -115,9 +111,6 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
         chat_bot.clear()
 
-    # overall_metrics = compute_metrics(sources, predictions, references)
-    # return (overall_metrics, results)
-
 
     overall_metrics = {
         "in_tokens": sum([counts["in"] for counts in token_usage]),
@@ -125,16 +118,15 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     }
 
     file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
-    # file_io_utils.convert_dict_to_json(f"dummy_metrics.json", overall_metrics)
 
     return (results, overall_metrics)
 
 
-passages_to_simplify = None
+passages_to_simplify = 10
 passage_type_to_simplify = "abstract"
 
-simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+# simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
-plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
+# plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
