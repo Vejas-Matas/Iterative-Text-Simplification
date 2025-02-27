@@ -95,10 +95,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         chat_bot.add_system_prompt(source)
         chat_bot.add_iteration_results()
 
-        print("INITIAL:" + chat_bot.get_last_response())
-        print("CHAT SO FAR:")
-        chat_bot.print_chat()
-        # Add an entry for iteration zero ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        print("INITIAL:" + chat_bot.get_iteration_results())
         
         ### Simplify
         algorithm_fn(chat_bot, algorithm_parameters, max_iter)
@@ -123,8 +120,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
-# simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 # plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
