@@ -29,11 +29,15 @@ def simplify_passage_iteratively(chat_bot, algorithm_parameters, max_iter=20):
             chat_bot.send_limited_context_prompt("Accept the proposed simplification. Print the updated version of the passage, do not print anything else")
             # chat_bot.send_prompt("If needed, adjust the passage to maintain readabily and flow of text")
 
-        # chat_bot.add_iteration_results()
+        # Check if the model ran out of tokens, return last's iteration's result
+        if chat_bot.get_last_response() == "":
+            return
+        
+        chat_bot.add_iteration_results()
 
-    chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
-
-    return chat_bot.get_last_response()
+    # chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
+    # return chat_bot.get_last_response()
+    return
 
 # def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
 def simplify_passage_iteratively_condensed(chat_bot, algorithm_parameters, max_iter=20):
@@ -71,9 +75,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["DC"]).lower().replace(" ", "_")
     results_file_name = f"algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}_timestamp={timestamp}"
 
-    predictions = []
     results = []
-    token_usage = []
 
     chat_bot = chat_bots.VllmChatBot(
         model_name=parameters.vllm_model,
@@ -84,52 +86,34 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         ### Initialise
         chat_bot.clear()
     
-        passage = sources[i]
+        source = sources[i]
         chat_bot.add_system_prompt(system_prompt)
-        chat_bot.add_system_prompt(f"The passage:\n{passage}")
+        chat_bot.add_system_prompt(f"The passage:\n{source}")
 
         if algorithm_parameters is not None and algorithm_parameters != {}:
             chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
 
         ### Simplify
-        # prediction = algorithm_fn(chat_bot, system_prompt, algorithm_parameters, passage, max_iter)
-        prediction = algorithm_fn(chat_bot, algorithm_parameters, max_iter)
+        algorithm_fn(chat_bot, algorithm_parameters, max_iter)
 
         ### Collect intermediary results
-        # metrics = compute_metrics([sources[i]], [prediction], [references[i]])
-        token_usage.append(chat_bot.get_total_token_usage())
-        predictions.append(prediction)
-        results.append({
-            "source": sources[i],
-            "prediction": prediction,
-            "reference": references[i],
-            # "metrics": metrics,
-        })
+        iteration_results = cat_bot.get_iteration_results()
+        prediction = iteration_results[-1]["prediction"]
+        results.append(iteration_results)
 
         ### Save / display results
         # chat_bot.print_chat()
         # chat_bot.save_chat()
-        chat_bot.print_token_usage_log()
-
-        ############################
-        if prediction == "":
-            chat_bot.save_chat()
-        ############################
+        # chat_bot.print_token_usage_log()
 
         file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
 
-    ### Overall results / metrics
-    overall_metrics = {
-        "in_tokens": sum([counts["in"] for counts in token_usage]),
-        "out_tokens": sum([counts["out"] for counts in token_usage])
-    }
+    file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}.json", results)
 
-    file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}_metrics.json", overall_metrics)
-
-    return (results, overall_metrics)
+    return results
 
 
-passages_to_simplify = None
+passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
 simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
