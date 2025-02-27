@@ -1,0 +1,1302 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nTherefore, it sends alarms autonomously when  this paper we :[84],\"explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs irrespective of location or time and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "system",
+    "content": "DC: Average person\nILT: Medium-High"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are the phrase \"when  this paper we :[84]\" and the sentence structure with multiple functionalities. The phrase \"[84]\" is likely a reference number but is unclear. The sentence structure is complex due to the multiple functionalities listed. The complexity of the passage is around 5.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper we :[84]"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs irrespective of location or time and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned AINGERU's three main functionalities in a specific order, which is now lost. The severity of this information loss is High. Additionally, the phrase \"we :[84]\" is completely lost, which is also a High severity loss. The original passage provided context for the number [84], which is now lost, causing a Medium-High severity loss. Overall, the information loss is significant, with a total severity of 2.5 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs irrespective of location or time and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The sentence is still somewhat complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex. The complexity has decreased since the last iteration."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "universal assistance anywhere and at any time"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "universal assistance anywhere"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere, monitoring of vital signs irrespective of location or time and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned \"at any time\" as part of the universal assistance, which is now lost. The severity of this information loss is Medium. Additionally, the original passage provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage also provided context for the phrase \"we :[84]\", which is now lost, causing a High severity loss. Overall, the information loss is moderate, with a total severity of 1.25 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs irrespective of location or time and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"monitoring of vital signs irrespective of location or time\" is a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4 on a scale of 1-10, where 1 is very simple and 10 is very complex. The complexity has decreased since the last iteration."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "monitoring of vital signs irrespective of location or time"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "monitoring of vital signs"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned \"irrespective of location or time\" as part of the vital signs monitoring, which is now lost. The severity of this information loss is Low. Additionally, the original passage provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage also mentioned the three functionalities in a specific order, which is now lost, causing a Medium severity loss. Overall, the information loss is moderate, with a total severity of 0.67 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs irrespective of location or time, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"monitoring of vital signs irrespective of location or time\" is a complex phrase due to its length and specificity. The phrase \"universal assistance anywhere and at any time\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "monitoring of vital signs irrespective of location or time"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "monitoring of vital signs anywhere"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned \"irrespective of location or time\" as part of the vital signs monitoring, which is now lost. The severity of this information loss is Medium. Additionally, the original passage provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage also had a specific order for the three functionalities, which is now lost, causing a Low severity loss. Overall, the information loss is moderate, with a total severity of 0.83 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "universal assistance anywhere and at any time"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "universal assistance anywhere"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned \"at any time\" as part of the universal assistance, which is now lost. The severity of this information loss is Low. Additionally, the original passage provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage also had a specific order for the three functionalities, which is now lost, causing a Medium severity loss. Overall, the information loss is moderate, with a total severity of 0.83 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper we"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned the context of the paper, which is now lost. The severity of this information loss is High. The original passage also provided the reference number [84], which is now lost, causing a High severity loss. The original passage provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. Overall, the information loss is significant, with a total severity of 1.5 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "remote monitoring"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned the specific details of remote monitoring, which is now lost. The severity of this information loss is Medium. The original passage also provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage mentioned the context of the paper, which is now lost, causing a High severity loss. Overall, the information loss is moderate, with a total severity of 1.33 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "monitoring of vital signs anywhere"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "monitoring of vital signs"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned the specific location aspect of vital signs monitoring, which is now lost. The severity of this information loss is Medium. The original passage provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage also mentioned the context of the paper, which is now lost, causing a High severity loss. Overall, the information loss is moderate, with a total severity of 1.33 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper we"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper we"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned the context of the paper, which is now lost. The severity of this information loss is High. The original passage also provided a reference number [84], which is now lost, causing a High severity loss. The original passage provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. Overall, the information loss is significant, with a total severity of 2 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "allowing authorized external persons to consult data about monitored persons using the Internet"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "allowing external persons to consult data about monitored persons"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring allowing external persons to consult data about monitored persons."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned the specific detail of using the Internet for data consultation, which is now lost. The severity of this information loss is Medium. The original passage also provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage mentioned the context of the paper, which is now lost, causing a High severity loss. Overall, the information loss is moderate, with a total severity of 1.33 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the three main functionalities offered by AINGERU"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "three main functionalities of AINGERU"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities of AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned the specific phrase \"explain the three main functionalities\", which is now lost. The severity of this information loss is Low. The original passage also provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage mentioned the context of the paper, which is now lost, causing a High severity loss. Overall, the information loss is moderate, with a total severity of 1 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper we explain the three main functionalities offered by AINGERU"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "when this paper explains AINGERU's three main functionalities"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper explains AINGERU's three main functionalities: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned the specific phrase \"explain the three main functionalities\", which is now lost. The severity of this information loss is Low. The original passage also provided a more detailed description of AINGERU's functionalities, which is now lost, causing a Low severity loss. The original passage mentioned the context of the paper, which is now lost, causing a High severity loss. Overall, the information loss is moderate, with a total severity of 1 out of 3."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper we explain the three main functionalities offered by AINGERU: universal assistance anywhere and at any time, monitoring of vital signs anywhere, and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is the sentence structure with multiple functionalities listed. The phrase \"universal assistance anywhere and at any time\" is a complex phrase due to its length and specificity. The phrase \"monitoring of vital signs anywhere\" is also a complex phrase due to its length and specificity. The sentence is complex due to the multiple functionalities listed. The complexity of the passage is around 4.5 on a scale of 1-10, where 1 is very simple and 10 is very complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "we explain the three main functionalities offered by AINGERU"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "explain AINGERU's three main functionalities"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Therefore, it sends alarms autonomously when this paper explain AINGERU's three main functionalities: universal assistance anywhere and at any time, monitoring of vital"
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  }
+]

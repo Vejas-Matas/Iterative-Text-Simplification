@@ -1,0 +1,1302 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "The passage:\nUsing a mixed-methods approach including content analysis and discourse analysis, we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "system",
+    "content": "DC: Average person\nILT: Medium-High"
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"Using a mixed-methods approach\"\n- \"content analysis and discourse analysis\"\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7.5 on a 1-10 scale, where 1 is very simple and 10 is extremely complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a mixed-methods approach including content analysis and discourse analysis"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis)"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"mixed-methods approach including content analysis and discourse analysis\", which has been simplified to \"a combination of two research methods (content and discourse analysis)\". This results in a loss of precision and detail.\n\nSeverity of information loss: High (4/5), as the simplified version lacks the nuance and specificity of the original phrase.\n\nILT constraint: Medium-High (3/5), which is higher than the severity of information loss, so this change is rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "4\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"types of conspiracy theories that appeared on Reddit\"\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 6.5 on a 1-10 scale, where 1 is very simple and 10 is extremely complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the conditions under which Zika conspiracy theories emerge"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the conditions that lead to Zika conspiracy theories"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions that lead to Zika conspiracy theories, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the conditions under which Zika conspiracy theories emerge\", which has been simplified to \"the conditions that lead to Zika conspiracy theories\". This results in a loss of precision and nuance.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some detail.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the particular discursive strategies through which Zika conspiracy theories developed in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the strategies used by Zika conspiracy theories in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the strategies used by Zika conspiracy theories in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\", which has been simplified to \"the strategies used by Zika conspiracy theories in online forums\". This results in a loss of precision and detail regarding the nature of the strategies.\n\nSeverity of information loss: High (4/5), as the simplified version lacks the nuance and specificity of the original phrase.\n\nILT constraint: Medium-High (3/5), which is lower than the severity of information loss, so this change is rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "4\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the particular discursive strategies through which Zika conspiracy theories developed in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the ways in which Zika conspiracy theories spread in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the ways in which Zika conspiracy theories spread in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\", which has been simplified to \"the ways in which Zika conspiracy theories spread in online forums\". This results in a loss of precision and detail regarding the nature of the strategies.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the particular discursive strategies through which Zika conspiracy theories developed in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the ways in which Zika conspiracy theories spread in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the ways in which Zika conspiracy theories spread in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\", which has been simplified to \"the ways in which Zika conspiracy theories spread in online forums\". This results in a loss of precision and detail regarding the nature of the strategies.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the conditions under which Zika conspiracy theories emerge"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the factors that lead to Zika conspiracy theories"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the factors that lead to Zika conspiracy theories, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the conditions under which Zika conspiracy theories emerge\", which has been simplified to \"the factors that lead to Zika conspiracy theories\". This results in a loss of precision and detail regarding the specific conditions.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the particular discursive strategies through which Zika conspiracy theories developed in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the ways in which Zika conspiracy theories spread in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the ways in which Zika conspiracy theories spread in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\", which has been simplified to \"the ways in which Zika conspiracy theories spread in online forums\". This results in a loss of precision and detail regarding the nature of the strategies.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex. \n\n Determined complexity is still higher than DC (Average person), so the algorithm continues."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the conditions under which Zika conspiracy theories emerge"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the factors that contribute to Zika conspiracy theories"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the factors that contribute to Zika conspiracy theories, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the conditions under which Zika conspiracy theories emerge\", which has been simplified to \"the factors that contribute to Zika conspiracy theories\". This results in a loss of precision and detail regarding the specific conditions.\n\nSeverity of information loss: High (4/5), as the simplified version conveys a more general idea.\n\nILT constraint: Medium-High (3/5), which is lower than the severity of information loss, so this change is rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "4\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex. \n\n Determined complexity is still higher than DC (Average person), so the algorithm continues."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the particular discursive strategies through which Zika conspiracy theories developed in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the ways in which Zika conspiracy theories spread in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the ways in which Zika conspiracy theories spread in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\", which has been simplified to \"the ways in which Zika conspiracy theories spread in online forums\". This results in a loss of precision and detail regarding the nature of the strategies.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7 on a 1-10 scale, where 1 is very simple and 10 is extremely complex. \n\n Determined complexity is still higher than DC (Average person), so the algorithm continues."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the particular discursive strategies through which Zika conspiracy theories developed in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the ways in which Zika conspiracy theories spread in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the ways in which Zika conspiracy theories spread in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\", which has been simplified to \"the ways in which Zika conspiracy theories spread in online forums\". This results in a loss of precision and detail regarding the nature of the strategies.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the particular discursive strategies through which Zika conspiracy theories developed in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n- \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\"\n\nThe complexity level of the passage is approximately 7.2 on a 1-10 scale, where 1 is very simple and 10 is extremely complex. \n\n Determined complexity is still higher than DC (Average person), so the algorithm continues."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the particular discursive strategies through which Zika conspiracy theories developed in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the strategies used by Zika conspiracy theories in online forums"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the strategies used by Zika conspiracy theories in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the particular discursive strategies through which Zika conspiracy theories developed in online forums\", which has been simplified to \"the strategies used by Zika conspiracy theories in online forums\". This results in a loss of precision and detail regarding the nature of the strategies.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the strategies used by Zika conspiracy theories in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the passage are:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n\nThe complexity level of the passage is approximately 6 on a 1-10 scale, where 1 is very simple and 10 is extremely complex. \n\n Determined complexity is still higher than DC (Average person), so the algorithm continues."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the conditions under which Zika conspiracy theories emerge"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "the factors that contribute to Zika conspiracy theories"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the factors that contribute to Zika conspiracy theories, and the strategies used by Zika conspiracy theories in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the conditions under which Zika conspiracy theories emerge\", which has been simplified to \"the factors that contribute to Zika conspiracy theories\". This results in a loss of precision and detail regarding the specific conditions.\n\nSeverity of information loss: Medium (3/5), as the simplified version conveys the general idea but lacks some nuance.\n\nILT constraint: Medium-High (3/5), which is equal to the severity of information loss, so this change is accepted."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "3\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, the conditions under which Zika conspiracy theories emerge, and the strategies used by Zika conspiracy theories in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the passage is:\n\n- \"the conditions under which Zika conspiracy theories emerge\"\n\nThe complexity level of the passage is approximately 6 on a 1-10 scale, where 1 is very simple and 10 is extremely complex. \n\n Determined complexity is still higher than DC (Average person), so the algorithm continues."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "the conditions under which Zika conspiracy theories emerge"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "how Zika conspiracy theories spread"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods (content and discourse analysis), we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, how Zika conspiracy theories spread, and the strategies used by Zika conspiracy theories in online forums."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"the conditions under which Zika conspiracy theories emerge\", which has been simplified to \"how Zika conspiracy theories spread\". This results in a loss of precision and detail regarding the specific conditions.\n\nSeverity of information loss: High (4/5), as the simplified version conveys a very general idea.\n\nILT constraint: Medium-High (3/5), which is lower than the severity of information loss, so this change is rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "4\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Using a combination of two research methods ("
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  }
+]
