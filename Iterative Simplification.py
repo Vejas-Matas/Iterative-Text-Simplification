@@ -83,15 +83,21 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     for i in range(len(sources)):
         ### Initialise
         chat_bot.clear()
+        chat_bot.add_system_prompt(system_prompt)
 
         if algorithm_parameters is not None and algorithm_parameters != {}:
-            chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
+            algorithm_string = "\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items())
+            chat_bot.add_system_prompt(f"Algorithm parameters are as follows.\n{algorithm_string}\n\nThe passage is provided in the following message")
+        else:
+            chat_bot.add_system_prompt(f"The passage is provided in the following message")
 
         source = sources[i]
-        chat_bot.add_system_prompt(system_prompt)
-        chat_bot.add_system_prompt(f"The passage:\n{source}")
+        chat_bot.add_system_prompt(source)
+        chat_bot.add_iteration_results()
 
-        print("LAST RESPONSE:" + chat_bot.get_last_response())
+        print("INITIAL:" + chat_bot.get_last_response())
+        print("CHAT SO FAR:")
+        chat_bot.print_chat()
         # Add an entry for iteration zero ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
         
         ### Simplify
