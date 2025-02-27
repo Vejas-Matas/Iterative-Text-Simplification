@@ -95,7 +95,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         chat_bot.add_system_prompt(source)
         chat_bot.add_iteration_results()
 
-        print("INITIAL:" + chat_bot.get_iteration_results())
+        print("INITIAL:" + str(chat_bot.get_iteration_results()))
         
         ### Simplify
         algorithm_fn(chat_bot, algorithm_parameters, max_iter)
