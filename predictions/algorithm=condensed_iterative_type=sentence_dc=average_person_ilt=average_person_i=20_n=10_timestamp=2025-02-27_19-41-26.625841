@@ -1,0 +1,10 @@
+In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.
+With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.
+Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.
+In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.
+Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.
+our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning, using a specific model architecture.
+The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.
+Permissions were obtained. Minimal risk (to pedestrians) is involved in the data collection process.
+We collected extensive data from drones and were able to avoid crashes and stay on course with an accuracy of 98.44%.
+The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.
