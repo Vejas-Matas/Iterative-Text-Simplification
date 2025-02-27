@@ -29,15 +29,11 @@ def simplify_passage_iteratively(chat_bot, algorithm_parameters, max_iter=20):
             chat_bot.send_limited_context_prompt("Accept the proposed simplification. Print the updated version of the passage, do not print anything else")
             # chat_bot.send_prompt("If needed, adjust the passage to maintain readabily and flow of text")
 
-        # Check if the model ran out of tokens, return last's iteration's result
+        # Check if the model ran out of tokens, if so, ignore this iteration and terminate
         if chat_bot.get_last_response() == "":
             return
         
         chat_bot.add_iteration_results()
-
-    # chat_bot.send_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
-    # return chat_bot.get_last_response()
-    return
 
 # def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
 def simplify_passage_iteratively_condensed(chat_bot, algorithm_parameters, max_iter=20):
@@ -53,12 +49,14 @@ def simplify_passage_iteratively_condensed(chat_bot, algorithm_parameters, max_i
             chat_bot.send_limited_context_prompt("Accept the proposed simplification. Print the updated version of the passage, do not print anything else", 9)
         #     chat_bot.send_limited_context_prompt("If needed, adjust the passage to maintain readabily and flow of text")
 
-        # chat_bot.add_iteration_results()
+        # Check if the model ran out of tokens, if so, ignore this iteration and terminate
+        if chat_bot.get_last_response() == "":
+            return
+        
+        chat_bot.add_iteration_results()
 
-    # Try None and numbers
-    chat_bot.send_limited_context_prompt("Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", None)
-    
-    return chat_bot.get_last_response()
+def simplify_passage_non_iteratively(chat_bot, algorithm_parameters, max_iter=0):
+    chat_bot.send_prompt("Simplify the provided passage. Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", None)
 
 
 
@@ -85,14 +83,17 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     for i in range(len(sources)):
         ### Initialise
         chat_bot.clear()
-    
-        source = sources[i]
-        chat_bot.add_system_prompt(system_prompt)
-        chat_bot.add_system_prompt(f"The passage:\n{source}")
 
         if algorithm_parameters is not None and algorithm_parameters != {}:
             chat_bot.add_system_prompt("\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items()))
 
+        source = sources[i]
+        chat_bot.add_system_prompt(system_prompt)
+        chat_bot.add_system_prompt(f"The passage:\n{source}")
+
+        print("LAST RESPONSE:" + chat_bot.get_last_response())
+        # Add an entry for iteration zero ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        
         ### Simplify
         algorithm_fn(chat_bot, algorithm_parameters, max_iter)
 
@@ -108,7 +109,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
         file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
 
-    file_io_utils.convert_dict_to_json(f"metrics/{results_file_name}.json", results)
+    file_io_utils.convert_dict_to_json(f"evaluations/{results_file_name}.json", results)
 
     return results
 
@@ -116,8 +117,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 
-simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("non_iterative", simplify_passage_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+# simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+# simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 # plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
