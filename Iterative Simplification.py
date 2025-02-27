@@ -97,7 +97,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         algorithm_fn(chat_bot, algorithm_parameters, max_iter)
 
         ### Collect intermediary results
-        iteration_results = cat_bot.get_iteration_results()
+        iteration_results = chat_bot.get_iteration_results()
         prediction = iteration_results[-1]["prediction"]
         results.append(iteration_results)
 
