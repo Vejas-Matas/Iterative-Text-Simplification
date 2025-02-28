@@ -1,0 +1,262 @@
+[
+  [
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+      "metrics": {
+        "sari": 9.839973496960793,
+        "bleu": 14.051676978912429,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are being researched by both academics and industries.",
+      "metrics": {
+        "sari": 21.847707847707852,
+        "bleu": 4.553719184146073,
+        "fkgl": 14.040000000000003,
+        "in_tokens": 4819,
+        "out_tokens": 286
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 9.17143246187364,
+        "bleu": 15.356865413172349,
+        "fkgl": 18.277500000000007,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Drones used in both personal and business settings, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 28.339798726861293,
+        "bleu": 4.780204393760627,
+        "fkgl": 10.580952380952379,
+        "in_tokens": 4837,
+        "out_tokens": 270
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 20.187097822213836,
+        "bleu": 41.58468660054065,
+        "fkgl": 15.51727272727273,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 13.418803418803419,
+        "bleu": 24.455861610699284,
+        "fkgl": 18.612972972972972,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose a computer-based learning method to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 31.220937942905906,
+        "bleu": 26.259038903696133,
+        "fkgl": 17.10529411764706,
+        "in_tokens": 4791,
+        "out_tokens": 260
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose a computer-based learning method to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 31.220937942905906,
+        "bleu": 26.259038903696133,
+        "fkgl": 17.10529411764706,
+        "in_tokens": 13792,
+        "out_tokens": 514
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose a computer-based learning method to driving by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 42.331921166759564,
+        "bleu": 30.096870722978444,
+        "fkgl": 13.872857142857146,
+        "in_tokens": 27287,
+        "out_tokens": 782
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose a computer-based learning method to driving by learning to fly by copying a skilled pilot.",
+      "metrics": {
+        "sari": 31.636085067347835,
+        "bleu": 11.295714543953919,
+        "fkgl": 13.030000000000005,
+        "in_tokens": 45051,
+        "out_tokens": 1037
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 9.165100804326121,
+        "bleu": 10.947127056200989,
+        "fkgl": 19.48,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.360275357102292,
+        "bleu": 12.970344345415759,
+        "fkgl": 18.493529411764708,
+        "in_tokens": 5506,
+        "out_tokens": 381
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.360275357102292,
+        "bleu": 12.970344345415759,
+        "fkgl": 18.493529411764708,
+        "in_tokens": 15663,
+        "out_tokens": 652
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 34.041796088647764,
+        "bleu": 18.696425994936554,
+        "fkgl": 18.3769696969697,
+        "in_tokens": 30317,
+        "out_tokens": 921
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 49364,
+        "out_tokens": 1176
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 72875,
+        "out_tokens": 1465
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 100913,
+        "out_tokens": 1723
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 133324,
+        "out_tokens": 1971
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 170086,
+        "out_tokens": 2225
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 211238,
+        "out_tokens": 2488
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 256823,
+        "out_tokens": 2746
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 306713,
+        "out_tokens": 3000
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 360978,
+        "out_tokens": 3258
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 419525,
+        "out_tokens": 3506
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 28.097492530244324,
+        "bleu": 17.06885782679538,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 482435,
+        "out_tokens": 3764
+      }
+    }
+  ]
+]

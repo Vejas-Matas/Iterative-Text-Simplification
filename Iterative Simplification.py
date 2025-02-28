@@ -56,7 +56,7 @@ def simplify_passage_iteratively_condensed(chat_bot, algorithm_parameters, max_i
         chat_bot.add_iteration_results()
 
 def simplify_passage_non_iteratively(chat_bot, algorithm_parameters, max_iter=0):
-    chat_bot.send_prompt("Simplify the provided passage. Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage", None)
+    chat_bot.send_prompt("Simplify the provided passage. Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
 
 
 
@@ -118,16 +118,16 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     return results
 
 
-passages_to_simplify = None
-# passage_type_to_simplify = "sentence"
+passages_to_simplify = 5
+passage_type_to_simplify = "sentence"
 
-# simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
-for passage_type_to_simplify in ["sentence", "abstract"]:
-    simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+#for passage_type_to_simplify in ["sentence", "abstract"]:
+#    simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+#    simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+#    simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 # plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
