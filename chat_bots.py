@@ -70,7 +70,7 @@ class VllmChatBot:
             "metrics": {
                 "sari": easse.sari.corpus_sari(sys_sents=[prediction], refs_sents=[self.references], orig_sents=self.sources),
                 "bleu": easse.bleu.corpus_bleu(sys_sents=[prediction], refs_sents=[self.references]),
-                "fkgl": easse.fgkl.corpus_fkgl(sentences=[prediction]),
+                "fkgl": easse.fkgl.corpus_fkgl(sentences=[prediction]),
                 "in_tokens": self.total_token_counts["in"],
                 "out_tokens": self.total_token_counts["out"],
             }
