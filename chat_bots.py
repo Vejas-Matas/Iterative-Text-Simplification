@@ -3,6 +3,7 @@ import vllm
 import datetime
 import json
 import torch
+import easse
 
 class VllmChatBot:
     ### Setup
@@ -15,6 +16,8 @@ class VllmChatBot:
         self.token_count_log = []
         self.total_token_counts = {"in": 0, "out": 0}
         self.iteration_results = []
+        self.sources = []
+        self.references = []
 
 
     ### Chat
@@ -59,12 +62,13 @@ class VllmChatBot:
         self.total_token_counts["out"] += num_generated_tokens
 
     def add_iteration_results(self):
+        prediction = self.get_last_response()
         results = {
-            "prediction": self.get_last_response(),
+            "prediction": prediction,
             "metrics": {
-                "bleu": 0,
-                "sari": 0,
-                "fkgl": 0,
+                "sari": easse.sari.corpus_sari(sys_sents=[prediction], refs_sents=[self.references], orig_sents=self.sources),
+                "bleu": easse.bleu.corpus_bleu(sys_sents=[prediction], refs_sents=[self.references]),
+                "fkgl": easse.fgkl.corpus_fkgl(sentences=[prediction]),
                 "in_tokens": self.total_token_counts["in"],
                 "out_tokens": self.total_token_counts["out"],
             }

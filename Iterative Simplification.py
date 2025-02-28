@@ -92,6 +92,9 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
             chat_bot.add_system_prompt(f"The passage is provided in the following message")
 
         source = sources[i]
+        chat_bot.sources.append(source)
+        chat_bot.references.append(references[i])
+
         chat_bot.add_system_prompt(source)
         chat_bot.add_iteration_results()
         
