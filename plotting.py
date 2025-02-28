@@ -17,18 +17,20 @@ def make_token_usage_graphs(timedelta=datetime.timedelta(minutes=1)):
 
         with open(file_name, encoding="utf8") as file:
             contents = json.load(file)
-            token_usage_data[algorithm_name] = contents # This overwrites things if there are multiple files with the same algorithm name
+            token_usage_data[file_name] = contents
+            # token_usage_data[algorithm_name] = contents # This overwrites things if there are multiple files with the same algorithm name
 
     algorithms, token_counts = restructure_token_data(token_usage_data)
     graph_token_usage(algorithms, token_counts)
 
 def get_recent_metrics_files(timedelta):
     timestamp_from = datetime.datetime.now() - timedelta
-    files = glob.glob("./metrics/*.json")
+    files = glob.glob("./evaluations/*.json")
     files_to_keep = []
 
     for file_name in files:
-        re_match = re.search(r"timestamp=([\d\-_.]+)_metrics.json", file_name)
+        # re_match = re.search(r"timestamp=([\d\-_.]+)_metrics.json", file_name)
+        re_match = re.search(r"timestamp=([\d\-_.]+)_algorithm", file_name)
         timestamp_string = re_match.group(1)
         timestamp = datetime.datetime.strptime(timestamp_string, "%Y-%m-%d_%H-%M-%S.%f")
 
