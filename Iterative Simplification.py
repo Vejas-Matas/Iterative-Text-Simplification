@@ -71,7 +71,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["DC"]).lower().replace(" ", "_")
-    results_file_name = f"algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}_timestamp={timestamp}"
+    results_file_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}"
 
     results = []
 
@@ -94,8 +94,6 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         source = sources[i]
         chat_bot.add_system_prompt(source)
         chat_bot.add_iteration_results()
-
-        print("INITIAL:" + str(chat_bot.get_iteration_results()))
         
         ### Simplify
         algorithm_fn(chat_bot, algorithm_parameters, max_iter)
@@ -117,11 +115,11 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     return results
 
 
-passages_to_simplify = 10
+passages_to_simplify = None
 passage_type_to_simplify = "sentence"
 
-# simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 # plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
