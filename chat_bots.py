@@ -3,7 +3,9 @@ import vllm
 import datetime
 import json
 import torch
-import easse
+import easse.sari
+import easse.bleu
+import easse.fkgl
 
 class VllmChatBot:
     ### Setup
