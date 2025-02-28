@@ -18,11 +18,11 @@ FILES=("${F1}" "${F2}" "${F3}")
 # done
 
 echo ${F1}
-easse ${COMMAND} -p "graphs/reports/${F1}" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F1}"
+easse ${COMMAND} -p "graphs/reports/${F1}.html" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F1}"
 echo ${F2}
-easse ${COMMAND} -p "graphs/reports/${F2}" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F2}"
+easse ${COMMAND} -p "graphs/reports/${F2}.html" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F2}"
 echo ${F3}
-easse ${COMMAND} -p "graphs/reports/${F3}" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F3}"
+easse ${COMMAND} -p "graphs/reports/${F3}.html" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F3}"
 
 
 
@@ -37,11 +37,11 @@ FILES=("${F1}" "${F2}" "${F3}")
 
 # Execute the command on each file path
 echo ${F1}
-easse ${COMMAND} -p "graphs/reports/${F1}" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F1}"
+easse ${COMMAND} -p "graphs/reports/${F1}.html" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F1}"
 echo ${F2}
-easse ${COMMAND} -p "graphs/reports/${F2}" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F2}"
+easse ${COMMAND} -p "graphs/reports/${F2}.html" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F2}"
 echo ${F3}
-easse ${COMMAND} -p "graphs/reports/${F3}" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F3}"
+easse ${COMMAND} -p "graphs/reports/${F3}.html" -t custom --refs_sents_paths "dataset/simpletext_lines/${PASSAGE_TYPE}_train_references${PASSAGE_COUNT_SUFFIX}.txt" --orig_sents_path "dataset/simpletext_lines/${PASSAGE_TYPE}_train_sources${PASSAGE_COUNT_SUFFIX}.txt" --sys_sents_path "./predictions/${F3}"
 
 
 # easse evaluate -q -t custom --refs_sents_paths "dataset/simpletext_lines/sentence_train_references_50.txt" --orig_sents_path "dataset/simpletext_lines/sentence_train_sources_50.txt" --sys_sents_path "predictions/${PREDICTION_FILE_NAME}"
