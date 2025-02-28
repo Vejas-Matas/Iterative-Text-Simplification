@@ -1,0 +1,5 @@
+In the modern era of automation and robotics, autonomous vehicles are being researched by both academics and industries.
+Drones used in both personal and business settings, there is an increased need for autonomy in these systems too.
+Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.
+In an attempt to achieve the above mentioned tasks, we propose a computer-based learning method to driving by learning to fly by copying a skilled pilot.
+Derived from the classic image classification algorithms, our classifier has been built using a fast 39-layered Inception model, that evaluates the presence of roads using tomographic reconstructions of the input frames.
