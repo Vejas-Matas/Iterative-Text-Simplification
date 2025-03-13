@@ -1,0 +1,662 @@
+[
+  [
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+      "metrics": {
+        "sari": 9.839973496960793,
+        "bleu": 14.051676978912429,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are being researched by both academics and industries.",
+      "metrics": {
+        "sari": 21.847707847707852,
+        "bleu": 4.553719184146073,
+        "fkgl": 14.040000000000003,
+        "in_tokens": 4264,
+        "out_tokens": 168
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are being researched by both academics and industries.",
+      "metrics": {
+        "sari": 21.847707847707852,
+        "bleu": 4.553719184146073,
+        "fkgl": 14.040000000000003,
+        "in_tokens": 11940,
+        "out_tokens": 318
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, autonomous vehicles are being researched by both academics and industries.",
+      "metrics": {
+        "sari": 28.55851138109203,
+        "bleu": 5.10809933294318,
+        "fkgl": 13.063333333333333,
+        "in_tokens": 23004,
+        "out_tokens": 453
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, autonomous vehicles are being researched by both academics and companies.",
+      "metrics": {
+        "sari": 28.55851138109203,
+        "bleu": 5.10809933294318,
+        "fkgl": 13.063333333333333,
+        "in_tokens": 37312,
+        "out_tokens": 596
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, autonomous vehicles are being researched by both academics and companies.",
+      "metrics": {
+        "sari": 28.55851138109203,
+        "bleu": 5.10809933294318,
+        "fkgl": 13.063333333333333,
+        "in_tokens": 54888,
+        "out_tokens": 732
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, autonomous vehicles are being researched by both academics and companies.",
+      "metrics": {
+        "sari": 28.55851138109203,
+        "bleu": 5.10809933294318,
+        "fkgl": 13.063333333333333,
+        "in_tokens": 75791,
+        "out_tokens": 862
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, autonomous vehicles are being researched by both academics and companies.",
+      "metrics": {
+        "sari": 28.55851138109203,
+        "bleu": 5.10809933294318,
+        "fkgl": 13.063333333333333,
+        "in_tokens": 99971,
+        "out_tokens": 991
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, autonomous vehicles studied by both academics and companies.",
+      "metrics": {
+        "sari": 30.46398620222224,
+        "bleu": 5.816635421147515,
+        "fkgl": 12.775000000000002,
+        "in_tokens": 127465,
+        "out_tokens": 1130
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, self-driving cars studied by both academics and companies.",
+      "metrics": {
+        "sari": 27.584321631878556,
+        "bleu": 2.908317710573757,
+        "fkgl": 10.562500000000004,
+        "in_tokens": 158186,
+        "out_tokens": 1265
+      }
+    },
+    {
+      "prediction": "In the modern era of automation, self-driving cars studied by both academics and companies.",
+      "metrics": {
+        "sari": 27.584321631878556,
+        "bleu": 2.908317710573757,
+        "fkgl": 10.562500000000004,
+        "in_tokens": 192168,
+        "out_tokens": 1403
+      }
+    },
+    {
+      "prediction": "In the modern era, self-driving cars studied by both academics and companies.",
+      "metrics": {
+        "sari": 30.650623885918005,
+        "bleu": 3.377156414337854,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 229451,
+        "out_tokens": 1527
+      }
+    },
+    {
+      "prediction": "In the modern era, self-driving cars studied by both academics and companies.",
+      "metrics": {
+        "sari": 30.650623885918005,
+        "bleu": 3.377156414337854,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 269871,
+        "out_tokens": 1652
+      }
+    },
+    {
+      "prediction": "In the present era, self-driving cars studied by both academics and companies.",
+      "metrics": {
+        "sari": 32.63227513227513,
+        "bleu": 3.377156414337854,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 313537,
+        "out_tokens": 1776
+      }
+    },
+    {
+      "prediction": "In the present era, self-driving cars studied by both academics and companies.",
+      "metrics": {
+        "sari": 32.63227513227513,
+        "bleu": 3.377156414337854,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 360385,
+        "out_tokens": 1910
+      }
+    },
+    {
+      "prediction": "In the present era, self-driving cars studied by academics and businesses.",
+      "metrics": {
+        "sari": 32.63227513227513,
+        "bleu": 3.673526562988939,
+        "fkgl": 9.44923076923077,
+        "in_tokens": 410526,
+        "out_tokens": 2043
+      }
+    },
+    {
+      "prediction": "In the present era, self-driving cars studied by academics and businesses.",
+      "metrics": {
+        "sari": 32.63227513227513,
+        "bleu": 3.673526562988939,
+        "fkgl": 9.44923076923077,
+        "in_tokens": 463890,
+        "out_tokens": 2173
+      }
+    },
+    {
+      "prediction": "In the present era, self-driving cars studied by academics and businesses.",
+      "metrics": {
+        "sari": 32.63227513227513,
+        "bleu": 3.673526562988939,
+        "fkgl": 9.44923076923077,
+        "in_tokens": 520493,
+        "out_tokens": 2288
+      }
+    },
+    {
+      "prediction": "In the present era, self-driving cars studied by academics and businesses.",
+      "metrics": {
+        "sari": 32.63227513227513,
+        "bleu": 3.673526562988939,
+        "fkgl": 9.44923076923077,
+        "in_tokens": 580285,
+        "out_tokens": 2412
+      }
+    },
+    {
+      "prediction": "In the present era, self-driving cars studied by academics and businesses.",
+      "metrics": {
+        "sari": 32.63227513227513,
+        "bleu": 3.673526562988939,
+        "fkgl": 9.44923076923077,
+        "in_tokens": 643345,
+        "out_tokens": 2542
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 9.17143246187364,
+        "bleu": 15.356865413172349,
+        "fkgl": 18.277500000000007,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "With the ever increasing number of aerial vehicles being used in civilian and commercial activities, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 24.553728097845745,
+        "bleu": 7.02969566273961,
+        "fkgl": 15.98,
+        "in_tokens": 4636,
+        "out_tokens": 259
+      }
+    },
+    {
+      "prediction": "With more aerial vehicles are being used in civilian and commercial activities, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 31.116293760350022,
+        "bleu": 7.929026506841378,
+        "fkgl": 13.984000000000002,
+        "in_tokens": 13299,
+        "out_tokens": 506
+      }
+    },
+    {
+      "prediction": "With more aerial vehicles are being used in civilian and commercial activities, a need for autonomy in these systems.",
+      "metrics": {
+        "sari": 39.31536639519833,
+        "bleu": 9.560408787521254,
+        "fkgl": 12.828571428571426,
+        "in_tokens": 26016,
+        "out_tokens": 731
+      }
+    },
+    {
+      "prediction": "With more aerial vehicles are being used in civilian and commercial activities, a need for autonomy in these systems.",
+      "metrics": {
+        "sari": 39.31536639519833,
+        "bleu": 9.560408787521254,
+        "fkgl": 12.828571428571426,
+        "in_tokens": 42732,
+        "out_tokens": 970
+      }
+    },
+    {
+      "prediction": "With more aerial vehicles are used in civilian and commercial sectors, a need for autonomy in these systems.",
+      "metrics": {
+        "sari": 39.79682849383965,
+        "bleu": 10.079037376973913,
+        "fkgl": 11.68,
+        "in_tokens": 63711,
+        "out_tokens": 1267
+      }
+    },
+    {
+      "prediction": "With more aerial vehicles are used in civilian and commercial sectors, a need for autonomy.",
+      "metrics": {
+        "sari": 44.4673536340203,
+        "bleu": 12.03921753741131,
+        "fkgl": 11.169411764705881,
+        "in_tokens": 88874,
+        "out_tokens": 1423
+      }
+    },
+    {
+      "prediction": "With aerial vehicles are used in many sectors, a need for autonomy.",
+      "metrics": {
+        "sari": 35.48857719174782,
+        "bleu": 6.191082705295718,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 117796,
+        "out_tokens": 1717
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 20.187097822213836,
+        "bleu": 41.58468660054065,
+        "fkgl": 15.51727272727273,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Due to guidelines set by governments regarding drone operation limits, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 30.772387334887338,
+        "bleu": 22.622583725445715,
+        "fkgl": 15.030000000000001,
+        "in_tokens": 4509,
+        "out_tokens": 234
+      }
+    },
+    {
+      "prediction": "Due to guidelines set by governments regarding drone operation limits, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 30.772387334887338,
+        "bleu": 22.622583725445715,
+        "fkgl": 15.030000000000001,
+        "in_tokens": 12896,
+        "out_tokens": 440
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 36.753010429001385,
+        "bleu": 21.341038930353758,
+        "fkgl": 16.028235294117646,
+        "in_tokens": 25185,
+        "out_tokens": 652
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 36.753010429001385,
+        "bleu": 21.341038930353758,
+        "fkgl": 16.028235294117646,
+        "in_tokens": 41321,
+        "out_tokens": 864
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road-tracking navigation is garnering interest.",
+      "metrics": {
+        "sari": 26.46024969127436,
+        "bleu": 6.857061569910705,
+        "fkgl": 15.725000000000005,
+        "in_tokens": 61370,
+        "out_tokens": 1066
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road-tracking navigation is garnering interest.",
+      "metrics": {
+        "sari": 26.46024969127436,
+        "bleu": 6.857061569910705,
+        "fkgl": 15.725000000000005,
+        "in_tokens": 85209,
+        "out_tokens": 1279
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road-tracking navigation is garnering interest.",
+      "metrics": {
+        "sari": 26.46024969127436,
+        "bleu": 6.857061569910705,
+        "fkgl": 15.725000000000005,
+        "in_tokens": 113044,
+        "out_tokens": 1509
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road-tracking navigation is garnering interest.",
+      "metrics": {
+        "sari": 26.46024969127436,
+        "bleu": 6.857061569910705,
+        "fkgl": 15.725000000000005,
+        "in_tokens": 144969,
+        "out_tokens": 1740
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road-tracking navigation is garnering interest.",
+      "metrics": {
+        "sari": 26.46024969127436,
+        "bleu": 6.857061569910705,
+        "fkgl": 15.725000000000005,
+        "in_tokens": 180954,
+        "out_tokens": 1956
+      }
+    },
+    {
+      "prediction": "Due to regulations from governments regarding drone operation limits, road tracking is garnering interest.",
+      "metrics": {
+        "sari": 23.814916291394784,
+        "bleu": 4.7898920568856385,
+        "fkgl": 12.775000000000002,
+        "in_tokens": 220861,
+        "out_tokens": 2153
+      }
+    },
+    {
+      "prediction": "Due to government regulations regarding drone operation limits, road tracking is garnering interest.",
+      "metrics": {
+        "sari": 23.724912078583557,
+        "bleu": 4.735536667911913,
+        "fkgl": 13.073333333333338,
+        "in_tokens": 264518,
+        "out_tokens": 2363
+      }
+    },
+    {
+      "prediction": "Due to government regulations regarding drone operation limits, road tracking is garnering interest.",
+      "metrics": {
+        "sari": 23.724912078583557,
+        "bleu": 4.735536667911913,
+        "fkgl": 13.073333333333338,
+        "in_tokens": 312017,
+        "out_tokens": 2575
+      }
+    },
+    {
+      "prediction": "Due to government regulations regarding drone operation limits, road tracking is garnering interest.",
+      "metrics": {
+        "sari": 23.724912078583557,
+        "bleu": 4.735536667911913,
+        "fkgl": 13.073333333333338,
+        "in_tokens": 363458,
+        "out_tokens": 2786
+      }
+    },
+    {
+      "prediction": "Due to government regulations regarding drone operation limits, tracking is garnering interest.",
+      "metrics": {
+        "sari": 23.724912078583557,
+        "bleu": 4.652458072580844,
+        "fkgl": 13.470000000000002,
+        "in_tokens": 418776,
+        "out_tokens": 2978
+      }
+    },
+    {
+      "prediction": "Due to regulations regarding drone operation limits, tracking is garnering interest.",
+      "metrics": {
+        "sari": 23.724912078583557,
+        "bleu": 4.534086576963962,
+        "fkgl": 12.172307692307694,
+        "in_tokens": 477801,
+        "out_tokens": 3182
+      }
+    },
+    {
+      "prediction": "Due to regulations regarding drone operation limits, tracking is garnering interest.",
+      "metrics": {
+        "sari": 23.724912078583557,
+        "bleu": 4.534086576963962,
+        "fkgl": 12.172307692307694,
+        "in_tokens": 540628,
+        "out_tokens": 3389
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 13.418803418803419,
+        "bleu": 24.455861610699284,
+        "fkgl": 18.612972972972972,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 10.336160299395592,
+        "bleu": 9.831781143765888,
+        "fkgl": 17.10529411764706,
+        "in_tokens": 5005,
+        "out_tokens": 300
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 14.175383191629303,
+        "bleu": 9.63699593939329,
+        "fkgl": 17.452352941176475,
+        "in_tokens": 14232,
+        "out_tokens": 561
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 17.345931928623866,
+        "bleu": 9.94331256564067,
+        "fkgl": 16.94666666666667,
+        "in_tokens": 27693,
+        "out_tokens": 822
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 17.345931928623866,
+        "bleu": 9.94331256564067,
+        "fkgl": 16.94666666666667,
+        "in_tokens": 45403,
+        "out_tokens": 1087
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 17.345931928623866,
+        "bleu": 9.94331256564067,
+        "fkgl": 16.94666666666667,
+        "in_tokens": 67483,
+        "out_tokens": 1348
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 17.345931928623866,
+        "bleu": 9.94331256564067,
+        "fkgl": 16.94666666666667,
+        "in_tokens": 93857,
+        "out_tokens": 1595
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we suggest an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 20.321562153711096,
+        "bleu": 9.729352789771998,
+        "fkgl": 16.94666666666667,
+        "in_tokens": 124444,
+        "out_tokens": 1843
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we suggest an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 20.321562153711096,
+        "bleu": 9.729352789771998,
+        "fkgl": 16.94666666666667,
+        "in_tokens": 159205,
+        "out_tokens": 2102
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we suggest an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 20.321562153711096,
+        "bleu": 9.729352789771998,
+        "fkgl": 16.94666666666667,
+        "in_tokens": 198282,
+        "out_tokens": 2359
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve these tasks, we suggest an imitation learning, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 26.95711502300581,
+        "bleu": 10.389889377420037,
+        "fkgl": 15.532258064516128,
+        "in_tokens": 241622,
+        "out_tokens": 2605
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve these tasks, we suggest an imitation solution, computer-based solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 28.15554466351027,
+        "bleu": 10.389889377420037,
+        "fkgl": 15.912903225806453,
+        "in_tokens": 289074,
+        "out_tokens": 2851
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve these tasks, we suggest an imitation solution, computer solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 28.15554466351027,
+        "bleu": 10.389889377420037,
+        "fkgl": 15.151612903225807,
+        "in_tokens": 340635,
+        "out_tokens": 3095
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve these tasks, we suggest an imitation solution, computer solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 28.15554466351027,
+        "bleu": 10.389889377420037,
+        "fkgl": 15.151612903225807,
+        "in_tokens": 396320,
+        "out_tokens": 3346
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve these tasks, we suggest an imitation solution, computer solution to UAV autonomy for navigating through city streets by learning from an expert pilot.",
+      "metrics": {
+        "sari": 28.15554466351027,
+        "bleu": 10.389889377420037,
+        "fkgl": 15.151612903225807,
+        "in_tokens": 456300,
+        "out_tokens": 3607
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 9.165100804326121,
+        "bleu": 10.947127056200989,
+        "fkgl": 19.48,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in a fast Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 25.24194028953994,
+        "bleu": 12.970344345415759,
+        "fkgl": 18.840588235294117,
+        "in_tokens": 4489,
+        "out_tokens": 239
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in a fast Inception model, that evaluates the presence of roads using the tomographic reconstructions of the frames.",
+      "metrics": {
+        "sari": 28.425264550264547,
+        "bleu": 13.382613080002837,
+        "fkgl": 18.3769696969697,
+        "in_tokens": 12993,
+        "out_tokens": 466
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in a fast Inception model, that evaluates the presence of roads using the tomographic reconstructions of the frames.",
+      "metrics": {
+        "sari": 28.425264550264547,
+        "bleu": 13.382613080002837,
+        "fkgl": 18.3769696969697,
+        "in_tokens": 25448,
+        "out_tokens": 689
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in a fast Inception model, that evaluates the presence of roads using the frames.",
+      "metrics": {
+        "sari": 31.60263241305441,
+        "bleu": 14.234121842188829,
+        "fkgl": 15.657931034482761,
+        "in_tokens": 41901,
+        "out_tokens": 898
+      }
+    }
+  ]
+]
