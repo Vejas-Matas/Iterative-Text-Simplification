@@ -42,6 +42,16 @@ sampling_params = SamplingParams(max_tokens=1000)  # Adjust as needed
 
 # passage = "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves."
 dc = "university student"
-prompt = f'Provide an equivalent FKGL score for the following type of reader: <{dc}>. Your answer must be a floating point number with two decimal points such as "12.34", or "None" input is not appropriate. You must not include anything else in your answer'
-response = llm.generate([prompt], sampling_params)[0].outputs[0].text
+# Examples taken form https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/
+prompts = [
+    """Here are references for FKGL score ranges (score range : school level : example book):
+0 - 3 : Kindergarten / Elementary : Hooray for Fish!
+3 - 6 : Elementary : The Gruffalo
+6 - 9 : Middle School : Harry Potter
+9 - 12 : High School : Jurassic Park
+12 - 15 : College : A Brief History of Time
+17 - 20 : Post-grad : Academic Papers""",
+    f'What is an equivalent FKGL score for the following type of reader: <{dc}>. Only provide a floating point number with two decimal points such as "12.34", or "None" input is not appropriate. Do not include anything else in your answer',
+]
+response = llm.generate(prompts, sampling_params)[0].outputs[0].text
 print(response)
