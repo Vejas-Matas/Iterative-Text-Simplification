@@ -55,4 +55,4 @@ prompts = [
     f'What is an equivalent FKGL score for the following type of reader: <{dc}>. Only provide a floating point number with two decimal points such as "12.34", or "None" input is not appropriate. Do not include anything else in your answer',
 ]
 response = llm.generate(prompts, sampling_params)[0].outputs[0].text
-print(response)
+print("\n\n\n[ " + response + "]\n\n\n")
