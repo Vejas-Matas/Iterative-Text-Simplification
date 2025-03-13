@@ -44,6 +44,7 @@ sampling_params = SamplingParams(max_tokens=1000)  # Adjust as needed
 dc = "university student"
 # Examples taken form https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/
 prompts = [
+    "You are a helpful assistant that completes language tasks and provides output that is very strictly formatted and easy to parse for other machines",
     """Here are references for FKGL score ranges (score range : school level : example book):
 0 - 3 : Kindergarten / Elementary : Hooray for Fish!
 3 - 6 : Elementary : The Gruffalo
