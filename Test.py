@@ -2,10 +2,13 @@ from vllm import LLM, SamplingParams
 import torch
 
 # Initialize LLaMa model with vLLM
-llm = LLM(model="hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4", max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1)  # Use your specific model
+model_name = "meta-llama/Llama-3.1-8B-Instruct"
+llm = LLM(model=model_name, max_model_len=30)  # Use your specific model
+# model_name = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
+# llm = LLM(model=model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1)  # Use your specific model
 
 # Define sampling parameters
-sampling_params = SamplingParams(max_tokens=1000)  # Adjust as needed
+sampling_params = SamplingParams(max_tokens=10)  # Adjust as needed
 
 # # Example list of chat-based tasks
 # tasks = [
