@@ -1,7 +1,7 @@
 from vllm import LLM, SamplingParams
 
 # Initialize LLaMa model with vLLM
-llm = LLM(model="hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4")  # Use your specific model
+llm = LLM(model="hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4", max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1)  # Use your specific model
 
 # Define sampling parameters
 sampling_params = SamplingParams(max_tokens=100)  # Adjust as needed
