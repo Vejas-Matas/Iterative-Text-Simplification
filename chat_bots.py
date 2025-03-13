@@ -88,6 +88,9 @@ class VllmChatBot:
     def get_iteration_results(self):
         return self.iteration_results.copy()
 
+    def get_latest_fkgl(self):
+        return self.iteration_results[-1]["metrics"]["fkgl"]
+
     ### Saving / displaying results
     def print_chat(self):
         for message in self.chat_log:
