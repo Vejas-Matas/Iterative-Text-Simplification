@@ -15,8 +15,11 @@ dataset = dataset_utils.read_dataset()
 def simplify_passage_iteratively(chat_bot, algorithm_parameters, max_iter=20):
     for _ in range(max_iter):
         # chat_bot.send_prompt("Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences")
-        chat_bot.send_prompt(f"FKGL score of the the latest passage version is {chat_bot.get_latest_fkgl()}")
-        chat_bot.send_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})? Answer "Yes" or "No"')
+        # chat_bot.send_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"')
+        
+        # # Add prompting to convert DC to DC (FKGL), alternatively, add it to algorithm_parameters
+        chat_bot.send_prompt("Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences")
+        chat_bot.send_prompt(f'FKGL score of the the latest passage version is {chat_bot.get_latest_fkgl()}. Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"')
         if "NO" in chat_bot.get_last_response().upper():
             break
         chat_bot.send_prompt(f'Identify a single complicated section of the passage. Remember to respect the ILT ({algorithm_parameters["ILT"]}) contraint. Only provide the identified section')
@@ -39,7 +42,7 @@ def simplify_passage_iteratively(chat_bot, algorithm_parameters, max_iter=20):
 # def simplify_passage_iteratively_condensed(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
 def simplify_passage_iteratively_condensed(chat_bot, algorithm_parameters, max_iter=20):
     for _ in range(max_iter):
-        chat_bot.send_limited_context_prompt(f'Identify which parts of the passage are the most complex. Based on this information, identify the complexity of the passage. Is determined complexity higher than DC ({algorithm_parameters["DC"]})? Answer "Yes" or "No"', 3)
+        chat_bot.send_limited_context_prompt(f'FKGL score of the the latest passage version is {chat_bot.get_latest_fkgl()}. Identify which parts of the passage are the most complex. Based on this information, identify the complexity of the passage. Is determined complexity higher than DC ({algorithm_parameters["DC"]})? Answer "Yes" or "No"', 3)
         if "NO" in chat_bot.get_last_response().upper():
             break
         chat_bot.send_limited_context_prompt(f'Identify a single complicated section of the passage. Simplify this section, and remember to respect the ILT ({algorithm_parameters["ILT"]}) contraint. Reincorporate the simplified section into the passage. Only provide the reincorporated version', 5)
