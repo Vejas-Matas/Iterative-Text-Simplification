@@ -111,8 +111,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         results.append(iteration_results)
 
         ### Save / display results
-        chat_bot.print_chat()
-        chat_bot.save_chat()
+        # chat_bot.print_chat()
+        # chat_bot.save_chat()
         # chat_bot.print_token_usage_log()
 
         file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)

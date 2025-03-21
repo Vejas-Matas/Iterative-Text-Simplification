@@ -19,7 +19,7 @@ def read_dataset():
                 file_name = f"simpletext_task3_2024_{data_type}_{passage_length}_{passage_type}.json"
                 path = folder + file_name
 
-                print("Reading: " + path)
+                # print("Reading: " + path)
                 with open(path, "r", encoding="utf8") as file:
                     data = json.load(file)
                 
