@@ -134,13 +134,21 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
         fact_comparison = chat_bot.send_no_context_prompts(fact_comparison_prompts)
 
-        print(100*"#")
-        print(100*"–")
-        print(source_facts)
-        print(100*"–")
-        print(prediction_facts)
-        print(100*"/")
-        print(fact_comparison)
+        fact_comparison_path = "./runs/fact_comparisons.txt"
+        file_io_utils.append_to_txt(fact_comparison_path, 100*"#")
+        file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
+        file_io_utils.append_to_txt(fact_comparison_path, source_facts)
+        file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
+        file_io_utils.append_to_txt(fact_comparison_path, prediction_facts)
+        file_io_utils.append_to_txt(fact_comparison_path, 100*"/")
+        file_io_utils.append_to_txt(fact_comparison_path, fact_comparison)
+        # print(100*"#")
+        # print(100*"–")
+        # print(source_facts)
+        # print(100*"–")
+        # print(prediction_facts)
+        # print(100*"/")
+        # print(fact_comparison)
 
         #############################################################################################################################################################
 
