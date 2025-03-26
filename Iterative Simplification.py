@@ -8,9 +8,6 @@ import chat_bots
 import parameters
 import plotting
 
-# Rewrite to class?
-dataset = dataset_utils.read_dataset()
-
 # def simplify_passage_iteratively(chat_bot, system_prompt, algorithm_parameters, passage, max_iter=20):
 def simplify_passage_iteratively(chat_bot, algorithm_parameters, max_iter=20):
     for _ in range(max_iter):
@@ -116,6 +113,36 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         # chat_bot.print_token_usage_log()
 
         file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
+
+
+
+        ################################################################## TESTING FACT EXTRACTION ##################################################################
+
+        fact_extraction_prompts = [
+            {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit. Provide these units as a numbered list, do not include any other text besides the list"},
+            {"role": "user",   "content": "Extract information units from the following passage"},
+        ]
+
+        source_facts = model.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
+        prediction_facts = model.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
+
+        fact_comparison_prompts = [
+            {"role": "system", "content": "You take lists of information, and treat them as mathematical sets. Then you provide three lists: elements present only in the first set (\"LOST: \"), only in the second one (\"ADDED: \"), and in the intesection (\"KEPT: \")"},
+            {"role": "user",   "content": f"First list:\n"{source_facts}},
+            {"role": "user",   "content": f"Second list:\n"{prediction_facts}},
+        ]
+
+        fact_comparison = model.send_no_context_prompts(fact_comparison_prompts)
+
+        print(100*"#")
+        print(100*"–")
+        print(source_facts)
+        print(100*"–")
+        print(prediction_facts)
+        print(100*"/")
+        print(fact_comparison)
+
+        #############################################################################################################################################################
 
     file_io_utils.convert_dict_to_json(f"evaluations/{results_file_name}.json", results)
 
