@@ -3,12 +3,12 @@ import torch
 
 # Initialize LLaMa model with vLLM
 model_name = "meta-llama/Llama-3.1-8B-Instruct"
-llm = LLM(model=model_name, max_model_len=30)  # Use your specific model
+llm = LLM(model=model_name, max_model_len=1000)  # Use your specific model
 # model_name = "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4"
 # llm = LLM(model=model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1)  # Use your specific model
 
 # Define sampling parameters
-sampling_params = SamplingParams(max_tokens=10)  # Adjust as needed
+sampling_params = SamplingParams(max_tokens=1000)  # Adjust as needed
 
 # # Example list of chat-based tasks
 # tasks = [
@@ -45,7 +45,7 @@ sampling_params = SamplingParams(max_tokens=10)  # Adjust as needed
 
 
 passage = "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves."
-passage = "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research."
+# passage = "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research."
 dc = "university student"
 
 
