@@ -100,7 +100,11 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         chat_bot.add_iteration_results()
         
         ### Simplify
-        algorithm_fn(chat_bot, algorithm_parameters, max_iter)
+        try:
+            algorithm_fn(chat_bot, algorithm_parameters, max_iter)
+        except ValueError:
+            # Model ran out tokens, so just use the last iteration
+            pass
 
         ### Collect intermediary results
         iteration_results = chat_bot.get_iteration_results()
