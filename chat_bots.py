@@ -58,7 +58,7 @@ class VllmChatBot:
     def send_no_context_prompts(self, prompts):
         response = self.model.chat(
             messages=prompts,
-            sampling_params=sampling_parameters,
+            sampling_params=self.sampling_parameters,
         )
         return response[0].outputs[0].text
 
