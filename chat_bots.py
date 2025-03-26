@@ -55,7 +55,7 @@ class VllmChatBot:
         self.chat_log.append({"role": "assistant", "content": response[0].outputs[0].text})
         self.increment_token_usage(response)
 
-    def send_no_context_prompt(self, prompts):
+    def send_no_context_prompts(self, prompts):
         response = self.model.chat(
             messages=prompts,
             sampling_params=sampling_parameters,
@@ -98,7 +98,7 @@ class VllmChatBot:
 
     def get_latest_fkgl(self):
         fkgl = self.iteration_results[-1]["metrics"]["fkgl"]
-        return f"{fkgl.2f}"
+        return fkgl # f"{fkgl.2f}"
 
     ### Saving / displaying results
     def print_chat(self):
