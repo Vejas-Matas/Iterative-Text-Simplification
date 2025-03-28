@@ -122,13 +122,13 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
         ################################################################## TESTING FACT EXTRACTION ##################################################################
 
-        # fact_extraction_prompts = [
-        #     {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit. Provide these units as a numbered list, do not include any other text besides the list"},
-        #     {"role": "user",   "content": "Extract information units from the following passage"},
-        # ]
+        fact_extraction_prompts = [
+            {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit. Provide these units as a numbered list, do not include any other text besides the list"},
+            {"role": "user",   "content": "Extract information units from the following passage"},
+        ]
 
-        # source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
-        # prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
+        source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
+        prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
 
         # # VERSION 1: NO PAST MEMORY
         # fact_comparison_prompts = [
