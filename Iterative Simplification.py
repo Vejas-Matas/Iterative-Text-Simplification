@@ -156,6 +156,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
             {"role": "user",        "content": prediction},
             {"role": "user",        "content": "Analyse the data and provide the three lists: ADDED, KEPT, DELETED"},
         ]
+        source_facts = ""
+        prediction_facts = ""
 
         fact_comparison = chat_bot.send_no_context_prompts(fact_comparison_prompts)
 
