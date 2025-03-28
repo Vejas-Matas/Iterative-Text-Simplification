@@ -130,13 +130,30 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
         prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
 
+        # # VERSION 1: NO PAST MEMORY
+        # fact_comparison_prompts = [
+        #     {"role": "system", "content": "You take lists of information, and treat them as mathematical sets. Then you provide three lists: elements present only in the first set (\"LOST: \"), only in the second one (\"ADDED: \"), and in the intesection (\"KEPT: \")"},
+        #     {"role": "user",   "content": f"First list:\n{source_facts}"},
+        #     {"role": "user",   "content": f"Second list:\n{prediction_facts}"},
+        # ]
+
+        # VERSION 2: PAST MEMORY
         fact_comparison_prompts = [
-            {"role": "system", "content": "You take lists of information, and treat them as mathematical sets. Then you provide three lists: elements present only in the first set (\"LOST: \"), only in the second one (\"ADDED: \"), and in the intesection (\"KEPT: \")"},
-            {"role": "user",   "content": f"First list:\n{source_facts}"},
-            {"role": "user",   "content": f"Second list:\n{prediction_facts}"},
+            {"role": "system",      "content": """You take two lists – extracted information from an original text and it's simplified version. Then you compare them as if they were mathematical sets. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both, in the set intersection), and "DELETED" (present only in the second list)."""},
+            {"role": "user",        "content": "Extract information units from the following passage"},
+            {"role": "assistant",   "content": source_facts},
+            {"role": "user",        "content": "Extract information units from the following passage"},
+            {"role": "assistant",   "content": prediction_facts},
+            {"role": "user",        "content": "Analyse the data and provide the three lists: ADDED, KEPT, DELETED"},
         ]
 
+        # VERSION 3: DIRECT COMPARISON
+
+
         fact_comparison = chat_bot.send_no_context_prompts(fact_comparison_prompts)
+
+
+
 
         fact_comparison_path = "./runs/fact_comparisons.txt"
         file_io_utils.append_to_txt(fact_comparison_path, 100*"#")
