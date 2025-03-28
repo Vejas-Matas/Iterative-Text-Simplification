@@ -122,13 +122,13 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
         ################################################################## TESTING FACT EXTRACTION ##################################################################
 
-        # fact_extraction_prompts = [
-        #     {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit. Provide these units as a numbered list, do not include any other text besides the list"},
-        #     {"role": "user",   "content": "Extract information units from the following passage"},
-        # ]
+        fact_extraction_prompts = [
+            {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
+            {"role": "user",   "content": "Extract information units from the following passage"},
+        ]
 
-        # source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
-        # prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
+        source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
+        prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
 
         # # VERSION 1: NO PAST MEMORY
         # fact_comparison_prompts = [
@@ -137,27 +137,27 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         #     {"role": "user",   "content": f"Second list:\n{prediction_facts}"},
         # ]
 
-        # # VERSION 2: PAST MEMORY
-        # fact_comparison_prompts = [
-        #     {"role": "system",      "content": """You take two lists – extracted information from an original text and its simplified version. Then you compare them as if they were mathematical sets. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both, in the set intersection), and "DELETED" (present only in the second list)."""},
-        #     {"role": "user",        "content": "Extract information units from the following passage"},
-        #     {"role": "user",        "content": source},
-        #     {"role": "assistant",   "content": source_facts},
-        #     {"role": "user",        "content": "Extract information units from the following passage"},
-        #     {"role": "user",        "content": prediction},
-        #     {"role": "assistant",   "content": prediction_facts},
-        #     {"role": "user",        "content": "Analyse the data and provide the three lists: ADDED, KEPT, DELETED"},
-        # ]
-
-        # VERSION 3: DIRECT COMPARISON
+        # VERSION 2: PAST MEMORY
         fact_comparison_prompts = [
-            {"role": "system",      "content": """You take two passages – an original text and its simplified version. Then you extract atomic knowledge units from both, and compare them as mathematical sets. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both, in the set intersection), and "DELETED" (present only in the second list)."""},
+            {"role": "system",      "content": """You take two lists – extracted information from an original text and its simplified version. Then you compare them as if they were mathematical sets. Compare the information and not wording – synonyms are consired same information, unless they make the passage more vague. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both lists), and "DELETED" (present only in the second list)"""},
+            {"role": "user",        "content": "Extract information units from the following passage (original)"},
             {"role": "user",        "content": source},
+            {"role": "assistant",   "content": source_facts},
+            {"role": "user",        "content": "Extract information units from the following passage (simplified)"},
             {"role": "user",        "content": prediction},
+            {"role": "assistant",   "content": prediction_facts},
             {"role": "user",        "content": "Analyse the data and provide the three lists: ADDED, KEPT, DELETED"},
         ]
-        source_facts = ""
-        prediction_facts = ""
+
+        # # VERSION 3: DIRECT COMPARISON
+        # fact_comparison_prompts = [
+        #     {"role": "system",      "content": """You take two passages – an original text and its simplified version. Then you extract atomic knowledge units from both, and compare them as mathematical sets. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both, in the set intersection), and "DELETED" (present only in the second list)."""},
+        #     {"role": "user",        "content": source},
+        #     {"role": "user",        "content": prediction},
+        #     {"role": "user",        "content": "Analyse the data and provide the three lists: ADDED, KEPT, DELETED"},
+        # ]
+        # source_facts = ""
+        # prediction_facts = ""
 
         fact_comparison = chat_bot.send_no_context_prompts(fact_comparison_prompts)
 

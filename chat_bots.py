@@ -12,6 +12,7 @@ class VllmChatBot:
     def __init__(self, model_name):
         self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1) # Make this nicer !!!
         self.sampling_parameters = vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
+        self.mini_task_sampling_parameters = ingParams(temperature=0.1, max_tokens=1024), # Make this nicer !!!
         self.clear()
     
     def clear(self):
@@ -58,7 +59,7 @@ class VllmChatBot:
     def send_no_context_prompts(self, prompts):
         response = self.model.chat(
             messages=prompts,
-            sampling_params=self.sampling_parameters,
+            sampling_params=self.mini_task_sampling_parameters,
         )
         return response[0].outputs[0].text
 
