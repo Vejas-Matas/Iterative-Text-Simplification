@@ -1,0 +1,5 @@
+In the modern era of automation and robotics, autonomous vehicles are a major focus of research.
+With the ever increasing number of drones being used in civilian and commercial settings, there is an increased need for autonomy in these systems too.
+Due to guidelines set by the governments regarding the operation ceiling of civil drones, road tracking is getting more attention.
+In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.
+Derived from the classic image classification algorithms, our classifier has been constructed in the form of an Inception model with many layers, that evaluates the presence of roads using specialized image reconstructions.

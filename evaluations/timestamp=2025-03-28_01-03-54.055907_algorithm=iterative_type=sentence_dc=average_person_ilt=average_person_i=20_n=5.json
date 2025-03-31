@@ -1,0 +1,342 @@
+[
+  [
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+      "metrics": {
+        "sari": 9.839973496960793,
+        "bleu": 14.051676978912429,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of industrial and academic research.",
+      "metrics": {
+        "sari": 11.567398119122254,
+        "bleu": 4.968018039415939,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 4729,
+        "out_tokens": 263
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of industrial and academic research.",
+      "metrics": {
+        "sari": 11.567398119122254,
+        "bleu": 4.968018039415939,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 13966,
+        "out_tokens": 526
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of industrial and academic research.",
+      "metrics": {
+        "sari": 11.567398119122254,
+        "bleu": 4.968018039415939,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 27805,
+        "out_tokens": 788
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of industrial and academic research.",
+      "metrics": {
+        "sari": 11.567398119122254,
+        "bleu": 4.968018039415939,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 46146,
+        "out_tokens": 1051
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in both academia and industry.",
+      "metrics": {
+        "sari": 11.471228576491734,
+        "bleu": 4.334264033674369,
+        "fkgl": 15.440869565217394,
+        "in_tokens": 69097,
+        "out_tokens": 1315
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in both academia and industry.",
+      "metrics": {
+        "sari": 11.471228576491734,
+        "bleu": 4.334264033674369,
+        "fkgl": 15.440869565217394,
+        "in_tokens": 96582,
+        "out_tokens": 1586
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in both academic and industrial settings.",
+      "metrics": {
+        "sari": 15.124687063408103,
+        "bleu": 8.282282660969603,
+        "fkgl": 15.895,
+        "in_tokens": 128778,
+        "out_tokens": 1866
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in both academic and industrial settings.",
+      "metrics": {
+        "sari": 15.124687063408103,
+        "bleu": 8.282282660969603,
+        "fkgl": 15.895,
+        "in_tokens": 165559,
+        "out_tokens": 2141
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in both academia and industry.",
+      "metrics": {
+        "sari": 11.471228576491734,
+        "bleu": 4.334264033674369,
+        "fkgl": 15.440869565217394,
+        "in_tokens": 207045,
+        "out_tokens": 2417
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in both academia and industry.",
+      "metrics": {
+        "sari": 11.471228576491734,
+        "bleu": 4.334264033674369,
+        "fkgl": 15.440869565217394,
+        "in_tokens": 253111,
+        "out_tokens": 2691
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in both academic and industrial settings.",
+      "metrics": {
+        "sari": 15.124687063408103,
+        "bleu": 8.282282660969603,
+        "fkgl": 15.895,
+        "in_tokens": 303883,
+        "out_tokens": 2967
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in industry and academia.",
+      "metrics": {
+        "sari": 11.471228576491734,
+        "bleu": 4.546308713404575,
+        "fkgl": 15.51727272727273,
+        "in_tokens": 359394,
+        "out_tokens": 3261
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of research in industry and academia.",
+      "metrics": {
+        "sari": 11.471228576491734,
+        "bleu": 4.546308713404575,
+        "fkgl": 15.51727272727273,
+        "in_tokens": 419619,
+        "out_tokens": 3552
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 9.17143246187364,
+        "bleu": 15.356865413172349,
+        "fkgl": 18.277500000000007,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 20.187097822213836,
+        "bleu": 41.58468660054065,
+        "fkgl": 15.51727272727273,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking navigation is garnering interest.",
+      "metrics": {
+        "sari": 18.48408753581167,
+        "bleu": 31.101473708063242,
+        "fkgl": 15.07619047619048,
+        "in_tokens": 4994,
+        "out_tokens": 262
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 13.418803418803419,
+        "bleu": 24.455861610699284,
+        "fkgl": 18.612972972972972,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose a machine learning-based approach to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 31.805744745853644,
+        "bleu": 26.259038903696133,
+        "fkgl": 16.75823529411765,
+        "in_tokens": 5338,
+        "out_tokens": 316
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 9.165100804326121,
+        "bleu": 10.947127056200989,
+        "fkgl": 19.48,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered neural network model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 11.436076823073725,
+        "bleu": 9.118099089300939,
+        "fkgl": 19.682926829268293,
+        "in_tokens": 4877,
+        "out_tokens": 266
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered neural network model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 11.436076823073725,
+        "bleu": 9.118099089300939,
+        "fkgl": 19.682926829268293,
+        "in_tokens": 14311,
+        "out_tokens": 536
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered neural network model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 11.436076823073725,
+        "bleu": 9.118099089300939,
+        "fkgl": 19.682926829268293,
+        "in_tokens": 28422,
+        "out_tokens": 812
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered neural network model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 11.436076823073725,
+        "bleu": 9.118099089300939,
+        "fkgl": 19.682926829268293,
+        "in_tokens": 47237,
+        "out_tokens": 1087
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 9.165100804326121,
+        "bleu": 10.947127056200989,
+        "fkgl": 19.48,
+        "in_tokens": 70744,
+        "out_tokens": 1358
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 14.174317254812612,
+        "bleu": 11.239306929134699,
+        "fkgl": 19.286666666666665,
+        "in_tokens": 98860,
+        "out_tokens": 1617
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using 3D images of the input frames.",
+      "metrics": {
+        "sari": 19.478884699435554,
+        "bleu": 10.720498932264805,
+        "fkgl": 17.551052631578944,
+        "in_tokens": 131581,
+        "out_tokens": 1892
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using 3D images of the input frames.",
+      "metrics": {
+        "sari": 19.478884699435554,
+        "bleu": 10.720498932264805,
+        "fkgl": 17.551052631578944,
+        "in_tokens": 168900,
+        "out_tokens": 2162
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using 3D images of the input frames.",
+      "metrics": {
+        "sari": 19.478884699435554,
+        "bleu": 10.720498932264805,
+        "fkgl": 17.551052631578944,
+        "in_tokens": 210904,
+        "out_tokens": 2438
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using 3D images of the input frames.",
+      "metrics": {
+        "sari": 19.478884699435554,
+        "bleu": 10.720498932264805,
+        "fkgl": 17.551052631578944,
+        "in_tokens": 257599,
+        "out_tokens": 2708
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using 3D images of the input frames.",
+      "metrics": {
+        "sari": 19.478884699435554,
+        "bleu": 10.720498932264805,
+        "fkgl": 17.551052631578944,
+        "in_tokens": 308959,
+        "out_tokens": 2980
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using images of the input frames.",
+      "metrics": {
+        "sari": 19.478884699435554,
+        "bleu": 11.02278071662516,
+        "fkgl": 17.65621621621621,
+        "in_tokens": 364983,
+        "out_tokens": 3246
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a 39-layered Inception model, that evaluates the presence of roads using images of the input frames.",
+      "metrics": {
+        "sari": 19.478884699435554,
+        "bleu": 11.02278071662516,
+        "fkgl": 17.65621621621621,
+        "in_tokens": 425508,
+        "out_tokens": 3505
+      }
+    }
+  ]
+]

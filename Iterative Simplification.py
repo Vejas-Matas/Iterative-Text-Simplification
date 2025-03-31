@@ -121,7 +121,6 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
 
         ################################################################## TESTING FACT EXTRACTION ##################################################################
-
         fact_extraction_prompts = [
             {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
             {"role": "user",   "content": "Extract information units from the following passage"},

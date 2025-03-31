@@ -1,0 +1,192 @@
+[
+  [
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.). An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 14.26014729998658,
+        "bleu": 24.350590355316577,
+        "fkgl": 20.01109756097561,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be done from the AEGIS App, such as finding the best route, locating nearby firefighting resources, and accessing weather information. An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 22.849436502409173,
+        "bleu": 20.842013033795606,
+        "fkgl": 21.01526086956522,
+        "in_tokens": 7922,
+        "out_tokens": 816
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be done from the AEGIS App, such as finding the best route, locating nearby firefighting resources, and accessing weather information. An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 22.849436502409173,
+        "bleu": 20.842013033795606,
+        "fkgl": 21.01526086956522,
+        "in_tokens": 24292,
+        "out_tokens": 1529
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work presents a new mobile app for managing wildfires, which works on Windows Phone devices and complements the AEGIS web-based platform for wildfire prevention and management. Several tasks can be done from the AEGIS App, such as finding the best route, locating nearby firefighting resources, and accessing weather information. An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 27.173306079162725,
+        "bleu": 17.14330292017272,
+        "fkgl": 19.659590909090912,
+        "in_tokens": 49263,
+        "out_tokens": 2295
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work presents a new mobile app for managing wildfires, which works on Windows Phone devices. Several tasks can be done from the AEGIS App, such as finding the best route, locating nearby firefighting resources, and accessing weather information. An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 25.932724067002237,
+        "bleu": 14.20213560736436,
+        "fkgl": 18.591515151515157,
+        "in_tokens": 82715,
+        "out_tokens": 3020
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work presents a new mobile app for managing wildfires, which works on Windows Phone devices. Several tasks can be done from the AEGIS App, such as finding the best route, locating nearby firefighting resources, and accessing weather information. AEGIS App features a digital assistant that uses artificial intelligence and allows users to access information through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 32.45989128458282,
+        "bleu": 15.144524299587077,
+        "fkgl": 17.37745205479452,
+        "in_tokens": 124139,
+        "out_tokens": 3677
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work presents a new mobile app for managing wildfires, which works on Windows Phone devices. Several tasks can be done from the AEGIS App, such as finding the best route, locating nearby firefighting resources, and accessing weather information. AEGIS App features a digital assistant that uses artificial intelligence and allows users to access information through voice commands. The application will be used by Greek firefighting personnel and is expected to improve information sharing between firefighting units in the field.",
+      "metrics": {
+        "sari": 37.26652047216828,
+        "bleu": 14.99512347997538,
+        "fkgl": 15.615786259541984,
+        "in_tokens": 173170,
+        "out_tokens": 4304
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some of the mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. In view of the application of mobile technology in education, some previous studies have addressed that mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods or strategies in mobile learning activities for different students to enhance learning have gradually become a important and concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 13.178259742064698,
+        "bleu": 20.525448682634867,
+        "fkgl": 18.05802391441158,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four kinds of monitor units were specially designed for a wireless communication, including a control center , a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 16.47034612174896,
+        "bleu": 28.57777613770623,
+        "fkgl": 18.61129562043796,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four types of monitor units were designed for wireless communication: a control center, a local monitor, a PDA, and a web page for patients and doctors. The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 35.409128364246264,
+        "bleu": 35.37615737013429,
+        "fkgl": 17.508191056910565,
+        "in_tokens": 6522,
+        "out_tokens": 543
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As various kinds of output devices emerged, such as highresolution printers or a display of PDA(Personal Digital Assistant), the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses artificial neural network to determine the optimal values of interpolated pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 11.14808485583288,
+        "bleu": 14.034861651674031,
+        "fkgl": 12.585454545454546,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-resolution printers or a display of PDA(Personal Digital Assistant), the importance of high-quality resolution has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses specialized computer algorithm to determine the best values for missing pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 20.530500281828456,
+        "bleu": 13.52760925135689,
+        "fkgl": 12.063807339449543,
+        "in_tokens": 6247,
+        "out_tokens": 506
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 12.589680348081977,
+        "bleu": 19.972071400182724,
+        "fkgl": 13.983304597701153,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In this implementation, colour information is extracted from the image and grouped into categories based on how people see colours. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 20.04926735952327,
+        "bleu": 19.9248038477612,
+        "fkgl": 13.582209302325584,
+        "in_tokens": 7629,
+        "out_tokens": 731
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented in a portable device. In this implementation, colour information is extracted from the image and grouped into categories based on how people see colours. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 20.28585782737072,
+        "bleu": 17.275051424372922,
+        "fkgl": 13.2591265060241,
+        "in_tokens": 23489,
+        "out_tokens": 1448
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented in a portable device. In this implementation, colour information is extracted from the image and grouped into categories based on how people see colours. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 20.28585782737072,
+        "bleu": 17.275051424372922,
+        "fkgl": 13.2591265060241,
+        "in_tokens": 47629,
+        "out_tokens": 2207
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented in a portable device. In this implementation, colour information is extracted from the image and grouped into categories based on how people see colours. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 20.28585782737072,
+        "bleu": 17.275051424372922,
+        "fkgl": 13.2591265060241,
+        "in_tokens": 80296,
+        "out_tokens": 2954
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented in a portable device. In this implementation, colour information is extracted from the image and grouped into categories based on how people see colours. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original version, users could adjust the system, but some features were not added because of technical limitations. We are confident that the full implementation will be possible in the near future as technology improves.",
+      "metrics": {
+        "sari": 32.503374696700604,
+        "bleu": 19.478124374769486,
+        "fkgl": 12.245422185430467,
+        "in_tokens": 121405,
+        "out_tokens": 3678
+      }
+    }
+  ]
+]
