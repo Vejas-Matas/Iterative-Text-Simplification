@@ -161,6 +161,7 @@ DELETED:
 
         fact_extraction_prompts = [
             {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
+            {"role": "system", "content": f"Two examples of of information extraction (desired output are the numbered lists):\n\n{information_extraction_example}"},
             {"role": "user",   "content": "Extract information units from the following passage"},
         ]
 
