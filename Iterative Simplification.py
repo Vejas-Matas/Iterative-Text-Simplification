@@ -121,6 +121,44 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
 
         ################################################################## TESTING FACT EXTRACTION ##################################################################
+        information_extraction_example = """Original passage:
+"Mitochondria, often referred to as the powerhouse of the cell, generate adenosine triphosphate (ATP) through oxidative phosphorylation, a process that involves the electron transport chain and chemiosmosis to drive ATP synthesis."
+
+Extracted information units:
+1. Mitochondria are called the powerhouse of the cell.
+2. Mitochondria generate ATP.
+3. ATP stands for adenosine triphosphate.
+4. The process used is oxidative phosphorylation.
+5. Oxidative phosphorylation involves the electron transport chain.
+6. Oxidative phosphorylation involves chemiosmosis.
+7. Chemiosmosis helps drive ATP synthesis.
+
+Simplified passage:
+
+"Mitochondria make energy for the cell using oxygen in a process called oxidative phosphorylation."
+
+Extracted information units:
+1. Mitochondria make energy for the cell.
+2. The process is called oxidative phosphorylation.
+3. Oxygen is used in this process.
+        """
+
+        information_comparison_example = """ADDED:
+1. Mitochondria make energy for the cell (instead of specifically mentioning ATP).
+
+KEPT:
+1. Mitochondria generate energy (though "ATP" is replaced with "energy" in the simplified version).
+2. The process is called oxidative phosphorylation.
+3. Oxygen is used in the process (implied in the complex version via "oxidative phosphorylation" but explicitly stated in the simplified version).
+
+DELETED:
+1. Mitochondria are called the powerhouse of the cell.
+2. ATP stands for adenosine triphosphate.
+3. Oxidative phosphorylation involves the electron transport chain.
+4. Oxidative phosphorylation involves chemiosmosis.
+5. Chemiosmosis helps drive ATP synthesis.
+"""
+
         fact_extraction_prompts = [
             {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
             {"role": "user",   "content": "Extract information units from the following passage"},
@@ -139,6 +177,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         # VERSION 2: PAST MEMORY
         fact_comparison_prompts = [
             {"role": "system",      "content": """You take two lists – extracted information from an original text and its simplified version. Then you compare them as if they were mathematical sets. Compare the information and not wording – synonyms are consired same information, unless they make the passage more vague. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both lists), and "DELETED" (present only in the second list)"""},
+            {"role": "system",      "content": f"Example of of information extraction (will laready be provided):\n\n{information_extraction_example}"},
+            {"role": "system",      "content": f"Example of of information comparison (desired output):\n\n{information_comparison_example}"},
             {"role": "user",        "content": "Extract information units from the following passage (original)"},
             {"role": "user",        "content": source},
             {"role": "assistant",   "content": source_facts},

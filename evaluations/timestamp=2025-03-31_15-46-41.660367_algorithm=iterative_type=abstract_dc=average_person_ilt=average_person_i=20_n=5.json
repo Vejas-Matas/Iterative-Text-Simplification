@@ -1,0 +1,232 @@
+[
+  [
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.). An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 14.26014729998658,
+        "bleu": 24.350590355316577,
+        "fkgl": 20.01109756097561,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, search for nearby facilities and firefighting support, access to weather data and a map of fire management resources. An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 18.84224722706009,
+        "bleu": 21.00958283863004,
+        "fkgl": 21.48705759162304,
+        "in_tokens": 7587,
+        "out_tokens": 756
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, search for nearby facilities and firefighting support, access to weather data and a map of fire management resources. An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a better exchange of information between operation centers and firefighting units.",
+      "metrics": {
+        "sari": 23.99105093095957,
+        "bleu": 21.958852028507696,
+        "fkgl": 20.736459016393443,
+        "in_tokens": 23510,
+        "out_tokens": 1465
+      }
+    },
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a tool to support the AEGIS platform for wildfire management. Several tasks can be accomplished from the AEGIS App, such as routing, search for nearby facilities and firefighting support, access to weather data and a map of fire management resources. An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a better exchange of information between operation centers and firefighting units.",
+      "metrics": {
+        "sari": 24.059683112689317,
+        "bleu": 18.523274632492612,
+        "fkgl": 20.082666666666665,
+        "in_tokens": 47420,
+        "out_tokens": 2147
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some of the mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. In view of the application of mobile technology in education, some previous studies have addressed that mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods or strategies in mobile learning activities for different students to enhance learning have gradually become a important and concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 13.178259742064698,
+        "bleu": 20.525448682634867,
+        "fkgl": 18.05802391441158,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some of the mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. Previous studies have shown that mobile learning can improve student engagement and help them achieve their learning goals. In the main stream of mobile learning, using mobile carriers with suitable learning methods or strategies in mobile learning activities for different students to enhance learning have gradually become a important and concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 24.50775120070882,
+        "bleu": 19.82158756445467,
+        "fkgl": 16.794909847434123,
+        "in_tokens": 8022,
+        "out_tokens": 801
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some mobile carriers use technology to connect to the internet and provide students with new learning experiences. Previous studies have shown that mobile learning can improve student engagement and help them achieve their learning goals. In the main stream of mobile learning, using mobile carriers with suitable learning methods or strategies in mobile learning activities for different students to enhance learning have gradually become a important and concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 33.38245826780696,
+        "bleu": 23.032605663836133,
+        "fkgl": 15.119037267080746,
+        "in_tokens": 24579,
+        "out_tokens": 1519
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four kinds of monitor units were specially designed for a wireless communication, including a control center , a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 16.47034612174896,
+        "bleu": 28.57777613770623,
+        "fkgl": 18.61129562043796,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four types of monitor units were created for wireless communication: a control center, a local monitor, mobile devices, and a web page for patients and doctors. The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 37.65333716932148,
+        "bleu": 38.34682578629375,
+        "fkgl": 17.700060975609762,
+        "in_tokens": 6556,
+        "out_tokens": 539
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As various kinds of output devices emerged, such as highresolution printers or a display of PDA(Personal Digital Assistant), the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses artificial neural network to determine the optimal values of interpolated pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 11.14808485583288,
+        "bleu": 14.034861651674031,
+        "fkgl": 12.585454545454546,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as highresolution printers or a display of PDA(Personal Digital Assistant), the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 17.6653044572171,
+        "bleu": 13.511555536517973,
+        "fkgl": 12.234642857142859,
+        "in_tokens": 6076,
+        "out_tokens": 508
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality printers or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.454141857712205,
+        "bleu": 13.696488751652701,
+        "fkgl": 12.478181818181817,
+        "in_tokens": 18517,
+        "out_tokens": 988
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality printers or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.454141857712205,
+        "bleu": 13.696488751652701,
+        "fkgl": 12.478181818181817,
+        "in_tokens": 37027,
+        "out_tokens": 1436
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality image enlargement or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.764591490884598,
+        "bleu": 13.506919558640064,
+        "fkgl": 12.779954954954956,
+        "in_tokens": 61746,
+        "out_tokens": 1891
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality image enlargement or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.764591490884598,
+        "bleu": 13.506919558640064,
+        "fkgl": 12.779954954954956,
+        "in_tokens": 92441,
+        "out_tokens": 2335
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality image enlargement or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.764591490884598,
+        "bleu": 13.506919558640064,
+        "fkgl": 12.779954954954956,
+        "in_tokens": 129181,
+        "out_tokens": 2784
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality image enlargement or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.764591490884598,
+        "bleu": 13.506919558640064,
+        "fkgl": 12.779954954954956,
+        "in_tokens": 171979,
+        "out_tokens": 3221
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality image enlargement or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.764591490884598,
+        "bleu": 13.506919558640064,
+        "fkgl": 12.779954954954956,
+        "in_tokens": 220815,
+        "out_tokens": 3670
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality image enlargement or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.764591490884598,
+        "bleu": 13.506919558640064,
+        "fkgl": 12.779954954954956,
+        "in_tokens": 275709,
+        "out_tokens": 4107
+      }
+    },
+    {
+      "prediction": "As various kinds of output devices emerged, such as high-quality image enlargement or a display on a personal digital assistant, the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses a sophisticated computer algorithm to determine the best values for the new pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 23.764591490884598,
+        "bleu": 13.506919558640064,
+        "fkgl": 12.779954954954956,
+        "in_tokens": 336641,
+        "out_tokens": 4556
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 12.589680348081977,
+        "bleu": 19.972071400182724,
+        "fkgl": 13.983304597701153,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a new way to convert colour information from everyday objects into sound for visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 19.42435364288548,
+        "bleu": 20.378429220587662,
+        "fkgl": 13.445000000000004,
+        "in_tokens": 6752,
+        "out_tokens": 644
+      }
+    }
+  ]
+]
