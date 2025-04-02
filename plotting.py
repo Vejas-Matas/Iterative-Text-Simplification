@@ -12,8 +12,8 @@ def make_token_usage_graphs(timedelta=datetime.timedelta(minutes=1)):
 
     for file_name in metrics_files:
         # re_match = re.search(r"algorithm=(\w+)_type=", file_name)
-        re_match = re.search(r"([\w\-=_.]+)_metrics.json", file_name)
-        algorithm_name = re_match.group(1)
+        # re_match = re.search(r"([\w\-=_.]+)_metrics.json", file_name)
+        # algorithm_name = re_match.group(1)
 
         with open(file_name, encoding="utf8") as file:
             contents = json.load(file)
@@ -23,7 +23,7 @@ def make_token_usage_graphs(timedelta=datetime.timedelta(minutes=1)):
     algorithms, token_counts = restructure_token_data(token_usage_data)
     graph_token_usage(algorithms, token_counts)
 
-def get_recent_metrics_files(timedelta):
+def get_recent_metrics_files(timedelta=datetime.timedelta(minutes=1), full_dataset_only=False):
     timestamp_from = datetime.datetime.now() - timedelta
     files = glob.glob("./evaluations/*.json")
     files_to_keep = []
@@ -34,8 +34,15 @@ def get_recent_metrics_files(timedelta):
         timestamp_string = re_match.group(1)
         timestamp = datetime.datetime.strptime(timestamp_string, "%Y-%m-%d_%H-%M-%S.%f")
 
-        if timestamp >= timestamp_from:
-            files_to_keep.append(file_name)
+        if timestamp < timestamp_from:
+            continue
+
+        if full_dataset_only:
+            re_match = re.search(r"_n=None", file_name)
+            if re_match is None:
+                continue
+
+        files_to_keep.append(file_name)
 
     return files_to_keep
 
