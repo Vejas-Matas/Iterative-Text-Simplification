@@ -45,9 +45,9 @@ class VllmChatBot:
 
         # There are 3 initial messages – task desciption, passage, and parameters
         initial_message_count = 3
-        intial_messages = self.chat_log[:initial_message_count]
+        initial_messages = self.chat_log[:initial_message_count]
         last_messages = self.chat_log[initial_message_count:][context_message_count:]
-        context = intial_messages + last_messages
+        context = initial_messages + last_messages
 
         print(100*"*")
         print(context)

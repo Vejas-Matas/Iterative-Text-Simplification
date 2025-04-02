@@ -237,20 +237,22 @@ HALLUCINATIONS:
         # ]
 
         # VERSION 2: PAST MEMORY
-        fact_comparison_prompts = [
-            {"role": "system",      "content": information_comparison_instructions},
-            {"role": "system",      "content": f"The first example of information extraction (will already be provided):\n\n{information_extraction_example_1}"},
-            {"role": "system",      "content": f"The first example of information comparison (desired output):\n\n{information_comparison_example_1}"},
-            {"role": "system",      "content": f"The second example of information extraction (will already be provided):\n\n{information_extraction_example_2}"},
-            {"role": "system",      "content": f"The second example of information comparison (desired output):\n\n{information_comparison_example_2}"},
-            {"role": "user",        "content": "Extract information units from the following passage (original)"},
-            {"role": "user",        "content": source},
-            {"role": "assistant",   "content": source_facts},
-            {"role": "user",        "content": "Extract information units from the following passage (simplified)"},
-            {"role": "user",        "content": prediction},
-            {"role": "assistant",   "content": prediction_facts},
-            {"role": "user",        "content": "Analyse the data and provide the four lists: PRESERVATIONS, OVERSIMPLIFICATIONS, DELETIONS, HALLACINATIONS. One fact pair should be present in only one list most of the time, a fact might be in multiple pairs if appropriate"},
-        ]
+        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        # fact_comparison_prompts = [
+        #     {"role": "system",      "content": information_comparison_instructions},
+        #     {"role": "system",      "content": f"The first example of information extraction (will already be provided):\n\n{information_extraction_example_1}"},
+        #     {"role": "system",      "content": f"The first example of information comparison (desired output):\n\n{information_comparison_example_1}"},
+        #     {"role": "system",      "content": f"The second example of information extraction (will already be provided):\n\n{information_extraction_example_2}"},
+        #     {"role": "system",      "content": f"The second example of information comparison (desired output):\n\n{information_comparison_example_2}"},
+        #     {"role": "user",        "content": "Extract information units from the following passage (original)"},
+        #     {"role": "user",        "content": source},
+        #     {"role": "assistant",   "content": source_facts},
+        #     {"role": "user",        "content": "Extract information units from the following passage (simplified)"},
+        #     {"role": "user",        "content": prediction},
+        #     {"role": "assistant",   "content": prediction_facts},
+        #     {"role": "user",        "content": "Analyse the data and provide the four lists: PRESERVATIONS, OVERSIMPLIFICATIONS, DELETIONS, HALLACINATIONS. One fact pair should be present in only one list most of the time, a fact might be in multiple pairs if appropriate"},
+        # ]
+        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         # # VERSION 3: DIRECT COMPARISON
         # fact_comparison_prompts = [
