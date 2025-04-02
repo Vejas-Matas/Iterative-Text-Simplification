@@ -113,7 +113,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
         ### Save / display results
         # chat_bot.print_chat()
-        # chat_bot.save_chat()
+        chat_bot.save_chat()
         # chat_bot.print_token_usage_log()
 
         file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
@@ -224,8 +224,10 @@ HALLUCINATIONS:
             {"role": "user",   "content": "Extract atomic information units from the following passage. Only provide the list"},
         ]
 
-        source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
-        prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
+        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        # source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
+        # prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
+        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         # # VERSION 1: NO PAST MEMORY
         # fact_comparison_prompts = [
@@ -260,8 +262,9 @@ HALLUCINATIONS:
         # source_facts = ""
         # prediction_facts = ""
 
-        fact_comparison = chat_bot.send_no_context_prompts(fact_comparison_prompts)
-
+        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        # fact_comparison = chat_bot.send_no_context_prompts(fact_comparison_prompts)
+        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -282,13 +285,13 @@ HALLUCINATIONS:
         print(100*"–")
         print(source)
         print()
-        print(source_facts)
+        # print(source_facts)
         print(100*"–")
         print(prediction)
-        print()
-        print(prediction_facts)
-        print(100*"/")
-        print(fact_comparison)
+        # print()
+        # print(prediction_facts)
+        # print(100*"/")
+        # print(fact_comparison)
 
         #############################################################################################################################################################
 
@@ -301,12 +304,13 @@ passages_to_simplify = 5
 passage_type_to_simplify = "sentence"
 
 # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 for passage_type_to_simplify in ["sentence", "abstract"]:
-    simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+    # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
     # simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
     # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+    pass
 
 # plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
