@@ -121,10 +121,21 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
 
         ################################################################## TESTING FACT EXTRACTION ##################################################################
-        information_extraction_example = """Original passage:
+        information_comparison_instructions = """You are a diligigent and attentive text evaluator. You take two lists – extracted information from an original text and its simplified version. Then you compare them for information discrepancies. Then you provide four lists:
+1. PRESERVATIONS: information in the original and the simplification are the same, equivallent (e.g. synonyms) or it can be clearly implied to be the same;
+2. OVERSIMPLIFICATIONS: core meaning is preserved, but some information was lost – e.g., vagueness is introduced, multiple meanings can be implied or original meaning is lost;
+3. DELETETIONS: information that was completely lost after simplification;
+4. HALLUCINATIONS: information that was added after simplification, but is not present and could not be implied from the original.
+
+Either of the lists is allowed to be empty. 
+"""
+        
+        # Examples are generated using ChatGPT and then refined
+        information_extraction_example_1 = """
+Original passage:
 "Mitochondria, often referred to as the powerhouse of the cell, generate adenosine triphosphate (ATP) through oxidative phosphorylation, a process that involves the electron transport chain and chemiosmosis to drive ATP synthesis."
 
-Extracted information units:
+Extracted atomic information units:
 1. Mitochondria are called the powerhouse of the cell.
 2. Mitochondria generate ATP.
 3. ATP stands for adenosine triphosphate.
@@ -134,35 +145,83 @@ Extracted information units:
 7. Chemiosmosis helps drive ATP synthesis.
 
 Simplified passage:
-
 "Mitochondria make energy for the cell using oxygen in a process called oxidative phosphorylation."
 
-Extracted information units:
+Extracted atomic information units:
 1. Mitochondria make energy for the cell.
 2. The process is called oxidative phosphorylation.
 3. Oxygen is used in this process.
-        """
+"""
 
-        information_comparison_example = """ADDED:
-1. Mitochondria make energy for the cell (instead of specifically mentioning ATP).
-
-KEPT:
-1. Mitochondria generate energy (though "ATP" is replaced with "energy" in the simplified version).
+        information_comparison_example_1 = """
+PRESERVATIONS:
+1. Mitochondria generate energy ("ATP" is replaced with "energy" in the simplified version, but meaning is clear in the context of cells).
 2. The process is called oxidative phosphorylation.
 3. Oxygen is used in the process (implied in the complex version via "oxidative phosphorylation" but explicitly stated in the simplified version).
 
-DELETED:
+OVERSIMPLIFICATIONS:
+0. None
+
+DELETIONS:
 1. Mitochondria are called the powerhouse of the cell.
 2. ATP stands for adenosine triphosphate.
 3. Oxidative phosphorylation involves the electron transport chain.
 4. Oxidative phosphorylation involves chemiosmosis.
 5. Chemiosmosis helps drive ATP synthesis.
+
+HALLUCINATIONS:
+0. None
+"""
+
+        information_extraction_example_2 = """
+Original passage:
+"A neural network is a computational model inspired by the structure of biological neural networks, consisting of layers of interconnected artificial neurons that process input data using weighted connections and activation functions to learn patterns and make predictions."
+
+Extracted atomic information units:
+1. A neural network is a computational model.
+2. A neural network is inspired by biological neural networks.
+3. It consists of layers of interconnected artificial neurons.
+4. It processes input data.
+5. It uses weighted connections to process data.
+6. It uses activation functions to process data.
+7. The purpose of a neural network is to learn patterns.
+8. A neural network is used to make predictions.
+
+Simplified passage:
+"A neural network is a computer program that learns patterns from data to make predictions and create images."
+
+Extracted atomic information units:
+1. A neural network is a computer program.
+2. A neural network learns patterns.
+3. A neural network processes data.
+4. A neural network is used to make predictions.
+5. A neural network is used to create images.
+"""
+
+        information_comparison_example_2 = """
+PRESERVATIONS:
+1. A neural network learns patterns.
+2. A neural network processes data.
+3. A neural network is used to make predictions.
+
+OVERSIMPLIFICATIONS:
+1. A neural network is a computer program ("A computational model" changed to "a computer program", which is partially true but omits non-software implementations).
+
+DELETIONS:
+1. A neural network is inspired by biological neural networks (link to biology).
+2. It consists of layers of interconnected artificial neurons (structure).
+3. It uses weighted connections to process data (learning mechanism).
+4. It uses activation functions to process data (learning mechanism).
+
+HALLUCINATIONS:
+1. A neural network is used to create images (statement is true, but is not mentioned or implied in the original).
 """
 
         fact_extraction_prompts = [
             {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
-            {"role": "system", "content": f"Two examples of of information extraction (desired output are the numbered lists):\n\n{information_extraction_example}"},
-            {"role": "user",   "content": "Extract information units from the following passage"},
+            {"role": "system", "content": f"The first pair of examples of information extraction (desired output are the numbered lists):\n\n{information_extraction_example_1}"},
+            {"role": "system", "content": f"The second pair of examples of information extraction (desired output are the numbered lists):\n\n{information_extraction_example_2}"},
+            {"role": "user",   "content": "Extract atomic information units from the following passage. Only provide the list"},
         ]
 
         source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
@@ -177,16 +236,18 @@ DELETED:
 
         # VERSION 2: PAST MEMORY
         fact_comparison_prompts = [
-            {"role": "system",      "content": """You take two lists – extracted information from an original text and its simplified version. Then you compare them as if they were mathematical sets. Compare the information and not wording – synonyms are consired same information, unless they make the passage more vague. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both lists), and "DELETED" (present only in the second list)"""},
-            {"role": "system",      "content": f"Example of of information extraction (will laready be provided):\n\n{information_extraction_example}"},
-            {"role": "system",      "content": f"Example of of information comparison (desired output):\n\n{information_comparison_example}"},
+            {"role": "system",      "content": information_comparison_instructions},
+            {"role": "system",      "content": f"The first example of information extraction (will already be provided):\n\n{information_extraction_example_1}"},
+            {"role": "system",      "content": f"The first example of information comparison (desired output):\n\n{information_comparison_example_1}"},
+            {"role": "system",      "content": f"The second example of information extraction (will already be provided):\n\n{information_extraction_example_2}"},
+            {"role": "system",      "content": f"The second example of information comparison (desired output):\n\n{information_comparison_example_2}"},
             {"role": "user",        "content": "Extract information units from the following passage (original)"},
             {"role": "user",        "content": source},
             {"role": "assistant",   "content": source_facts},
             {"role": "user",        "content": "Extract information units from the following passage (simplified)"},
             {"role": "user",        "content": prediction},
             {"role": "assistant",   "content": prediction_facts},
-            {"role": "user",        "content": "Analyse the data and provide the three lists: ADDED, KEPT, DELETED"},
+            {"role": "user",        "content": "Analyse the data and provide the four lists: PRESERVATIONS, OVERSIMPLIFICATIONS, DELETIONS, HALLACINATIONS"},
         ]
 
         # # VERSION 3: DIRECT COMPARISON
