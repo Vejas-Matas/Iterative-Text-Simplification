@@ -265,18 +265,18 @@ HALLUCINATIONS:
 
 
 
-        fact_comparison_path = "./runs/fact_comparisons.txt"
-        file_io_utils.append_to_txt(fact_comparison_path, 100*"#")
-        file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
-        file_io_utils.append_to_txt(fact_comparison_path, source)
-        file_io_utils.append_to_txt(fact_comparison_path, "")
-        file_io_utils.append_to_txt(fact_comparison_path, source_facts)
-        file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
-        file_io_utils.append_to_txt(fact_comparison_path, prediction)
-        file_io_utils.append_to_txt(fact_comparison_path, "")
-        file_io_utils.append_to_txt(fact_comparison_path, prediction_facts)
-        file_io_utils.append_to_txt(fact_comparison_path, 100*"/")
-        file_io_utils.append_to_txt(fact_comparison_path, fact_comparison)
+        # fact_comparison_path = "./runs/fact_comparisons.txt"
+        # file_io_utils.append_to_txt(fact_comparison_path, 100*"#")
+        # file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
+        # file_io_utils.append_to_txt(fact_comparison_path, source)
+        # file_io_utils.append_to_txt(fact_comparison_path, "")
+        # file_io_utils.append_to_txt(fact_comparison_path, source_facts)
+        # file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
+        # file_io_utils.append_to_txt(fact_comparison_path, prediction)
+        # file_io_utils.append_to_txt(fact_comparison_path, "")
+        # file_io_utils.append_to_txt(fact_comparison_path, prediction_facts)
+        # file_io_utils.append_to_txt(fact_comparison_path, 100*"/")
+        # file_io_utils.append_to_txt(fact_comparison_path, fact_comparison)
 
         print(100*"#")
         print(100*"–")
