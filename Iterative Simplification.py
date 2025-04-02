@@ -218,7 +218,7 @@ HALLUCINATIONS:
 """
 
         fact_extraction_prompts = [
-            {"role": "system", "content": "You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
+            {"role": "system", "content": "You are a diligigent and attentive text evaluator. You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
             {"role": "system", "content": f"The first pair of examples of information extraction (desired output are the numbered lists):\n\n{information_extraction_example_1}"},
             {"role": "system", "content": f"The second pair of examples of information extraction (desired output are the numbered lists):\n\n{information_extraction_example_2}"},
             {"role": "user",   "content": "Extract atomic information units from the following passage. Only provide the list"},
@@ -247,7 +247,7 @@ HALLUCINATIONS:
             {"role": "user",        "content": "Extract information units from the following passage (simplified)"},
             {"role": "user",        "content": prediction},
             {"role": "assistant",   "content": prediction_facts},
-            {"role": "user",        "content": "Analyse the data and provide the four lists: PRESERVATIONS, OVERSIMPLIFICATIONS, DELETIONS, HALLACINATIONS"},
+            {"role": "user",        "content": "Analyse the data and provide the four lists: PRESERVATIONS, OVERSIMPLIFICATIONS, DELETIONS, HALLACINATIONS. One fact pair should be present in only one list most of the time, a fact might be in multiple pairs if appropriate"},
         ]
 
         # # VERSION 3: DIRECT COMPARISON
