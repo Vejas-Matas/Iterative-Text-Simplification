@@ -1,0 +1,242 @@
+[
+  [
+    {
+      "prediction": "Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.). An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire confrontation operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 14.26014729998658,
+        "bleu": 24.350590355316577,
+        "fkgl": 20.01109756097561,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This mobile application helps manage wildfires and works with a web-based system called AEGIS. Novel technological advances in mobile devices and applications can be used to help in fighting wildfires, enabling end-users to easily conduct everyday tasks, such as accessing data and information, and coordinating personnel and vehicles. This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and works with the AEGIS platform for wildfire prevention and management. Several tasks can be accomplished from the AEGIS App, such as routing, finding the closest facilities and firefighting support infrastructures, and accessing weather data and information about fire management (water sources, gas refill stations, evacuation sites etc.). An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands. The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sophisticated transferring of information and knowledge between wildfire operation centers and firefighting units in the field.",
+      "metrics": {
+        "sari": 29.5028747414195,
+        "bleu": 21.93022783673162,
+        "fkgl": 17.640420168067227,
+        "in_tokens": 7615,
+        "out_tokens": 803
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some of the mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. In view of the application of mobile technology in education, some previous studies have addressed that mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods or strategies in mobile learning activities for different students to enhance learning have gradually become a important and concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 13.178259742064698,
+        "bleu": 20.525448682634867,
+        "fkgl": 18.05802391441158,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some of the mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. In view of the application of mobile technology in education, some previous studies have addressed that mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods in mobile learning activities has become increasingly important and a concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 20.735082731614018,
+        "bleu": 21.518567056758236,
+        "fkgl": 17.625127201565565,
+        "in_tokens": 7941,
+        "out_tokens": 816
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. In view of the application of mobile technology in education, some previous studies have addressed that mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods in mobile learning activities has become increasingly important and a concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 22.275403078955094,
+        "bleu": 22.301222071143403,
+        "fkgl": 17.59861751152074,
+        "in_tokens": 24919,
+        "out_tokens": 1629
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. Mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods in mobile learning activities has become increasingly important and a concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 29.377416237930003,
+        "bleu": 25.02250542411915,
+        "fkgl": 16.61585714285714,
+        "in_tokens": 50819,
+        "out_tokens": 2416
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. Mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods in mobile learning activities has become increasingly important and a concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 29.377416237930003,
+        "bleu": 25.02250542411915,
+        "fkgl": 16.61585714285714,
+        "in_tokens": 85333,
+        "out_tokens": 3138
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. Mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods in mobile learning activities has become increasingly important and a concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 29.377416237930003,
+        "bleu": 25.02250542411915,
+        "fkgl": 16.61585714285714,
+        "in_tokens": 128135,
+        "out_tokens": 3867
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. Mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods in mobile learning activities has become increasingly important and a concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 29.377416237930003,
+        "bleu": 25.02250542411915,
+        "fkgl": 16.61585714285714,
+        "in_tokens": 179358,
+        "out_tokens": 4619
+      }
+    },
+    {
+      "prediction": "In recent years, mobile technologies have developed and applied in education fields, and some mobile emerging carriers with mobile technologies include a personal digital assistant (PDA), smart phone, and e-book. Some mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning. Mobile learning is a meaningful learning that can improve the interaction between students and the situations and reach the purposes of learning. In the main stream of mobile learning, using mobile carriers with suitable learning methods in mobile learning activities has become increasingly important and a concern issue. The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies. The experimental results show that the competitive learning group of students have better learning performance than non-competitive learning group of students. After completing the learning activity, the two groups of students presented high positive attitudes towards learning.",
+      "metrics": {
+        "sari": 29.377416237930003,
+        "bleu": 25.02250542411915,
+        "fkgl": 16.61585714285714,
+        "in_tokens": 239035,
+        "out_tokens": 5354
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four kinds of monitor units were specially designed for a wireless communication, including a control center , a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 16.47034612174896,
+        "bleu": 28.57777613770623,
+        "fkgl": 18.61129562043796,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four types of monitor units were designed for wireless communication, including a control center, a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 24.471476080031422,
+        "bleu": 31.90374641403756,
+        "fkgl": 18.46287037037037,
+        "in_tokens": 6258,
+        "out_tokens": 506
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four types of monitor units were designed for wireless communication, including a control center, a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 24.471476080031422,
+        "bleu": 31.90374641403756,
+        "fkgl": 18.46287037037037,
+        "in_tokens": 19021,
+        "out_tokens": 1040
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four types of monitor units were designed for wireless communication, including a control center, a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to improve health care and patient care.",
+      "metrics": {
+        "sari": 37.497868986645315,
+        "bleu": 33.53711141454242,
+        "fkgl": 16.17484234234234,
+        "in_tokens": 38527,
+        "out_tokens": 1543
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four kinds of monitor units were specially designed for a wireless communication, including a control center, a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to improve health care and patient care.",
+      "metrics": {
+        "sari": 31.270302051769352,
+        "bleu": 30.265712019730902,
+        "fkgl": 16.31245575221239,
+        "in_tokens": 64595,
+        "out_tokens": 2081
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four kinds of monitor units were specially designed for a wireless communication, including a control center, a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). The use of various monitor units is created to fulfill different medical personnel requirements and wishes. This application was developed to improve health care and patient care.",
+      "metrics": {
+        "sari": 31.270302051769352,
+        "bleu": 30.265712019730902,
+        "fkgl": 16.31245575221239,
+        "in_tokens": 97509,
+        "out_tokens": 2592
+      }
+    },
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology. Four kinds of monitor units were specially designed for a wireless communication, including a control center, a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor). Monitor units are designed to serve medical staff. This application was developed to improve health care and patient care.",
+      "metrics": {
+        "sari": 37.43397807982254,
+        "bleu": 28.694266426714712,
+        "fkgl": 15.100833333333338,
+        "in_tokens": 136951,
+        "out_tokens": 3077
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As various kinds of output devices emerged, such as highresolution printers or a display of PDA(Personal Digital Assistant), the importance of high-quality resolution conversion has been increasing. This paper proposes a new method for enlarging image with high quality. One of the largest problems on image enlargement is the exaggeration of the jaggy edges. To remedy this problem, we propose a new interpolation method, which uses artificial neural network to determine the optimal values of interpolated pixels. The experimental results are shown and evaluated. The effectiveness of our methods is discussed by comparing with the conventional methods.",
+      "metrics": {
+        "sari": 11.14808485583288,
+        "bleu": 14.034861651674031,
+        "fkgl": 12.585454545454546,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space. This information is subsequently converted into sound and sent to the user via speakers or headphones. In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is limited.We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 12.589680348081977,
+        "bleu": 19.972071400182724,
+        "fkgl": 13.983304597701153,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In the original version, users could send feedback to adjust the system, but some features were not implemented due to current technology limitations. We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 31.402472922215804,
+        "bleu": 13.476313481975241,
+        "fkgl": 13.031016260162605,
+        "in_tokens": 6940,
+        "out_tokens": 540
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In the original version, users could send feedback to adjust the system, but some features were not implemented due to current technology limitations. We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 31.402472922215804,
+        "bleu": 13.476313481975241,
+        "fkgl": 13.031016260162605,
+        "in_tokens": 20391,
+        "out_tokens": 1035
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented inside a Personal Digital Assistant (PDA) portable device. In the original version, users could send feedback to adjust the system, but some features were not implemented due to current technology limitations. We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 31.402472922215804,
+        "bleu": 13.476313481975241,
+        "fkgl": 13.031016260162605,
+        "in_tokens": 40445,
+        "out_tokens": 1602
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours. For them, everyday tasks like navigating through a train or metro network map becomes demanding. We present a novel technique for extracting colour information from everyday natural stimuli and presenting it to visually impaired users as pleasant, non-invasive sound. This technique was implemented in a portable device that can be carried by users. In the original version, users could send feedback to adjust the system, but some features were not implemented due to current technology limitations. We are confident that the full implementation will be possible in the near future as PDA technology improves.",
+      "metrics": {
+        "sari": 30.372987402458573,
+        "bleu": 8.844136277282336,
+        "fkgl": 12.647276422764229,
+        "in_tokens": 67476,
+        "out_tokens": 2155
+      }
+    }
+  ]
+]

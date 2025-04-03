@@ -1,0 +1,22 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the the latest passage version is 15.51727272727273. Identify which parts of the passage are the most complex. Based on this information, identify the complexity of the passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The FKGL (Flesch-Kincaid Grade Level) score of 15.51727272727273 indicates that the passage is written at a high school level, but may be challenging for an average person to understand.\n\nThe most complex parts of the passage are the words \"operation ceiling of civil drones\" and \"road-tracking based navigation\". These phrases require some technical knowledge and may be unfamiliar to non-experts.\n\nThe complexity of the passage is above the DC (Average person), so the answer is: Yes"
+  }
+]
