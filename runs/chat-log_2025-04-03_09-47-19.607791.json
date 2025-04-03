@@ -1,0 +1,30 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The passage is \"In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.\"\n\nThe most complex parts of the passage are the phrase \"modern era of automation and robotics\" and the phrase \"academic and industrial research\". These phrases are complex because they contain multiple words and concepts that may be unfamiliar to non-experts.\n\nThe complexity level of the passage is approximately: Basic. The passage uses simple sentence structure and everyday vocabulary, making it easily understandable for an average person."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 15.638095238095236. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  }
+]
