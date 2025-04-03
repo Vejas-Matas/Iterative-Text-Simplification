@@ -49,11 +49,6 @@ class VllmChatBot:
         last_messages = self.chat_log[initial_message_count:][context_message_count:]
         context = initial_messages + last_messages
 
-        print(100*"*")
-        for message in context:
-            print(message)
-        print(100*"*")
-
         response = self.model.chat(
             messages=context,
             sampling_params=self.sampling_parameters,
