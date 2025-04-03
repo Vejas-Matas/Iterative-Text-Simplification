@@ -43,21 +43,24 @@ def simplify_passage_iteratively_unaware(chat_bot, algorithm_parameters, max_ite
         # chat_bot.send_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"')
         
         # # Add prompting to convert DC to DC (FKGL), alternatively, add it to algorithm_parameters
-        chat_bot.send_limited_context_prompt("Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences", 3)
-        # chat_bot.send_limited_context_prompt(f'FKGL score of the latest passage version is {chat_bot.get_latest_fkgl()}. Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 5)
-        chat_bot.send_limited_context_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 5)
+        latest_passage_version = chat_bot.get_iteration_results()[-1]["prediction"]
+        chat_bot.add_system_prompt("The lastest vetsion of the passage is provided in the following prompt")
+        chat_bot.add_system_prompt(latest_passage_version)
+        chat_bot.send_limited_context_prompt("Identify which parts of the passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences", 2)
+        # chat_bot.send_limited_context_prompt(f'FKGL score of the latest passage version is {chat_bot.get_latest_fkgl()}. Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 4)
+        chat_bot.send_limited_context_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 4)
         if "NO" in chat_bot.get_last_response().upper()[-5:]:
             break
-        chat_bot.send_limited_context_prompt(f'Identify a single complicated section of the passage. Remember to respect the ILT ({algorithm_parameters["ILT"]}) contraint. Only provide the identified section', 7)
-        chat_bot.send_limited_context_prompt("Simplify this section. Only provide the proposed simplification", 9)
-        chat_bot.send_limited_context_prompt("Reincorporate the simplified section into the passage", 11)
-        chat_bot.send_limited_context_prompt("Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences", 13)
-        chat_bot.send_limited_context_prompt(f'What is the highest severity level identified in your last answer? Is it higher than ILT ({algorithm_parameters["ILT"]})? Provide the highest severity level, followed by an answer to the ILT question as "Yes" or "No"', 15)
+        chat_bot.send_limited_context_prompt(f'Identify a single complicated section of the passage. Remember to respect the ILT ({algorithm_parameters["ILT"]}) contraint. Only provide the identified section', 6)
+        chat_bot.send_limited_context_prompt("Simplify this section. Only provide the proposed simplification", 8)
+        chat_bot.send_limited_context_prompt("Reincorporate the simplified section into the passage", 10)
+        chat_bot.send_limited_context_prompt("Identify information loss and its severity in the updated passage compared to the original. Comparison must be between the originally provided (the very first) passage and the current simplified version. Limit your answer to a maximum of 5 sentences", 12)
+        chat_bot.send_limited_context_prompt(f'What is the highest severity level identified in your last answer? Is it higher than ILT ({algorithm_parameters["ILT"]})? Provide the highest severity level, followed by an answer to the ILT question as "Yes" or "No"', 14)
         if "NO" in chat_bot.get_last_response().upper()[-5:]:
-            chat_bot.send_limited_context_prompt("Accept the proposed simplification. Print the updated version of the passage, do not print anything else", 17)
-            # chat_bot.send_limited_context_prompt("If needed, adjust the passage to maintain readabily and flow of text", 19)
+            chat_bot.send_limited_context_prompt("Accept the proposed simplification. Print the updated version of the passage, do not print anything else", 16)
+            # chat_bot.send_limited_context_prompt("If needed, adjust the passage to maintain readabily and flow of text", 18)
         else:
-            chat_bot.send_limited_context_prompt("Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else", 17)
+            chat_bot.send_limited_context_prompt("Revert the last proposed change. In further iterations you may still attempt to simplify this section in other ways. Print the reverted passage, do not print anything else", 16)
             
 
         # Check if the model ran out of tokens, if so, ignore this iteration and terminate
