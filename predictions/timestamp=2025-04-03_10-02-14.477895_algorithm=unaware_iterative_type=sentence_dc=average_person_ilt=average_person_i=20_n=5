@@ -1,0 +1,5 @@
+In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.
+With the ever increasing number of drones, there is an increased need for autonomy in these systems too.
+Due to guidelines set by the governments regarding the operation ceiling of civil drones, real-time tracking along roads is garnering interest.
+In an attempt to achieve the above mentioned tasks, we propose a machine learning approach to help drones navigate city streets by learning to fly by imitating an expert pilot.
+Derived from classic image classification algorithms, our classifier is based on an Inception model that evaluates the presence of roads using the input frames.
