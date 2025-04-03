@@ -50,7 +50,8 @@ class VllmChatBot:
         context = initial_messages + last_messages
 
         print(100*"*")
-        print(context)
+        for message in context:
+            print(message)
         print(100*"*")
 
         response = self.model.chat(
