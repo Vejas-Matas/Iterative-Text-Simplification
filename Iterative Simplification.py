@@ -47,8 +47,8 @@ def simplify_passage_iteratively_unaware(chat_bot, algorithm_parameters, max_ite
         chat_bot.add_system_prompt("The latest version of the simplified passage is provided in the following prompt")
         chat_bot.add_system_prompt(latest_passage_version)
         chat_bot.send_limited_context_prompt("Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences", 2)
-        # chat_bot.send_limited_context_prompt(f'FKGL score of the latest passage version is {chat_bot.get_latest_fkgl()}. Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 4)
-        chat_bot.send_limited_context_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 4)
+        chat_bot.send_limited_context_prompt(f'FKGL score of the latest passage version is {chat_bot.get_latest_fkgl()}. Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 4)
+        # chat_bot.send_limited_context_prompt(f'Is determined complexity higher than DC ({algorithm_parameters["DC"]})?  Answer "Yes" or "No"', 4)
         if "NO" in chat_bot.get_last_response().upper()[-5:]:
             break
         chat_bot.send_limited_context_prompt(f'Identify a single complicated section of the simplified passage. Remember to respect the ILT ({algorithm_parameters["ILT"]}) contraint. Only provide the identified section', 6)
