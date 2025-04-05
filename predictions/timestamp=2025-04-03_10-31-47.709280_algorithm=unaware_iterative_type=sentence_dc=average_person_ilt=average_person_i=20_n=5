@@ -1,0 +1,5 @@
+In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.
+Drones being used in everyday life and business, drones are increasingly being used in both civilian and commercial activities, so they need to be more autonomous.
+Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.
+In an attempt to achieve the above mentioned tasks, we propose a machine learning-based system for controlling drones in urban areas by mimicking an experienced pilot, using a computer-controlled drone navigation system.
+Derived from the classic image classification algorithms, our classifier has been constructed in the form of a multi-layered neural network model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.
