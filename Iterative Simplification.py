@@ -112,9 +112,13 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     chat_bot = chat_bots.VllmChatBot(
         model_name=parameters.vllm_model,
     )
+
+    for idx, source in enumerate(sources):
+        print(f"{idx}: {source}")
     
     ### Simplifying passages one-by-one
-    for i in range(len(sources)):
+    # for i in range(len(sources)):
+    for i in range(0):
         ### Initialise
         chat_bot.clear()
         chat_bot.add_system_prompt(system_prompt)
@@ -123,7 +127,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
             algorithm_string = "\n".join(f"{parameter}: {value}" for parameter, value in algorithm_parameters.items())
             chat_bot.add_system_prompt(f"Algorithm parameters are as follows.\n{algorithm_string}\n\nThe original passage is provided in the following message")
         else:
-            chat_bot.add_system_prompt(f"The passage is provided in the following message")
+            chat_bot.add_system_prompt(f"The original passage is provided in the following message")
 
         source = sources[i]
         chat_bot.sources.append(source)
