@@ -1,5 +1,0 @@
-In the present era, self-driving cars studied by academics and businesses.
-With aerial vehicles are used in many sectors, a need for autonomy.
-Due to regulations regarding drone operation limits, tracking is garnering interest.
-In an attempt to achieve these tasks, we suggest an imitation solution, computer solution to UAV autonomy for navigating through city streets by learning from an expert pilot.
-Derived from the classic image classification algorithms, our classifier has been constructed in a fast Inception model, that evaluates the presence of roads using the frames.

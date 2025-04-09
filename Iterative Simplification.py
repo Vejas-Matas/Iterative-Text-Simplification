@@ -157,7 +157,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         information_comparison_instructions = """You are a diligigent and attentive text evaluator. You take two lists – extracted information from an original text and its simplified version. Then you compare them for information discrepancies. Then you provide four lists:
 1. PRESERVATIONS: information in the original and the simplification are the same, equivallent (e.g. synonyms) or it can be clearly implied to be the same;
 2. OVERSIMPLIFICATIONS: core meaning is preserved, but some information was lost – e.g., vagueness is introduced, multiple meanings can be implied or original meaning is lost;
-3. DELETETIONS: information that was completely lost after simplification;
+3. DELETIONS: information that was completely lost after simplification;
 4. HALLUCINATIONS: information that was added after simplification, but is not present and could not be implied from the original.
 
 Either of the lists is allowed to be empty. 
@@ -335,7 +335,7 @@ HALLUCINATIONS:
     return results
 
 
-passages_to_simplify = 5
+passages_to_simplify = 20
 passage_type_to_simplify = "sentence"
 
 # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
