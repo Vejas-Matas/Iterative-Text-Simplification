@@ -1,0 +1,5 @@
+In the modern era of automation and robotics, self-driving cars are the focus of research.
+With the ever increasing number of drones getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.
+Due to rules set by the government, road-tracking based navigation is garnering interest.
+We propose a solution to drone navigation by following an expert, with learning from a skilled pilot, using data
+Derived from the classic image classification algorithms, our classifier was built using a computer program, that evaluates the presence of roads using the reconstructed images of the input frames and a 39-layered computer model.

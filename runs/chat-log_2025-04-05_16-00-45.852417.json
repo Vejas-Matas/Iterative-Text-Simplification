@@ -1,0 +1,182 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe original passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex part of the simplified passage is the phrase \"road-tracking based navigation is garnering interest\" which contains a technical term \"road-tracking based navigation\" that might be unfamiliar to non-experts.\n\nThe complexity level of the passage is approximately \"Average person\" which matches the desired complexity (DC)."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 15.51727272727273. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"road-tracking based navigation\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"road-tracking navigation\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking navigation is garnering interest."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss in the updated simplified passage is that the term \"road-tracking\" has been shortened from \"road-tracking based navigation\". The severity of the information loss is High because the term \"based navigation\" provides crucial context about the type of navigation system being referred to."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking navigation is garnering interest."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking navigation is garnering interest."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The simplified passage is still too complex for the \"Average person\" (DC) level. \nThe most complex part of the passage is \"guidelines set by the governments regarding the operation ceiling of civil drones\" as it contains technical jargon and complex vocabulary. \nThe complexity level of the passage is approximately 6.5 on a 1-10 scale, where 1 is the simplest and 10 is the most complex. \nThis level is still above the desired complexity level of an \"Average person\" (DC)."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 15.07619047619048. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "guidelines set by the governments"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "rules set by the government"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Due to rules set by the government, road-tracking navigation is garnering interest."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss detected: \"civil drones\" is not present in the updated simplified passage.\nSeverity of information loss: High (specificity of the original statement is lost)\nILT constraint: Medium-High, which is higher than the detected severity of information loss."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. Print the simplified passage with the proposed change reverted, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Due to rules set by the government, road-tracking based navigation is garnering interest."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "Due to rules set by the government, road-tracking based navigation is garnering interest."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are \"rules set by the government\" and \"road-tracking based navigation is garnering interest\".\n\nThe complexity level of the passage is still high, as it is a single sentence that is somewhat abstract. The original passage was more complex, but the simplification did not significantly reduce the complexity of the passage. To reach the desired complexity, further simplification is needed."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 10.713333333333338. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  }
+]

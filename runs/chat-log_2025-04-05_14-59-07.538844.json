@@ -1,0 +1,182 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe original passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are \"39-layered Inception model\" and \"tomographic reconstructions of the input frames.\" These phrases are complex because they contain technical terms and specific details that may be unfamiliar to non-experts.\n\nThe complexity level of the simplified passage is \"Technical\" as it requires some background knowledge in computer science and image processing to understand the concepts being described. The passage is not at the desired complexity level of \"Average person\" as specified by the DC parameter."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "39-layered Inception model"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "A 39-layered neural network"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered neural network, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss in the updated simplified passage is that the term \"Inception model\" has been replaced with \"neural network\", which is a more general term. The severity of this information loss is Medium, as the term \"Inception model\" is a specific type of neural network, but the replacement is not drastic. However, some nuances of the original description may be lost, as \"Inception model\" implies a specific architecture. The change does not significantly alter the overall meaning of the passage. Overall, the information loss is within the ILT (Medium-High) threshold."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\n\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast neural network, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast neural network, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The simplified passage is \"Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast neural network, that evaluates the presence of roads using the tomographic reconstructions of the input frames.\"\n\nThe most complex parts are:\n- \"fast 39-layered Inception model\" (removed in simplification)\n- \"tomographic reconstructions\" (kept in simplification)\n\nThe complexity level of the simplified passage is: Average person."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "that evaluates the presence of roads using the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast neural network, that evaluates the presence of roads using the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage specified \"in the form of a fast 39-layered Inception model\" which is now removed in the simplified passage.\n\nThe severity of the information loss is high because the removal of the specific model type and its layer count might affect the understanding of the classifier's architecture and its capabilities."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\n\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast neural network, that evaluates the presence of roads using the input frames."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast neural network, that evaluates the presence of roads using the input frames."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The simplified passage \"Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast neural network, that evaluates the presence of roads using the input frames\" has the following complex parts:\n\n- \"fast 39-layered Inception model\" is still present but simplified to \"fast neural network\" \n- \"tomographic reconstructions of the input frames\" is still present but simplified to \"input frames\" \n\nThe complexity level of the passage is Average person (DC), as it is still understandable to an average person with some basic knowledge of computer vision and neural networks."
+  },
+  {
+    "role": "user",
+    "content": "Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  }
+]

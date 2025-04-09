@@ -1,0 +1,110 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe original passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The passage is already at a relatively simple level. However, some parts that could be considered the most complex are: \"unmanned aerial vehicles\" and \"civilian and commercial domain\". These terms might be unfamiliar to some readers. The complexity level of the passage is approximately 4.5 out of 10, indicating it is still somewhat readable but could be simplified further for a general audience."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 18.277500000000007. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"unmanned aerial vehicles\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"Drones\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "With the ever increasing number of drones getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage mentions \"unmanned aerial vehicles\", while the current simplified passage uses \"drones\". This change results in a loss of precision, as \"drones\" is a more general term that may not specifically refer to all types of unmanned aerial vehicles. The severity of this information loss is moderate, as it may cause some readers to misunderstand the context. The ILT (Medium-High) threshold is exceeded, as the change affects the clarity of the text."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Moderate\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "With the ever increasing number of drones getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "With the ever increasing number of drones getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The simplified passage is \"With the ever increasing number of drones getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.\"\n\nThe most complex parts are: \n- \"increasing number\" (modifying a noun)\n- \"civilian and commercial domain\" (compound noun phrase)\n- \"increased need\" (idiomatic expression)\n\nThe complexity level of the passage is below the desired complexity level (Average person), but since the original complexity was not provided, it's hard to say how much it was reduced."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 16.170000000000005. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  }
+]
