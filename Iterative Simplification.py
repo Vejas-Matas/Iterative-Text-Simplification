@@ -112,13 +112,9 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     chat_bot = chat_bots.VllmChatBot(
         model_name=parameters.vllm_model,
     )
-
-    for idx, source in enumerate(sources):
-        print(f"{idx}: {source}")
     
     ### Simplifying passages one-by-one
-    # for i in range(len(sources)):
-    for i in range(0):
+    for i in range(len(sources)):
         ### Initialise
         chat_bot.clear()
         chat_bot.add_system_prompt(system_prompt)
@@ -149,11 +145,11 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         results.append(iteration_results)
 
         ### Save / display results
-        chat_bot.print_chat()
-        chat_bot.save_chat()
+        # chat_bot.print_chat()
+        # chat_bot.save_chat()
         # chat_bot.print_token_usage_log()
 
-        file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
+        # file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
 
 
 
@@ -334,7 +330,7 @@ HALLUCINATIONS:
 
         #############################################################################################################################################################
 
-    file_io_utils.convert_dict_to_json(f"evaluations/{results_file_name}.json", results)
+    # file_io_utils.convert_dict_to_json(f"evaluations/{results_file_name}.json", results)
 
     return results
 
