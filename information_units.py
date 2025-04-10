@@ -107,11 +107,23 @@ def convert_fact_string_to_dict(text):
 
     return result
 
-chat_bot = chat_bots.VllmChatBot(
-    model_name=parameters.vllm_model,
-)
+def compare_run_information_units(run_name, chat_bot):
+    comparisons = []
 
-s = "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research."
-p = "In the modern technology, autonomous vehicles are currently the focus of academic and industrial research."
+    with open(f"evaluations/metrics/{run_name}.json", encoding="utf8") as file:
+        simplification_results = json.load(file)
 
-print(compare_information_units(chat_bot, s, p))
+    for passage_results in simplification_results:
+        source = simplification_result[0]["prediction"]
+        prediction = simplification_result[-1]["prediction"]
+
+        fact_comparison_string = compare_information_units(chat_bot, source, prediction)
+        fact_comparison_categories = convert_fact_string_to_dict
+        dict_entry = {
+            "source": source,
+            "prediction": prediction,
+            "comparison": fact_comparison_categories
+        }
+        comparisons.append(dict_entry)
+
+    convert_dict_to_json(f"evaluations/information_comparison/{run_name}.json", comparisons)
