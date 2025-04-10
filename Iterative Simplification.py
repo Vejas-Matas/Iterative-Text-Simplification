@@ -104,7 +104,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         raise ValueError('Passage type should be "abstract" or "sentence"')
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
-    parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["DC"]).lower().replace(" ", "_")
+    parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["ILT"]).lower().replace(" ", "_")
     results_file_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}"
 
     results = []
