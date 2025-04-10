@@ -113,7 +113,7 @@ def compare_run_information_units(run_name, chat_bot):
     with open(f"evaluations/metrics/{run_name}.json", encoding="utf8") as file:
         simplification_results = json.load(file)
 
-    for passage_results in simplification_results:
+    for simplification_result in simplification_results:
         source = simplification_result[0]["prediction"]
         prediction = simplification_result[-1]["prediction"]
 
