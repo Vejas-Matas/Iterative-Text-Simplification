@@ -96,7 +96,7 @@ def convert_fact_string_to_dict(text):
         if not title_match:
             continue
 
-        title = title_match.group(1)
+        title = title_match.group(1).lower()
         content = part.strip()[len(title) + 1:].strip()
 
         if content.startswith("0. "):

@@ -106,7 +106,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["ILT"]).lower().replace(" ", "_")
-    run_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}"
+    run_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}" # WILL NEED TRAIN / TSET DISTINCTION, AND IN EVALUATION FILE AS WELL
 
     results = []
     
@@ -159,7 +159,7 @@ chat_bot = chat_bots.VllmChatBot(
     model_name=parameters.vllm_model,
 )
 
-passages_to_simplify = 20
+passages_to_simplify = 5
 passage_type_to_simplify = "sentence"
 latest_run_names = []
 
@@ -175,6 +175,18 @@ for passage_type_to_simplify in ["sentence", "abstract"]:
     # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
     pass
 
-# plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
+print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
+print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
+print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
+print("–––––––––––––––––SIMPLIFICATION COMPLETE––––––––––––––––––––")
+print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
+print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
+print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
+print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
+
+
+
+for run_name in latest_run_names:
+    information_units.compare_run_information_units(run_name, chat_bot)
 
 file_io_utils.convert_dict_to_json("./latest_run_names.json", latest_run_names)
