@@ -80,8 +80,32 @@ def compare_information_units(chat_bot, source, prediction):
     # print(100*"/")
     # print(fact_comparison)
 
-    return fac_comparison
+    return fact_comparison
 
+def convert_fact_string_to_dict(text):
+    sections = ["PRESERVATIONS", "OVERSIMPLIFICATIONS", "DELETIONS", "HALLUCINATIONS"]
+    pattern = "|".join(f"(?={s}:)" for s in sections)
+    parts = re.split(pattern, text.strip())
+
+    result = {}
+    for part in parts:
+        if not part.strip():
+            continue
+
+        title_match = re.match(r"([A-Z]+):", part.strip())
+        if not title_match:
+            continue
+
+        title = title_match.group(1)
+        content = part.strip()[len(title) + 1:].strip()
+
+        if content.startswith("0. "):
+            result[title] = []
+        else:
+            items = re.findall(r"\d+\.\s+(.*?)(?=\n\d+\.|\Z)", content, re.DOTALL)
+            result[title] = [item.strip() for item in items]
+
+    return result
 
 chat_bot = chat_bots.VllmChatBot(
     model_name=parameters.vllm_model,

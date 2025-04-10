@@ -2,6 +2,7 @@
 import datetime
 
 # My own files
+import information_units
 import file_io_utils
 import dataset_utils
 import chat_bots
@@ -105,13 +106,9 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["ILT"]).lower().replace(" ", "_")
-    results_file_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}"
+    run_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}"
 
     results = []
-
-    chat_bot = chat_bots.VllmChatBot(
-        model_name=parameters.vllm_model,
-    )
     
     ### Simplifying passages one-by-one
     for i in range(len(sources)):
@@ -149,194 +146,22 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         # chat_bot.save_chat()
         # chat_bot.print_token_usage_log()
 
-        # file_io_utils.append_to_txt(f"predictions/{results_file_name}", prediction)
+        file_io_utils.append_to_txt(f"predictions/{run_name}", prediction)
 
-
-
-        ################################################################## TESTING FACT EXTRACTION ##################################################################
-        information_comparison_instructions = """You are a diligigent and attentive text evaluator. You take two lists – extracted information from an original text and its simplified version. Then you compare them for information discrepancies. Then you provide four lists:
-1. PRESERVATIONS: information in the original and the simplification are the same, equivallent (e.g. synonyms) or it can be clearly implied to be the same;
-2. OVERSIMPLIFICATIONS: core meaning is preserved, but some information was lost – e.g., vagueness is introduced, multiple meanings can be implied or original meaning is lost;
-3. DELETIONS: information that was completely lost after simplification;
-4. HALLUCINATIONS: information that was added after simplification, but is not present and could not be implied from the original.
-
-Either of the lists is allowed to be empty. 
-"""
-        
-        # Examples are generated using ChatGPT and then refined
-        information_extraction_example_1 = """
-Original passage:
-"Mitochondria, often referred to as the powerhouse of the cell, generate adenosine triphosphate (ATP) through oxidative phosphorylation, a process that involves the electron transport chain and chemiosmosis to drive ATP synthesis."
-
-Extracted atomic information units:
-1. Mitochondria are called the powerhouse of the cell.
-2. Mitochondria generate ATP.
-3. ATP stands for adenosine triphosphate.
-4. The process used is oxidative phosphorylation.
-5. Oxidative phosphorylation involves the electron transport chain.
-6. Oxidative phosphorylation involves chemiosmosis.
-7. Chemiosmosis helps drive ATP synthesis.
-
-Simplified passage:
-"Mitochondria make energy for the cell using oxygen in a process called oxidative phosphorylation."
-
-Extracted atomic information units:
-1. Mitochondria make energy for the cell.
-2. The process is called oxidative phosphorylation.
-3. Oxygen is used in this process.
-"""
-
-        information_comparison_example_1 = """
-PRESERVATIONS:
-1. Mitochondria generate energy ("ATP" is replaced with "energy" in the simplified version, but meaning is clear in the context of cells).
-2. The process is called oxidative phosphorylation.
-3. Oxygen is used in the process (implied in the complex version via "oxidative phosphorylation" but explicitly stated in the simplified version).
-
-OVERSIMPLIFICATIONS:
-0. None
-
-DELETIONS:
-1. Mitochondria are called the powerhouse of the cell.
-2. ATP stands for adenosine triphosphate.
-3. Oxidative phosphorylation involves the electron transport chain.
-4. Oxidative phosphorylation involves chemiosmosis.
-5. Chemiosmosis helps drive ATP synthesis.
-
-HALLUCINATIONS:
-0. None
-"""
-
-        information_extraction_example_2 = """
-Original passage:
-"A neural network is a computational model inspired by the structure of biological neural networks, consisting of layers of interconnected artificial neurons that process input data using weighted connections and activation functions to learn patterns and make predictions."
-
-Extracted atomic information units:
-1. A neural network is a computational model.
-2. A neural network is inspired by biological neural networks.
-3. It consists of layers of interconnected artificial neurons.
-4. It processes input data.
-5. It uses weighted connections to process data.
-6. It uses activation functions to process data.
-7. The purpose of a neural network is to learn patterns.
-8. A neural network is used to make predictions.
-
-Simplified passage:
-"A neural network is a computer program that learns patterns from data to make predictions and create images."
-
-Extracted atomic information units:
-1. A neural network is a computer program.
-2. A neural network learns patterns.
-3. A neural network processes data.
-4. A neural network is used to make predictions.
-5. A neural network is used to create images.
-"""
-
-        information_comparison_example_2 = """
-PRESERVATIONS:
-1. A neural network learns patterns.
-2. A neural network processes data.
-3. A neural network is used to make predictions.
-
-OVERSIMPLIFICATIONS:
-1. A neural network is a computer program ("A computational model" changed to "a computer program", which is partially true but omits non-software implementations).
-
-DELETIONS:
-1. A neural network is inspired by biological neural networks (link to biology).
-2. It consists of layers of interconnected artificial neurons (structure).
-3. It uses weighted connections to process data (learning mechanism).
-4. It uses activation functions to process data (learning mechanism).
-
-HALLUCINATIONS:
-1. A neural network is used to create images (statement is true, but is not mentioned or implied in the original).
-"""
-
-        fact_extraction_prompts = [
-            {"role": "system", "content": "You are a diligigent and attentive text evaluator. You extract factual information from passages. Each fact must be an atomic information unit, expressed as a clause. Provide these units as a numbered list, do not include any other text besides the list"},
-            {"role": "system", "content": f"The first pair of examples of information extraction (desired output are the numbered lists):\n\n{information_extraction_example_1}"},
-            {"role": "system", "content": f"The second pair of examples of information extraction (desired output are the numbered lists):\n\n{information_extraction_example_2}"},
-            {"role": "user",   "content": "Extract atomic information units from the following passage. Only provide the list"},
-        ]
-
-        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        # source_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": source}])
-        # prediction_facts = chat_bot.send_no_context_prompts(fact_extraction_prompts + [{"role": "user",   "content": prediction}])
-        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        # # VERSION 1: NO PAST MEMORY
-        # fact_comparison_prompts = [
-        #     {"role": "system", "content": "You take lists of information, and treat them as mathematical sets. Then you provide three lists: elements present only in the first set (\"LOST: \"), only in the second one (\"ADDED: \"), and in the intesection (\"KEPT: \")"},
-        #     {"role": "user",   "content": f"First list:\n{source_facts}"},
-        #     {"role": "user",   "content": f"Second list:\n{prediction_facts}"},
-        # ]
-
-        # VERSION 2: PAST MEMORY
-        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        # fact_comparison_prompts = [
-        #     {"role": "system",      "content": information_comparison_instructions},
-        #     {"role": "system",      "content": f"The first example of information extraction (will already be provided):\n\n{information_extraction_example_1}"},
-        #     {"role": "system",      "content": f"The first example of information comparison (desired output):\n\n{information_comparison_example_1}"},
-        #     {"role": "system",      "content": f"The second example of information extraction (will already be provided):\n\n{information_extraction_example_2}"},
-        #     {"role": "system",      "content": f"The second example of information comparison (desired output):\n\n{information_comparison_example_2}"},
-        #     {"role": "user",        "content": "Extract information units from the following passage (original)"},
-        #     {"role": "user",        "content": source},
-        #     {"role": "assistant",   "content": source_facts},
-        #     {"role": "user",        "content": "Extract information units from the following passage (simplified)"},
-        #     {"role": "user",        "content": prediction},
-        #     {"role": "assistant",   "content": prediction_facts},
-        #     {"role": "user",        "content": "Analyse the data and provide the four lists: PRESERVATIONS, OVERSIMPLIFICATIONS, DELETIONS, HALLACINATIONS. One fact pair should be present in only one list most of the time, a fact might be in multiple pairs if appropriate"},
-        # ]
-        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        # # VERSION 3: DIRECT COMPARISON
-        # fact_comparison_prompts = [
-        #     {"role": "system",      "content": """You take two passages – an original text and its simplified version. Then you extract atomic knowledge units from both, and compare them as mathematical sets. Provide three lists: "ADDED" (present only in the first list), "KEPT" (present in both, in the set intersection), and "DELETED" (present only in the second list)."""},
-        #     {"role": "user",        "content": source},
-        #     {"role": "user",        "content": prediction},
-        #     {"role": "user",        "content": "Analyse the data and provide the three lists: ADDED, KEPT, DELETED"},
-        # ]
-        # source_facts = ""
-        # prediction_facts = ""
-
-        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        # fact_comparison = chat_bot.send_no_context_prompts(fact_comparison_prompts)
-        # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-        # fact_comparison_path = "./runs/fact_comparisons.txt"
-        # file_io_utils.append_to_txt(fact_comparison_path, 100*"#")
-        # file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
-        # file_io_utils.append_to_txt(fact_comparison_path, source)
-        # file_io_utils.append_to_txt(fact_comparison_path, "")
-        # file_io_utils.append_to_txt(fact_comparison_path, source_facts)
-        # file_io_utils.append_to_txt(fact_comparison_path, 100*"–")
-        # file_io_utils.append_to_txt(fact_comparison_path, prediction)
-        # file_io_utils.append_to_txt(fact_comparison_path, "")
-        # file_io_utils.append_to_txt(fact_comparison_path, prediction_facts)
-        # file_io_utils.append_to_txt(fact_comparison_path, 100*"/")
-        # file_io_utils.append_to_txt(fact_comparison_path, fact_comparison)
-
-        print(100*"#")
-        print(100*"–")
-        print(source)
-        # print()
-        # print(source_facts)
-        print(100*"–")
-        print(prediction)
-        # print()
-        # print(prediction_facts)
-        # print(100*"/")
-        # print(fact_comparison)
-
-        #############################################################################################################################################################
-
-    # file_io_utils.convert_dict_to_json(f"evaluations/{results_file_name}.json", results)
+    file_io_utils.convert_dict_to_json(f"evaluations/metrics/{run_name}.json", results)
+    latest_run_names.append(run_name)
 
     return results
 
 
+
+chat_bot = chat_bots.VllmChatBot(
+    model_name=parameters.vllm_model,
+)
+
 passages_to_simplify = 20
 passage_type_to_simplify = "sentence"
+latest_run_names = []
 
 # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
@@ -351,3 +176,5 @@ for passage_type_to_simplify in ["sentence", "abstract"]:
     pass
 
 # plotting.make_token_usage_graphs(datetime.timedelta(hours=6))
+
+file_io_utils.convert_dict_to_json("./latest_run_names.json", latest_run_names)
