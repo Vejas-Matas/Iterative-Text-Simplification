@@ -1,0 +1,1152 @@
+[
+  [
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+      "metrics": {
+        "sari": 9.839973496960793,
+        "bleu": 14.051676978912429,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Autonomous vehicles are the focus of research.",
+      "metrics": {
+        "sari": 33.687541462683775,
+        "bleu": 4.995138898472386,
+        "fkgl": 8.180000000000003,
+        "in_tokens": 2738,
+        "out_tokens": 372
+      }
+    },
+    {
+      "prediction": "Autonomous vehicles are the focus of research.",
+      "metrics": {
+        "sari": 33.687541462683775,
+        "bleu": 4.995138898472386,
+        "fkgl": 8.180000000000003,
+        "in_tokens": 5282,
+        "out_tokens": 596
+      }
+    },
+    {
+      "prediction": "Special cars are being studied.",
+      "metrics": {
+        "sari": 31.28968253968254,
+        "bleu": 3.5275023606301383,
+        "fkgl": 0.5166666666666693,
+        "in_tokens": 7925,
+        "out_tokens": 853
+      }
+    },
+    {
+      "prediction": "Cars are being studied.",
+      "metrics": {
+        "sari": 31.28968253968254,
+        "bleu": 3.2174093287959424,
+        "fkgl": 0,
+        "in_tokens": 10357,
+        "out_tokens": 1023
+      }
+    },
+    {
+      "prediction": "Cars are being studied.",
+      "metrics": {
+        "sari": 31.28968253968254,
+        "bleu": 3.2174093287959424,
+        "fkgl": 0,
+        "in_tokens": 12963,
+        "out_tokens": 1243
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 9.17143246187364,
+        "bleu": 15.356865413172349,
+        "fkgl": 18.277500000000007,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is a need for autonomy in these systems.",
+      "metrics": {
+        "sari": 21.87310545778288,
+        "bleu": 16.436148154531296,
+        "fkgl": 17.350000000000005,
+        "in_tokens": 2684,
+        "out_tokens": 408
+      }
+    },
+    {
+      "prediction": "With the increasing number of drones used in civilian and commercial areas, there is a need for autonomy in these systems.",
+      "metrics": {
+        "sari": 37.16640713839593,
+        "bleu": 8.668528067348738,
+        "fkgl": 11.849565217391305,
+        "in_tokens": 5429,
+        "out_tokens": 665
+      }
+    },
+    {
+      "prediction": "With the number of drones used in public areas increasing, there is a need for autonomy in these systems.",
+      "metrics": {
+        "sari": 31.486524096818215,
+        "bleu": 4.567211833282236,
+        "fkgl": 9.457142857142859,
+        "in_tokens": 8054,
+        "out_tokens": 917
+      }
+    },
+    {
+      "prediction": "With more drones being used in public areas, there is a need for autonomy in these systems.",
+      "metrics": {
+        "sari": 31.92429465958878,
+        "bleu": 4.814971807094068,
+        "fkgl": 7.346315789473689,
+        "in_tokens": 10680,
+        "out_tokens": 1160
+      }
+    },
+    {
+      "prediction": "With more drones being used in public areas, there's a need for drones to control themselves.",
+      "metrics": {
+        "sari": 37.0475912975913,
+        "bleu": 5.401157445454033,
+        "fkgl": 7.818888888888889,
+        "in_tokens": 13356,
+        "out_tokens": 1433
+      }
+    },
+    {
+      "prediction": "With more drones being used in public areas, there's a need for drones to control themselves.",
+      "metrics": {
+        "sari": 37.0475912975913,
+        "bleu": 5.401157445454033,
+        "fkgl": 7.818888888888889,
+        "in_tokens": 15973,
+        "out_tokens": 1651
+      }
+    },
+    {
+      "prediction": "With more drones being used in public areas, drones should be able to control themselves.",
+      "metrics": {
+        "sari": 37.1980796980797,
+        "bleu": 5.751391809950023,
+        "fkgl": 7.004705882352944,
+        "in_tokens": 18669,
+        "out_tokens": 1959
+      }
+    },
+    {
+      "prediction": "With more drones being used in public areas, drones should be able to control themselves.",
+      "metrics": {
+        "sari": 37.1980796980797,
+        "bleu": 5.751391809950023,
+        "fkgl": 7.004705882352944,
+        "in_tokens": 21399,
+        "out_tokens": 2242
+      }
+    },
+    {
+      "prediction": "With more drones being used in public areas, drones should be able to control themselves. The complexity level is 7.",
+      "metrics": {
+        "sari": 37.341787233234605,
+        "bleu": 4.141141330484801,
+        "fkgl": 4.799347826086958,
+        "in_tokens": 24161,
+        "out_tokens": 2508
+      }
+    },
+    {
+      "prediction": "With more drones being used in public areas, drones should be able to fly on their own.",
+      "metrics": {
+        "sari": 36.818123397070764,
+        "bleu": 5.0912128230977505,
+        "fkgl": 5.483157894736845,
+        "in_tokens": 26887,
+        "out_tokens": 2783
+      }
+    },
+    {
+      "prediction": "With more air vehicles flying automatically in public areas, air vehicles should be able to fly automatically.",
+      "metrics": {
+        "sari": 34.4979218121633,
+        "bleu": 2.8629993657668873,
+        "fkgl": 12.314736842105265,
+        "in_tokens": 29444,
+        "out_tokens": 2979
+      }
+    },
+    {
+      "prediction": "Vehicles flying on their own in public should be able to fly automatically.",
+      "metrics": {
+        "sari": 35.33408158284027,
+        "bleu": 3.4815016528590457,
+        "fkgl": 7.570000000000004,
+        "in_tokens": 32210,
+        "out_tokens": 3266
+      }
+    },
+    {
+      "prediction": "Vehicles flying on their own in public should be able to fly automatically.",
+      "metrics": {
+        "sari": 35.33408158284027,
+        "bleu": 3.4815016528590457,
+        "fkgl": 7.570000000000004,
+        "in_tokens": 34762,
+        "out_tokens": 3491
+      }
+    },
+    {
+      "prediction": "Vehicles flying on their own in public should be able to fly automatically.",
+      "metrics": {
+        "sari": 35.33408158284027,
+        "bleu": 3.4815016528590457,
+        "fkgl": 7.570000000000004,
+        "in_tokens": 37382,
+        "out_tokens": 3705
+      }
+    },
+    {
+      "prediction": "Vehicles flying on their own in public should be able to fly automatically.",
+      "metrics": {
+        "sari": 35.33408158284027,
+        "bleu": 3.4815016528590457,
+        "fkgl": 7.570000000000004,
+        "in_tokens": 40000,
+        "out_tokens": 3967
+      }
+    },
+    {
+      "prediction": "Vehicles flying on their own in public should be able to fly automatically.",
+      "metrics": {
+        "sari": 35.33408158284027,
+        "bleu": 3.4815016528590457,
+        "fkgl": 7.570000000000004,
+        "in_tokens": 42727,
+        "out_tokens": 4244
+      }
+    },
+    {
+      "prediction": "Vehicles flying on their own in public should be able to fly by itself.",
+      "metrics": {
+        "sari": 35.236615695900696,
+        "bleu": 3.4768108606699193,
+        "fkgl": 4.420000000000002,
+        "in_tokens": 45369,
+        "out_tokens": 4476
+      }
+    },
+    {
+      "prediction": "Drones in public should be able to fly by itself.",
+      "metrics": {
+        "sari": 37.08496303891041,
+        "bleu": 3.5572110236581462,
+        "fkgl": 2.645454545454548,
+        "in_tokens": 48236,
+        "out_tokens": 4843
+      }
+    },
+    {
+      "prediction": "Drones in public should be able to fly by itself.",
+      "metrics": {
+        "sari": 37.08496303891041,
+        "bleu": 3.5572110236581462,
+        "fkgl": 2.645454545454548,
+        "in_tokens": 50703,
+        "out_tokens": 5009
+      }
+    },
+    {
+      "prediction": "Drones in public should be able to fly by itself. The passage is hard to understand.",
+      "metrics": {
+        "sari": 37.38926278399962,
+        "bleu": 3.211547431691929,
+        "fkgl": 2.342222222222226,
+        "in_tokens": 53285,
+        "out_tokens": 5232
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 20.187097822213836,
+        "bleu": 41.58468660054065,
+        "fkgl": 15.51727272727273,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Due to governments rules for drone flying, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 37.964578993990756,
+        "bleu": 20.274680688313648,
+        "fkgl": 10.713333333333338,
+        "in_tokens": 2693,
+        "out_tokens": 358
+      }
+    },
+    {
+      "prediction": "Due to regulations for drone rules, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 37.35008818342152,
+        "bleu": 19.91898879730063,
+        "fkgl": 11.784285714285716,
+        "in_tokens": 5428,
+        "out_tokens": 645
+      }
+    },
+    {
+      "prediction": "Due to rules for drones, is getting popular.",
+      "metrics": {
+        "sari": 24.696969696969692,
+        "bleu": 2.183071139876803,
+        "fkgl": 3.650000000000002,
+        "in_tokens": 8130,
+        "out_tokens": 903
+      }
+    },
+    {
+      "prediction": "The score is 3.65. Due to rules for drones, is getting popular.",
+      "metrics": {
+        "sari": 25.434155216763912,
+        "bleu": 2.8157669494185624,
+        "fkgl": 0,
+        "in_tokens": 10854,
+        "out_tokens": 1208
+      }
+    },
+    {
+      "prediction": "The score is 3.65. Due to rules for drones, is popular.",
+      "metrics": {
+        "sari": 25.434155216763912,
+        "bleu": 2.766368121082493,
+        "fkgl": 0,
+        "in_tokens": 13479,
+        "out_tokens": 1455
+      }
+    },
+    {
+      "prediction": "The score is 3.65. Due to rules for drones, is well-liked.",
+      "metrics": {
+        "sari": 25.434155216763912,
+        "bleu": 2.766368121082493,
+        "fkgl": 0,
+        "in_tokens": 15933,
+        "out_tokens": 1649
+      }
+    },
+    {
+      "prediction": "Due to rules for drones, is well-liked.",
+      "metrics": {
+        "sari": 24.696969696969692,
+        "bleu": 1.9861872553779454,
+        "fkgl": 2.342222222222226,
+        "in_tokens": 18492,
+        "out_tokens": 1889
+      }
+    },
+    {
+      "prediction": "Because of drone rules, is well-liked.",
+      "metrics": {
+        "sari": 26.865530303030308,
+        "bleu": 1.7426130460477305,
+        "fkgl": 2.280000000000001,
+        "in_tokens": 21167,
+        "out_tokens": 2151
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 13.418803418803419,
+        "bleu": 24.455861610699284,
+        "fkgl": 18.612972972972972,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We're trying to make a system that helps drones fly through cities by learning from an expert pilot. In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 14.460470085470085,
+        "bleu": 16.18444679083915,
+        "fkgl": 13.451428571428576,
+        "in_tokens": 3534,
+        "out_tokens": 667
+      }
+    },
+    {
+      "prediction": "We're trying to make a system that helps drones fly through cities. In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 14.52991452991453,
+        "bleu": 18.187652620719987,
+        "fkgl": 12.332,
+        "in_tokens": 6424,
+        "out_tokens": 974
+      }
+    },
+    {
+      "prediction": "We're trying to make a system that helps drones fly through cities. We use a system that learns to fly like an expert to help drones navigate cities.",
+      "metrics": {
+        "sari": 37.508308005135085,
+        "bleu": 4.175872565419194,
+        "fkgl": 4.420000000000002,
+        "in_tokens": 9224,
+        "out_tokens": 1230
+      }
+    },
+    {
+      "prediction": "We're trying to make a system that helps drones fly through cities. We use a system that learns to fly like an expert to help drones navigate cities.",
+      "metrics": {
+        "sari": 37.508308005135085,
+        "bleu": 4.175872565419194,
+        "fkgl": 4.420000000000002,
+        "in_tokens": 11985,
+        "out_tokens": 1479
+      }
+    },
+    {
+      "prediction": "We're trying to make a system that helps drones move through the city. We use a system that learns to fly like an expert to help drones move through the city",
+      "metrics": {
+        "sari": 36.95601380810404,
+        "bleu": 3.9016631127179084,
+        "fkgl": 4.293749999999999,
+        "in_tokens": 14886,
+        "out_tokens": 1815
+      }
+    },
+    {
+      "prediction": "We're trying to make a system that helps drones move through the city. We use a system that learns to fly like an expert to help drones navigate the city",
+      "metrics": {
+        "sari": 37.74548749231457,
+        "bleu": 4.15466379165763,
+        "fkgl": 4.919516129032257,
+        "in_tokens": 17591,
+        "out_tokens": 2058
+      }
+    },
+    {
+      "prediction": "We're trying to make a system that helps drones move through the city. We use a system to help drones navigate the city by flying like an expert",
+      "metrics": {
+        "sari": 36.654938677980155,
+        "bleu": 3.748131723822483,
+        "fkgl": 4.7132758620689685,
+        "in_tokens": 20275,
+        "out_tokens": 2306
+      }
+    },
+    {
+      "prediction": "We're trying to make a system to help drones fly like an expert pilot with a drone navigation system",
+      "metrics": {
+        "sari": 40.204984897302644,
+        "bleu": 8.383213927348148,
+        "fkgl": 8.588421052631581,
+        "in_tokens": 23044,
+        "out_tokens": 2554
+      }
+    },
+    {
+      "prediction": "We're trying to make a system to help drones be flown by a good pilot",
+      "metrics": {
+        "sari": 33.29425153385255,
+        "bleu": 2.634169649402235,
+        "fkgl": 3.633333333333333,
+        "in_tokens": 26005,
+        "out_tokens": 2913
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 9.165100804326121,
+        "bleu": 10.947127056200989,
+        "fkgl": 19.48,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Our classifier has been constructed in the form of a fast and powerful model that uses special images to detect roads.",
+      "metrics": {
+        "sari": 27.079305030124704,
+        "bleu": 2.057727317881788,
+        "fkgl": 10.690000000000001,
+        "in_tokens": 2770,
+        "out_tokens": 392
+      }
+    },
+    {
+      "prediction": "Our classifier has been constructed in the form of a fast and powerful model that uses special images to detect roads.",
+      "metrics": {
+        "sari": 27.079305030124704,
+        "bleu": 2.057727317881788,
+        "fkgl": 10.690000000000001,
+        "in_tokens": 5546,
+        "out_tokens": 683
+      }
+    },
+    {
+      "prediction": "Our classifier has been constructed in the form of a strong model that uses special images to detect roads.",
+      "metrics": {
+        "sari": 27.87918175014949,
+        "bleu": 2.017521553928156,
+        "fkgl": 9.32,
+        "in_tokens": 8130,
+        "out_tokens": 875
+      }
+    },
+    {
+      "prediction": "Our classifier is a strong model that uses special pictures to find roads.",
+      "metrics": {
+        "sari": 32.519569471624266,
+        "bleu": 1.5868476281722577,
+        "fkgl": 6.727142857142859,
+        "in_tokens": 10876,
+        "out_tokens": 1142
+      }
+    },
+    {
+      "prediction": "Our classifier is a simple tool that uses pictures to find roads.",
+      "metrics": {
+        "sari": 31.786305151403425,
+        "bleu": 1.3848548284356388,
+        "fkgl": 5.818461538461541,
+        "in_tokens": 13519,
+        "out_tokens": 1367
+      }
+    },
+    {
+      "prediction": "Our classifier is a simple tool that uses pictures to find roads.",
+      "metrics": {
+        "sari": 31.786305151403425,
+        "bleu": 1.3848548284356388,
+        "fkgl": 5.818461538461541,
+        "in_tokens": 15994,
+        "out_tokens": 1506
+      }
+    },
+    {
+      "prediction": "Our classifier is a simple tool that uses pictures to find roads",
+      "metrics": {
+        "sari": 30.998820106047315,
+        "bleu": 1.15382592527539,
+        "fkgl": 6.790000000000003,
+        "in_tokens": 18694,
+        "out_tokens": 1723
+      }
+    },
+    {
+      "prediction": "Our classifier is a simple tool that uses pictures to find roads",
+      "metrics": {
+        "sari": 30.998820106047315,
+        "bleu": 1.15382592527539,
+        "fkgl": 6.790000000000003,
+        "in_tokens": 21456,
+        "out_tokens": 2007
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames. Our classifier is a simple tool that uses pictures to find roads",
+      "metrics": {
+        "sari": 10.35557699480231,
+        "bleu": 8.48007939406595,
+        "fkgl": 13.611538461538462,
+        "in_tokens": 24430,
+        "out_tokens": 2439
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames. It's a simple tool",
+      "metrics": {
+        "sari": 9.165100804326121,
+        "bleu": 9.916058235566588,
+        "fkgl": 12.030909090909088,
+        "in_tokens": 27375,
+        "out_tokens": 2752
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a powerful computer model that checks for roads in images. It's a simple tool",
+      "metrics": {
+        "sari": 32.4760349594631,
+        "bleu": 9.13124680674188,
+        "fkgl": 9.825,
+        "in_tokens": 30552,
+        "out_tokens": 3171
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Based on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.",
+      "metrics": {
+        "sari": 14.233500417710944,
+        "bleu": 21.690365808279147,
+        "fkgl": 16.816,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Our system performs well in terms of processing and accuracy compared to other models.",
+      "metrics": {
+        "sari": 25.187391371413113,
+        "bleu": 3.716499092256817,
+        "fkgl": 9.92666666666667,
+        "in_tokens": 2733,
+        "out_tokens": 402
+      }
+    },
+    {
+      "prediction": "Our system performs well in terms of processing and accuracy compared to other models.",
+      "metrics": {
+        "sari": 25.187391371413113,
+        "bleu": 3.716499092256817,
+        "fkgl": 9.92666666666667,
+        "in_tokens": 5515,
+        "out_tokens": 694
+      }
+    },
+    {
+      "prediction": "Our system performs well in terms of speed and precision compared to other models.",
+      "metrics": {
+        "sari": 26.173826173826168,
+        "bleu": 3.4585921141027356,
+        "fkgl": 7.566666666666666,
+        "in_tokens": 8138,
+        "out_tokens": 910
+      }
+    },
+    {
+      "prediction": "Our system does well in terms of speed and copying models compared to other models.",
+      "metrics": {
+        "sari": 27.279638012396635,
+        "bleu": 3.21858262703621,
+        "fkgl": 6.8750000000000036,
+        "in_tokens": 10783,
+        "out_tokens": 1161
+      }
+    },
+    {
+      "prediction": "Our system does well in terms of speed and copying one model.",
+      "metrics": {
+        "sari": 26.431252681252683,
+        "bleu": 3.4015426186864377,
+        "fkgl": 3.0953846153846136,
+        "in_tokens": 13409,
+        "out_tokens": 1392
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+      "metrics": {
+        "sari": 13.280882523625392,
+        "bleu": 23.71144604616222,
+        "fkgl": 13.824736842105263,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+      "metrics": {
+        "sari": 13.280882523625392,
+        "bleu": 23.71144604616222,
+        "fkgl": 13.824736842105263,
+        "in_tokens": 2712,
+        "out_tokens": 362
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+      "metrics": {
+        "sari": 13.280882523625392,
+        "bleu": 23.71144604616222,
+        "fkgl": 13.824736842105263,
+        "in_tokens": 5401,
+        "out_tokens": 582
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experienced pilots.",
+      "metrics": {
+        "sari": 38.02680071206044,
+        "bleu": 31.482826891551863,
+        "fkgl": 12.402758620689657,
+        "in_tokens": 8094,
+        "out_tokens": 808
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experienced pilots who flew the drone in urban areas.",
+      "metrics": {
+        "sari": 53.815750441444116,
+        "bleu": 35.320351051052896,
+        "fkgl": 10.68,
+        "in_tokens": 10894,
+        "out_tokens": 1084
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experienced pilots who flew the drone in urban areas.",
+      "metrics": {
+        "sari": 53.815750441444116,
+        "bleu": 35.320351051052896,
+        "fkgl": 10.68,
+        "in_tokens": 13524,
+        "out_tokens": 1336
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experienced pilots who flew the drone in urban areas.",
+      "metrics": {
+        "sari": 53.815750441444116,
+        "bleu": 35.320351051052896,
+        "fkgl": 10.68,
+        "in_tokens": 16259,
+        "out_tokens": 1574
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experienced pilots who flew the drone in urban areas.",
+      "metrics": {
+        "sari": 53.815750441444116,
+        "bleu": 35.320351051052896,
+        "fkgl": 10.68,
+        "in_tokens": 18792,
+        "out_tokens": 1730
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experienced pilots who flew the drone in urban areas with lots of flying experience.",
+      "metrics": {
+        "sari": 49.8714497863434,
+        "bleu": 29.11321657814561,
+        "fkgl": 12.629999999999999,
+        "in_tokens": 21705,
+        "out_tokens": 2051
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experienced pilots who flew the drone in urban areas. The passage has a high readability score.",
+      "metrics": {
+        "sari": 53.815750441444116,
+        "bleu": 26.336844315987236,
+        "fkgl": 7.651060606060607,
+        "in_tokens": 24405,
+        "out_tokens": 2290
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experts having at least 6-8 years of flying experience. The passage has a high readability score.",
+      "metrics": {
+        "sari": 34.491704618311104,
+        "bleu": 24.339235199221196,
+        "fkgl": 6.069285714285716,
+        "in_tokens": 27273,
+        "out_tokens": 2578
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experts having many years of flying experience.",
+      "metrics": {
+        "sari": 45.224286538396285,
+        "bleu": 37.95418722091349,
+        "fkgl": 9.79739130434783,
+        "in_tokens": 30291,
+        "out_tokens": 2939
+      }
+    },
+    {
+      "prediction": "The data used for training the system has been captured from the drone, by experts having many years of flying experience. The passage's complexity was measured at a high level.",
+      "metrics": {
+        "sari": 45.97282281324835,
+        "bleu": 26.336844315987236,
+        "fkgl": 8.366212121212126,
+        "in_tokens": 33018,
+        "out_tokens": 3215
+      }
+    },
+    {
+      "prediction": "The data was captured by experienced pilots.",
+      "metrics": {
+        "sari": 37.253378429849015,
+        "bleu": 3.0038632040006075,
+        "fkgl": 8.180000000000003,
+        "in_tokens": 35711,
+        "out_tokens": 3422
+      }
+    },
+    {
+      "prediction": "The data was captured by experienced pilots.",
+      "metrics": {
+        "sari": 37.253378429849015,
+        "bleu": 3.0038632040006075,
+        "fkgl": 8.180000000000003,
+        "in_tokens": 38223,
+        "out_tokens": 3588
+      }
+    },
+    {
+      "prediction": "The data was captured by experienced pilots.",
+      "metrics": {
+        "sari": 37.253378429849015,
+        "bleu": 3.0038632040006075,
+        "fkgl": 8.180000000000003,
+        "in_tokens": 40709,
+        "out_tokens": 3733
+      }
+    },
+    {
+      "prediction": "The data was captured by experts having at least 6-8 years of flying experience.",
+      "metrics": {
+        "sari": 27.585021986396665,
+        "bleu": 5.334480033289602,
+        "fkgl": 4.92235294117647,
+        "in_tokens": 43380,
+        "out_tokens": 3989
+      }
+    },
+    {
+      "prediction": "The data was captured by experts having at least 6-8 years of flying experience.",
+      "metrics": {
+        "sari": 27.585021986396665,
+        "bleu": 5.334480033289602,
+        "fkgl": 4.92235294117647,
+        "in_tokens": 46148,
+        "out_tokens": 4244
+      }
+    },
+    {
+      "prediction": "The data was captured by experts who have a lot of flying experience.",
+      "metrics": {
+        "sari": 33.91125750066198,
+        "bleu": 5.019878544914281,
+        "fkgl": 5.884285714285717,
+        "in_tokens": 48825,
+        "out_tokens": 4477
+      }
+    },
+    {
+      "prediction": "The data was captured by experts who have a lot of flying experience.",
+      "metrics": {
+        "sari": 33.91125750066198,
+        "bleu": 5.019878544914281,
+        "fkgl": 5.884285714285717,
+        "in_tokens": 51422,
+        "out_tokens": 4663
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Permissions were taken from required authorities who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+      "metrics": {
+        "sari": 3.0753968253968247,
+        "bleu": 2.0705706652424007,
+        "fkgl": 13.436666666666667,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Permissions were taken from officials who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+      "metrics": {
+        "sari": 12.642135642135642,
+        "bleu": 2.1671320168371846,
+        "fkgl": 11.849565217391305,
+        "in_tokens": 2574,
+        "out_tokens": 330
+      }
+    },
+    {
+      "prediction": "Permissions were taken from officials who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+      "metrics": {
+        "sari": 12.642135642135642,
+        "bleu": 2.1671320168371846,
+        "fkgl": 11.849565217391305,
+        "in_tokens": 5248,
+        "out_tokens": 569
+      }
+    },
+    {
+      "prediction": "Permissions were taken from officials who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+      "metrics": {
+        "sari": 12.642135642135642,
+        "bleu": 2.1671320168371846,
+        "fkgl": 11.849565217391305,
+        "in_tokens": 7808,
+        "out_tokens": 791
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "With the extensive amount of drone data that we collected, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%.",
+      "metrics": {
+        "sari": 14.42659731342596,
+        "bleu": 26.245554054129023,
+        "fkgl": 13.48375,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44% and extensive amount of drone data.",
+      "metrics": {
+        "sari": 33.05672268907563,
+        "bleu": 29.33705789311312,
+        "fkgl": 12.421481481481482,
+        "in_tokens": 2786,
+        "out_tokens": 387
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with very accurate data and an extensive amount of drone data.",
+      "metrics": {
+        "sari": 38.76004435882391,
+        "bleu": 27.659333772326384,
+        "fkgl": 13.611538461538462,
+        "in_tokens": 5468,
+        "out_tokens": 626
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with very accurate data and a lot of drone data.",
+      "metrics": {
+        "sari": 43.396428312612876,
+        "bleu": 28.838945870351704,
+        "fkgl": 12.096,
+        "in_tokens": 8109,
+        "out_tokens": 856
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with very good data.",
+      "metrics": {
+        "sari": 44.851131462968205,
+        "bleu": 37.75432399924586,
+        "fkgl": 9.830526315789477,
+        "in_tokens": 10851,
+        "out_tokens": 1119
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with very good data.",
+      "metrics": {
+        "sari": 44.851131462968205,
+        "bleu": 37.75432399924586,
+        "fkgl": 9.830526315789477,
+        "in_tokens": 13441,
+        "out_tokens": 1325
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with very good data. The passage's readability is very good.",
+      "metrics": {
+        "sari": 47.23043525356232,
+        "bleu": 28.32630234719515,
+        "fkgl": 8.541538461538462,
+        "in_tokens": 16182,
+        "out_tokens": 1601
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with very good data. The text is easy to understand.",
+      "metrics": {
+        "sari": 47.04525006837713,
+        "bleu": 28.32630234719515,
+        "fkgl": 6.726153846153846,
+        "in_tokens": 18791,
+        "out_tokens": 1816
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with good data. The text is easy to understand.",
+      "metrics": {
+        "sari": 47.23043525356232,
+        "bleu": 29.534359244592498,
+        "fkgl": 6.277000000000001,
+        "in_tokens": 21399,
+        "out_tokens": 2017
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting, with good data. This text is clear.",
+      "metrics": {
+        "sari": 46.70298331482005,
+        "bleu": 31.52861344254502,
+        "fkgl": 4.799347826086958,
+        "in_tokens": 24142,
+        "out_tokens": 2309
+      }
+    },
+    {
+      "prediction": "We have been able to navigate successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 49.46009537614756,
+        "bleu": 39.798800548799825,
+        "fkgl": 9.255714285714287,
+        "in_tokens": 26715,
+        "out_tokens": 2488
+      }
+    },
+    {
+      "prediction": "We have been driven successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 54.815697655676196,
+        "bleu": 32.33824575540096,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 29346,
+        "out_tokens": 2702
+      }
+    },
+    {
+      "prediction": "We have been driven successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 54.815697655676196,
+        "bleu": 32.33824575540096,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 31859,
+        "out_tokens": 2894
+      }
+    },
+    {
+      "prediction": "We have been driven successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 54.815697655676196,
+        "bleu": 32.33824575540096,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 34504,
+        "out_tokens": 3126
+      }
+    },
+    {
+      "prediction": "We have been driven successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 54.815697655676196,
+        "bleu": 32.33824575540096,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 37217,
+        "out_tokens": 3406
+      }
+    },
+    {
+      "prediction": "We have been driven successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 54.815697655676196,
+        "bleu": 32.33824575540096,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 39877,
+        "out_tokens": 3647
+      }
+    },
+    {
+      "prediction": "We have been driven successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 54.815697655676196,
+        "bleu": 32.33824575540096,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 42534,
+        "out_tokens": 3886
+      }
+    },
+    {
+      "prediction": "We have been driven successfully through roads without crashing or overshooting.",
+      "metrics": {
+        "sari": 54.815697655676196,
+        "bleu": 32.33824575540096,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 45307,
+        "out_tokens": 4155
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.",
+      "metrics": {
+        "sari": 21.06441698936628,
+        "bleu": 45.30777803692813,
+        "fkgl": 8.140000000000004,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.",
+      "metrics": {
+        "sari": 21.06441698936628,
+        "bleu": 45.30777803692813,
+        "fkgl": 8.140000000000004,
+        "in_tokens": 2342,
+        "out_tokens": 220
+      }
+    },
+    {
+      "prediction": "The computational efficiency of MAVNet enables the drone to fly at very fast speeds of up to 6 meters per second.",
+      "metrics": {
+        "sari": 26.451000690131124,
+        "bleu": 21.79301929852717,
+        "fkgl": 10.690000000000001,
+        "in_tokens": 4976,
+        "out_tokens": 477
+      }
+    },
+    {
+      "prediction": "The computational efficiency of MAVNet enables the drone to fly at very fast speeds up to 6 meters per second.",
+      "metrics": {
+        "sari": 32.65328949279253,
+        "bleu": 22.914213083896932,
+        "fkgl": 10.580952380952379,
+        "in_tokens": 7710,
+        "out_tokens": 769
+      }
+    },
+    {
+      "prediction": "The computational efficiency of MAVNet enables the drone to fly at very fast speeds up to 6 meters per second. This is at a 10th-grade level.",
+      "metrics": {
+        "sari": 32.65328949279253,
+        "bleu": 16.848646110322342,
+        "fkgl": 6.305714285714288,
+        "in_tokens": 10193,
+        "out_tokens": 969
+      }
+    },
+    {
+      "prediction": "The computational efficiency of MAVNet enables the drone to fly at very fast speeds up to 6 meters per second. The simplified passage's complexity was measured at 6.3 on the FKGL scale.",
+      "metrics": {
+        "sari": 32.65328949279253,
+        "bleu": 13.7340196432234,
+        "fkgl": 8.740000000000002,
+        "in_tokens": 12914,
+        "out_tokens": 1285
+      }
+    },
+    {
+      "prediction": "The computational efficiency of MAVNet enables the drone to fly at very fast speeds up to 6 meters per second.",
+      "metrics": {
+        "sari": 32.65328949279253,
+        "bleu": 22.914213083896932,
+        "fkgl": 10.580952380952379,
+        "in_tokens": 15519,
+        "out_tokens": 1474
+      }
+    }
+  ]
+]
