@@ -119,7 +119,7 @@ def compare_run_information_units(run_name, chat_bot):
         prediction = simplification_result[-1]["prediction"]
 
         fact_comparison_string = compare_information_units(chat_bot, source, prediction)
-        fact_comparison_categories = convert_fact_string_to_dict
+        fact_comparison_categories = convert_fact_string_to_dict(fact_comparison_string)
         dict_entry = {
             "source": source,
             "prediction": prediction,
