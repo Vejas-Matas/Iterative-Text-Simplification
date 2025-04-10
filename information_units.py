@@ -28,7 +28,7 @@ def compare_information_units(chat_bot, source, prediction):
 
     # VERSION 2: PAST MEMORY
     fact_comparison_prompts = [
-        {"role": "system",      "content": information_comparison_instructions},
+        {"role": "system",      "content": parameters.information_comparison_instructions},
         {"role": "system",      "content": f"The first example of information extraction (will already be provided):\n\n{parameters.information_extraction_example_1}"},
         {"role": "system",      "content": f"The first example of information comparison (desired output):\n\n{parameters.information_comparison_example_1}"},
         {"role": "system",      "content": f"The second example of information extraction (will already be provided):\n\n{parameters.information_extraction_example_2}"},
