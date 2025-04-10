@@ -4,6 +4,7 @@ import json
 import numpy as np
 import pandas as pd
 
+import file_io_utils
 import parameters
 import chat_bots
 
@@ -126,4 +127,4 @@ def compare_run_information_units(run_name, chat_bot):
         }
         comparisons.append(dict_entry)
 
-    convert_dict_to_json(f"evaluations/information_comparison/{run_name}.json", comparisons)
+    file_io_utils.convert_dict_to_json(f"evaluations/information_comparison/{run_name}.json", comparisons)
