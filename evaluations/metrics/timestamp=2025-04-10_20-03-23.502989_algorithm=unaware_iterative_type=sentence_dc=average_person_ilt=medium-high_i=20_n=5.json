@@ -1,0 +1,292 @@
+[
+  [
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+      "metrics": {
+        "sari": 9.839973496960793,
+        "bleu": 14.051676978912429,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are the focus of research.",
+      "metrics": {
+        "sari": 18.287642640583815,
+        "bleu": 5.751391809950023,
+        "fkgl": 11.169411764705881,
+        "in_tokens": 5057,
+        "out_tokens": 250
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, autonomous vehicles are the main focus of research.",
+      "metrics": {
+        "sari": 19.455111810610532,
+        "bleu": 5.401157445454033,
+        "fkgl": 11.096666666666668,
+        "in_tokens": 10263,
+        "out_tokens": 523
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, self-driving cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 9.130000000000003,
+        "in_tokens": 15347,
+        "out_tokens": 783
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, driving cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 8.474444444444444,
+        "in_tokens": 20450,
+        "out_tokens": 1039
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, self-driving cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 9.130000000000003,
+        "in_tokens": 25219,
+        "out_tokens": 1229
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, driverless cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 9.130000000000003,
+        "in_tokens": 30340,
+        "out_tokens": 1476
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, self-driving cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 9.130000000000003,
+        "in_tokens": 35230,
+        "out_tokens": 1700
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, driverless cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 9.130000000000003,
+        "in_tokens": 40287,
+        "out_tokens": 1935
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, self-driving cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 9.130000000000003,
+        "in_tokens": 45567,
+        "out_tokens": 2231
+      }
+    },
+    {
+      "prediction": "In the modern era of automation and robotics, self-driving cars are the main focus of research.",
+      "metrics": {
+        "sari": 20.568056052945185,
+        "bleu": 2.8265205879007453,
+        "fkgl": 9.130000000000003,
+        "in_tokens": 50768,
+        "out_tokens": 2523
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 9.17143246187364,
+        "bleu": 15.356865413172349,
+        "fkgl": 18.277500000000007,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in civilian and commercial activities, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 9.917141789239311,
+        "bleu": 5.517784889816492,
+        "fkgl": 18.95806451612903,
+        "in_tokens": 5341,
+        "out_tokens": 292
+      }
+    },
+    {
+      "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in civilian and commercial activities, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 13.394078939422078,
+        "bleu": 5.919720809373671,
+        "fkgl": 17.69241379310345,
+        "in_tokens": 10610,
+        "out_tokens": 557
+      }
+    },
+    {
+      "prediction": "With the ever increasing number of drones getting involved in civilian and commercial activities, there is an increased need for autonomy in these systems too.",
+      "metrics": {
+        "sari": 23.041160908807967,
+        "bleu": 6.384875295507791,
+        "fkgl": 15.480740740740742,
+        "in_tokens": 16058,
+        "out_tokens": 874
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 20.187097822213836,
+        "bleu": 41.58468660054065,
+        "fkgl": 15.51727272727273,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Due to government regulations, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 37.35008818342152,
+        "bleu": 18.720655824046926,
+        "fkgl": 13.673333333333336,
+        "in_tokens": 5504,
+        "out_tokens": 297
+      }
+    },
+    {
+      "prediction": "Due to government regulations, road-tracking based navigation is garnering interest.",
+      "metrics": {
+        "sari": 37.35008818342152,
+        "bleu": 18.720655824046926,
+        "fkgl": 13.673333333333336,
+        "in_tokens": 10443,
+        "out_tokens": 495
+      }
+    },
+    {
+      "prediction": "Due to government regulations, road-tracking navigation is becoming popular.",
+      "metrics": {
+        "sari": 28.745384217648084,
+        "bleu": 4.945547290259043,
+        "fkgl": 13.372727272727271,
+        "in_tokens": 15765,
+        "out_tokens": 765
+      }
+    },
+    {
+      "prediction": "Due to government regulations, road tracking is popular.",
+      "metrics": {
+        "sari": 24.292210827975207,
+        "bleu": 2.0315766105349127,
+        "fkgl": 7.190000000000001,
+        "in_tokens": 20691,
+        "out_tokens": 988
+      }
+    },
+    {
+      "prediction": "Because of rules, road tracking is popular.",
+      "metrics": {
+        "sari": 26.865530303030308,
+        "bleu": 1.9861872553779454,
+        "fkgl": 3.653333333333336,
+        "in_tokens": 25745,
+        "out_tokens": 1229
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 13.418803418803419,
+        "bleu": 24.455861610699284,
+        "fkgl": 18.612972972972972,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose a machine learning approach to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 31.220937942905906,
+        "bleu": 26.259038903696133,
+        "fkgl": 16.064117647058826,
+        "in_tokens": 5610,
+        "out_tokens": 300
+      }
+    },
+    {
+      "prediction": "In an attempt to achieve the above mentioned tasks, we propose a machine learning approach to UAV navigation in city streets by learning to fly by imitating an expert pilot.",
+      "metrics": {
+        "sari": 40.709436092188035,
+        "bleu": 27.983190414643474,
+        "fkgl": 14.590000000000003,
+        "in_tokens": 11249,
+        "out_tokens": 699
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 9.165100804326121,
+        "bleu": 10.947127056200989,
+        "fkgl": 19.48,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a deep neural network model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+      "metrics": {
+        "sari": 19.149343088971573,
+        "bleu": 9.868209342887877,
+        "fkgl": 19.414210526315788,
+        "in_tokens": 5554,
+        "out_tokens": 319
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a deep neural network model, that evaluates the presence of roads using reconstructions of the input frames.",
+      "metrics": {
+        "sari": 22.69829337637245,
+        "bleu": 9.792531733010927,
+        "fkgl": 18.11666666666667,
+        "in_tokens": 10779,
+        "out_tokens": 582
+      }
+    },
+    {
+      "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a deep neural network model, that evaluates the presence of roads using reconstructions of the input frames.",
+      "metrics": {
+        "sari": 22.69829337637245,
+        "bleu": 9.792531733010927,
+        "fkgl": 18.11666666666667,
+        "in_tokens": 16234,
+        "out_tokens": 865
+      }
+    }
+  ]
+]
