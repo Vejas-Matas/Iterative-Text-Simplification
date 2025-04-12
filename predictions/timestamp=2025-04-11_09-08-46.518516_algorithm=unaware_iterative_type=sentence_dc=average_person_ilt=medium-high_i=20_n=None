@@ -1,0 +1,958 @@
+In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.
+With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.
+Because of government rules, getting more popular
+In an attempt to achieve the above mentioned tasks, we propose a machine learning based solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.
+Derived from the classic image classification algorithms, our classifier has been constructed in the form of a basic model, that uses reconstructions of the input frames to detect roads.
+Based on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.
+The data used for training the system has been captured from the drone in streets, by experts having 6-8 years of experience.
+Permissions were taken from officials who made sure that low risk is involved in the data collection.
+With the extensive amount of drone data that we collected, we have been able to navigate successfully through roads without crashing, with a high degree of accuracy.
+The drone system enables the drone to fly at high speeds of up to 6m/sec.
+We present the same results in this research and compare them with other current best vision and learning techniques.
+Recognizing Traffic Signs using intelligent systems can drastically reduce the number of accidents happening world-wide.
+Cars have arrived signs are hard to read.
+Various machine learning techniques like Random Forest, SVM as well as deep learning models has been proposed for classifying traffic signs.
+Though they reach top performance on a particular data-set, but fall short of tackling various Traffic Sign Recognition benchmarks.
+In this paper, we propose a novel and unified architecture that aces multiple benchmarks with better overall score than the state-of-the-art architectures.
+Our model is made of residual convolutional blocks with hierarchical dilated skip connections joined in steps.
+With this we score 99.33% Accuracy in German sign recognition test and 99.17% Accuracy in Belgian traffic sign classification benchmark.
+Moreover, we propose a newly devised residual learning technique which is very low in both memory and computational complexity.
+We introduce Ignition: an AI system for training self-driving vehicles in simulated environments.
+The model is an Advanced computer program, which is fed in images from the front of a simulated F1 car, and outputs steering, throttle, and braking instructions.
+Importantly, we never explicitly train the model to detect road features like the outline of a track or distance to other cars; instead, we illustrate that these features are learned by the network.
+In this paper, we present an adapt an existing system to a new area, which allows a network to adapt to a new place, controlling a car.
+A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.
+To enable learning from existing models, we let the model produce not only a steering command but also a lane departure level (LDL) by adding a new task module, which takes the output of the last layer as input from existing models.
+The CNN trained on the source domain, called source network, is then utilized to train another task module called target network, which also uses the last part of the source network's output and is trained to produce a steering command for the target domain.
+The commands from the source and target networks are finally merged according to a simple formula and the merged command is utilized for controlling a car in the target domain.
+To demonstrate the effectiveness of our method, we used games.
+Experimental results show that the proposed method performs better than other methods in terms of safe driving.
+A significant problem of using deep learning techniques is the limited amount of data available for training.
+There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.
+In previous work, we have trained a multi-objective Convolutional Neural Network (CNN) to identify the robot body in the image and estimate 3D positions of the joints by using just a 2D image, but it was limited to a range of robots produced by Universal Robots (UR).
+In this work, we improve our method to work with a new robot.
+However, instead of collecting large datasets once again, we collect a few small datasets with videos each and we adapt the existing model to a new robot with different appearance.
+We have proven that transfer learning is not only applicable in this field, but it requires smaller datasets, trains significantly faster and reaches similar accuracy compared to the original method, even improving it on some aspects.
+Machine decisions are a concern in transportation and organ and vehicle exchanges
+In this paper we present mathematical methods for modeling and controlling the system of autonomous mobility-on-demand MOD systems wherein robotic, self-driving vehicles transport customers within an urban environment and rebalance the vehicles to maintain good service throughout the network.
+We first cast a self-driving system within a network with passenger loss.
+The key insights are used to design a smart balancing system, which is applied to a study of a major city and implemented on a testing platform.
+The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.
+Finally, we extend our traffic modeling framework to include traffic jams, and study the impact of self-driving cars that help traffic move on overall congestion.
+Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.
+after the digital revolution, we will see a dramatic transformation of our economy and most of our societal institutions.
+While the benefits of this change can be massive, there are also severe risks to our society.
+After the automation of many processes and the creation of self-driving vehicles, the automation of society is coming.
+This is moving us to a tipping point and to a crossroads: we must decide between a society that makes decisions for us and uses advertising or persuasion to control us or a society where decisions are made together in a fair and collaborative way.
+Modern information and communication systems enable both, but the latter has economic benefits and strategic advantages.
+democracies are under threat, but I believe that they need to be protected, as they produce good results.
+Once becomes a reality and passengers are no longer worry about it, they will need to find new entertainment options.
+However, retrieving entertainment contents at the Data Center (DC) can hinder this service due to slow with the Data Center.
+we propose a car's cache, by using computer software on the car's computer
+First, at DC, Neural Network is used to predict what users will ask for in specific areas.
+To reduce the traffic delay, MLP outputs are logged into MEC servers attached to roadside units.
+Second, in order to cache entertainment contents stylized for car passengers’ features such as age and gender, a computer is used to guess the age and gender of passengers.
+Through this, the self-driving car can identify the contents need to be downloaded from the Cellular Edge Cloud server and cached.
+Finally, we formulate smartphone caching in the car that enhances entertainment services as a problem whose goal is to reduce downloading time using computer caching.
+To solve the formulated problem, an optimized algorithm is applied.
+The simulation results show that the accuracy of our prediction for the contents in self-driving cars is achieved at 98.04% and our approach can minimize delay.
+This paper describes the design, implementation, and successful use of the Stock Exchange, a basic simulation of a financial market, based on an order book.
+Construction of BSE was motivated by the fact that most financial markets are now automated, with trading activity that previously was the responsibility of human traders now being performed by automated trading systems.
+Research aimed at understanding this new type of financial market is hampered by the fact that no real-world exchange will allow testing of that market while it's open, forcing researchers to work primarily from past trading data.
+Similarly, education of engineers who can create trading systems requires that they have hands-on learning experience in a realistic teaching environment.
+BSE as described here addresses both those needs: it has been successfully used for teaching and research in a leading British university, and the BSE program code is available online in recent years.
+This paper provides a study of how stock prices react to financial news.
+Thereby, we specifically shed light into the extensive amount of filings for which no prior categorization of their content exists.
+For this purpose, we utilize an approach from data mining - namely, latent Dirichlet allocation - as a means of topic modeling.
+This technique facilitates our task of categorize, at the start, the content of more than 70,000 U.S. filings.
+We then evaluate the stock market reaction.
+Our empirical evidence suggests a considerable discrepancy among various types of news stories in terms of their relevance and impact on financial markets.
+For instance, we find a statistically significant abnormal return in response to earnings results and credit rating, but also for disclosures regarding business strategy, the health sector, as well as mergers and acquisitions.
+Our results yield findings that benefit managers, investors and policy-makers by indicating how regulatory filings should be structured and the topics most likely to precede changes in stock valuations.
+It deals with bank troubles in banks today.
+Computing has improved, trades happen quickly, due to software systems.
+We move on and discuss the trading system and the bank
+As for the humanoid robots, the noise from the robot's movements severely degrades the performance of the speech recognition accuracy.
+In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which the motor's state is used to improve speech recognition.
+For this, we consider bottleneck features, which have been successfully applied to neural network based automatic speech recognition system.
+When learning the key features to identify, we first exploit motor state with acoustic features as the input of the first neural network.
+Then, the second model uses information from the first model.
+When the proposed method is evaluated in terms of error rate on a speech database, the experimental results show that an obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.
+Many model based techniques have been proposed in the literature for applying domestic service tasks on humanoid robots, such as teleoperation, learning from demonstration and imitation.
+However sensor based robot control overcomes many of the difficulties of unknown environments which limit the range of previous methods.
+Furthermore, for tasks that require service and manipulation, it is more suitable to study the interaction between the robot and its environment at the contact point using the sensor based control, rather than specifying the joint positions and velocities required to achieve them.
+Online social media provide users with more opportunities to engage with diverse opinions.
+Simultaneously, they allow the spread of misinformation by empowering individuals to choose the stories they want to hear, both through active (confirmation bias) and passive (personalized news algorithms) self-reinforcing mechanisms.
+A clear understanding of those trade-offs is still missing.
+We introduce a stylized social learning model where most participants in a network update their beliefs based on new information, while some participants display confirmation bias, they reject news that disagree with their existing views.
+We show that this simple confirmation bias can generate permanent opinion polarisation.
+Furthermore, the model results in states where unbiased agents behave because of their neighbours' bias, due to their biased neighbours acting as gatekeepers restricting their access to information.
+We derive analytic results for the distribution of people's opinions, explicitly demonstrating the aforementioned trade-off between confirmation bias and social connectivity, which we further validate against US Internet access affects people's views on global warming.
+Our findings indicate that confirmation bias in small doses may actually result in improved accuracy across individuals by a variety of views in a social network.
+However, results also indicate that when confirmation bias reaches a point, accuracy declines as biased groups limit the flow of information.
+We discuss the policy implications of our model, highlighting the downside of challenging approaches and suggesting alternative strategies to contrast misinformation.
+The advent of WWW changed the way we can produce and access information.
+people tend to choose information that fits their views, forming groups of like-minded people around shared narratives where dissenting information is ignored.
+In this environment, it work together
+Such a configuration occurs even in the consumption of news online, and considering that 63% of users access news directly form social media, this suggests that more division leads to more false information spreading.
+Along this path, we focus on the polarization of users around news in various European countries.
+First, we compare the page posting behavior and the users interacting patterns across countries and observe different posting, liking and commenting rates.
+Second, we explore how users choose which pages to view and community creation.
+France, Germany, and Spain are more polarized than Italy.
+Finally, we present a variation of the Bounded Confidence Model to simulate the emergence of these communities by considering the usersu0027 engagement and trust on the news.
+Our findings suggest that trust in information broadcaster plays a pivotal role against division of users online.
+For peer-to-peer networks, it is very important to have a mechanism in place that allows the nodes to control resource usage and prevent Malicious attacks.
+In this paper, we discuss and compare the ways to control that are used by crypto projects.
+The introduced methods are then applied to design a decentralized exchange for Namecoin names and other crypto assets as an example.
+With the introduction of specialized cryptocurrencies, such as Monero, the implementation of mining code in browser code has become a worthwhile alternative to mining equipment.
+Based on this technology, a new form of parasitic computing, widely called cryptojacking or drive-by mining, has gained momentum in the web. A cryptojacking site uses visitors' computers to mine for money.
+In this paper, we systematically explore this phenomenon. For this, we propose a three-step analysis, which enables us to find bad scripts and investigate cryptojacking on many websites.
+We find that cryptojacking is common, with currently 1 out of 500 sites hosting a mining script.
+Moreover, we perform several secondary analyses to gain insight into the cryptojacking landscape, including a code review, an estimate of expected mining revenue, and an evaluation of current blacklist-based countermeasures.
+The rise of modern blockchains has facilitated the emergence of smart contracts: autonomous programs that live and run on the blockchain.
+Smart contracts have seen a rapid climb to prominence, with applications predicted in law, business, commerce, and governance.  contracts :[39],"are commonly written in a high-level language such as Ethereum's programming language, and translated to compact low-level bytecode for deployment on the blockchain.
+Once deployed, the bytecode is executed automatically, usually by a computer program.
+As with all programs, smart contracts can be highly vulnerable to malicious attacks because of errors.
+At the same time, special contracts are also high-value targets, often commanding large amounts of cryptocurrency.
+Hence, developers and auditors need security frameworks capable of analysing machine code to detect security vulnerabilities.
+In this paper, we present Vandal: a security tool for Ethereum contracts.
+Vandal consists of a pipeline that converts smart contract code to semantic logic relations.
+A security check is written in code.
+Vandal is both fast and robust, successfully analysing over 95\% of all 141k unique contracts with an average runtime of 4.15 seconds; outperforming the current state of the art tools---Oyente, EthIR, Mythril, and Rattle---under equivalent conditions.
+As Bitcoin's popularity has grown in the past 10 years, it has become an increasingly attractive target for enemies.
+Image tampering, being readily facilitated and proliferated by today’s digital techniques, is increasingly causing problems regarding the authenticity of images.
+JPEG images can be easily altered; JPEG images are frequently altered, and research is ongoing
+Nevertheless, the interesting issue of looking for image changes and its related operations by using the same quantization matrix has not been fully investigated.
+We need to detect forgeries, we propose a method to detect forgeries.
+The learning classifiers are applied for classification
+Our experimental results indicate that the approach is indeed highly effective in detecting image tampering and relevant manipulations with the same quantization matrix.
+The tampering with time is a big challenge in computer forensics.
+Detecting such changes and reconstructing the timeline is of paramount importance.
+However, this can be difficult since the attacker can hide changes.
+In particular, cloud machine time can be attacked in various ways by an attacker.
+Virtual machines are especially vulnerable to attacks from their host.
+make the timeline secure, protect the timeline for hosts and guests
+In this paper we survey the issues related to host and guest machine timing in the cloud.
+Further, we describe a new system to find and correct changes made by hackers. infected hosts and devices
+The proposed framework has been implemented on an especially built simulator.
+Results show the feasibility of our proposal.
+Detection of different types of image editing operations carried out on an image is an important problem in image forensics.
+It gives information about images, and also can show fake images.
+There have been a few methods proposed to detect different types of image editing operations in a single framework.
+However, all operations have to be known from the start of training phase.
+In forensic cases it may not be possible to know about the editing operations carried out on an image.
+we propose a new tool which can tell the difference between edited images
+The proposed method classifies image patches in a pair by pair as either similarly or differently processed using a deep siamese neural network.
+Once the network learns to distinguish between different image editing operations, it can distinguish between different image editing operations not present in the training stage.
+The experimental results show the efficacy of the proposed method in detecting/discriminating different image editing operations.
+users can do many tasks fast. users can perform several tasks quickly
+DIANE is a digital assistant system that aims to fasten the doctor access to hospital services, medical records, and also staff. face recognition makes it easier for doctors to access the system
+As research has shown people are affected by various biases in their decisions.
+In our paper we study the impact of biases on managers on team performance.
+In the simulations, managerial decisions which are based on various levels of complexity and different incentive systems suffer from biases known from basic decision-making theory.
+The results illustrate how biases in combination with each other and in different organizational contexts affect organizational performance.
+We find that, contrary to intuition, different types of biases significantly improve organizational performance while these biases negatively affect organizational performance when they occur separately.
+This might raise questions if decisions should be rational.
+Perception of the local environment is a precondition for mobile robots to navigate safely.
+Most robots rely on planar regions. small robots and humanoids
+For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information.
+Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages.
+In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles.
+Our system then uses this information to create maps, where paths are quick.
+We show in actual tests that our framework keeps run times well under 10ms for one single cycle and allows for real-time footstep planning.
+A service robot often first has to search for a user to carry out a desired task.
+This is a challenging problem, especially when this person moves around since the robot’s field of view is constrained and the environment structure typically poses further visibility constraints that influence the perception of the user.
+In this paper, we propose a novel method that computes the likelihood of the user’s observability at each possible location in the environment based on Monte Carlo simulations.
+As the robot needs time to reach the search locations, we take this time as well as the visibility limitations into account when computing search locations.
+The robot chooses the next location.
+Our experiments in real-world situations demonstrate that our approach leads to a significantly shorter search time compared to a greedy approach with background information.
+People walk on usual paths between those places by a mobile robot.
+Depending on the environment, following a human's steps might not be the optimal solution since more efficient routes for the robot are available.
+We propose to perform a prediction about the human's future movements and use this information in a reinforcement learning framework to generate foresighted navigation actions for the robot.
+human will often be blocked from view because of obstacles, it's hard to know where the person is.
+Our approach deals with such situations by taking into account when objects block the robot's view such that the robot automatically considers to execute actions to get the human in its field of view.
+We show in actual experiments that our technique leads to much shorter paths compared to a robot following the user.
+In this paper, we introduce an approach to efficient robot navigation through cluttered indoor environments.
+We propose to estimate local obstacle densities based on detected objects and use them to predict traversal costs corresponding to potential obstacles in regions not yet observable by the robot's sensors.
+By taking into account the costs for the path, the robot is then able to navigate more efficiently and reduces the risk of getting stuck in cluttered regions.
+As the experimental results demonstrate, our method enables the robot to efficiently navigate through environments containing cluttered spaces and achieves significantly shorter times compared to a standard approach not using any prediction.
+In this paper, we present a navigation system that allows humanoid robots to autonomously navigate in cluttered spaces.
+From the data of an onboard depth camera, the system determines the robot's location to correct its movement and maintains a heightmap representation of the environment.
+Based on this model, our system takes actions, leading the robot to target locations.
+To efficiently check for collisions, we developed a new approach that takes into consideration the robot's shape and the obstacles.
+As we demonstrate in experiments with a Nao humanoid, our system makes navigation easier and the robot can handle hard terrain.
+In this paper, we present a new method to accurately calibrate the kinematic model of a humanoid based on observations of its monocular camera.
+Our technique estimates the parameters of the complete model, consisting of the body angles, as well as the camera extrinsic and intrinsic parameters.
+Furthermore, we developed an approach to automatically select a subset of configurations for the calibration process that yields a good trade-off between the number of observations and accuracy.
+Our method is better
+Hence, our system only requires a reduced number of configurations to achieve accurate results.
+Our optimization is general and can be applied to robots
+In this paper, a lab automation is introduced.
+A limb is attached to a rotorcraft.
+The limb's gripper allows the drone to pick up objects such as micro-arrays and test tubes often used in high throughput systems.
+The resulting drone could augment existing HTS operations.
+6-axis arm and gripper
+test and evaluation are also provided. Section 11
+Robot friends have become more popular
+However, humanoid walking might be a bit unstable for these applications.
+Even with miniature humanoids, falls occur frequently.
+Wheel attachments were added to a small robot, so it can move faster and with more stability than walking.
+In addition, with attachments, a robot can roll when needed.
+DARwIn-OP is a robot that has been used as a test and evaluation platform.
+This paper discusses friends by using a miniature humanoid capable of fetching different toys based on voice command.
+Advances in electronics and sensor technology have widened the scopes of networked drones to include applications as diverse as surveillance, video recording, operations, entertainment/advertising, signal emission, transportation, and delivery.
+apps need video recording
+Large drones are used singly in missions while small ones are used in teams.
+The small drones are being useful in civilian applications.
+Small drones are used for drones to together, and sending signals lead to deployment of drones (to these applications).
+To develop group display, a tool is needed.
+Simulation shows that drone formation can display messages effectively.
+The prevalence and rapid development of the Internet and mobile technology in recent decades has revamped our living styles and daily habits.
+To join the digital world, more business activities have been engaged in the digital world.
+Marketing and advertising is one of a few business areas that is transformed digitally
+The rise of Key Opinion Leaders (KOLs), social media platforms, and Omni-channel retailing have attracted countless business entities to consider the adoption of digital marketing tools for promoting and advertising their brands and products.
+However, with more tools, they need to be selected carefully
+In this paper, a new decision-making tool is proposed and developed for assisting industry practitioners in systematically and effectively evaluate and select proper digital marketing tool(s) for adoption.
+The developed method not only streamlines the internal business process, but it also increases the practitioner's ability to meet goals.
+This study focuses on the digital marketing of tourism SMEs.
+The study addresses the question of how the use of technology tools benefit the company's operations.
+By adopting marketing as a set of skills, the study provides new insights into the existing tourism literature on e-marketing.
+Companies' marketing abilities are improved by the web.
+Four major capabilities were identified, which evolves as a result of using the tools.
+A key finding of the study is that the use of ICT-based tools transforms digital marketing capabilities from a set of abilities that enables tourism SMEs not only to float in a web-marketing stream, but also to lead such a stream.
+Big data, the enhanced ability to collect, store and analyze previously unimaginable quantities of data in tremendous speed and with negligible costs, delivers immense benefits in marketing efficiency, healthcare, environmental protection, national security and more.
+The central tenets of the current privacy framework, data minimization and purpose limitation are severely strained by big data and modern businesses.
+As we increasingly interact with these artificial agents in unsupervised settings, with no human mediators, their autonomy and more complex abilities, raises legal and philosophical questions.
+The focus on the machine is a distraction from the debate surrounding privacy and equality and bias.
+It can exacerbate, help, or show ethical issues, but people must be held accountable.
+Policymakers should seek to devise basic rules for ethical data analysis and profiling.
+Such guidelines would address the use of legal and technical mechanisms to obfuscate data; kinds of privacy issues; and ways to help individuals understand their data.
+As smart speakers with voice interaction capability permeate continuously in the world, more and more people will gradually get used to the new interaction medium–voice.
+Although speech recognition, language processing has improved in recent years, users may still make mistakes, such as errors, which can frustrate users.
+When an error happens, it is vital that the smart speaker gives a proper response.
+Top brands differ on two points.
+We explored user’s preference of response strategies under two error scenarios——“cannot understand” and “no requested audio resource”.
+Two research factors were measured.
+The results showed that participants were more satisfied and did better when smart speaker apologized in both error scenarios.
+In the “no requested audio resource” scenario, humor had no significant impact on the perception of satisfaction and sincerity.
+But in the "cannot understand" scenario, humor can decrease trust.
+they can't tell human voices from machines
+a method to identify which of human or machine is sending voice commands to a smart speaker is desired.
+to prevent such machine-voice based attacks to a smart speaker in absence of residents, we propose a system consisting of a speaker and a microphone array to detect the existence of a human nearby, supposing it can be incorporated in a smart speaker in the future.
+Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing voice assistants support limited language options for users.
+we conducted a usability study of the Google Home Smart Speaker with 20 participants including English speakers and non-English speakers to understand their differences in using the Google Home Smart Speaker.
+The findings show that compared to others, English speakers had better user experiences in interacting with the device.
+It also shows that talking to voice assistants is easier with good language skills.
+The findings from this study can create insights for voice interface designers and developers can improve voice recognition for different languages for various user groups worldwide.
+A pharmacophore analysis was used to investigate and compare various types of compounds relevant to the drug discovery process (specifically, drug molecules, chemical building blocks and nondrug molecules).
+Significant differences were observed between the drug properties and those obtained for the screening compounds, which appear to be closely related to non-drug properties.
+It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for selecting compounds based on properties for library design, thus improving the odds of success in lead discovery projects.
+Evaluating experiments using standardized language is a way to make experiment descriptions machine-readable.
+Protocols are communicated using simple technical language, which precludes most kinds of analysis by software algorithms.
+The availability of a suitable ontology can capture some of the pertinent information by asserting the facts, as triples.
+With appropriate annotation, assays can be checked in a few ways, like drug development.
+The BioAssay Ontology (BAO) was created for this purpose, and provides a collection of key terms which can be linked to.
+Next generation sequencing (NGS) produces massive datasets and a few samples.
+Subsequent bioinformatic analysis is typically done with the help of open source tools, where each application does one task towards the final result.
+This situation leaves the bioinformaticians with the tasks to combine the tools, manage the data files, document the analysis, and ensure reproducibility.
+SPSS Clementinel2.0 statistical software was used to mine the association rules between Etiology and traditional Chinese medicine (TCM), Syndromes and TCM, Symptoms and TCM.
+The classic Apriori algorithm is useful to mine cases of influenza treated by traditional Chinese medicine.
+Identifying antimicrobial resistant (AMR) bacteria in metagenomics samples is essential for public health and food safety.
+Next-generation sequencing (NGS) technology has provided a powerful tool in identifying the genetic variation and constructing the correlations between genotype and phenotype in humans and other species.
+Estimating bacteria mixtures using a statistical method has reduced the false discovery rate (FDR) and mean absolute error (MAE) in single nucleotide change.
+CRISPR-Cas is a tool that is widely used for gene editing.
+However, bad things can happen because of the enzyme
+Anti-CRISPR proteins, which are powerful molecules that inhibit the gene editing tool, may have the potential to promote better utilization of the gene editing tool in gene therapy, especially for gene therapy.
+Additionally, more in-depth research would help researchers to better understand the connection between viruses that attack bacteria.
+Therefore, it is necessary to collect and integrate data on CRISPR.
+The CRISPR was recently developed as a powerful tool for changing genes.
+These applications require the design of guide RNAs that are efficient and specific.
+It is hard
+CRISPR has become a hot research area ever since its advent for its efficiency and precision in editing DNA sequences.
+Gene editing techniques have been developed to achieve different aims.
+The target locations of a DNA strain can be precisely broken and repaired, during which the genes can be removed, repaired, silenced, or activated.
+The high efficiency of CRISPR/Cas9 reagents preparation and the easiness of experiment conduction make it now a powerful tool of high-content screen.
+The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation.
+Improving the health of people helps public health, and, it works, might be seen as a public good.
+IVF and Genetic testing before implantation.
+Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents.
+Their children should use IVF technology.
+Enhancing future kids will be gendered, unless a new kind of womb is developed.
+These are challenging issues that require a broader view, men and women.
+Despite the lack of a feminist perspective in the discussions about the merits and risks of genetic modification, there is an urgent need to understand their place in this field.
+The CRISPR-Cpf1 system has been successfully applied in genome editing.
+However, effectiveness of a tool for changing genes varies among different short DNA.
+Using machine learning model, a model was created to predict how well a gRNA functions for any given gRNAs.
+the first web service application, CRISPR-DT, a tool that helps users design the best gRNAs for the CRISPR system, is available.
+A key problem for cars with no driver is the understanding, of the current driving situation.
+Addressing this issue requires the extraction of meaningful information from on-board stereo imagery by classifying the fundamental elements of urban scenes into categories that can more easily be interpreted and be reflected upon (streets, buildings, pedestrians, vehicles, signs, etc.).
+A method is proposed to combine 3D maps with images and 3D maps.
+A novel fusion architecture based on the Stixel framework is presented for combining per-pixel segmentation with depth information obtained from stereo imagery while integrating coarse prior depth and label information.
+the approach was tested on a manually labeled data set in urban environments
+The results show that the classification accuracy was much improved by this method compared to what is obtained from pixel-wise segmentation of the CNN alone.
+In recent years self-driving cars have become more commonplace on public roads, with the promise of bringing safety and efficiency to modern transportation systems.
+Increasing the reliability of these vehicles on the road requires an extensive suite of software tests, ideally performed on realistic computer simulations, where multiple vehicles and pedestrians interact with the self-driving vehicle.
+It is therefore of critical importance to ensure that self-driving software is assessed against a wide range of challenging simulated driving scenarios.
+The current state, as adopted by some of the leaders in self-driving cars, still relies on human input [1].
+In this paper we propose to automate the process using machine learning optimization to generate adversarial self-driving scenarios that expose poorly-engineered or poorly-trained self-driving policies, and increase the risk of collision with simulated pedestrians and vehicles.
+We show that by incorporating the generated scenarios into the training set of the self-driving policy, and by fine-tuning the policy using vision-based imitation learning we obtain safer self-driving behavior.
+With the developing of the technology on self-driving, more and more L3 driverless vehicles are launched in market, people get opportunities to experience the self-driving cars in their daily life.
+As a result, there is a growing demand for the autopilot experience.
+Natural and efficient human-computer interaction can not only improve the driving experience, but also accelerate the process of self-driving commercialization.
+This paper discusses eye movement, voice commands and hand gestures in self-driving cars, and analyzes the technology, advantages and disadvantages of the existing interaction modes, and prospect the future development trend of self-driving human-computer interaction.
+Self-driving vehicle technologies are progressing rapidly and are expected to play a significant role in the future of transportation.
+One of the main challenges for self-driving vehicles on public roads is the safe cooperation among vehicles using sensor-based perception and inter-vehicle communications.
+When self-driving vehicles try to occupy the same space, they might collide with each other, might get blocked, or might brake hard making it uncomfortable or unsafe for passengers in a self-driving vehicle.
+In this paper, we study how a self-driving car can safely navigate merge points, where two lanes with different traffic rules meet.
+We present a safe protocol for merge points named Safe Merge System, where driving cars use sensors and communication to work with other cars.
+Our simulation results show that our traffic protocol has higher traffic throughput, compared to basic traffic rules, while ensuring safety.
+Emerging self-driving vehicles are vulnerable to different attacks because of how they communicate and the type of communication systems used in these vehicles.
+These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs).
+New threats exist for cars.
+These communication systems render driverless cars vulnerable to many types of attacks, including bad attacks.
+In this paper, we propose a system to protect car communications for cars with driver assistance.
+The smart detection system relies on the computer algorithms, to detect a common type of attack in VANETs: Denial-of-Service (DoS).
+The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and partly self-driving vehicles.
+This paper proposes a test suite for self-driving cars based on Robot software.
+One approach to the development of self-driving systems is the utilization of ROS which is an open-source middleware framework used in the development of robot applications.
+On the other hand, the popular approach in the automotive industry is the utilization of MATLAB/Simulink which is software for modeling, simulating, and analyzing.
+MATLAB/Simulink provides an interface between ROS and MATLAB/Simulink that enables to create functionalities of ROS-based robots in MATLAB/Simulink.
+However, it is not been fully utilized in the development of self-driving cars yet because there are not enough data for self-driving, and it is difficult for developers to adopt collaboration.
+Therefore, we provide a software benchmark for a self-driving system called Autoware Auto.
+Autoware is popular open-source software that provides a complete set of self-driving modules.
+Auto software samples
+They help to design robot systems.
+Ensuring the safety of self-driving cars is important, but neither industry nor authorities have settled on a standard way to test them.
+Deploying self-driving cars for testing in regular traffic is a common, but costly and risky method, which has already caused fatalities.
+As a safer alternative, virtual tests, in which tests are run on computer simulations, have been proposed.
+It's impossible to test all possible driving situations. They need to test self-driving cars manually.
+Fault, a tool for testing car
+We test a self-driving car's steering system to see when it goes off the road.
+A video illustrating a system in action is available online
+Little is known about how people will react.
+This is especially true for self-driving public transport.
+In this study, the relative preferences for a trip with a self-driving bus is assessed compared to a trip with a regular bus, based on a preference survey.
+Based on the responses of 282 respondents from the Netherlands and Germany, a discrete choice model is estimated as a Mixed Logit model including attitudes towards trust in self-driving vehicles and interest in technology.
+The results show that people prefer self-driving buses for short distances.
+This is due to the finding that travel time is about twice as long for the self-driving bus.
+Findings from this study further suggest that the popularity of driverless buses decreases with the presence of a human steward on-board, or if they are operated on demand.
+People who currently trust self-driving cars like driverless buses better than others.
+Preferences towards automated public transport services are expected to evolve along with the transition to regular operations.
+The management of self-driving systems is becoming more complex as the development of self-driving technology progresses.
+Using ROS is one approach to developing self-driving systems; however, the system used in the automotive industry is typically designed using MATLAB/Simulink, which can simulate and evaluate the models used for self-driving.
+These models are incompatible with computer operating systems.
+To connect them, is difficult to develop.
+Therefore, the proposed framework allows models created using MATLAB/Simulink to be used in a ROS-based self-driving system, thereby improving development efficiency.
+new framework demonstrated its practical potential.
+They have become more for sharing information.
+The spread of news in emergency situations is common on social media and so is the spread of misinformation about the event.
+We define as misinformation false or inaccurate information.
+In this paper we study the problem of misinformation identification in OSNs, and we focus in particular on the Twitter social network.
+Based on user and tweets characteristics, we build a misinformation detection model that identifies unusual behavior and exploits supervised learning techniques to detect misinformation.
+Our results from tweets illustrate that our approach effectively identifies misinformation during emergencies.
+Furthermore, it checks for incorrect information, identifies misinformation, removes wrong info.
+Superintelligence is a potential type of future artificial intelligence (AI) that is much more intelligent than humans in many ways.
+If built, superintelligence could be a transformative event, with potential consequences that are massively beneficial or catastrophic.
+Meanwhile, the prospect of superintelligence is the subject of major ongoing debate, which includes a significant amount of misinformation.
+Superintelligence misinformation is potentially dangerous, ultimately leading bad decisions by those who would develop superintelligence and those who influence them.
+This paper surveys stopping false info.
+Two types of strategies to stop fake news and fix it after it's spread.
+In general, misinformation can be difficult to correct, suggesting many strategies to prevent it.
+The strategies proposed can be applied to lay public attention to highly advanced AI, AI education programs, and efforts to build expert consensus.
+The widespread false information online could cause public panic and serious economic damages.
+The misinformation problem aims at limiting the spread of misinformation by running competing ads.
+Motivated by realistic scenarios, we present the first analysis of the problem of spreading false information for the case when an arbitrary number of cascades are allowed.
+First, we provide a basic model for cascading processes and introduce an important concept called as cascade priority.
+Second, we show that the misinformation containment problem cannot be approximated within a factor of very large growth rate in polynomial time unless $NP \\subseteq DTIME(n^{\\polylog{n}})$.
+Third, we introduce several types of priority system that are frequently seen in real social networks.
+Finally, we stop false info
+The effectiveness of the method is supported by positive results
+Inaccurate information, in the field of library and information science, is often regarded as a problem that needs to be corrected or simply understood as either misinformation or disinformation without further consideration.
+Misinformation and disinformation, however, may cause significant problems for users in online environments, where they are constantly exposed to a lot of incorrect information.
+This paper aims to establish conceptual groundwork for future empirical research by examine the relationships between true and false information and disinformation.
+Our analysis extends to a discussion of signs of deception, to detect false information.
+They are connected
+Misinformation is a complex idea, more complex than just being inaccurate, and disinformation does not always entail misinformation.
+The growth of social media provides a convenient communication scheme for people, but at the same time it becomes a hotbed of misinformation.
+Spreading false news is harmful to the public.
+We design a framework, which integrates collective intelligence and computer intelligence, to help identify misinformation.
+check what users post; and match people with false claims
+By sending the suspected misinformation to experts, we can get the opinions of experts to check the accuracy, and help refute misinformation.
+In this paper, we focus on search for misinformation identification.
+We propose a tag system to identify the expertise of microblog users with social tags.
+Experiments on a real-world data demonstrate the effectiveness of our method for expert finding with respect to misinformation identification in microblogs.
+The importance of research on misinformation is well-known.
+Two major challenges faced by this research community are the limited research models and a lack of misinformation about this research.
+This paper aims to address the main challenges by defining misinformation and making misinformation compatible.
+In particular, a model of misinformation are proposed through surveying, studying previous research.
+The misinformation model can guide future research, but also track and understand false information.
+We present a plan to find errors in a library, and explore new ways to fix info
+Conspiracy theories have gained much academic and media attention recently, due to their impact on events.
+However, little is known about things that are not true.
+We present a study on the Zika outbreak on Reddit
+Using a mixed-methods approach including content analysis and discourse analysis, we identified types of conspiracy theories that appeared on Reddit in response to the Zika crisis, how Zika conspiracy theories emerged, and how Zika conspiracy theories spread online.
+Our analysis shows that conspiracy talk emerged as people attempted to make sense of a public health crisis, reflecting their changing information needs and their distrust in the sources of Zika information.
+Practical implications for healthcare professionals are discussed.
+Conspiracy theories are omnipresent in online discussions---whether to explain a recent event that still lacks official report or to express political dissent.
+Theories change and grow, and connect, making it difficult.
+It is therefore crucial to develop scalable methods to examine the nature of conspiratorial discussions in online communities.
+What do users talk about when they discuss conspiracy theories online? What are the recurring elements in their discussions? What do these elements tell us about the way users think? This work answers these questions by analyzing over ten years of discussions in r/conspiracy---an online community on Reddit dedicated to conspiratorial discussions.
+We focus on the key elements of a theory, they, the actions they take, and their targets.
+For example, a narrative-motif such as \"governmental agency-controls-communications\" represents the various ways in which multiple conspiratorial statements denote how governmental agencies control information.
+Thus, story patterns expose commonalities between multiple conspiracy theories even when they refer to different events or circumstances.
+In the process, these representations help us understand how users talk about conspiracy theories and offer us a means to understand what they're saying.
+Our approach enables a large-scale study of conspiracy theories in alternative news and social media with implications for understanding their adoption and combating their spread.
+Yet contemporary work in Philosophy argues belief in conspiracy theories is understandable and if we look at the evidence, conspiracies do happen and can be believed because they do occur.
+Drawing on this work, I examine the types of evidence, showing that the problems related to conspiracy theories are not unique to such theories.
+We shouldn't doubt conspiracy theories because of the evidence they use. They use evidence incorrectly. I argue there's no case for a scepticism of conspiracy theories, a case that can be made without further proof.
+Cryptocurrency is a new financial technology which has attracted a large number of people around the world.
+The high-speed evolution, radical price fluctuations of cryptocurrency, and the inconsistent attitudes of monetary authorities in different countries have triggered panic and chain reactions towards the application and adoption of cryptocurrency and have caused public security related events.
+In this paper, we analyze the risks of the crypto market based on price history.
+The market is unstable.
+The technology is the underlying technology developed for Bitcoin, the most popular type of digital money.
+Blockchain have gotten more to be a force.
+Individuals and organizations may benefit from blockchain with its ability to increase secure data exchange and to make transactions more secure and easier between entities.
+We investigate factors that influence an individual's intention to use a digital currency.
+We develop a model of cryptocurrency adoption based on a well-known theory to figure out why people use cryptocurrency and see which factors matter most.
+They offer a good idea with effects in online government.
+Cryptocurrency was built initially as a possible implementation of digital currency, then various new uses were created in finance and other areas.
+This paper aims to offer analytical insights to help understand digital currency by treating it as a financial product.
+We position cryptocurrency by comparing its key features with two major financial assets: money and stocks.
+We investigated cryptocurrency. Our investigation suggests that the dynamics of cryptocurrency are more similar to stock.
+As to the robustness and clustering structure, our research finds cryptocurrency market is more fragile than stock market, thus it is currently a high-risk financial market.
+Phone and watch has became popular as a payment method.
+At the same time, cryptocurrency is becoming a currency and the total value of all types of cryptocurrency has reached USD 200 billion.
+Therefore, it is a natural demand to support cryptocurrency payment on mobile devices.
+Considering the poor infrastructure and lack of access to money in developing countries, this combination is especially attractive.
+The high storage fees and delay in processing payments are the two main obstacles for mobile payment using cryptocurrency.
+We propose two different schemes for cryptocurrency mobile payment, one involves a centralized bank and the other one does not require any centralized party.
+We also provide a solution for the bank to meet customer and money laundering regulations when it is involved in cryptocurrency transactions.
+Caused by recent financial crises research has been done to study how crises affect markets.
+Much less has been said about how news affects the market.
+We propose a new way to track financial news on the web, and show that it can help predict market risks. Financial news can help predict market risks.
+We examine news articles from 2011 to 2013 and study the connection between financial markets and news.
+We found market news reflects movements in the financial markets.
+Cohesiveness is more general and robust measure of systemic risk expressed in news, than measures based on simple occurrences of specific terms.
+Our results indicate that  financial news  is highly correlated with and driven by volatility on the financial markets.
+In this paper, We study markets in a new way.
+The entropy is derived using singular value decomposition of the components of stock market indices in financial markets from selected developed economies, i.e., France, Germany, the United Kingdom, and the United States.
+I study how a shock in the entropy in the United States affects the entropy in the other financial markets.
+I also model the entropy using a dynamic factor model and find the main reason for the changes in volatility.
+Mobile devices are common in everyone's life.
+Nowadays such devices come with many features.
+Hence people can use these devices for diverse applications.
+As the acceptability and usability of such devices are very high, there are chances that these devices can be used for illegal activities.
+The percentage of smartphones victims of cyber crimes is going up.
+So it becomes necessary to examine such devices requiring computer tools.
+This paper discusses types of digital evidence present in Microsoft’s Windows Mobile smart phones and an agent based approach for logically acquiring such devices.
+Also it describes a tool for examining mobiles
+The increasing number of IoT devices makes it inevitable that they will be involved in forensic investigations.
+These devices produced by various vendors often posses simple standard connections, such as USB ports or wireless connections.
+Meanwhile, with a growing interest in security and privacy, Encryption is becoming commonplace in consumer-level computing devices, and IoT devices are no exception.
+A challenge exists for device analysis.
+This work explores the electromagnetic analysis literature to aid in IoT device investigations.
+EM side-channel analysis is a technique where radio signals are used for eavesdropping on the operations and data handling of computing devices.
+Security methods makes it a viable option to assist investigations must result in minimal changes to the device.
+The literature on different types of attacks are discussed – selected on the basis of their applicability in device scenarios.
+The insight gained from the previous research is used to identify new uses for smart devices.
+The use of phone investigation to search for scams is nothing new.
+But mobile phones have turned into smartphones, and fraudsters learned new tricks with them.
+Smartphones are packed with functionality that can easily be used for unwanted data access or contact with others - none of which passes through company-owned systems, and is beyond company control.
+Employers need to be aware of these risks when devices are issued, along with ensuring that processes are in place when things go wrong, explains Philip Ridley of CCL-Forensics.
+Detecting scammers is a difficult process.
+It's not only about keeping up with the intellect, motives and awareness of the online scammer, but also the technologies that can be misused.
+What's more, the methods through which the technology can be manipulated to hide and disguise fraudulent activities - all while staying away from company networks - are constantly evolving.
+The company is at risk of theft of the company data.
+Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to fake company websites and to avoid detection by phishing countermeasures.
+Manipulations can be as subtle as source code changes or as obvious as adding/removing content.
+To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a database of over 17,000 phishing attacks on 159 brands.
+The results of the experiments using various technical approaches demonstrate that some can achieve a success rate of 90% while maintaining a low false positive rate.
+The focus of the 1-8 hours after exercise is to enhance processes that help the body recover.
+Recommended nutritional strategies to maximize recovery in skeletal muscle include protein for enhancing rates of protein synthesis and carbohydrate for replenishing glycogen stores [2],[3].
+Eating protein after exercise helps activate two responses that work together at muscle growth to stimulate increasing muscle protein synthesis [4]–[6].
+Eating 20-25 grams of high-quality protein after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.
+The cultural environment surrounding some sports often involves the intake of large amounts of alcohol after training and competition, in team sports, heavy drinking is a particular risk.
+The outcomes of binge drinking after exercise are likely to include the effect of alcohol on the body as well as the indirect effect on the athlete's recovery due to not eating or resting due to being drunk.
+Although the concurrent consumption of carbohydrate can partially offset the deleterious effects of alcohol intake on post-exercise glycogen resynthesis [14], the effect of drinking on muscle protein.
+The aim of the current study was to determine the effect of alcohol intake on cell signaling and muscle protein synthesis in humans during recovery from a bout of strenuous exercise approximating stresses an athlete may experience in training and performance for various team sports such as various football and rugby codes, and court sports.
+We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would slow down the production of new proteins and reduce muscle growth.
+Eight healthy physically active male subjects (age 21 years old, body mass 79 kg, breathing power, maximum leg lift strength: 104 kg) who had been exercising regularly for several months volunteered for this study.
+The study employed a randomized counter-balanced, cross-over design in which each subject completed various types of high-intensity exercise with either post-exercise drink of carbs and alcohol, or just protein on three separate occasions.
+Resistance exercise consisted of eight sets of five repetitions at 80% of their maximum strength.
+After completion of the final set, subjects rested for 5 min before commencing 30 minutes of steady cycling.
+Upon completion, subjects rested on the bike for 2 min before undertaking 10 x 30 seconds of high-intensity intervals at 110% of personal peak output, with 30 s active recovery (∼50% of PPO) between each work bout.
+After exercise, they had either a protein drink or an energy drink.
+Furthermore, a carbohydrate-based meal (1.5 g·kg−1 BM) was consumed ∼2 h post-exercise, immediately after the muscle biopsy, according to recommendations for post-exercise glycogen recovery [24].
+8 hours is a recovery time as well as the period during which blood alcohol levels remain high for a while after the event, blood alcohol levels remain high
+The alcohol ingestion protocol (1.5 g·kg−1 BM; 12±2 standard drinks) began 1 h post-exercise and was consumed in 6 equal volumes of 1 part vodka (∼60 mL) to four parts orange juice (∼240 mL, 1.8 g CHO·kg−1 BM) during a 3 h period.
+For the PRO condition, orange juice was consumed with a matched volume of water in place of the alcohol.
+Subjects drank the beverages every 30 mins.
+Blood, cell signaling and mRNA data were analyzed by two-way ANOVA (two factor: time × treatment) with repeated measures and myofibrillar protein synthesis was analyzed by one-way ANOVA with repeated measures.
+The first novel finding of this study was that muscle protein synthesis following mixed resistance and high-intensity exercise, designed to mimic the metabolic profile of many team sports, were impaired during the early (8 h) recovery phase by the ingestion of large amounts of alcohol.
+These outcomes were clearly noticeable after drinking, makes it harder to recover
+However, a second finding was that even when protein was consumed in amounts shown to be optimally effective to stimulate MPS [8] during post-exercise recovery, the intake of alcohol reduced MPS by ∼24%, representing only a partial ‘rescue’ of the body's natural healing process compared with protein alone.
+The mTORC1 is a central node for integrating nutrient (i.e. amino acid) and signals from exercise [31], [32].
+In conclusion, the current research provide the novel observation that alcohol impairs the response of muscle tissue in exercise recovery despite a good diet.
+The amount of alcohol by athletes.
+However, published reports suggest intakes of some individuals can be significantly greater [9], [50], which is of concern for many reasons related to health and safety [13].
+It has been hard to look for information about alcohol and sports performance that appeals to athletes
+Given the need to promote protein synthesis that underpins adaptation, repair and regeneration of skeletal muscle the results of the current study provide clear evidence of impaired recovery when alcohol is consumed after resistance and high-intensity exercise even in the presence of optimal nutritional conditions.
+We propose our data is of great importance to athletes and coaches.
+Our findings provide a research base for a message of moderation in alcohol intake to promote recovery after exercise with the potential to affect sports practices.
+In this paper we revisit a topic originally discussed in 1955, the lack of direct evidence that exercise builds muscle strength.
+To this day, long-term adaptations in strength are thought to be primarily contingent on changes in muscle size.
+a lot of attention has been placed on programs designed to allow for building both muscle size and strength.
+However, the conclusion that a change in muscle size affects a change in strength is surprisingly based on a small amount of evidence.
+We suggest that these changes may be completely separate phenomena based on: (1) the change in muscle size doesn't directly match the change in muscle strength after training; (2) the loss of muscle mass with detraining, yet a maintenance of muscle strength; and (3) the similar muscle growth between low-load and high-load resistance training, yet divergent results in strength.
+It helps to grow muscles at low intensity.
+Doing it with low intensity and blood flow results in muscle growth in just a few weeks.
+A typical exercise prescription calls for 3 to 5 sets when you're too tired with short rest periods.
+The metabolic buildup causes positive physiologic reactions, specifically a rise in growth hormone that is higher than levels found with higher intensities.
+Occlusion training is applicable for those who are unable to sustain high loads due to joint pain, recovery patients, cardiac rehabilitation, athletes with limited training capacity, and astronauts.
+Studies show exercise has minimal effect on skeletal muscle size.
+We and others have demonstrated that exercise acutely and chronically uses protein more efficiently and leads to muscle growth.
+These findings promote an opposite view by providing novel perspective on muscle mass regulation and insight into ways to prevent muscle loss in people at risk of muscle loss.
+Stretch training is widely used in a variety of fitness-related capacities such as increasing joint range of motion, preventing muscle stiffness and alleviating injuries.
+Moreover, some researches indicate that stretch training may induce muscle hypertrophy; however, studies on the topic have been primarily relegated to animal and in vitro models.
+The purpose of this brief review was to check if stretch training really works.
+Of the 10 studies identified, 3 observed some significantly positive effects of stretch training on muscle structure.
+Intriguingly, in these studies, the stretching was carried out with an apparatus that aided in its performance, or with an external overload.
+5 studies on stretching and weightlifting that showed enhanced muscle growth.
+In conclusion, passive, low-intensity stretch does not appear to affect muscle growth; when stretching is loaded or done between contractions, it may lead to muscle growth.
+Cycle training is widely performed as a major part of any exercise program seeking to improve aerobic capacity and cardiovascular health.
+However, the effect of cycle training on muscle size and strength gain still requires further insight, even though it is known that professional cyclists display larger muscle size compared to controls.
+Therefore, the purpose of this review is to discuss the effects of cycling on muscle strength and the ways to increase muscle size with cycling.
+It is plausible that cycle training requires a longer period to significantly increase muscle size compared to typical resistance training due to a much slower hypertrophy rate.
+Cycle training induces muscle hypertrophy similarly between young and older age groups, while strength gain seems to favor older adults, which is better for older adults to improve muscle quality compared to young adults.
+For young adults, more intense cycling may be required to achieve strength gains.
+It also appears that muscle hypertrophy induced by cycle training results from the positive changes in muscle protein balance
+Resistance training is the most effective method to increase muscle mass.
+It also helps health.
+Although it is deemed safe and of clinical relevance for treating and preventing a vast number of diseases, a time-efficient and minimal dose of exercise has been the focus of a great number of research studies.
+Similarly, a relationship between dose and response that rises and then falls has been hypothesized to exist.
+However, the majority of available evidence supports a clear dose-response relationship between resistance training volume and physiological responses, such as muscle hypertrophy and health outcomes.
+There is little data to support the U-shaped response.
+The overarching principle argued herein is that volume is the most easily modifiable variable that has the most evidenced-based response with important repercussions, be these muscle hypertrophy or health-related outcomes.
+Although the effects of short versus long inter-set rest intervals in resistance training on muscle growth have been investigated in several studies, the findings are equivocal and the practical implications remain unclear.
+It is shown that short breaks can help get stronger.
+Novel findings involving trained participants using measures sensitive to detect changes in muscle hypertrophy suggest a possible advantage for the use of long rest intervals to elicit hypertrophic effects.
+More research is needed to compare these two approaches. However, there is a lack of similar studies.
+Memory is a process in which information is stored in the brain.
+For animals, it happens only in the brain.
+This review describes a memory system in muscles in which muscle growth is 'remembered' such that a muscle fibre that grew before, can regain its mass quickly.
+A new cell biological model based on the literature, by the best methods for finding myonuclei, can explain this phenomenon.
+According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth.
+Even if subjected to severe muscle wasting, muscle cell nuclei are preserved, muscle cell nuclei stay safe in weak muscles.
+Fibres that have more myonuclei grow faster when subjected to overload exercise, thus the nuclei represent an important indicator of previous strength.
+This memory might be very long lasting in humans, myonuclei last for a long time.
+Muscle cells are harder to repair in older people, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.
+It is thought that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance.
+Several observational studies lend support to this hypothesis, with a negative relationship between eating and weight.
+The purpose of this review is to present and discuss a study that evaluated eating frequency and body weight, including statistical analysis.
+Feeding frequency was positively associated with weight loss and body fat percentage led to increased muscle mass.
+However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition.
+In conclusion, although the study found that eating more often may be beneficial for weight and body shape, these findings need to be carefully considered.
+Inactive adults experience a 3% to 8% loss of muscle mass per decade, accompanied by a decrease in metabolic rate and fat accumulation.
+Ten weeks of resistance training may increase lean weight by 1.4 kg, increase metabolism, and reduce fat weight by 1.8 kg.
+Benefits of resistance training include better physical health, control, and self-esteem.
+Resistance training may assist prevention and management of type 2 diabetes by reducing belly fat, reducing HbA1c, increasing the density of glucose transporter type 4, and improving insulin sensitivity.
+Resistance training may enhance cardiovascular health, by reducing resting blood pressure, lowering bad cholesterol, and increasing high-density lipoprotein cholesterol.
+Resistance training may promote bone development, Bone density increases due to exercise.
+Resistance training may be effective for reducing low back pain and easing discomfort associated with arthritis and fibromyalgia and has been shown to reverse specific aging factors in skeletal muscle.
+Physical activity has proved to be an effective means of preventing several diseases and improving general health.
+Starting strength training is usually delayed until teenagers, especially athletes.
+However, such advices seem to have a mainly anecdotal nature.
+Current literature does not seem to have any particular aversion against the practice of strength training by kids and teens, with proper supervision and safety precautions.
+At the same time, several studies provide consistent findings supporting the benefits of repeated, intense physical efforts in young subjects.
+Improved motor skills and body composition at when they are young have been extensively documented.
+Strength training is safe and healthy for kids.
+Human aging results in a few changes to muscle.
+Sarcopenia is the age-associated loss of muscle mass and is one of the main contributors to musculoskeletal impairments in the elderly.
+Previous research has demonstrated that resistance training can attenuate muscle weakness in older people, however few articles have focused on the effects of resistance training on functional mobility.
+The purpose of this systematic review was to 1) present the current state of literature regarding the effects of resistance training on functional mobility outcomes for older adults with skeletal muscle function deficits and 2) provide clinicians with practical guidelines that can be used with seniors during resistance training, or to encourage exercise.
+We set forth evidence that resistance training can reduce age-related decline in movement ability, including improvements in gait speed, and fall risk reduction.
+Older adults should be encouraged to participate in strength training, and should be admonished to gradually increase exercise to follow the daily activity guidelines.
+Maximizing the hypertrophic response to resistance training (RT) is thought to be best achieved by adjusting the workout plan, exercise order, length of rest intervals, intensity of maximal load, and training volume.
+An often overlooked thing that affects muscle growth is time spent repeating.
+Duration amounts to the sum total of muscle contraction, stretching, and holding, and is predicated on the tempo at which the repetition is performed.
+We conducted a review and analysis to determine whether alterations in repetition duration can amplify the hypertrophic response to RT.
+Muscle growth are similar when training with from 0.5 to 8 seconds.
+From a practical standpoint it would seem that a fairly wide range of repetition durations can be employed if the primary goal is to maximize muscle growth.
+Findings suggest that training at slow pace is not effective for building muscle, there's not enough research.
+Recovery from exercise refers to the time period between the end of a bout of exercise and the subsequent return to a resting or recovered state.
+It also refers to effects after exercise that are distinct from the resting state.
+Recovery of the cardiovascular system after exercise occurs over time, many things change over time.
+Some of these changes may be necessary for exercise adaptation, yet some can lead to cardiovascular instability during recovery.
+these changes may provide insight into when it's ready for more training after rest.
+This review focuses on most observed changes in blood flow and the underlying causes that drive cardiovascular recovery and will highlight how they differ following resistance and aerobic exercise.
+Primary emphasis will be placed on the hypotensive effect of aerobic and resistance exercise and associated mechanisms that have clinical relevance, but if left unchecked, can progress to symptomatic hypotension and syncope.
+Finally, we focus on the practical application of this information to improve recovery or avoid problems.
+We will explore appropriate field measures, and discuss how these measures can aid training.
+Exercise and physical activity are becoming a crucial tool in the treatment and prevention of many health issues and diabetes; this notion has been termed "exercise as medicine".
+Exercise has favorable effects on reducing heart disease risk, inflammation, cachexia, and hypertension, and improves lung function.
+Chronic kidney disease, affects 1 in 10 people, is often overlooked as a target for exercise-based therapy.
+Despite the types of kidney problems, exercise has a potential role in all patients suffering from the condition.
+In this review, exercise may help with kidney disease and how this form of treatment should be best administered.
+Blood flow restriction is a treatment used to increase strength in healthy individuals.
+However, its effects on pain are unknown.
+To determine if adding BFR to exercise helps with knee pain.
+Methods: Systematic review with meta-analysis of randomized clinical trials.
+Studies that compared exercise with or without limited blood flow to treat knee pain in people 18 and older were included.
+The average difference in measurements showed that resistance exercises with BFR was not more effective than resistance exercises for reducing pain (SMD: -0.37cm, 95% CI=-0.93, 0.19) and improving knee function (SMD=-0.23 points, 95% CI=-0.71, 0.26) in patients with knee pain.
+In Japan, had 40 million patients with hypertension in 2010.
+The management of this condition is given the highest priority in disease control, and the importance of lifestyle changes for lowering blood pressure levels has been recognized in Japan.
+In particular, emphasis has been placed on increasing the levels of activities of daily living and physical exercise (sports).
+In this literature review, we examined appropriate exercise prescriptions (e.g., type, intensity, and duration) for the prevention and treatment of hypertension as described in Japanese and foreign articles.
+This review recommends safe and effective whole-body aerobic exercise at moderate intensity (i.e., 50-65% of your maximum oxygen level) that primarily focuses on the major muscle groups for the prevention and treatment of hypertension.
+Resistance exercise should be performed without holding your breath and should be used as additional exercise, but resistance exercise is not recommended for people with high blood pressure and chest pain.
+recently, there has been a renewed public interest in IFast.
+Nutrition is crucial for athletic performance, the impact of IFast on athletes.
+Looking at high-intensity, endurance, and resistance exercises, studies have found mixed results but overall are consistent in showing that there is no benefit to athletic performance while fasting.
+Nearly every physically active person encounters periods in which the time available for exercise is limited (e.g., work, family, or other commitments).
+During such periods, the goal of physical training may be to simply maintain (rather than improve) physical performance.
+Similarly, certain special populations may desire to maintain performance for prolonged periods, namely athletes and military personnel.
+In general populations, endurance performance can be maintained for up to 15 weeks when training frequency is reduced to as little as 2 sessions per week or when exercise volume is reduced by 33–66% (as low as 13–26 minutes per session), as long as intensity is maintained and heart rate.
+Strength and muscle size (especially in younger people) can be maintained for up to 32 weeks with as little as 1 session of strength training per week and 1 set per exercise, as long as exercise intensity (relative load) is maintained; whereas, in older populations, maintaining muscle size may require up to 2 sessions per week and 2–3 sets per exercise, while maintaining exercise intensity.
+Intensity is key to fitness. less exercise
+Nutrient timing is a popular nutritional strategy that involves the consumption of nutrient types in and around an exercise session.
+It has claimed that this approach can produce dramatic improvements in body composition.
+It has been suggested that Timing of eating is important can
+The post-exercise period is widely considered the most critical part of nutrient timing.
+Theoretically, consuming the proper ratio of nutrients during this time initiates the repair of damaged muscles and restoration of energy reserves, but that happens in a way that enhances both body composition and exercise performance.
+Several researchers have made reference to a "window of opportunity" for muscle growth whereby a limited time exists after training to optimize muscle growth.
+However, the importance - and even the existence - of a post-exercise ‘window’ can vary.
+Not only is nutrient timing research open to question in terms of applicability, but recent evidence has directly challenged the classical view of the relevance of post-workout nutrition and muscle growth.
+Lack of time is the main reason for not moving.
+The aim of this review was to determine how strength training can be most effectively carried out in a time-efficient manner by critically evaluating research on acute training variables, advanced training techniques, and the need for warm-up and stretching.
+When programming strength training for optimum time-efficiency we recommend prioritizing compound exercises that include full dynamic movements (i.e. both eccentric and concentric muscle actions), and to perform a minimum of one leg pressing exercise (e.g. squats), one upper-body pulling exercise (e.g. pull-up) and one upper-body pushing exercise (e.g. bench press).
+Exercises can be performed with machines or free weights for different reasons.
+Weekly training volume is more important than training frequency and we recommend performing 4 sets per muscle group per week with moderate weights.
+Advanced training techniques, such as special training techniques roughly halves training time compared to traditional training, while maintaining training volume.
+However, these methods are probably better at inducing hypertrophy than muscular strength, and more research is needed on how training affects muscle growth over time.
+Finally, we advise restricting the warm-up to specific warm-ups, and only prioritize stretching if the goal of training is to increase flexibility.
+Training frequency is muscle growth
+The purpose of this paper was to conduct a systematic review and meta-analysis of experimental studies designed to investigate the effects of weekly training frequency on hypertrophic adaptations.
+no difference between different frequencies on a volume-equated basis.
+Meta-regression analysis of non-volume-equated studies showed a significant effect favoring higher frequencies, although the overall difference in effect of higher frequencies was somewhat better than 1 day a week.
+In conclusion, some evidence that resistance training frequency does not significantly or meaningfully impact muscle hypertrophy when volume is equated.
+Thus, for an amount of training, individuals can choose a weekly frequency.
+A variety of specialized training has been advocated as a means to heighten muscle growth.
+Resistance training techniques such as drop sets and negative reps can be beneficial for muscle growth.
+This article will explore the potential role of these techniques in growing muscle mass and provide an insight into possible applications to resistance training programs.
+The quest to increase lean body mass is widely pursued by those who lift weights.
+Research is lacking, however, as to the best approach for maximizing muscle growth.
+Bodybuilders generally train with moderate loads and fairly short rest intervals that induce a lot of muscle fatigue.
+Powerlifters, on the other hand, train with heavy weights and lengthy rest periods between sets.
+Although both groups are known to display impressive muscularity, it is not clear which method is superior for muscle growth.
+It has been shown that muscle growth is influenced by multiple factors and exercise causes muscle stress, which helps it grow from exercise.
+Therefore, the purpose of this paper is twofold: (a) to extensively review the literature as to the mechanisms of muscle hypertrophy and their application to exercise training and (b) to draw conclusions from the research as to the optimal protocol for maximizing muscle growth.
+Abstract   Novel technological advances in mobile devices and applications can be exploited in wildfire confrontation, enabling end-users to easily conduct several everyday tasks, such as access to data and information, sharing of intelligence and coordination of personnel and vehicles.
+This work describes an innovative mobile application for wildfire information management that operates on mobile devices and helps with wildfire prevention using the AEGIS platform.
+Several tasks can be accomplished from the AEGIS App, such as find nearby facilities and access to weather and emergency information.
+An innovative feature of AEGIS App is the support of these tasks by a digital assistant for artificial intelligence named Cortana (developed by Microsoft for Windows Phone devices), that allows information utilization through voice commands.
+The application is to be used by firefighting personnel in Greece and is potentially expected to contribute towards a more sharing of information between fire centers and firefighting units in the field.
+In recent years, mobile technologies have developed and applied in education fields, and some mobile devices like PDAs, smartphones, and e-books.
+Some of the mobile carriers combines context-aware technologies or involve into wireless network environments to make effective use through the combination of learning scenarios and technologies, and then provide students new learning experiences differed from the past learning.
+In view of the application of mobile technology in education, some previous studies show that mobile learning can improve learning outcomes.
+In the main stream of mobile learning, using mobile carriers with suitable learning methods or strategies in mobile learning activities for different students to enhance learning have gradually become a important and concern issue.
+The purpose of this study is to investigate the learning achievement and learning attitude of elementary school students on a campus plant learning activity when they use mobile carriers and competitive learning strategies.
+The experimental results show that the competitive group have better learning performance than non-competitive learning group of students.
+After completing the learning activity, the two groups of students presented high positive attitudes towards learning.
+This paper proposes a patient monitoring system which integrates an ECG monitor, GPS and a mobile phone to measure vital signs and transmit them to a local server via Bluetooth wireless technology.
+This paper proposes a patient monitoring system which integrates an ECG transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology.
+Four types of monitors were designed for wireless communication, including a control center , a local monitor unit, mobile devices (personal digital assistant; PDA), and a website for patients.
+Three kinds of monitors were specially designed for a wireless communication, including a control center , a local monitor unit, mobile devices, and a Web page (for patients and doctors).
+The use of various monitor units is created to help different healthcare workers.
+The use of various monitor units is created to fulfill different medical personnel requirements and wishes.
+For patients and staff, improve care and health care
+This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, will improve health care.
+As various kinds of output devices emerged, such as high-quality printers or a display of PDA(Personal Digital Assistant), the importance of high-quality image conversion has been increasing.
+As various kinds of output devices emerged, such as various devices such as printers or PDA displays, the importance of high-quality resolution conversion has been increasing.
+It makes the image bigger
+This paper proposes a new method for enlarging image with high quality.
+One of the main problems when enlarged is blurry
+One of the largest problems on image enlargement is edge distortion.
+we propose a new way of filling in gaps, uses a computer to find the best pixels.
+To remedy this problem, we propose a new interpolation method, which uses a special machine to determine the optimal values of interpolated pixels.
+Evaluated
+The results are shown.
+our method is compared to conventional methods.
+The effectiveness of our method is compared to traditional methods.
+A significant number of people suffer from vision problems.
+A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours.
+For them, everyday tasks like reading maps is hard.
+For them, navigating through a train or metro map is difficult.
+We present a new method for getting color information from natural surroundings and presenting it to visually impaired users as pleasant, non-invasive sound.
+We present a novel technique for finding colors in everyday objects and presenting it to people who can't see as soft sound.
+This technique was implemented inside a Personal Digital Assistant (PDA) portable device.
+In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space.
+Colour is extracted from the image and sorted by people
+It is then sent to the user as sound.
+In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented because the current technology is not advanced enough. We are confident that the full implementation will be possible in the near future as PDA technology improves.
+In the original implementation, it is possible for the user to send its feedback to reconfigure the system, however several features such as these were not implemented. It will be possible soon.
+Medicine misuse increases the risk of hospital admissions for the elderly.
+Medicine misuse increases the risk of going to the hospital for seniors.
+This causes unnecessary suffering for patients and costs society a lot of money
+This causes pain for patients and is costly for society.
+A medicine decision support system in a smartphone app, with a barcode reader, can provide an overview of the patient's complete medicine use, and detect all potentially bad combinations of drugs.
+Focusing on the elderly, our aim was to evaluate if a medicine reminder system is useful and user-friendly for nurses in home care.
+Focusing on the elderly, our aim was to evaluate if a mobile medicine decision support system with a barcode reader is useful and user-friendly for nurses in home care.
+The participants received a comprehensive overview from the patientsu0027 medicine use and noted drug-drug interactions, therapeutic duplications and warnings for drugs unsuitable for elderly people.
+The participants received a comprehensive overview from the patients' medicine use and noted drug interactions, duplicate medications and warnings for drugs unsuitable for elderly people.
+The nurses regarded that the decision support system increased prevention and safety, was useful and user-friendly.
+The nurses regarded that the decision support system made safety measures better, was useful and user-friendly.
+It shows content is important.
+Our findings that most content were mostly important.
+That might be helpful for nurses using a tool.
+their calendar can help them plan their schedule
+access to patient appointment schedules can help clinicians manage time and problems better.
+Healthcare systems manage their appointment schedules via scheduling systems that are hard for doctors to use.
+Many health care organizations manage their schedules using computer systems which are poorly accessible by clinicians.
+Other staff may manage scheduling, making it hard for clinicians to stay up to date.
+Also, staff other than the clinicianu0027s personal assistant(s) may manage scheduling, making it difficult for clinicians to stay informed of changes.
+Many a clinician today uses a digital assistant containing basic calendaring functionality.
+Many a clinician today uses a personal digital assistant (PDA) containing basic calendaring functionality.
+Our “PalmOversite” project demonstrates the feasibility of add appointment information to the calendar, making schedule information more accessible to the clinician.
+Our “PalmOversite” project demonstrates the feasibility of integrating enterprise appointment schedule information into a PDA calendar, making schedule information much more readily available to the clinician.
+Partners In Health (PIH) and its sister organization in Lima, Peru, Socios En Salud (SES), treat a majority of drug-resistant tuberculosis patients in Peru, in collaboration with the Peruvian National TB Program.
+Partners In Health (PIH) and its sister organization in Lima, Peru, Socios En Salud (SES), treat a majority of multidrug-resistant tuberculosis (MDR-TB) patients in Peru, in conjunction with the Peruvian National TB Program (NTP).
+Monthly bacteriology tests, which must be collected from health facilities in the city, are an integral part of this treatment.
+Monthly bacteriology tests, which must be collected from health facilities in the city, are an integral part of this treatment.
+A SES employee visits each health establishment to collect this information by hand, process it and type it into an electronic medical record system. We describe the development of a digital system for lab results into the PIH-EMR.
+A staff member visits each hospital or clinic to collect and enter data into a computer system, a digital system that collects and sends lab results to the computer.
+After the setup, we tested it. Score
+After the initial test phase, we tested the system in a test phase.
+We did an assessment in two health districts, then switched to electronic records in one district while the control site used paper records.
+We did an assessment in two health districts and then they implemented the system in one district, while the other district kept using the old one.
+The PDA-based system had a processing time of 6.2 days, lower than the baseline and control sites much less than 1.
+The PDA-based system had a processing time of 6.2 days, much lower than the baseline [54.8]. less than 0.001
+It was also able to reduce errors and receive positive feedback from the users.
+It was also able to reduce the frequency of discrepancy from 10.1% to 2.8% (pu003c0.0001) and receive positive feedback from the users.
+Finally, the system’s cost would be recuperated in three months from time savings due to increased work efficiency.
+This system will be the subject of a larger study to determine its impact on delays, errors and costs.
+In order to share knowledge between experts and others, and to promote communication, make tools and resources for sharing knowledge.
+In order to facilitate knowledge transfer and to promote interdisciplinary communication, there is a need to provide methods and tools for doing so between specialists and non-experts.
+This research team developed and evaluated a decision support tool on a personal digital assistant (PDA) for cardiac tele-triage/tele-consultation when the presenting problem was chest pain.
+This research team created and tested a phone app for when they have heart pain.
+The combined human factors methods of cognitive work analysis during the requirements-gathering phase and ecological interface design during the design phase were used to develop the DST.
+A pilot clinical trial was conducted at a cardiac care hospital over a 3-month period.
+During this time, the DST was used by the nine nursing coordinators who provide tele-triage/tele-consultation 24/7.
+This clinical trial validated the design and demonstrated its usefulness to advanced cardiac care nurses, its potential for use by nurses less experienced in cardiac care, and for its potential use in an interdisciplinary team environment.
+This clinical trial validated the design and demonstrated its usefulness to advanced cardiac care nurses, its potential for use by less experienced nurses, and for its potential use in an interdisciplinary team environment.
+This paper presents a learning app.
+Since uses a virtual pet to teach the learner’s interest.
+M-CALL runs on a computer for learning
+M-CALL runs on a personal computer with public wireless LAN for online learning.
+Creates a virtual pet by learn Korean
+Test was used as problem sets.
+It consists of virtual pet, mobile apps, learning system, and mobile tutoring.
+It provides various functions for Korean language learning.
+It was tested on a phone and a computer.
+This study compared typing speed of two soft keyboards for use in handheld devices: the QWERTY and the T9.
+Participants transcribed text presented on a computer screen into a personal digital assistant (PDA) using a stylus and one of these two keyboards.
+Participants transcribed text presented on a computer screen into a digital assistant using a stylus and one of these two keyboards.
+We added a method for measuring typing speed.
+We introduced a new psychological test for measuring how fast people type that provides a measure of typing speed.
+Using this technique, we calculated the maximum transcription rate for each keyboard.
+The results show that transcription rates were higher for the QWERTY keyboard than for the T9, the T9 keyboard was not used as much, despite the T9 being better built
+QWERTY is faster
+An ancillary experiment demonstrated that the poorer performance of the T9 layout may have resulted from an increase in visual scanning time due to perceptual grouping of the letters on the keys.
+An ancillary experiment demonstrated that the poorer performance of the T9 layout may have resulted from an increase in visual scanning time due to grouping of letters on the keys.
+Together these findings imply that the QWERTY keyboard layout remains the most effective of the available designs for stylus tapping on soft keyboards.
+QWERTY keyboard is the most effective for tapping on a keyboard.
+The proliferation of mobile devices such as smart phones and PDA opens new ways for developing mobile commerce systems (also known as mobile commerce systems).
+The growth of phones makes it easier to order on phones.
+Mobile systems, we still see many common components that we have in common E-commerce websites and web servers and database servers.
+Mobile systems, we still see many common components that we have in standard E-commerce applications, such as web servers and database servers.
+However, these new applications raise some unique challenges.
+Mobile devices have small screens.
+What information do users want to access on their mobile devices? “How do we test a mobile commerce system?” In this paper, we discuss software development issues for mobile commerce systems based on our experience with a tourist M-commerce system.
+Our prototype, easyHotel, is an useful software that allows booking hotel rooms via mobile phones.
+It is widely acknowledged that information such as web content should be adapted for mobile platforms to account for mobile limitations.
+devices are different, we suggest that adaptation should be device-specific
+Two main methods for adapting content are automated conversion and making changes to the content, with a trade-off between quality and cost.
+As alternative avoiding this trade-off, we propose a simple content tool for content adaptation.
+We make a simple system for adjustment.
+To facilitate the use of this framework in the Web, we base our approach on the object-oriented WebComposition model and its XML-based implementation WCML.
+We apply our structured approach to an example application to demonstrate how content for different devices reduces effort.
+We apply our object-oriented approach to an example application to demonstrate how content is adapted for different platforms, reducing development and maintenance effort.
+In monitoring a patientu0027s real-time vital signs through Body Area Networks (BAN), rich data sources are communicated to medical practitioners.
+It is essential that data is delivered on time and as needed.
+In this paper a system is designed for people with heart problems, on the sensing device and communication.
+In this paper a system is designed for patients with cardiac disorders, with an emphasis on the design of the sensing device and communication scheme chosen.
+Several existing wearable physiological devices (Patient Sensing Device — PSD) used in the Healthcare systems are bulky in design and are not flexible and comfortable for the elderly patients.
+Several existing wearable physiological devices (Patient Sensing Device — PSD) used in the Healthcare systems are bulky in design and are not flexible and comfortable for the elderly patients.
+Presented is a unique flexible, detachable mask for the comfort of patients.
+Also discussed is a model for transmission, storage and processing of patient related data, which ensures periodic logging of patient data without crashing the networks.
+Also discussed is patient info management, patient info is updated.
+A prototype has been developed and implemented to enable transmission of Electrocardiogram (ECG) signal and body temperature of a patient, which can be expanded to include other vital signs.
+A proof of concept prototype has been developed and implemented to send ECG and body temperature data of a patient, which can be expanded to include other vital signs.
+Communication between a mobile smart-phone and the heart rate and temperature monitor is implemented Bluetooth.
+Communication between a phone and the ECG uses wireless technology.
+The presented Data Management System — Periodic Model (DMS — PM) is designed to manage wireless interface of sensor units with the patient database at a healthcare provider through a mobile device making use of the existing GSM network.
+Advancement of mobile technology has enabled additional platforms to support learning in a single learning space.
+Advancement of wireless and mobile technology has enabled additional platforms to support learning in a single learning space.
+Using mobile devices in learning is becoming more common.
+The current trend uses devices in a school.
+Such devices can communicate with wireless mobile terminal and exchange information with its surroundings [1].
+A Language learning system named One Day Trip is developed to assist overseas students to learn Japanese in everyday life situations with the help of a PDA.
+This paper proposes the implementation with Knowledge Management concepts in the system to aid the teacher and learners.
+we have developed teaching tools for Internet and home networks
+These applications have been written for Cybiko, other gadgets.
+The Cybiko PDA stopped.
+As a result, these applications were moved to other platforms to remain useful.
+Instead of porting each application to individual platforms, which would be very time-consuming, we created the Messaging Layer.
+This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code adjustments.
+Unlike many other classes of hardware, smartcards do not have the ability to communicate securely with the user.
+without a way to inform the owner, difficult
+We explore between smartcards and powerful machines.
+On the other side of this border we find the AI assistant, to be useful, a machine must be able to create secure digital signatures
+On the other side of this border we find the Personal Digital Assistant  :[66],"our view, to be useful as an extension of the usersu0027 private sphere, a machine must at least have enough functionality and resources to create trustworthy digital signatures (express the user's wishes, as it were).
+A less resourceful machine can merely act as a memory helper, helping the owner remember addresses and phone are :[121],"made to be hard to hack, and as such they seem ideal as a minimal machine.
+However, trustworthy digital signatures can not be created by smartcards alone, simply because the user does not know what is given to the card for reference [163], a smartcard needs external support to create secure digital signatures.
+However, digital signatures can't be made by smartcards, simply because the user doesn't know the card's contents, a smartcard can't make digital signatures.
+We explore what must be included in such an infrastructure, and demonstrate that trustworthy digital signatures can in fact be made using a standard :[211],"argue that based on this fact, systems can be constructed by utilizing smartcards. Simple systems can be built using smartcards. holders of smartcards are treated equally
+A smartcard can be trusted gives new opportunities for designers of user-oriented that smartcards are :[257],"here to stay, finding ways to apply them in constructive manners is prudent.
+In this paper we present the key features of a tool for seniors. Compared to others, also provides a high quality assistance.
+In this paper we present the main features of a system that we have developed and that provides a new kind of tele-assistance service to elderly people. It offers better assistance than current services, always available.
+We rate the assistance as high quality because monitors vital signs and looking for problems by the device that the person carries in real time.
+We rate the assistance as high quality because checks vital signs and a finding of unusual situations by the device that the person carries in real time.
+Therefore, it sends alarms autonomously when this paper we :[84],"explain the three main functionalities offered by AINGERU: help at any moment, Monitoring your vital signs, and allowing authorized people to check the data online.
+Therefore, it sends alarms autonomously when  this paper we :[84],"explain the three main functionalities offered by AINGERU: universal assistance at any time, monitoring of vital signs irrespective of location or time and remote monitoring by allowing authorized external persons to consult data about monitored persons using the Internet.
+Moreover we show how those functionalities are achieved by making use of assistive tools, wireless signals.
+Objective: To evaluate the effectiveness of a personal digital assistant (PDA)–based clinical decision support system (CDSS) on nonsteroidal anti-inflammatory drug (NSAID) prescribing safety in the outpatient  :[26],"The design was a randomized, controlled trial conducted in a university-based resident clinic.
+It was done in a university clinic.
+Internal medicine residents received a PDA-based CDSS suite.
+They got a decision aid
+For staff, the CDSS had a tool to predict stomach problems from NSAID use.
+For intervention residents, the system included a risk assessment for stomach problems from pain medication and treatment suggestions.
+Unannounced patients trained to portray musculoskeletal symptoms presented to study physicians.
+Safety outcomes were assessed to the subjects taking the drugs.
+Safety outcomes were assessed from the prescriptions given to the people involved.
+Each prescription was reviewed by a committee of clinicians unaware of participant details and study group, and :[108],"Prescriptions were judged as safe or unsafe.
+Each prescription was reviewed by a group of doctors. Prescriptions were judged as safe or unsafe.[108]
+:[26],"The main outcome was comparing safe and unsafe NSAID prescriptions between the two groups :[135],"At baseline, the number of doctors who wrote bad NSAID prescriptions was similar in both groups (0.27 vs. 0.29, p u003e 0.05).
+:[26],"The main outcome was to compare prescribing between the two groups :[135],"At baseline, the mean proportion of cases per physician with unsafe prescriptions for the two groups was similar (0.27 vs. 0.29, p u003e 0.05).
+Controlling for baseline performance, participants prescribed more safely than controls after receiving the CDSS.
+Controlling for baseline performance, intervention participants prescribed more safely than controls after receiving the CDSS (0.23 vs. 0.45 (significant difference)).
+With the CDSS, intervention participants checked the patient's overall gut health from  :[198],"Participants using a tablet-based system for prescribing certain medications made fewer mistakes than participants without the CDSS.
+Recently walking directions have been studied by many researchers, which provides pedestrians with a GPS system.
+On the other hand, a 3dimensional (3D) map, which is one of major themes in machine vision research, has been utilized as a simulation tool in city and landscape planning, and other engineering fields.
+The 3D maps will give more intuitive information compared to conventional 2-dimensional (2D) ones.
+In this paper we first propose walking directions, and the tools and their use.
+Secondly we compare effectiveness of 2D and 3D maps for navigation. We compare these maps under different conditions: 3D maps with and without texture, and on different screen sizes.
+The experimental results show that 3D maps with texture on mobile phone display size, and 3D maps without texture on PDA display size are superior to 2D maps in search time and error rate.
+These results show that 3D maps help with directions.
+Mobile agents are a competitive concept of client-server computing and are especially suitable in mobile settings.
+They can
+Mobile agents are created on a mobile device such as a Personal Digital Assistant (PDA), will be launched into the information galaxy and are fulfilling the mobile user ‘s task on the services available on networked stationary systems.
+One transmission channel for these itinerant agents is email.
+This paper introduces a new email system, which is a first step in creating mobile workers.
+Active M 3 integrates two known concepts: active mail and multimedia mail.
+Digital Video Broadcasting — Handheld (DVB-H) is a technology developed as an extension of Digital Video Broadcasting — Terrestrial (DVB-T) with additional features that make it suitable for delivery to mobile devices such as phones and Personal Digital Assistant (PDAs).
+This paper deals with the conditions of receiving digital video broadcast type services in mobile handheld devices.
+The DVB-H standard is introduced and the main technology components on broadcast layer are discussed in some details.
+Finally the TV broadcast system design is described.
+No passage was provided to update.
+We present a design for a low cost and fast communications device powered by a computer chip as its engine.
+The device can achieve high speed, thanks to the adapter.
+The device could be used as a box, an Internet terminal, a helper or as a video phone.
+The RV4640 is a very affordable 64 bit RISC processor that executes 175 million instructions.
+The RV4640 can be connected to a Processor.
+The IDT77903 ATM card is a 25 Mbps card and it costs less than $100 (US).
+Integrating this card into our device as a connection to the internet will make highspeed videoconferencing and multimedia applications easily implementable.
+Dr. Who is a Microsoft research project aiming at creating a speech-centric multimodal interaction framework, which serves as the foundation for the NET natural user interface.
+The paper discusses MiPad's design, development phase, and preliminary user study in comparison to the existing pen-based PDA interface.
+MiPad is the application prototype that demonstrates compelling user advantages for wireless personal digital assistant (PDA) devices, MiPad fully integrates continuous speech recognition (CSR) and spoken language understanding (SLU) to enable users to accomplish many common tasks using a multimodal interface and wireless technologies.
+It tries to fix the issue of typing on small keyboards in today's mobile devices.
+Unlike a cellular phone, MiPad avoids speech-only interaction.
+It incorporates a microphone that is not compatible when a field is selected
+As a user taps the screen or uses a built in roller to navigate, the tapping action narrows the number of possible instructions for spoken word understanding.
+MiPad currently runs on a Windows CE Pocket PC with a standard computer where speech recognition is performed.
+The Dr Who CSR engine uses a unified CFG and n-gram language model.
+The Dr Who SLU engine is based on a simple words and a plan-based dialog manager.
+Little is known about how new apps emerge in the business world.
+Research in the sociology of technology suggests that the development of new apps is a process of social interaction between multiple constituencies, aiming to create understanding mobile technology problems.
+This theory is illustrated by the early evolution of the personal digital assistant (PDA).
+According to this view, major technological communities attempt to impose their own definitions of key problems and solutions on new mobile technology, thereby forcing newer players to provide a "total system" that completely redefines a new application area.
+In the widespread environment, mobile terminals like personal digital assistant or cellular phone are used to access the Web.
+We implemented the procedures in a specialized viewer system that transforms Web content into passive viewing content that is especially useful for mobile devices.
+It gets images and text from the web and it generates a Flash file
+Although the how Web content looks depends on the device, the Web interface of mobile terminals is designed almost the same as that of personal computers.
+However, comparing mobile and desktop terminals, some differences affect displayed on the screen.
+Moreover, when changing the access style between interactive and passive, the presentation should be adjusted for the terminal.
+To adjust the play style of Web content to the terminal type, we developed a method for visual presentation.
+First, using keyword analysis, we represent the emotional aspect of a Web page by adjusting the background color of the screen.
+Second, we emphasize the subject of the content by the logotype of the keyword.
+Third, break the picture into fewer parts and present one after another with special effects.
+These procedures can be applied to any type of terminal.
+We have developed two-way location aware system, named as “The Beijing Explorer”, which exchanged positioning information and users’ situation to one another using a handheld device with built-in wireless LAN and a GPS (Global Positioning System) receiver in real time.
+Users can see their position and their chats on the screen of a PDA in real-time.
+The system was used for the guidance of the Palace Museum in Beijing, China.
+We carried on experiments two times using it.
+The results of experiments show that the service using positioning data and sharing contents were valuable and interesting.
+Location information is important for navigation.
+A truly personal machine, called a private machine and implemented as a Personal computer, is fundamentally different from traditional machines.
+It is personal and private in an unprecedented manner, and its modus operandi is such that network and power failures will not be rare.
+Designing distributed systems where PDAs are used is a private :[59],"assets (electronic money, keys for authentication and opening doors) will be stored in PDAs.
+Ownership and control of these ID 59, assets and the media should remain with the user.
+We used a basic design to show users relevant information.
+We argue and show that when systems are designed this way, the user (a human) is better able to control the system and his personal data, as he can make better decisions than the system itself based on qualitative assessment of the provided information.
+The system we have designed and implemented under this design guidelines is presented and discussed.
+Depression is overlooked in children's healthcare.
+The purpose of this paper is to describe the development and initial evaluation of a personal digital assistant (PDA)-based decision support system (DSS) for pediatric depression screening in ages 8 to 18 years of age by pediatric advanced practice nurse (APN) students.
+Three aspects are described: selection of depression screening instrument; adding the tool to the PDA; and evaluation through usage and focus groups.
+1 in 4 people were screened.
+Twenty percent of those screened were identified as at risk for mood disorder.
+The barriers to screening identified through focus groups included a lack of time, knowledge, guidelines for the intervention, referral resources, ease of use, staff comfort, as well as cultural barriers.
+Suggestions for educational and research to integrate clinical based screening using a portable device are discussed.
+This study explored the potential of the application of wireless and mobile computing technologies to be used in improving the efficiency of patient care and education and future developments in information and communication technologies to support healthcare professionals and medical students in healthcare research, medical education and training.
+The design used for this study was a review of studies, including personal observations. These specific databases were used to find published studies.
+Today, more than 50% of healthcare professionals and medical students are using Personal Digital Assistant with growth of over 75 by 2007.
+In addition, wireless and mobile computing technologies allows Personal Digital Assistant to connect directly to networks or the Internet.
+Studies for care and should evaluate to a potential timesaving tool.
+Mobile technology is only beginning to start starting the process in improving care and education.
+They have shown a positive impact on patient safety, health care efficiency, and ultimately patient satisfaction.
+Nursing students can learn many things through practical training by getting hands-on experience in hospitals and interacting with patients.
+Therefore practical training is an effective learning opportunity for developing the skills of nursing students.
+Moreover, at hospitals, which are important training facilities, with regard to medical safety, the use of learning tools that produce electrical devices is not possible.
+So, we created a learning support environment that makes it easier to imagine nursing techniques, and enables preparation and review at any time and anywhere using a portable digital assistant (PDA) device for practical training.
+As described in this paper, we report on the outline of the educational materials named "digital nursing dictionary" that created and the practices
+Display size and resolution on mobile devices are the main problems with Apps.
+Smartphone pages are often too large for its screen to present.
+The same problem exists for devices with low-resolution screens.
+Manual reconstruction of web pages for these devices would make things easier; however, different display types will increase the burden of web page designers.
+In this paper, we propose a document segmentation and presentation system.
+The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document.
+Summaries are added to make it easy to navigate. FKGL score is 7.59
+The system shows the structure of a web page to make the most of the screen space for information finding.
+A small computer chip is the brain of the computer and a voltage monitor.
+The analysis uses basic math
+This device has two work modes: "native" and "remote".
+It also can communicate with monitor center through telephone line, serial port, smart card, PDA (Personal Digital Assistant), etc.
+With network and small screen device improvements, such as wireless access, faster computers, users are no longer limited by location when accessing online information.
+We are interested in studying the effect of people switching from a large screen device, such as a desktop or laptop to use the same web page on a small device, in this case a PDA (Personal Digital Assistant), Switching from a computer to a phone.
+We discuss three ways to on mobile devices
+We introduce a new Overview method, called the Gateway, for use on the small screen that exploits a user’s familiarity of a web page.
+users prefer the Gateway and Direct Migration approach for web pages that were previously used on big screens, despite the common way many websites work.
+The limits of mobile systems need to be considered in software development.
+We have been developing a taxonomy of risks based on SEIu0027s risk questionnaire and applied it during the development of a negotiation support system for a Personal Digital Assistant (PDA).
+In our planned research, we will explore how we can better integrate existing risk management strategies and Agile Methods (AM).
+Growth of mobile services and private data have required increased level of protection.
+Speaker recognition, one of the biometric technologies, arises a lot of interest for its simple, cheap and convenient characteristics.
+A speaker recognition system which facilitates reliable authentication with multiple voices is presented.
+A large multi-channel corpus, including mobile phone, personal digital assistant (PDA), telephone and microphone, is collected to evaluate the system performance.
+This paper presents a method to generate unique and nevertheless highly random pseudonyms in a distributed environment.
+More precisely, each user can now generate his pseudonym locally in his personal security environment, e.g.
+on his ID or phone
+There is no need for any information interchange between issuing parties or global data (especially keys), except unique identifiers for each user and each device of the system.
+Additionally the holder can prove, that he generated a specific pseudonym without revealing his identity and he can reveal his identity by disclosing the pseudonym.
+The verifier of a disclosed pseudonym can be sure, that the presenter of the pseudonym is the holder of the pseudonym (i.e.)
+the
+The user's ID and device will be used to generate new names, but to hide the user's identity.
+In mobile society, location services play an increasingly important role.
+These services are to be accessed by users with a mobile end device for the use of city maps, route planning, navigation, or traffic information.
+Mobile end devices, however, do not have processing power or storage capacity comparable to that of a personal computer or laptop.
+These deficits can be bypassed with simpler methods in development.
+This paper outlines the experience gained in finding routes in public transport to be used on a smartphone.
+Breaking down the route computation into smaller steps plays a significant role in reducing power usage on the phone.
