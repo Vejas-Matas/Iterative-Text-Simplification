@@ -10,9 +10,9 @@ import easse.fkgl
 class VllmChatBot:
     ### Setup
     def __init__(self, model_name):
-        self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1, use_tqdm=False) # Make this nicer !!!
-        self.sampling_parameters = vllm.SamplingParams(temperature=0.5, max_tokens=1024), # Make this nicer !!!
-        self.mini_task_sampling_parameters = vllm.SamplingParams(temperature=0.0, max_tokens=1024), # Make this nicer !!!
+        self.model = vllm.LLM(model_name, max_model_len=8192, dtype=torch.float16, quantization="awq", tensor_parallel_size=1, max_num_seqs=1) # Make this nicer !!!
+        self.sampling_parameters = vllm.SamplingParams(temperature=0.5, max_tokens=1024,use_tqdm=False), # Make this nicer !!!
+        self.mini_task_sampling_parameters = vllm.SamplingParams(temperature=0.0, max_tokens=1024, use_tqdm=False), # Make this nicer !!!
         self.clear()
     
     def clear(self):
