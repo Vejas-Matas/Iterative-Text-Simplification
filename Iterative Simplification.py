@@ -95,23 +95,24 @@ def simplify_passage_non_iteratively(chat_bot, algorithm_parameters, max_iter=0)
 
 
 
-def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_parameters, passage_type, max_iter, n=None):
+def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_parameters, passage_type, data_type, max_iter, n=None):
     ### Setup
     if passage_type == "abstract":
-        sources, references = dataset_utils.get_sources_and_references("abs", n)
+        sources, references = dataset_utils.get_sources_and_references("abs", data_type, n)
     elif passage_type == "sentence":
-        sources, references = dataset_utils.get_sources_and_references("snt", n)
+        sources, references = dataset_utils.get_sources_and_references("snt", data_type, n)
     else:
         raise ValueError('Passage type should be "abstract" or "sentence"')
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["ILT"]).lower().replace(" ", "_")
-    run_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_{parameter_string}_i={max_iter}_n={n}" # WILL NEED TRAIN / TSET DISTINCTION, AND IN EVALUATION FILE AS WELL
+    run_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_set={data_type}_{parameter_string}_i={max_iter}_n={n}" # WILL NEED TRAIN / TSET DISTINCTION, AND IN EVALUATION FILE AS WELL
 
     results = []
     
     ### Simplifying passages one-by-one
     for i in range(len(sources)):
+        print(i) #####################################################################################################################################################################################
         ### Initialise
         chat_bot.clear()
         chat_bot.add_system_prompt(system_prompt)
@@ -159,21 +160,27 @@ chat_bot = chat_bots.VllmChatBot(
     model_name=parameters.vllm_model,
 )
 
-passages_to_simplify = 10
+passages_to_simplify = None
 passage_type_to_simplify = "sentence"
+data_type = "test"
+
 latest_run_names = []
 
-# simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+# simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, data_type, passages_to_simplify)
+# simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 0, passages_to_simplify)
 
 for passage_type_to_simplify in ["sentence", "abstract"]:
-    # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    # simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    # simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
-    pass
+    # print(f"iterative: {passage_type_to_simplify}".upper())
+    # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+    # print(f"unaware_iterative: {passage_type_to_simplify}".upper())
+    # simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+    # print(f"condensed_iterative: {passage_type_to_simplify}".upper())
+    # simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+    # print(f"non_iterative: {passage_type_to_simplify}".upper())
+    # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 0, passages_to_simplify)
+    # pass
 
 print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
 print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
