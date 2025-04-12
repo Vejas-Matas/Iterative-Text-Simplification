@@ -73,19 +73,3 @@ def create_dataset_line_files():
     file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/sentence_train_references.txt", snts[1])
     file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_train_sources.txt", abss[0])
     file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_train_references.txt", abss[1])
-
-dataset = read_dataset()
-
-for data_type in ["train", "test"]:
-    for passage_length in ["abs", "snt"]:
-        for passage_type in ["source", "reference"]:
-            data = dataset[data_type][passage_length][passage_type]
-            print(f"{data_type} {passage_length} {passage_type}: {len(data)}")
-
-abs_tr = get_sources_and_references("abs", "train", None)
-abs_ts = get_sources_and_references("abs", "test", None)
-snt_tr = get_sources_and_references("snt", "train", None)
-snt_ts = get_sources_and_references("snt", "test", None)
-
-for pair in [abs_tr, snt_tr, abs_ts, snt_ts]:
-    print(f"{len(pair[0])}, {len(pair[0])}")

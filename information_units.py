@@ -70,7 +70,10 @@ def compare_run_information_units(run_name, chat_bot):
     with open(f"evaluations/metrics/{run_name}.json", encoding="utf8") as file:
         simplification_results = json.load(file)
 
-    for simplification_result in simplification_results:
+    for i, simplification_result in enumerate(simplification_results):
+        if (i+1) % 10 == 0 or (i+1) == len(sources):
+            print(f"{i+1}/{len(sources)}")
+        
         source = simplification_result[0]["prediction"]
         prediction = simplification_result[-1]["prediction"]
 
