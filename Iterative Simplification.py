@@ -98,7 +98,7 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     parameter_string = ("dc=" + algorithm_parameters["DC"] + "_" + "ilt=" + algorithm_parameters["ILT"]).lower().replace(" ", "_")
-    run_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_set={data_type}_{parameter_string}_i={max_iter}_n={n}" # WILL NEED TRAIN / TSET DISTINCTION, AND IN EVALUATION FILE AS WELL
+    run_name = f"timestamp={timestamp}_algorithm={algorithm_name}_type={passage_type}_set={data_type}_{parameter_string}_i={max_iter}_n={n}"
 
     results = []
     
@@ -164,24 +164,26 @@ latest_run_names = []
 
 # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, data_type, passages_to_simplify)
 # simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
-simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
 # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 0, passages_to_simplify)
 
 for passage_type_to_simplify in ["sentence", "abstract"]:
-    # print(f"iterative: {passage_type_to_simplify}".upper())
-    # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
-    # print(f"unaware_iterative: {passage_type_to_simplify}".upper())
-    # simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
-    # print(f"condensed_iterative: {passage_type_to_simplify}".upper())
-    # simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
-    # print(f"non_iterative: {passage_type_to_simplify}".upper())
-    # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 0, passages_to_simplify)
+    print(f"iterative: {passage_type_to_simplify}".upper())
+    simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+    print(f"unaware_iterative: {passage_type_to_simplify}".upper())
+    simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+    print(f"condensed_iterative: {passage_type_to_simplify}".upper())
+    simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 20, passages_to_simplify)
+    print(f"non_iterative: {passage_type_to_simplify}".upper())
+    simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, data_type, 0, passages_to_simplify)
     pass
 
 print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
 print("–––––––––––––––––SIMPLIFICATION COMPLETE––––––––––––––––––––")
 print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
 
+
+file_io_utils.convert_dict_to_json("./latest_run_names.json", latest_run_names)
 
 
 for run_name in latest_run_names:
@@ -191,6 +193,3 @@ for run_name in latest_run_names:
 print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
 print("––––––––––INFORMATION RETENTION ANALYSIS COMPLETE–––––––––––")
 print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
-
-
-file_io_utils.convert_dict_to_json("./latest_run_names.json", latest_run_names)
