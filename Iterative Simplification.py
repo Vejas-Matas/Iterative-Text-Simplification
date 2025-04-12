@@ -142,8 +142,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
         results.append(iteration_results)
 
         ### Save / display results
-        # chat_bot.print_chat()
-        # chat_bot.save_chat()
+        chat_bot.print_chat()
+        chat_bot.save_chat()
         # chat_bot.print_token_usage_log()
 
         file_io_utils.append_to_txt(f"predictions/{run_name}", prediction)
@@ -159,20 +159,20 @@ chat_bot = chat_bots.VllmChatBot(
     model_name=parameters.vllm_model,
 )
 
-passages_to_simplify = None
+passages_to_simplify = 10
 passage_type_to_simplify = "sentence"
 latest_run_names = []
 
 # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-# simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
 # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
 
 for passage_type_to_simplify in ["sentence", "abstract"]:
-    simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
-    simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
+    # simplify_passages("iterative", simplify_passage_iteratively, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+    # simplify_passages("unaware_iterative", simplify_passage_iteratively_unaware, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+    # simplify_passages("condensed_iterative", simplify_passage_iteratively_condensed, parameters.system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 20, passages_to_simplify)
+    # simplify_passages("non_iterative", simplify_passage_non_iteratively, parameters.non_iterative_system_prompt, parameters.algorithm_parameters, passage_type_to_simplify, 0, passages_to_simplify)
     pass
 
 print("––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––")
