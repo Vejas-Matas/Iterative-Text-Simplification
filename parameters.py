@@ -5,7 +5,7 @@ algorithm_parameters = {
 }
 
 ### DATASET SPLITTING
-test_set_proportion = 0.2
+test_set_proportion = 0.1
 splitting_seed = 42
 
 ### LARGE LANGUAGE MODEL

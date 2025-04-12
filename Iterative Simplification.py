@@ -84,6 +84,7 @@ def simplify_passage_iteratively_condensed(chat_bot, algorithm_parameters, max_i
 def simplify_passage_non_iteratively(chat_bot, algorithm_parameters, max_iter=0):
     chat_bot.send_prompt("Simplify the provided passage. Print the final version of the simplified passage, include only the text of the passage with no comments or additional punctuation, and do not provide the original passage")
 
+    chat_bot.add_iteration_results()
 
 
 def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_parameters, passage_type, data_type, max_iter, n=None):
@@ -104,8 +105,10 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     ### Simplifying passages one-by-one
     for i in range(len(sources)):
         ### TQDM replacement
-        if (i+1) % 10 == 0 or (i+1) == len(sources):
+        if (i+1) == len(sources):
             print(f"{i+1}/{len(sources)}")
+        elif (i+1) % 10 == 0:
+            print(f"{i+1}/{len(sources)}, ", end="")
 
         ### Initialise
         chat_bot.clear()
