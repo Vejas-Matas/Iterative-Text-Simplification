@@ -105,10 +105,8 @@ def simplify_passages(algorithm_name, algorithm_fn, system_prompt, algorithm_par
     ### Simplifying passages one-by-one
     for i in range(len(sources)):
         ### TQDM replacement
-        if (i+1) == len(sources):
+        if (i+1) == len(sources) or (i+1) % 25 == 0:
             print(f"{i+1}/{len(sources)}")
-        elif (i+1) % 10 == 0:
-            print(f"{i+1}/{len(sources)}, ", end="")
 
         ### Initialise
         chat_bot.clear()

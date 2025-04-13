@@ -71,10 +71,8 @@ def compare_run_information_units(run_name, chat_bot):
         simplification_results = json.load(file)
 
     for i, simplification_result in enumerate(simplification_results):
-        if (i+1) == len(simplification_results):
+        if (i+1) == len(simplification_results) or (i+1) % 25 == 0:
             print(f"{i+1}/{len(simplification_results)}")
-        elif (i+1) % 10 == 0:
-            print(f"{i+1}/{len(simplification_results)}, ", end="")
         
         source = simplification_result[0]["prediction"]
         prediction = simplification_result[-1]["prediction"]

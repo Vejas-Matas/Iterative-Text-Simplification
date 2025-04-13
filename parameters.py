@@ -1,7 +1,7 @@
 ### ALGORITHM PARAMETERS
 algorithm_parameters = {
-    "DC": "Average person",
-    "ILT": "Medium-High"
+    "DC": "Undergraduate student",
+    "ILT": "Medium"
 }
 
 ### DATASET SPLITTING
