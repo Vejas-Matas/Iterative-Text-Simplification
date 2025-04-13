@@ -1,0 +1,470 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe original passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are \"by flying it in and around urban and semi-urban streets\" and \"by experts having at least 6-8 years of flying experience\".\n\nThe complexity level of the passage is: High."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 13.824736842105263. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "by experts having at least 6-8 years of flying experience"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "by experts with extensive flying experience"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts with extensive flying experience."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss: The original passage mentions a specific range of experience (6-8 years), which is lost in the simplified version.\nSeverity of information loss: High (IL: 0.75) - the original passage provides a specific range, while the simplified version provides a vague estimate."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "0.75\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. Print the simplified passage with the proposed change reverted, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are:\n\n- \"by experts having at least 6-8 years of flying experience\"\n- \"urban and semi-urban streets\"\n\nThe complexity level of the passage is: Average person (DC)."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 13.824736842105263. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"by experts having at least 6-8 years of flying experience\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"by experienced pilots\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experienced pilots."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentioned a range of flying experience (6-8 years), which is not present in the simplified version. The severity of the information loss is High, as the range provides more specific and detailed information about the pilots' experience. The updated simplified passage may be misleading, as it implies that any pilot, regardless of experience, is qualified. The loss of this information may impact the reader's understanding of the pilots' qualifications. The severity of the information loss is higher than the ILT (Medium-High), so the change should be rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experienced pilots."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experienced pilots."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The phrase \"experienced pilots\" is the most complex part of the simplified passage as it can be replaced with a more general term without significant loss of information.\n\nThe complexity level of the simplified passage is approximately 0.5 on a scale of 1-1, where 1 is the highest complexity (original passage) and 0 is the lowest complexity (very simple language)."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 12.402758620689657. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"by experienced pilots\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"by pilots\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by pilots."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the term \"experienced pilots\" has been replaced with \"pilots\", which may imply that the pilots have less experience. The severity of this information loss is considered Medium due to the potential impact on the reader's understanding of the pilots' qualifications. The original passage emphasizes the importance of the pilots' experience in capturing the data, which is not fully conveyed in the updated simplified passage. This change may lead to a slight loss of credibility in the data collection process. The ILT (Medium-High) threshold is exceeded, so the change should be rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by pilots."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by pilots."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are:\n\n- \"by experts having at least 6-8 years of flying experience\" is still somewhat complex, but the removal of \"experts\" and the specificity of 6-8 years of experience was too much to simplify in one pass, so we will focus on the other part of the sentence.\n\nThe complexity level of the simplified passage is: Average person (DC)"
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 10.922857142857143. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"by pilots\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"by people\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss identified: Loss of specificity in the experience of the pilots (from \"experts having at least 6-8 years of flying experience\" to \"by people\").\nSeverity of information loss: High. This is because the original passage specifically mentions pilots with a certain level of experience, which is crucial information for understanding the context of the data capture. The change reduces the credibility of the data capture process."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are: \"people with at least 6-8 years of flying experience\" and \"urban and semi-urban streets\".\n\nThe complexity level of the simplified passage is: Average person (DC), which is the desired complexity level."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 10.501428571428573. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "\"people with at least 6-8 years of flying experience\""
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "\"people with experience flying drones\""
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people with experience flying drones."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The information loss is that the original passage mentions \"experts\" which is a specific and precise detail, whereas the simplified passage uses a more general term \"people with experience flying drones\". The severity of the information loss is Medium, as the change from \"experts\" to \"people with experience flying drones\" is a significant difference but still conveys the general idea. The information loss tolerance (ILT) is Medium-High, which means the change is acceptable."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Medium\nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people with experience flying drones."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people with experience flying drones."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The simplified passage is \"The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people with experience flying drones.\"\n\nThe most complex parts of the passage are \"urban and semi-urban\" and \"people with experience flying drones\" as they use more advanced vocabulary and concepts.\n\nThe complexity level of the passage is above Average person (DC) as it uses technical terms related to drone flying and requires some level of domain knowledge."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 12.74625. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Remember to respect the ILT (Medium-High) contraint. Only provide the identified section"
+  },
+  {
+    "role": "assistant",
+    "content": "people with experience flying drones"
+  },
+  {
+    "role": "user",
+    "content": "Simplify this section. Only provide the proposed simplification"
+  },
+  {
+    "role": "assistant",
+    "content": "experienced drone pilots"
+  },
+  {
+    "role": "user",
+    "content": "Reincorporate the simplified section into the simplified passage"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experienced drone pilots."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The original passage states \"by experts having at least 6-8 years of flying experience\", which is a specific detail about the expertise of the people flying the drone. The simplified passage \"by experienced drone pilots\" loses this specific detail, resulting in a loss of information. The severity of this information loss is High, as it changes the nature of the expertise from a specific range of years to a more general term. This change exceeds the ILT (Medium-High) threshold, so the change should be rejected."
+  },
+  {
+    "role": "user",
+    "content": "What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "High\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. Print the simplified passage with the proposed change reverted, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people with experience flying drones."
+  },
+  {
+    "role": "system",
+    "content": "The latest version of the simplified passage is provided in the following prompt"
+  },
+  {
+    "role": "system",
+    "content": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people with experience flying drones."
+  },
+  {
+    "role": "user",
+    "content": "Identify which parts of the simplified passage are the most complex, then the complexity level of the passage. Limit your answer to a maximum of 5 sentences"
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are:\n\n- \"by flying it in and around urban and semi-urban streets\" (contains two complex phrases)\n- \"by people with experience flying drones\" (contains a complex phrase)\n\nThe complexity level of the passage is: Average"
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest passage version is 12.74625. Is determined complexity higher than DC (Average person)?  Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "No"
+  }
+]

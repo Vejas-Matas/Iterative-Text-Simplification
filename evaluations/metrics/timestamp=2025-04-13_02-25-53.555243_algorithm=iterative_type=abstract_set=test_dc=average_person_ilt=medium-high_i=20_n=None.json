@@ -1,0 +1,758 @@
+[
+  [
+    {
+      "prediction": "The ingestion of \u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 12.558643926452982,
+        "bleu": 20.672497713717185,
+        "fkgl": 12.55714285714286,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "\u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 19.684048350523003,
+        "bleu": 22.366895391935884,
+        "fkgl": 10.9025,
+        "in_tokens": 5157,
+        "out_tokens": 278
+      }
+    },
+    {
+      "prediction": "About 20-25 grams of high-quality protein after exercise, repeated every 4 hours has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 36.47197484644963,
+        "bleu": 11.99107517419581,
+        "fkgl": 13.29555555555556,
+        "in_tokens": 15094,
+        "out_tokens": 589
+      }
+    },
+    {
+      "prediction": "About 20-25 grams of high-quality protein after exercise, repeated every 4 hours has been shown to maximize the anabolic response in muscle.",
+      "metrics": {
+        "sari": 41.57119221774394,
+        "bleu": 11.942324323213688,
+        "fkgl": 12.250000000000004,
+        "in_tokens": 29422,
+        "out_tokens": 816
+      }
+    },
+    {
+      "prediction": "About 20-25 grams of high-quality protein after exercise, repeated every 4 hours has been shown to maximize the anabolic response in muscle.",
+      "metrics": {
+        "sari": 41.57119221774394,
+        "bleu": 11.942324323213688,
+        "fkgl": 12.250000000000004,
+        "in_tokens": 47862,
+        "out_tokens": 1016
+      }
+    },
+    {
+      "prediction": "About 20-25 grams of high-quality protein after exercise, every 4 hours has been shown to maximize the anabolic response in muscle.",
+      "metrics": {
+        "sari": 39.24852110141957,
+        "bleu": 10.14527220714202,
+        "fkgl": 11.152000000000001,
+        "in_tokens": 70566,
+        "out_tokens": 1249
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be optimally effective to stimulate MPS [8] during post-exercise recovery, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 7.8093891567151035,
+        "bleu": 9.202435575026604,
+        "fkgl": 23.55924528301887,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Even when consuming enough protein after exercise, adding alcohol reduced muscle growth by 24%, only partially 'rescuing' the protein's effect.",
+      "metrics": {
+        "sari": 39.050147256123786,
+        "bleu": 5.291907393644995,
+        "fkgl": 12.453333333333333,
+        "in_tokens": 5703,
+        "out_tokens": 365
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a custom data set consisting of 17,992 phishing attacks targeting 159 different brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 27.67689579545748,
+        "bleu": 68.14319862721,
+        "fkgl": 16.54896825396826,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a set of algorithms is used to identify phishing websites based on their content, using a large database of known phishing attacks targeting various brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 38.49025797770352,
+        "bleu": 59.086357967917436,
+        "fkgl": 16.296756198347108,
+        "in_tokens": 6266,
+        "out_tokens": 471
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a set of algorithms is used to identify phishing websites based on their content, using a large database of known phishing attacks targeting various brands. Some experiments have shown that certain content-based approaches can detect phishing websites with a high success rate and few false positives.",
+      "metrics": {
+        "sari": 35.12059626814354,
+        "bleu": 40.28588827173193,
+        "fkgl": 15.409545454545455,
+        "in_tokens": 18500,
+        "out_tokens": 904
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 22.53691605257005,
+        "bleu": 50.58459724999643,
+        "fkgl": 15.956626506024097,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. However, a single study's results may have skewed the findings, so it's unclear if eating more frequently really helps with weight loss. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 23.112356241584692,
+        "bleu": 44.10225507599439,
+        "fkgl": 15.129962602842188,
+        "in_tokens": 7056,
+        "out_tokens": 716
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Subjects ingested the beverages within 5 min every 30 min.",
+      "metrics": {
+        "sari": 7.397504456327986,
+        "bleu": 9.864703138979419,
+        "fkgl": 6.936363636363637,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances to homeostasis and physiological function and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 4.763729246487867,
+        "bleu": 3.219425957071092,
+        "fkgl": 10.243636363636366,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the changes to the body's balance and function caused by exercise and promoting adaptation to the training [1].",
+      "metrics": {
+        "sari": 27.21832678940522,
+        "bleu": 8.878512064955949,
+        "fkgl": 7.341276595744681,
+        "in_tokens": 5501,
+        "out_tokens": 395
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 13.883152974234898,
+        "bleu": 23.718278212376354,
+        "fkgl": 15.718388888888892,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a better experience with the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 28.739237168737574,
+        "bleu": 27.57674210648779,
+        "fkgl": 15.115731343283581,
+        "in_tokens": 6851,
+        "out_tokens": 591
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a better experience with the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 28.739237168737574,
+        "bleu": 27.57674210648779,
+        "fkgl": 15.115731343283581,
+        "in_tokens": 20655,
+        "out_tokens": 1141
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a better experience with the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. This study can help VUI designers and developers improve the device for users around the world by adding more language options and better speech recognition.",
+      "metrics": {
+        "sari": 40.279314629990104,
+        "bleu": 29.329052100865262,
+        "fkgl": 14.385291338582679,
+        "in_tokens": 41536,
+        "out_tokens": 1742
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a better experience with the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. This study can help VUI designers and developers improve the device for users around the world by adding more language options and better speech recognition.",
+      "metrics": {
+        "sari": 40.279314629990104,
+        "bleu": 29.329052100865262,
+        "fkgl": 14.385291338582679,
+        "in_tokens": 69350,
+        "out_tokens": 2271
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a better experience with the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. This study can help make the device better for users worldwide by adding more languages and improving its speech recognition.",
+      "metrics": {
+        "sari": 40.822028407376784,
+        "bleu": 28.67410923735326,
+        "fkgl": 14.044032786885243,
+        "in_tokens": 103988,
+        "out_tokens": 2828
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other APIu0027s and networking protocols, we created the Vassar College Messaging Layer. This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 20.436613495843037,
+        "bleu": 42.354888216929545,
+        "fkgl": 12.380000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to a new platform, we created a layer that allows them to work on multiple platforms with minimal changes.",
+      "metrics": {
+        "sari": 37.65380766107111,
+        "bleu": 27.157861889867366,
+        "fkgl": 10.320137931034484,
+        "in_tokens": 6119,
+        "out_tokens": 424
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 27.975074814230194,
+        "bleu": 71.62328717397851,
+        "fkgl": 13.751301859799717,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. According to this model, previously untrained muscles get ready to grow by recruiting new cell nuclei from satellite cells before hypertrophic growth. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 28.7128978463053,
+        "bleu": 67.28541021089517,
+        "fkgl": 13.725662482566253,
+        "in_tokens": 8220,
+        "out_tokens": 896
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+      "metrics": {
+        "sari": 26.269310590431285,
+        "bleu": 64.87066897882097,
+        "fkgl": 16.99,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 24.896934149679172,
+        "bleu": 59.072926651991324,
+        "fkgl": 10.455193798449613,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Dynamic obstacles require the robot to plan its path again, which can cause delays or collisions. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 36.282731827233555,
+        "bleu": 57.80703672985335,
+        "fkgl": 9.390000000000004,
+        "in_tokens": 7234,
+        "out_tokens": 673
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network (DNN) for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 22.47133546024932,
+        "bleu": 48.040146358704284,
+        "fkgl": 17.126278538812787,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We first use the motor's on/off state to help identify the relevant sound features, in addition to the actual sound recordings, to improve the initial sound modeling. Then, the second DNN for primary acoustic modeling employs both the features obtained from the first step and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that a significant improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 38.0930738091263,
+        "bleu": 43.63408065334847,
+        "fkgl": 16.70959090909091,
+        "in_tokens": 7514,
+        "out_tokens": 635
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 19.73230473230473,
+        "bleu": 41.641869490617296,
+        "fkgl": 22.241739130434784,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, chemical compounds and non-medicinal substances). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 34.267200719009146,
+        "bleu": 45.228644908645244,
+        "fkgl": 21.2333962264151,
+        "in_tokens": 6017,
+        "out_tokens": 449
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, chemical compounds and non-medicinal substances). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for optimizing compound selection for drug development, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 35.247618641310225,
+        "bleu": 40.942233124582124,
+        "fkgl": 20.34450980392157,
+        "in_tokens": 18004,
+        "out_tokens": 892
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 25.061986582455273,
+        "bleu": 58.98876071190637,
+        "fkgl": 12.905644329896909,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 40.13253668205939,
+        "bleu": 60.97688793871184,
+        "fkgl": 12.75895348837209,
+        "in_tokens": 7549,
+        "out_tokens": 732
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The current debate on future generations' moral obligations suggests that women might be required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 47.76511795467508,
+        "bleu": 62.00701586579762,
+        "fkgl": 12.452564935064935,
+        "in_tokens": 23129,
+        "out_tokens": 1393
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The current debate on future generations' moral obligations suggests that women might be required to use IVF. These are complex issues that need a broader perspective from both women and men. Enhancing future generations will be gendered, unless the artificial womb is developed. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 44.74065976426166,
+        "bleu": 55.01452257920839,
+        "fkgl": 12.383782679738562,
+        "in_tokens": 46142,
+        "out_tokens": 2019
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The current debate on future generations' moral obligations suggests that women might be required to use IVF. These are complex issues that need a broader perspective from both women and men. There is a need to clarify the role of women in the discussions about human genome modification. Enhancing future generations will be gendered, unless the artificial womb is developed.",
+      "metrics": {
+        "sari": 47.08829714193789,
+        "bleu": 52.40969022351984,
+        "fkgl": 11.706805555555558,
+        "in_tokens": 76749,
+        "out_tokens": 2650
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The current debate on future generations' moral obligations suggests that women might be required to use IVF. These are complex issues that need a broader perspective from both women and men. Future generations will be gendered unless an artificial womb is developed. There is a need to clarify the role of women in the discussions about human genome modification.",
+      "metrics": {
+        "sari": 44.7508548179222,
+        "bleu": 46.62853745560193,
+        "fkgl": 11.6546522556391,
+        "in_tokens": 114658,
+        "out_tokens": 3258
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. Women might be required to use IVF in the future. These are complex issues that need a broader perspective from both women and men. Future generations will be gendered unless an artificial womb is developed. There is a need to clarify the role of women in the discussions about human genome modification.",
+      "metrics": {
+        "sari": 44.27730840343293,
+        "bleu": 44.22282120688254,
+        "fkgl": 10.874722222222221,
+        "in_tokens": 159781,
+        "out_tokens": 3851
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. Women might be required to use IVF in the future. These are complex issues that require a broader perspective. Future generations will be gendered unless an artificial womb is developed. There is a need to clarify the role of women in the discussions about human genome modification.",
+      "metrics": {
+        "sari": 43.80092214617171,
+        "bleu": 42.85449729569901,
+        "fkgl": 10.983130165289257,
+        "in_tokens": 211915,
+        "out_tokens": 4401
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving future generations' health could benefit public health, individuals, and communities. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. Women might be required to use IVF in the future. These are complex issues that require a broader perspective. There is a need to clarify the role of women in human genome modification discussions. Future generations will be gendered unless an artificial womb is developed.",
+      "metrics": {
+        "sari": 43.315193946364786,
+        "bleu": 41.8859781435694,
+        "fkgl": 10.93561974789916,
+        "in_tokens": 270937,
+        "out_tokens": 4980
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+      "metrics": {
+        "sari": 14.357550351824012,
+        "bleu": 23.04235981581216,
+        "fkgl": 12.643679775280898,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system breaks down the web document into smaller segments and provides a summary to help users navigate the content.",
+      "metrics": {
+        "sari": 19.939884695695095,
+        "bleu": 18.83761191027208,
+        "fkgl": 12.634318181818184,
+        "in_tokens": 6929,
+        "out_tokens": 642
+      }
+    },
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system breaks down a web document into smaller segments based on the device's screen size and the document's content. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system breaks down the web document into smaller segments and provides a summary to help users navigate the content.",
+      "metrics": {
+        "sari": 25.24187346493193,
+        "bleu": 17.8893995436806,
+        "fkgl": 12.06338235294118,
+        "in_tokens": 21492,
+        "out_tokens": 1297
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 15.951150570868881,
+        "bleu": 24.676863694756616,
+        "fkgl": 9.80903846153846,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 32.92546875661768,
+        "bleu": 23.97012061216918,
+        "fkgl": 9.94203346203346,
+        "in_tokens": 6606,
+        "out_tokens": 533
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 38.84000304235349,
+        "bleu": 22.544736798473732,
+        "fkgl": 9.219735449735452,
+        "in_tokens": 19647,
+        "out_tokens": 1044
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 35.75322449590769,
+        "bleu": 17.71355469246862,
+        "fkgl": 8.690476190476193,
+        "in_tokens": 38944,
+        "out_tokens": 1490
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 35.75322449590769,
+        "bleu": 17.71355469246862,
+        "fkgl": 8.690476190476193,
+        "in_tokens": 64153,
+        "out_tokens": 1929
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 35.75322449590769,
+        "bleu": 17.71355469246862,
+        "fkgl": 8.690476190476193,
+        "in_tokens": 95491,
+        "out_tokens": 2380
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 35.75322449590769,
+        "bleu": 17.71355469246862,
+        "fkgl": 8.690476190476193,
+        "in_tokens": 132966,
+        "out_tokens": 2856
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 35.75322449590769,
+        "bleu": 17.71355469246862,
+        "fkgl": 8.690476190476193,
+        "in_tokens": 176726,
+        "out_tokens": 3311
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 35.75322449590769,
+        "bleu": 17.71355469246862,
+        "fkgl": 8.690476190476193,
+        "in_tokens": 226641,
+        "out_tokens": 3787
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual pet game, a learning app, a mobile learning system, and online tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 35.75322449590769,
+        "bleu": 17.71355469246862,
+        "fkgl": 8.690476190476193,
+        "in_tokens": 282768,
+        "out_tokens": 4222
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Computer-assisted language learning is often dull, but M-CALL makes it more engaging with a fun game. M-CALL runs on a smartphone with internet access for mobile learning. It grows a cyber pet by solving problems of Korean language learning. This includes a virtual",
+      "metrics": {
+        "sari": 38.09366537443402,
+        "bleu": 6.428102353916307,
+        "fkgl": 7.679555555555556,
+        "in_tokens": 344999,
+        "out_tokens": 4670
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to dexterously manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 20.909041069689867,
+        "bleu": 43.935253530076054,
+        "fkgl": 8.713433734939759,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6-axis robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 32.78087171193887,
+        "bleu": 45.10519507198066,
+        "fkgl": 8.321913580246914,
+        "in_tokens": 5690,
+        "out_tokens": 394
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high-speed systems. The resulting drone could augment existing systems. The 6-axis robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 41.49500244685381,
+        "bleu": 44.992326536383096,
+        "fkgl": 8.757894736842108,
+        "in_tokens": 16943,
+        "out_tokens": 771
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high-speed systems. The resulting drone could augment existing systems. The 6-axis robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 41.49500244685381,
+        "bleu": 44.992326536383096,
+        "fkgl": 8.757894736842108,
+        "in_tokens": 33474,
+        "out_tokens": 1136
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high-speed systems. The resulting drone could augment existing systems. The 6-axis robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 41.49500244685381,
+        "bleu": 44.992326536383096,
+        "fkgl": 8.757894736842108,
+        "in_tokens": 55540,
+        "out_tokens": 1518
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high-speed systems. The resulting drone could augment existing systems. The 6-axis robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 43.874236793133605,
+        "bleu": 44.984795216975904,
+        "fkgl": 8.479666666666667,
+        "in_tokens": 83244,
+        "out_tokens": 1912
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 18.818898027256463,
+        "bleu": 37.75747267675955,
+        "fkgl": 13.988691910499146,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm based on neural networks to detect and prevent Denial-of-Service (DoS) attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 29.288881229069233,
+        "bleu": 36.34657554086403,
+        "fkgl": 14.124249547920439,
+        "in_tokens": 7325,
+        "out_tokens": 689
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm based on neural networks to detect and prevent Denial-of-Service (DoS) attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 29.288881229069233,
+        "bleu": 36.34657554086403,
+        "fkgl": 14.124249547920439,
+        "in_tokens": 22521,
+        "out_tokens": 1387
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems make self-driving vehicles vulnerable to various types of malicious attacks, including Denial of Service (DoS) and other common cyber threats. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm based on neural networks to detect and prevent Denial-of-Service (DoS) attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 38.83824679230912,
+        "bleu": 36.67640680651457,
+        "fkgl": 14.479142857142861,
+        "in_tokens": 45890,
+        "out_tokens": 2091
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems make self-driving vehicles vulnerable to various types of malicious attacks, including Denial of Service (Do S) and other common cyber threats. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm to detect and prevent Denial-of-Service (DoS) attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 40.17920738468275,
+        "bleu": 37.432665583829696,
+        "fkgl": 14.193197278911565,
+        "in_tokens": 77189,
+        "out_tokens": 2786
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new risks to self-driving vehicles, making them harder to control. These communication systems make self-driving vehicles vulnerable to various types of malicious attacks, including Denial of Service (Do S) and other common cyber threats. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm to detect and prevent Denial-of-Service (DoS) attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 38.17790188612927,
+        "bleu": 31.611036525388837,
+        "fkgl": 13.565812807881777,
+        "in_tokens": 116311,
+        "out_tokens": 3446
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new risks to self-driving vehicles, making them harder to control. These communication systems put self-driving vehicles at risk of cyber attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm to detect and prevent Denial-of-Service (DoS) attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 38.147964969157194,
+        "bleu": 33.368548561549716,
+        "fkgl": 12.818848283499449,
+        "in_tokens": 163155,
+        "out_tokens": 4101
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new risks to self-driving vehicles, making them harder to control. These communication systems put self-driving vehicles at risk of cyber attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm to prevent Do S attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 38.96697762721468,
+        "bleu": 34.07415405945112,
+        "fkgl": 12.425485714285717,
+        "in_tokens": 217583,
+        "out_tokens": 4719
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs pose a risk to self-driving vehicles. These communication systems put self-driving vehicles at risk of cyber attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a smart algorithm to prevent Do S attacks in VANETs. The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self",
+      "metrics": {
+        "sari": 40.092601850331214,
+        "bleu": 34.6493737123139,
+        "fkgl": 11.877218045112784,
+        "in_tokens": 279202,
+        "out_tokens": 5288
+      }
+    }
+  ]
+]

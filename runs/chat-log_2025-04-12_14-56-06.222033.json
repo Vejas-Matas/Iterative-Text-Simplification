@@ -1,0 +1,86 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe original passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest simplified passage version is 18.612972972972972. Identify which parts of the simplified passage are the most complex. Based on this information, identify the complexity of the simplified passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The FKGL (Flesch-Kincaid Grade Level) score of 18.612972972972972 indicates that the passage is quite complex. \n\nUpon analyzing the passage, the most complex parts are:\n- \"imitation learning based\" (requires some domain-specific knowledge)\n- \"data-driven solution\" (requires some domain-specific knowledge)\n- \"UAV autonomy\" (requires some domain-specific knowledge)\n- \"navigating through city streets\" (requires some domain-specific knowledge)\n- \"learning to fly by imitating an expert pilot\" (requires some domain-specific knowledge)\n\nThe complexity of the simplified passage is approximately 18.6, which is higher than the desired complexity of \"Average person\" (DC = 7-8). \n\nAnswer: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Simplify this section, and remember to respect the ILT (Medium-High) contraint. Reincorporate the simplified section into the simplified passage. Only provide the reincorporated version"
+  },
+  {
+    "role": "assistant",
+    "content": "The complicated section is: \"imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.\"\n\nSimplified version: \"Copy the way an expert pilot flies a drone to navigate in a city.\"\n\nInformation loss: The original passage conveys a more advanced and specific approach to drone navigation, while the simplified version generalizes the concept. The severity of information loss is Medium (some details are lost, but the main idea remains). The ILT is Medium-High, so the change is accepted.\n\nThe reincorporated version is:\nCopy the way an expert pilot flies a drone to navigate in a city."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The updated simplified passage (\"Copy the way an expert pilot flies a drone to navigate in a city.\") loses information about the specific approach (\"imitation learning based, data-driven solution\") and the domain (\"UAV autonomy\"). The severity of this information loss is High (some key concepts are lost). The severity of information loss is not higher than ILT (Medium-High). However, the severity is still higher than ILT, indicating that the changes should be rejected.\n\nHighest severity level: High\nAnswer: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. Print the simplified passage with the proposed change reverted, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Copy the way an expert pilot flies a drone to navigate in a city."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest simplified passage version is 5.993333333333336. Identify which parts of the simplified passage are the most complex. Based on this information, identify the complexity of the simplified passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The FKGL (Flesch-Kincaid Grade Level) score indicates that the simplified passage is at a 6th-grade level, which is above the DC of \"Average person\" (around 5th-6th grade). \n\nYes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Simplify this section, and remember to respect the ILT (Medium-High) contraint. Reincorporate the simplified section into the simplified passage. Only provide the reincorporated version"
+  },
+  {
+    "role": "assistant",
+    "content": "The complicated section is: \"Copy the way an expert pilot flies a drone to navigate in a city.\"\n\nSimplified section: \"Learn to fly a drone like an expert pilot.\"\n\nReincorporated simplified passage: Learn to fly a drone like an expert pilot."
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss: The original passage mentions \"imitation learning based\" and \"data-driven solution\", which are not present in the simplified passage. Severity level: High. \nInformation loss: The original passage provides context for the solution, which is lacking in the simplified passage. Severity level: Medium. \nInformation loss: The original passage does not specify the exact method of learning, which is not present in the simplified passage. Severity level: Low. \nThe highest severity level is High. \nNo"
+  },
+  {
+    "role": "user",
+    "content": "Accept the proposed simplification. Print the updated version of the simplified passage, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Learn to fly a drone like an expert pilot."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest simplified passage version is 1.2900000000000027. Identify which parts of the simplified passage are the most complex. Based on this information, identify the complexity of the simplified passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The FKGL (Flesch-Kincaid Grade Level) score of 1.2900000000000027 indicates that the simplified passage is at a very basic level, which is likely to be below the desired complexity of \"Average person\" (usually around 7-8).\n\nThe most complex parts of the passage are the words \"drone\" and \"pilot\", which may be unfamiliar to some readers. However, the passage is still quite simple and clear.\n\nThe complexity of the simplified passage is lower than the desired complexity of \"Average person\". \n\nAnswer: No"
+  }
+]

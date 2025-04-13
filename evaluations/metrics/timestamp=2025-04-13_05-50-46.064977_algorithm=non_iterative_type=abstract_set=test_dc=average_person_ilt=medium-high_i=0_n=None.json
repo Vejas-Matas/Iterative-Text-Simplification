@@ -1,0 +1,398 @@
+[
+  [
+    {
+      "prediction": "The ingestion of \u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 12.558643926452982,
+        "bleu": 20.672497713717185,
+        "fkgl": 12.55714285714286,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Eating 20-25 grams of protein after exercise helps build muscle.",
+      "metrics": {
+        "sari": 39.90255485515209,
+        "bleu": 5.359391501112158,
+        "fkgl": 2.187692307692309,
+        "in_tokens": 216,
+        "out_tokens": 16
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be optimally effective to stimulate MPS [8] during post-exercise recovery, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 7.8093891567151035,
+        "bleu": 9.202435575026604,
+        "fkgl": 23.55924528301887,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Even with the right amount of protein to help muscles recover after exercise, drinking alcohol reduced muscle growth by 24%.",
+      "metrics": {
+        "sari": 42.06796097663912,
+        "bleu": 8.9275746495808,
+        "fkgl": 10.310434782608699,
+        "in_tokens": 236,
+        "out_tokens": 24
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a custom data set consisting of 17,992 phishing attacks targeting 159 different brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 27.67689579545748,
+        "bleu": 68.14319862721,
+        "fkgl": 16.54896825396826,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Phishers change the code of websites to look like real websites and avoid detection. To catch these changes a team of algorithms is used to detect phishing sites based on their content. These algorithms use a large data set of known phishing attacks and can detect over 90% of them with few mistakes.",
+      "metrics": {
+        "sari": 23.775195880807203,
+        "bleu": 3.926438027936271,
+        "fkgl": 7.967368421052633,
+        "in_tokens": 313,
+        "out_tokens": 61
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 22.53691605257005,
+        "bleu": 50.58459724999643,
+        "fkgl": 15.956626506024097,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Eating smaller meals more often may help with weight loss and keeping weight off. Some studies suggest that eating less often is linked to being overweight. A review of studies that tested the effect of eating frequency on weight was done. The review found that eating more often was linked to losing fat and gaining muscle. However a closer look at the data showed that the positive results were mainly from one study. This makes it unclear if eating more often really helps with weight.",
+      "metrics": {
+        "sari": 28.71301424604782,
+        "bleu": 2.744905247796387,
+        "fkgl": 6.404120879120878,
+        "in_tokens": 349,
+        "out_tokens": 93
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Subjects ingested the beverages within 5 min every 30 min.",
+      "metrics": {
+        "sari": 7.397504456327986,
+        "bleu": 9.864703138979419,
+        "fkgl": 6.936363636363637,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "People drank a drink every 30 minutes.",
+      "metrics": {
+        "sari": 52.87749287749288,
+        "bleu": 23.76101887396086,
+        "fkgl": 2.280000000000001,
+        "in_tokens": 189,
+        "out_tokens": 10
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances to homeostasis and physiological function and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 4.763729246487867,
+        "bleu": 3.219425957071092,
+        "fkgl": 10.243636363636366,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The first few hours after exercise are important for the body to recover and adapt.",
+      "metrics": {
+        "sari": 37.91675179145721,
+        "bleu": 3.3639838296829803,
+        "fkgl": 8.350000000000005,
+        "in_tokens": 224,
+        "out_tokens": 17
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 13.883152974234898,
+        "bleu": 23.718278212376354,
+        "fkgl": 15.718388888888892,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "People use voice assistants like Google Home but they mainly support English language. We tested Google Home with 20 people who speak English and those who don't. People who speak English well had better experiences with the device. This shows that how well someone speaks English affects how they use voice assistants.",
+      "metrics": {
+        "sari": 34.50136801282938,
+        "bleu": 2.326297694926233,
+        "fkgl": 4.409285714285716,
+        "in_tokens": 332,
+        "out_tokens": 59
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other APIu0027s and networking protocols, we created the Vassar College Messaging Layer. This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 20.436613495843037,
+        "bleu": 42.354888216929545,
+        "fkgl": 12.380000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We developed applications for teaching networking on a device called Cybiko. But the Cybiko was discontinued. So we had to move the applications to other devices. Instead of copying each app to every device we created a layer that helps applications work on different devices with little changes.",
+      "metrics": {
+        "sari": 29.780254499196342,
+        "bleu": 1.7145723152052617,
+        "fkgl": 8.314615384615387,
+        "in_tokens": 312,
+        "out_tokens": 57
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 27.975074814230194,
+        "bleu": 71.62328717397851,
+        "fkgl": 13.751301859799717,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Skeletal muscle remembers its past experiences through a process called cellular memory. When a muscle fibre grows and then loses mass, it can regain mass faster than a new fibre. This happens because the muscle fibre has more myonuclei which are like cells that help the fibre grow. These myonuclei are protected and can last for a long time, even up to 15 years. This means that muscle memory might be very long lasting in humans and could be a good reason to start strength training early in life.",
+      "metrics": {
+        "sari": 21.682546400991345,
+        "bleu": 3.4644242437395647,
+        "fkgl": 6.525083333333331,
+        "in_tokens": 448,
+        "out_tokens": 105
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+      "metrics": {
+        "sari": 26.269310590431285,
+        "bleu": 64.87066897882097,
+        "fkgl": 16.99,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Automated decision-making raises moral concerns.",
+      "metrics": {
+        "sari": 22.023809523809522,
+        "bleu": 1.543228837249852,
+        "fkgl": 16.25,
+        "in_tokens": 198,
+        "out_tokens": 9
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 24.896934149679172,
+        "bleu": 59.072926651991324,
+        "fkgl": 10.455193798449613,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Mobile robots need to navigate safely in changing environments. They use maps to plan their paths. However humans and small robots can step over objects and need height information. Our system first maps the environment and detects moving obstacles. Then it uses this information to plan paths in real time. This system works quickly and allows for safe navigation.",
+      "metrics": {
+        "sari": 30.102180577478837,
+        "bleu": 5.412362885442876,
+        "fkgl": 5.881153846153847,
+        "in_tokens": 362,
+        "out_tokens": 66
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network (DNN) for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 22.47133546024932,
+        "bleu": 48.040146358704284,
+        "fkgl": 17.126278538812787,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Noise from humanoid robots makes it hard for them to understand what people are saying. A new way to make robots understand speech better is proposed. It uses the information of the robot's motor on or off state to help identify what people are saying. The robot first learns to recognize sounds and then uses the motor information to improve its understanding of speech. This new method works better than the old ones in recognizing words and sounds.",
+      "metrics": {
+        "sari": 27.412196990097993,
+        "bleu": 1.0980087260287752,
+        "fkgl": 7.517734939759038,
+        "in_tokens": 404,
+        "out_tokens": 85
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 19.73230473230473,
+        "bleu": 41.641869490617296,
+        "fkgl": 22.241739130434784,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Drug discovery researchers used a method to compare different types of compounds. They found big differences between drugs and compounds that are tested many at a time. This could help them choose the best compounds to use in research and make it more likely to find new medicines.",
+      "metrics": {
+        "sari": 28.681984361275866,
+        "bleu": 1.0544207188789012,
+        "fkgl": 7.930196078431372,
+        "in_tokens": 305,
+        "out_tokens": 52
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 25.061986582455273,
+        "bleu": 58.98876071190637,
+        "fkgl": 12.905644329896909,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Gene editing could solve health care issues. It might improve the health of individuals and communities. However, this would require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Women would likely be involved in this process. The moral implications of this have not been fully discussed. The role of women in enhancing future generations needs to be clarified.",
+      "metrics": {
+        "sari": 28.79809045658097,
+        "bleu": 7.215736615227784,
+        "fkgl": 7.560625000000002,
+        "in_tokens": 381,
+        "out_tokens": 72
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+      "metrics": {
+        "sari": 14.357550351824012,
+        "bleu": 23.04235981581216,
+        "fkgl": 12.643679775280898,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Mobile devices can't show all web pages because of small screens and low resolution. Designers would have to make separate versions of each page for different devices which is a big problem. We propose a system that breaks down a web page into smaller parts based on screen size and the page's structure. It also includes overviews and summaries to help users navigate.",
+      "metrics": {
+        "sari": 35.301350980816004,
+        "bleu": 1.84905829769634,
+        "fkgl": 8.026082089552244,
+        "in_tokens": 359,
+        "out_tokens": 72
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 15.951150570868881,
+        "bleu": 24.676863694756616,
+        "fkgl": 9.80903846153846,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A new language learning tool called M-CALL was created for people learning Korean. It uses a game to make learning more fun. M-CALL can be used on a personal digital assistant with a wireless internet connection. The more you learn, the more your virtual pet grows. The tool includes a language test to see how well you're doing. It has several features to help with learning the Korean language. A prototype of M-CALL was made and tested on a mobile device and a computer.",
+      "metrics": {
+        "sari": 40.91344034475363,
+        "bleu": 6.332119738103426,
+        "fkgl": 5.311801242236026,
+        "in_tokens": 320,
+        "out_tokens": 100
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to dexterously manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 20.909041069689867,
+        "bleu": 43.935253530076054,
+        "fkgl": 8.713433734939759,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A new robotic drone is being developed. It has a mechanical arm that can pick up small objects like test tubes and micro-arrays. This drone could help with laboratory work.",
+      "metrics": {
+        "sari": 27.544034371400187,
+        "bleu": 1.2510485588654399,
+        "fkgl": 5.506060606060608,
+        "in_tokens": 277,
+        "out_tokens": 36
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 18.818898027256463,
+        "bleu": 37.75747267675955,
+        "fkgl": 13.988691910499146,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Self-driving vehicles are vulnerable to different types of attacks due to their communication systems. These systems make self-driving vehicles susceptible to various malicious attacks. We propose a system to secure external communications for self-driving and semi self-driving cars. The system can detect a common type of attack called Denial-of-Service.",
+      "metrics": {
+        "sari": 45.57709024225225,
+        "bleu": 13.584207981421812,
+        "fkgl": 12.064292452830191,
+        "in_tokens": 365,
+        "out_tokens": 62
+      }
+    }
+  ]
+]

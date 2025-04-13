@@ -1,0 +1,54 @@
+[
+  {
+    "role": "system",
+    "content": "\nYou are a reader assistant. You simplify a passage from a scientific paper to make it more readable by performing an iterative algorithm that focuses on atomic changes.\n\nYou are also given two parameters: DC (Desired Complexity) \u2013 a desired complexity of the simplified text, and ILT (Information Loss Tolerance) \u2013 a threshold for information loss compared to original passage that specifies whether an atomic change should be accepted or not.\n\nThe algorithm is as follows:\n1. Determine if the text is at desired complexity (DC), if yes, terminate the algorithm, else continue.\n2. Identify a section of the text whose complexity is above DC.\n3. Propose a simplification of the identified section.\n4. Identify information loss and the severity of it \u2013 if the severity for any of the information loss questions is higher than information loss tolerance (ILT), reject changes, else update the current state of the passage\n5. Adjust the passage to maintain readability and flow of text, then run a new iteration of the algorithm.\n\nWhen the algorithm terminates, you print the final simplified passage\n\nWhen responding to prompts, only respond to the given question and do not proceed to the next step\n"
+  },
+  {
+    "role": "system",
+    "content": "Algorithm parameters are as follows.\nDC: Average person\nILT: Medium-High\n\nThe original passage is provided in the following message"
+  },
+  {
+    "role": "system",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest simplified passage version is 19.48. Identify which parts of the simplified passage are the most complex. Based on this information, identify the complexity of the simplified passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "To identify the most complex parts of the simplified passage, I need to analyze the passage.\n\nThe simplified passage is: \"Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.\"\n\nThe most complex words or phrases are:\n- \"39-layered Inception model\" (technical term, high level of abstraction)\n- \"tomographic reconstructions\" (technical term, high level of abstraction)\n- \"image classification algorithms\" (technical term, high level of abstraction)\n\nThe complexity of the simplified passage is High.\n\nThe determined complexity is higher than DC (Average person). Answer is: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Identify a single complicated section of the simplified passage. Simplify this section, and remember to respect the ILT (Medium-High) contraint. Reincorporate the simplified section into the simplified passage. Only provide the reincorporated version"
+  },
+  {
+    "role": "assistant",
+    "content": "The complicated section is: \"39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.\"\n\nSimplified version: \"our classifier uses a complex model to detect roads in images by analyzing the input data.\"\n\nInformation loss: \n- Original: \"39-layered Inception model\" -> Simplified: \"complex model\" (ILT: Medium-High, Severity: 0.5) - Accepted\n- Original: \"tomographic reconstructions\" -> Simplified: \"analyzing the input data\" (ILT: Medium-High, Severity: 0.3) - Accepted\n- Original: \"the presence of roads\" -> Simplified: \"detect roads\" (ILT: Medium-High, Severity: 0.2) - Accepted\n\nReincorporated version: \"Derived from the classic image classification algorithms, our classifier uses a complex model to detect roads in images by analyzing the input data.\""
+  },
+  {
+    "role": "user",
+    "content": "Identify information loss and its severity in the updated simplified passage compared to the original passage. Comparison must be between the originally provided (the very first) passage and the current simplified version with the proposed change. Limit your answer to a maximum of 5 sentences. What is the highest severity level identified in your last answer? Is it higher than ILT (Medium-High)? Provide the highest severity level, followed by an answer to the ILT question as \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "Information loss and its severity:\n\n- Original: \"fast 39-layered Inception model\" -> Simplified: \"complex model\" (ILT: Medium-High, Severity: 0.5)\n- Original: \"tomographic reconstructions of the input frames\" -> Simplified: \"analyzing the input data\" (ILT: Medium-High, Severity: 0.3)\n- Original: \"our classifier has been constructed\" -> Simplified: \"our classifier uses\" (ILT: Low, Severity: 0.1)\n\nThe highest severity level is 0.5.\n\nThe highest severity (0.5) is higher than ILT (Medium-High). Answer: Yes"
+  },
+  {
+    "role": "user",
+    "content": "Revert the last proposed change. Print the simplified passage with the proposed change reverted, do not print anything else"
+  },
+  {
+    "role": "assistant",
+    "content": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames."
+  },
+  {
+    "role": "user",
+    "content": "FKGL score of the latest simplified passage version is 19.48. Identify which parts of the simplified passage are the most complex. Based on this information, identify the complexity of the simplified passage. Is determined complexity higher than DC (Average person)? Answer \"Yes\" or \"No\""
+  },
+  {
+    "role": "assistant",
+    "content": "The most complex parts of the simplified passage are:\n- \"fast 39-layered Inception model\"\n- \"tomographic reconstructions of the input frames\"\n\nThe complexity of the simplified passage is: Technical\n\nNo"
+  }
+]

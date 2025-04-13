@@ -1,0 +1,958 @@
+[
+  [
+    {
+      "prediction": "The ingestion of \u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 12.558643926452982,
+        "bleu": 20.672497713717185,
+        "fkgl": 12.55714285714286,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The ingestion of 20-25 grams of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 23.781853767147883,
+        "bleu": 22.072010864654942,
+        "fkgl": 12.872432432432436,
+        "in_tokens": 5290,
+        "out_tokens": 251
+      }
+    },
+    {
+      "prediction": "The ingestion of 20-25 grams of high quality protein after exercise has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 42.52140939931188,
+        "bleu": 25.283089095802612,
+        "fkgl": 11.624000000000002,
+        "in_tokens": 10584,
+        "out_tokens": 501
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be optimally effective to stimulate MPS [8] during post-exercise recovery, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 7.8093891567151035,
+        "bleu": 9.202435575026604,
+        "fkgl": 23.55924528301887,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be optimal to stimulate MPS during post-exercise recovery, alcohol decreased protein production by about 24%, representing only a partial \u2018rescue\u2019 of the response compared with protein alone.",
+      "metrics": {
+        "sari": 33.192976028352774,
+        "bleu": 10.82590250273915,
+        "fkgl": 22.32297872340426,
+        "in_tokens": 5937,
+        "out_tokens": 330
+      }
+    },
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts needed to stimulate muscle protein synthesis during post-exercise recovery, alcohol decreased protein production by about 24%, representing only a partial \u2018rescue\u2019 of the response compared with protein alone.",
+      "metrics": {
+        "sari": 38.674678460120425,
+        "bleu": 11.644216046403793,
+        "fkgl": 23.12826086956522,
+        "in_tokens": 11879,
+        "out_tokens": 680
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a custom data set consisting of 17,992 phishing attacks targeting 159 different brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 27.67689579545748,
+        "bleu": 68.14319862721,
+        "fkgl": 16.54896825396826,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a dataset of over 17,000 phishing attacks targeting 159 brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 30.9978089803767,
+        "bleu": 62.423970534651836,
+        "fkgl": 16.165101626016263,
+        "in_tokens": 7565,
+        "out_tokens": 522
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a large dataset of over 17,000 phishing attacks. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 30.19736590388382,
+        "bleu": 60.2558721892554,
+        "fkgl": 16.004194214876033,
+        "in_tokens": 14903,
+        "out_tokens": 1018
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a large database of phishing attacks. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 29.32017292142768,
+        "bleu": 60.02407736003267,
+        "fkgl": 15.943592436974793,
+        "in_tokens": 22380,
+        "out_tokens": 1527
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a large database of phishing attacks. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of over 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 29.264642615088032,
+        "bleu": 57.25165039004028,
+        "fkgl": 15.915000000000003,
+        "in_tokens": 29807,
+        "out_tokens": 2044
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To respond to these changes, a set of algorithms is used to detect phishing websites based on their content. The results of the experiments using a variety of different approaches demonstrate that some can achieve a detection rate of over 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 44.60722066707078,
+        "bleu": 53.38374008384914,
+        "fkgl": 13.81366504854369,
+        "in_tokens": 37169,
+        "out_tokens": 2540
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 22.53691605257005,
+        "bleu": 50.58459724999643,
+        "fkgl": 15.956626506024097,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several studies support this hypothesis, with a relationship noted between the frequency of eating and body fat. The purpose of this review is to discuss a meta-analysis that evaluated the effect of meal frequency on fat mass and lean mass. Feeding frequency was associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, one study's results may not be reliable, raising doubts about the effectiveness of more frequent meals in improving body composition. In conclusion, although the initial results suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 50.299761130635886,
+        "bleu": 50.15757794842959,
+        "fkgl": 12.885287769784174,
+        "in_tokens": 8585,
+        "out_tokens": 619
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several studies support this hypothesis, with a relationship noted between the frequency of eating and body fat. The purpose of this review is to discuss a meta-analysis that evaluated the effect of meal frequency on fat mass and lean mass. Feeding frequency was associated with reduced body fat and increased lean mass. However, one study's results may not be reliable, raising doubts about the effectiveness of more frequent meals in improving body composition. In conclusion, although the initial results suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 51.75855601942496,
+        "bleu": 49.282405607416166,
+        "fkgl": 12.73846153846154,
+        "in_tokens": 16769,
+        "out_tokens": 1226
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several studies support this hypothesis, with an inverse relationship noted between the frequency of eating and body fat. This review looks at how often eating affects body fat and muscle mass. Feeding frequency was associated with reduced body fat and increased lean mass. However, the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 51.68814957661075,
+        "bleu": 56.433756337409655,
+        "fkgl": 11.9814,
+        "in_tokens": 24765,
+        "out_tokens": 1781
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Subjects ingested the beverages within 5 min every 30 min.",
+      "metrics": {
+        "sari": 7.397504456327986,
+        "bleu": 9.864703138979419,
+        "fkgl": 6.936363636363637,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Subjects ingested the beverages every 30 minutes.",
+      "metrics": {
+        "sari": 47.09935897435898,
+        "bleu": 26.295889981470573,
+        "fkgl": 11.130000000000003,
+        "in_tokens": 4796,
+        "out_tokens": 221
+      }
+    },
+    {
+      "prediction": "Subjects ingested the beverages every half hour.",
+      "metrics": {
+        "sari": 31.875,
+        "bleu": 5.367626065580593,
+        "fkgl": 9.655000000000001,
+        "in_tokens": 9972,
+        "out_tokens": 489
+      }
+    },
+    {
+      "prediction": "Subjects ingested the beverages every 30 minutes.",
+      "metrics": {
+        "sari": 47.09935897435898,
+        "bleu": 26.295889981470573,
+        "fkgl": 11.130000000000003,
+        "in_tokens": 14648,
+        "out_tokens": 696
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances to homeostasis and physiological function and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 4.763729246487867,
+        "bleu": 3.219425957071092,
+        "fkgl": 10.243636363636366,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the disturbances to the body's balance and physical functions and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 18.030813689998414,
+        "bleu": 3.8674683002689934,
+        "fkgl": 7.566666666666666,
+        "in_tokens": 5915,
+        "out_tokens": 368
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for restoring the body's balance and physical functions and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 20.81332020739623,
+        "bleu": 3.804006018007904,
+        "fkgl": 6.727142857142859,
+        "in_tokens": 11348,
+        "out_tokens": 660
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to restore the body's balance and physical functions and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 26.1935705577947,
+        "bleu": 4.010219277455057,
+        "fkgl": 3.120000000000001,
+        "in_tokens": 17277,
+        "out_tokens": 1028
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 13.883152974234898,
+        "bleu": 23.718278212376354,
+        "fkgl": 15.718388888888892,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. Language skills affect how well people interact with voice assistants. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs.",
+      "metrics": {
+        "sari": 24.885128010658534,
+        "bleu": 22.731089568218533,
+        "fkgl": 14.624946564885498,
+        "in_tokens": 7902,
+        "out_tokens": 588
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. Language skills affect how well people interact with voice assistants. adding support for more languages and improving how the device understands what users say can help make it more useful for everyone.",
+      "metrics": {
+        "sari": 33.31958604171415,
+        "bleu": 21.33726297185276,
+        "fkgl": 14.122125000000004,
+        "in_tokens": 15634,
+        "out_tokens": 1124
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. Language skills affect how well people interact with voice assistants. Adding more languages and improving voice recognition can make the device more useful for everyone.",
+      "metrics": {
+        "sari": 33.08091002301799,
+        "bleu": 22.679257878576404,
+        "fkgl": 13.93725619834711,
+        "in_tokens": 23256,
+        "out_tokens": 1650
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. People's language skills affect how well they use voice assistants. Adding more languages and improving voice recognition can make the device more useful for everyone.",
+      "metrics": {
+        "sari": 39.036762568036764,
+        "bleu": 22.879084458791507,
+        "fkgl": 13.794605263157894,
+        "in_tokens": 30875,
+        "out_tokens": 2145
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Language skills affect how well people use voice assistants. Adding more languages and improving voice recognition can make the device more useful for everyone.",
+      "metrics": {
+        "sari": 38.57878462719576,
+        "bleu": 22.40532941343034,
+        "fkgl": 13.660106382978729,
+        "in_tokens": 38260,
+        "out_tokens": 2605
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. People's language skills affect how well they use voice assistants. Adding more languages and improving voice recognition can make the device more useful for everyone.",
+      "metrics": {
+        "sari": 39.036762568036764,
+        "bleu": 22.879084458791507,
+        "fkgl": 13.794605263157894,
+        "in_tokens": 45363,
+        "out_tokens": 3021
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. A usability study of the Google Home Smart Speaker was conducted with 20 participants to understand their differences in using the device. Language skills help users get the most out of voice assistants. Adding more languages and improving voice recognition can make the device more useful for everyone.",
+      "metrics": {
+        "sari": 42.5070412809007,
+        "bleu": 19.146151018746664,
+        "fkgl": 12.690348837209303,
+        "in_tokens": 52652,
+        "out_tokens": 3490
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. A usability study of the Google Home Smart Speaker was conducted with 20 participants to understand their differences in using the device. Language skills help users get the most out of voice assistants. Adding more languages and improving voice recognition can make the device more useful for everyone.",
+      "metrics": {
+        "sari": 42.5070412809007,
+        "bleu": 19.146151018746664,
+        "fkgl": 12.690348837209303,
+        "in_tokens": 59971,
+        "out_tokens": 3930
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We tested the Google Home Smart Speaker with 20 people. Language skills help users get the most out of voice assistants. Adding more languages and improving voice recognition can make the device more useful for everyone.",
+      "metrics": {
+        "sari": 39.95112129382259,
+        "bleu": 13.594034491055998,
+        "fkgl": 10.122297297297298,
+        "in_tokens": 67458,
+        "out_tokens": 4419
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other APIu0027s and networking protocols, we created the Vassar College Messaging Layer. This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 20.436613495843037,
+        "bleu": 42.354888216929545,
+        "fkgl": 12.380000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other APIu0027s and networking protocols, we created the Vassar College Messaging Layer. This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 20.436613495843037,
+        "bleu": 42.354888216929545,
+        "fkgl": 12.380000000000003,
+        "in_tokens": 7447,
+        "out_tokens": 494
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, we created a messaging layer to make it easier.",
+      "metrics": {
+        "sari": 38.97091477915373,
+        "bleu": 26.820931203202527,
+        "fkgl": 10.415000000000003,
+        "in_tokens": 14519,
+        "out_tokens": 859
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. It recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. We created a layer to make it easier to port the applications.",
+      "metrics": {
+        "sari": 40.85229966182811,
+        "bleu": 21.268445901497607,
+        "fkgl": 8.774608695652176,
+        "in_tokens": 21534,
+        "out_tokens": 1282
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. It recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. We created a tool to make it easier to move the applications.",
+      "metrics": {
+        "sari": 40.68332052961183,
+        "bleu": 21.169289607330995,
+        "fkgl": 8.9456231884058,
+        "in_tokens": 28328,
+        "out_tokens": 1666
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 27.975074814230194,
+        "bleu": 71.62328717397851,
+        "fkgl": 13.751301859799717,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Myonuclei seem to be resistant to cell death in muscle tissue that is shrinking. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 41.786898135907975,
+        "bleu": 65.6021104224625,
+        "fkgl": 12.210436137071653,
+        "in_tokens": 10429,
+        "out_tokens": 817
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. Myonuclei seem to be resistant to cell death in muscle tissue that is shrinking. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 41.62011338617939,
+        "bleu": 65.23764015246817,
+        "fkgl": 12.210436137071653,
+        "in_tokens": 20735,
+        "out_tokens": 1657
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. Myonuclei appear to be more resistant to dying off in muscles that are shrinking. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 41.10659860948051,
+        "bleu": 64.6530377168362,
+        "fkgl": 12.265576323987542,
+        "in_tokens": 30806,
+        "out_tokens": 2458
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+      "metrics": {
+        "sari": 26.269310590431285,
+        "bleu": 64.87066897882097,
+        "fkgl": 16.99,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Moral responsibility is a major concern in automated decision-making, with applications in transportation and healthcare.",
+      "metrics": {
+        "sari": 45.00029025891095,
+        "bleu": 55.81600587827485,
+        "fkgl": 16.72235294117647,
+        "in_tokens": 4931,
+        "out_tokens": 201
+      }
+    },
+    {
+      "prediction": "Moral responsibility is a major concern in automated decision-making, with applications in transportation and healthcare.",
+      "metrics": {
+        "sari": 45.00029025891095,
+        "bleu": 55.81600587827485,
+        "fkgl": 16.72235294117647,
+        "in_tokens": 9862,
+        "out_tokens": 442
+      }
+    },
+    {
+      "prediction": "Computer decisions are a major concern in that, with applications in transportation and healthcare.",
+      "metrics": {
+        "sari": 26.50974025974026,
+        "bleu": 15.917012694603715,
+        "fkgl": 10.562500000000004,
+        "in_tokens": 14893,
+        "out_tokens": 700
+      }
+    },
+    {
+      "prediction": "Computer decisions are a major concern in that, with applications in transportation and healthcare.",
+      "metrics": {
+        "sari": 26.50974025974026,
+        "bleu": 15.917012694603715,
+        "fkgl": 10.562500000000004,
+        "in_tokens": 20177,
+        "out_tokens": 987
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 24.896934149679172,
+        "bleu": 59.072926651991324,
+        "fkgl": 10.455193798449613,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough because they can step over objects and need to know the height of the environment. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 45.24460720023934,
+        "bleu": 61.65778255736542,
+        "fkgl": 9.269896480331262,
+        "in_tokens": 8834,
+        "out_tokens": 699
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough because they can step over objects and need to know the height of the environment. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 45.24460720023934,
+        "bleu": 61.65778255736542,
+        "fkgl": 9.269896480331262,
+        "in_tokens": 17486,
+        "out_tokens": 1378
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough because they can step over objects and need to know the height of the environment. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times under 10ms and allows for real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 51.37998029448983,
+        "bleu": 64.53808846844817,
+        "fkgl": 8.788602150537638,
+        "in_tokens": 26056,
+        "out_tokens": 2024
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network (DNN) for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 22.47133546024932,
+        "bleu": 48.040146358704284,
+        "fkgl": 17.126278538812787,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider a specialized type of artificial intelligence (AI) system that recognizes spoken words, which have been successfully applied to speech recognition. When learning to catch these features, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network (DNN) for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 31.902800802199028,
+        "bleu": 45.97416065438853,
+        "fkgl": 17.133333333333336,
+        "in_tokens": 9700,
+        "out_tokens": 760
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider a specialized computer system for initial speech recognition modeling. When learning to catch these features, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first DNN for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 30.88795648341812,
+        "bleu": 44.652080245789655,
+        "fkgl": 16.262715736040608,
+        "in_tokens": 18928,
+        "out_tokens": 1461
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider a basic system for initial speech recognition modeling. When learning to catch these features, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first DNN for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 30.88795648341812,
+        "bleu": 44.88166148980545,
+        "fkgl": 15.993877551020407,
+        "in_tokens": 27584,
+        "out_tokens": 2069
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider a basic system for initial speech recognition modeling. We use the motor's on/off state to help the system understand the audio signals. Then, the second DNN for primary acoustic modeling employs both the features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 35.95568922821024,
+        "bleu": 45.11832849572228,
+        "fkgl": 14.193000000000001,
+        "in_tokens": 37043,
+        "out_tokens": 2851
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider a basic system for initial speech recognition modeling. The motor's on/off state helps the system improve audio signal recognition. Then, the second DNN for primary acoustic modeling employs both the features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 36.61649041683325,
+        "bleu": 46.21504111390171,
+        "fkgl": 14.319069767441864,
+        "in_tokens": 45643,
+        "out_tokens": 3448
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider a basic system for initial speech recognition modeling. The motor's on/off state helps the system improve audio signal recognition. The second model uses features from the first model and audio signals to improve speech recognition. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.602378727981815,
+        "bleu": 45.376529047109535,
+        "fkgl": 14.250602409638557,
+        "in_tokens": 54540,
+        "out_tokens": 4088
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 19.73230473230473,
+        "bleu": 41.641869490617296,
+        "fkgl": 22.241739130434784,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for optimizing compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 22.531506555306866,
+        "bleu": 40.5094605405196,
+        "fkgl": 21.621785714285718,
+        "in_tokens": 7526,
+        "out_tokens": 552
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles for drug molecules and high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for optimizing compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 28.41772341062655,
+        "bleu": 40.63704885223712,
+        "fkgl": 21.01075471698113,
+        "in_tokens": 14873,
+        "out_tokens": 1057
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles for drug molecules and high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for optimizing compound selection and library design, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 29.09835173022189,
+        "bleu": 40.02860995932747,
+        "fkgl": 20.760952380952386,
+        "in_tokens": 21850,
+        "out_tokens": 1490
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Differences were found between the pharmacophore profiles of drug molecules and high-throughput screening compounds. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for optimizing compound selection and library design, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 27.309143129840084,
+        "bleu": 29.33347430324684,
+        "fkgl": 18.815652173913048,
+        "in_tokens": 28831,
+        "out_tokens": 1910
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 25.061986582455273,
+        "bleu": 58.98876071190637,
+        "fkgl": 12.905644329896909,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations implies that women may be morally required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 40.258772223115066,
+        "bleu": 59.607195540806394,
+        "fkgl": 12.162967032967035,
+        "in_tokens": 8946,
+        "out_tokens": 597
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will require In Vitro Fertilisation and genetic testing before implantation. The current discussion on future generations implies that women may be morally required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 38.5381911979516,
+        "bleu": 55.010487533618814,
+        "fkgl": 11.762727272727272,
+        "in_tokens": 17466,
+        "out_tokens": 1218
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF and genetic testing. The current discussion on future generations implies that women may be morally required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 37.708985886686115,
+        "bleu": 54.096047940581705,
+        "fkgl": 10.939142857142858,
+        "in_tokens": 25779,
+        "out_tokens": 1780
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF and genetic testing. The current discussion suggests that women might be morally expected to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 36.944174205204426,
+        "bleu": 55.085646397805526,
+        "fkgl": 10.580952380952379,
+        "in_tokens": 34338,
+        "out_tokens": 2389
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF and genetic testing. The current discussion suggests that women might be morally expected to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 34.13792845056983,
+        "bleu": 35.018814334599526,
+        "fkgl": 9.696260504201682,
+        "in_tokens": 42822,
+        "out_tokens": 2976
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. The current discussion suggests that women might be morally expected to use IVF. Enhancing future generations will be gendered. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 31.67527308379572,
+        "bleu": 28.808160819748437,
+        "fkgl": 8.599587155963306,
+        "in_tokens": 50622,
+        "out_tokens": 3428
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. The current discussion suggests that women might be morally expected to use IVF. Enhancing future generations will be gendered. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 31.67527308379572,
+        "bleu": 28.808160819748437,
+        "fkgl": 8.599587155963306,
+        "in_tokens": 58529,
+        "out_tokens": 3939
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women might be expected to use IVF. Enhancing future generations will be gendered. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 31.315020102552882,
+        "bleu": 26.83067164404094,
+        "fkgl": 7.831213592233013,
+        "in_tokens": 66116,
+        "out_tokens": 4376
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need to use IVF. Enhancing future generations will be gendered. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 31.510567626847017,
+        "bleu": 26.90363339466924,
+        "fkgl": 7.698823529411765,
+        "in_tokens": 74346,
+        "out_tokens": 4940
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need IVF. Enhancing future generations will be gendered. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 31.381138046727177,
+        "bleu": 26.42823662147615,
+        "fkgl": 7.666,
+        "in_tokens": 82046,
+        "out_tokens": 5399
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need IVF. Future generations will be gendered unless an artificial womb is created. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 30.93560386515712,
+        "bleu": 25.34465193539502,
+        "fkgl": 8.092142857142857,
+        "in_tokens": 89918,
+        "out_tokens": 5892
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need IVF. Future generations will be gendered unless an artificial womb is created. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 30.93560386515712,
+        "bleu": 25.34465193539502,
+        "fkgl": 8.092142857142857,
+        "in_tokens": 98068,
+        "out_tokens": 6436
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need IVF. Future generations will be male or female unless a new way to grow babies outside the womb is developed. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 30.750255059922825,
+        "bleu": 25.889836315218147,
+        "fkgl": 8.254115044247786,
+        "in_tokens": 105933,
+        "out_tokens": 6959
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need IVF. Babies will be either male or female, unless a new way to grow babies outside the womb is created. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 29.511336852815976,
+        "bleu": 24.493760464092382,
+        "fkgl": 7.760350877192984,
+        "in_tokens": 114387,
+        "out_tokens": 7555
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need to use IVF. Babies will be either male or female, unless a new way to grow babies outside the womb is created. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 29.655753335180872,
+        "bleu": 24.85056317854515,
+        "fkgl": 7.818965517241381,
+        "in_tokens": 122165,
+        "out_tokens": 8029
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need to use IVF. Babies will be either male or female, unless a new way to grow babies outside the womb is created. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 29.655753335180872,
+        "bleu": 24.85056317854515,
+        "fkgl": 7.818965517241381,
+        "in_tokens": 130082,
+        "out_tokens": 8525
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need to use IVF. Babies will be either male or female. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 29.582167460021083,
+        "bleu": 23.32730713218848,
+        "fkgl": 7.143834951456313,
+        "in_tokens": 137811,
+        "out_tokens": 8950
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. Future generations will need IVF. Women may need to use IVF. Babies will be either male or female. There is a lack of clarity on the role of women in gene editing discussions, making it urgent to address this issue.",
+      "metrics": {
+        "sari": 29.582167460021083,
+        "bleu": 23.32730713218848,
+        "fkgl": 7.143834951456313,
+        "in_tokens": 145692,
+        "out_tokens": 9480
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+      "metrics": {
+        "sari": 14.357550351824012,
+        "bleu": 23.04235981581216,
+        "fkgl": 12.643679775280898,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 15.951150570868881,
+        "bleu": 24.676863694756616,
+        "fkgl": 9.80903846153846,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to dexterously manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 20.909041069689867,
+        "bleu": 43.935253530076054,
+        "fkgl": 8.713433734939759,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. A 6-axis robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 31.999576829772252,
+        "bleu": 43.101703249041364,
+        "fkgl": 8.321913580246914,
+        "in_tokens": 6552,
+        "out_tokens": 407
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high-speed testing systems. The resulting drone could augment existing operations. A 6-axis robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 41.01072682432289,
+        "bleu": 44.16743970287542,
+        "fkgl": 9.183831168831173,
+        "in_tokens": 12995,
+        "out_tokens": 777
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate objects such as micro-arrays and test tubes often used in high-speed testing systems. The resulting drone could augment existing operations. A robotic arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 41.27706200880322,
+        "bleu": 43.95332353909002,
+        "fkgl": 9.471351351351355,
+        "in_tokens": 19284,
+        "out_tokens": 1139
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 18.818898027256463,
+        "bleu": 37.75747267675955,
+        "fkgl": 13.988691910499146,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems make self-driving vehicles vulnerable to various types of attacks, such as Denial of Service (DoS). In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 31.050637989445374,
+        "bleu": 38.28118619827864,
+        "fkgl": 13.75781512605042,
+        "in_tokens": 8675,
+        "out_tokens": 622
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems make self-driving vehicles vulnerable to various types of attacks, such as Denial of Service (DoS). In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a special kind of artificial intelligence to detect a common type of attack on VANETs: Denial-of-Service (DoS).",
+      "metrics": {
+        "sari": 39.92164231812964,
+        "bleu": 38.52363560856584,
+        "fkgl": 13.57777777777778,
+        "in_tokens": 17402,
+        "out_tokens": 1298
+      }
+    }
+  ]
+]

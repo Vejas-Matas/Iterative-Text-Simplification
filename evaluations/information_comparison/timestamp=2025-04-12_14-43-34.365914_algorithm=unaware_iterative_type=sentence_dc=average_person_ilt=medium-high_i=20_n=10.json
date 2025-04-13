@@ -1,0 +1,186 @@
+[
+  {
+    "source": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+    "prediction": "In the modern era of automation and robotics, autonomous vehicles are currently the focus of academic and industrial research.",
+    "comparison": {
+      "preservations": [
+        "The modern era is characterized by automation and robotics.",
+        "Autonomous vehicles are the current focus of research."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "The research is conducted by academics.",
+        "The research is conducted by industries."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+    "prediction": "With the ever increasing number of unmanned aerial vehicles getting involved in activities in the civilian and commercial domain, there is an increased need for autonomy in these systems too.",
+    "comparison": {
+      "preservations": [
+        "Unmanned aerial vehicles are being used in civilian activities.",
+        "Unmanned aerial vehicles are being used in commercial activities.",
+        "There is a need for autonomy in unmanned aerial vehicles."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Due to guidelines set by the governments regarding the operation ceiling of civil drones, road-tracking based navigation is garnering interest.",
+    "prediction": "Due to regulations set by the government, road-tracking based navigation is garnering interest.",
+    "comparison": {
+      "preservations": [
+        "The government set regulations (implied in the original passage, but explicitly stated in the simplified version)."
+      ],
+      "oversimplifications": [
+        "The regulations are related to road-tracking based navigation (the original passage mentions regulations for drone operation, not specifically road-tracking based navigation)."
+      ],
+      "deletions": [
+        "Governments have set guidelines for drone operation.",
+        "The guidelines concern the operation ceiling of civil drones."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+    "prediction": "In an attempt to achieve the above mentioned tasks, we propose an imitation learning based, data-driven solution to UAV autonomy for navigating through city streets by learning to fly by imitating an expert pilot.",
+    "comparison": {
+      "preservations": [
+        "A data-driven solution is proposed.",
+        "The solution is imitation learning based.",
+        "The solution is for UAV autonomy.",
+        "The solution involves learning to fly.",
+        "The solution involves imitating an expert pilot."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a fast 39-layered Inception model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+    "prediction": "Derived from the classic image classification algorithms, our classifier has been constructed in the form of a deep artificial neural network model, that evaluates the presence of roads using the tomographic reconstructions of the input frames.",
+    "comparison": {
+      "preservations": [
+        "The classifier was derived from classic image classification algorithms.",
+        "The classifier evaluates the presence of roads.",
+        "The classifier uses tomographic reconstructions of input frames."
+      ],
+      "oversimplifications": [
+        "The classifier is a deep artificial neural network model (\"Inception model\" was replaced with a more general term, losing specific information).",
+        "The classifier is in the form of a model (lost the specific detail of being a 39-layered Inception model)."
+      ],
+      "deletions": [
+        "The model has 39 layers.",
+        "The model is called Inception."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Based on the Inception-v3 architecture, our system performs better in terms of processing complexity and accuracy than many existing models for imitation learning.",
+    "prediction": "Our system performs better in terms of speed and performance than many existing models for imitation learning using custom design.",
+    "comparison": {
+      "preservations": [
+        "The system performs better in terms of performance (\"processing complexity\" is replaced with \"performance\", but the meaning is clear).",
+        "The system is better than many existing models.",
+        "The system is used for imitation learning."
+      ],
+      "oversimplifications": [
+        "The system performs better in terms of speed (\"accuracy\" is replaced with \"speed\", which is a simplification and may not be entirely accurate).",
+        "The system is used with a custom design (\"based on the Inception-v3 architecture\" is replaced with \"used with a custom design\", which is a significant change)."
+      ],
+      "deletions": [
+        "The system is based on the Inception-v3 architecture.",
+        "The system performs better in terms of processing complexity.",
+        "The system performs better in terms of accuracy."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by experts having at least 6-8 years of flying experience.",
+    "prediction": "The data used for training the system has been captured from the drone, by flying it in and around urban and semi-urban streets, by people with experience flying drones.",
+    "comparison": {
+      "preservations": [
+        "Data is used for training the system.",
+        "The data is captured from a drone.",
+        "The drone is flown in urban streets.",
+        "The drone is flown in semi-urban streets."
+      ],
+      "oversimplifications": [
+        "People with experience fly the drone (\"people with experience flying drones\" is a vague and overly broad statement compared to \"experts having at least 6-8 years of flying experience\")."
+      ],
+      "deletions": [
+        "The experts have at least 6 years of flying experience.",
+        "The experts have at least 8 years of flying experience."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Permissions were taken from required authorities who made sure that minimal risk (to pedestrians) is involved in the data collection process.",
+    "prediction": "Permissions were taken from the right authorities that minimal risk to pedestrians is involved.",
+    "comparison": {
+      "preservations": [
+        "Permissions were taken.",
+        "Permissions were taken from the right authorities (implied in the original as \"required authorities\").",
+        "Minimal risk to pedestrians is involved.\n\nOVERSIMPHICATIONS:",
+        "The risk is to pedestrians (the original states \"minimal risk to pedestrians\", which is a more specific and accurate description).",
+        "The phrase \"the right authorities\" is more vague than \"required authorities\" in the original."
+      ],
+      "deletions": [
+        "The data collection process involves minimal risk (this information is present in the original but not in the simplified version).",
+        "To ensure minimal risk is involved (this phrase is present in the original but not in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "With the extensive amount of drone data that we collected, we have been able to navigate successfully through roads without crashing or overshooting, with an accuracy of 98.44%.",
+    "prediction": "We have been able to drive safely on roads with a 98% accuracy.",
+    "comparison": {
+      "preservations": [
+        "The accuracy of safe driving is 98% (similar to the original accuracy of 98.44%, the difference is negligible).",
+        "We have driven safely on roads (similar to the original statement of navigating through roads without crashing or overshooting)."
+      ],
+      "oversimplifications": [
+        "We have driven safely on roads (the original statement included navigating through roads, which is a more specific and accurate description).",
+        "Roads are used for driving (this is an implied fact in the original statement, but not explicitly stated)."
+      ],
+      "deletions": [
+        "We collected a large amount of drone data (the original statement highlighted the extensive amount of data collected from drones).",
+        "The data was collected from drones (the original statement explicitly mentioned the source of the data).",
+        "We navigated without crashing and without overshooting (the original statement included both conditions of successful navigation).",
+        "The navigation was successful (this is implied in the original statement, but not explicitly stated in the simplified version)."
+      ],
+      "hallucinations": [
+        "We have been able to drive safely on roads (the original statement used the phrase \"we have been able to navigate successfully\", which is not present in the simplified version)."
+      ]
+    }
+  },
+  {
+    "source": "The computational efficiency of MAVNet enables the drone to fly at high speeds of up to 6m/sec.",
+    "prediction": "The performance of MAVNet enables the drone to fly at up to 6 seconds.",
+    "comparison": {
+      "preservations": [
+        "The performance of MAVNet enables the drone to fly (the original stated \"computational efficiency\" is a more specific term, but the concept is preserved)."
+      ],
+      "oversimplifications": [
+        "The drone can fly at up to 6 seconds (the original stated \"high speeds of up to 6m/sec\", which is a speed, not a time)."
+      ],
+      "deletions": [
+        "The computational efficiency of MAVNet is high (the original stated that the computational efficiency is high, but this is not present in the simplified version).",
+        "The maximum speed is 6m/sec (the original stated the speed, but the simplified version changed it to a time)."
+      ],
+      "hallucinations": [
+        "The drone can fly at up to 6 seconds (the original stated a speed, not a time)."
+      ]
+    }
+  }
+]
