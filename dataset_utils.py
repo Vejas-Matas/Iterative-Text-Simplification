@@ -66,10 +66,17 @@ def get_sources_and_references(passage_type_abbreviation, data_type, n):
     return (sources, references)
 
 def create_dataset_line_files():
-    snts = get_sources_and_references("snt", None)
-    abss = get_sources_and_references("abs", None)
+    snt_train = get_sources_and_references("snt", "train", None)
+    abs_train = get_sources_and_references("abs", "train", None)
+    snt_test = get_sources_and_references("snt", "test", None)
+    abs_test = get_sources_and_references("abs", "test", None)
 
-    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/sentence_train_sources.txt", snts[0])
-    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/sentence_train_references.txt", snts[1])
-    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_train_sources.txt", abss[0])
-    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_train_references.txt", abss[1])
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/sentence_train_sources.txt", snt_train[0])
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/sentence_train_references.txt", snt_train[1])
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_train_sources.txt", abs_train[0])
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_train_references.txt", abs_train[1])
+
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/sentence_test_sources.txt", snt_test[0])
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/sentence_test_references.txt", snt_test[1])
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_test_sources.txt", abs_test[0])
+    file_io_utils.convert_list_to_txt("./dataset/simpletext_lines/abstract_test_references.txt", abs_test[1])
