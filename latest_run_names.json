@@ -1,10 +1,5 @@
 [
-  "timestamp=2025-04-13_19-32-55.263625_algorithm=iterative_type=sentence_set=test_dc=undergraduate_student_ilt=medium_i=20_n=None",
-  "timestamp=2025-04-13_20-31-50.010892_algorithm=unaware_iterative_type=sentence_set=test_dc=undergraduate_student_ilt=medium_i=20_n=None",
-  "timestamp=2025-04-13_21-58-25.391995_algorithm=condensed_iterative_type=sentence_set=test_dc=undergraduate_student_ilt=medium_i=20_n=None",
-  "timestamp=2025-04-14_02-57-53.025711_algorithm=non_iterative_type=sentence_set=test_dc=undergraduate_student_ilt=medium_i=0_n=None",
-  "timestamp=2025-04-14_02-59-23.654489_algorithm=iterative_type=abstract_set=test_dc=undergraduate_student_ilt=medium_i=20_n=None",
-  "timestamp=2025-04-14_03-20-45.475428_algorithm=unaware_iterative_type=abstract_set=test_dc=undergraduate_student_ilt=medium_i=20_n=None",
-  "timestamp=2025-04-14_04-21-48.266235_algorithm=condensed_iterative_type=abstract_set=test_dc=undergraduate_student_ilt=medium_i=20_n=None",
-  "timestamp=2025-04-14_06-38-06.457001_algorithm=non_iterative_type=abstract_set=test_dc=undergraduate_student_ilt=medium_i=0_n=None"
+  "timestamp=2025-04-16_07-41-24.930528_algorithm=iterative_type=sentence_set=test_dc=undergraduate_student_ilt=medium_i=50_n=None",
+  "timestamp=2025-04-16_08-57-38.611074_algorithm=unaware_iterative_type=sentence_set=test_dc=undergraduate_student_ilt=medium_i=50_n=None",
+  "timestamp=2025-04-16_10-50-05.942540_algorithm=condensed_iterative_type=sentence_set=test_dc=undergraduate_student_ilt=medium_i=50_n=None"
 ]
