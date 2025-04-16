@@ -1,0 +1,548 @@
+[
+  [
+    {
+      "prediction": "The ingestion of \u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 12.558643926452982,
+        "bleu": 20.672497713717185,
+        "fkgl": 12.55714285714286,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be optimally effective to stimulate MPS [8] during post-exercise recovery, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 7.8093891567151035,
+        "bleu": 9.202435575026604,
+        "fkgl": 23.55924528301887,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "When protein was consumed in optimal amounts to stimulate muscle protein synthesis after exercise, the intake of alcohol reduced muscle protein synthesis by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 29.584996665361952,
+        "bleu": 5.48507609904441,
+        "fkgl": 21.121951219512194,
+        "in_tokens": 5384,
+        "out_tokens": 365
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a custom data set consisting of 17,992 phishing attacks targeting 159 different brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 27.67689579545748,
+        "bleu": 68.14319862721,
+        "fkgl": 16.54896825396826,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a dataset containing over 17,000 phishing attacks on 159 different brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 31.651575417168843,
+        "bleu": 62.683634194324725,
+        "fkgl": 16.388709677419357,
+        "in_tokens": 6410,
+        "out_tokens": 562
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, file matching algorithms are used to identify phishing websites based on their content, employing a dataset containing over 17,000 phishing attacks on 159 different brands. The results of the experiments using a variety of approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 46.326632453849165,
+        "bleu": 62.30797680169691,
+        "fkgl": 15.745273109243701,
+        "in_tokens": 19685,
+        "out_tokens": 1130
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, file matching algorithms are used to identify phishing websites based on their content, employing a dataset containing over 17,000 phishing attacks on 159 different brands. Experiments show that some approaches can achieve a high detection rate with few false positives.",
+      "metrics": {
+        "sari": 38.8274872857578,
+        "bleu": 43.232009772290546,
+        "fkgl": 14.63269230769231,
+        "in_tokens": 39878,
+        "out_tokens": 1693
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, file matching algorithms are used to identify phishing websites based on their content, a dataset containing thousands of phishing attacks on many brands. Experiments show that some approaches can achieve a high detection rate with few false positives.",
+      "metrics": {
+        "sari": 36.539301339707926,
+        "bleu": 40.30237125168062,
+        "fkgl": 14.600098039215688,
+        "in_tokens": 66545,
+        "out_tokens": 2177
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 22.53691605257005,
+        "bleu": 50.58459724999643,
+        "fkgl": 15.956626506024097,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 22.53691605257005,
+        "bleu": 50.58459724999643,
+        "fkgl": 15.956626506024097,
+        "in_tokens": 7259,
+        "out_tokens": 705
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. This analysis found that the results were mainly due to one study, which raises doubts about the effectiveness of more frequent meals. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 33.790535452942,
+        "bleu": 45.68883537405707,
+        "fkgl": 14.811451612903227,
+        "in_tokens": 22515,
+        "out_tokens": 1370
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Subjects ingested the beverages within 5 min every 30 min.",
+      "metrics": {
+        "sari": 7.397504456327986,
+        "bleu": 9.864703138979419,
+        "fkgl": 6.936363636363637,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances to homeostasis and physiological function and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 4.763729246487867,
+        "bleu": 3.219425957071092,
+        "fkgl": 10.243636363636366,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances to homeostasis and physiological function and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 4.763729246487867,
+        "bleu": 3.219425957071092,
+        "fkgl": 10.243636363636366,
+        "in_tokens": 5391,
+        "out_tokens": 348
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the effects of exercise on the body and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 21.520727918125587,
+        "bleu": 5.8207551456798345,
+        "fkgl": 6.465116279069768,
+        "in_tokens": 15949,
+        "out_tokens": 676
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 13.883152974234898,
+        "bleu": 23.718278212376354,
+        "fkgl": 15.718388888888892,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We tested the Google Home Smart Speaker with 20 people, including those who speak English as a first language and those who don't. The findings show that native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 24.876958551089615,
+        "bleu": 18.88847657794279,
+        "fkgl": 13.33923076923077,
+        "in_tokens": 6528,
+        "out_tokens": 570
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other APIu0027s and networking protocols, we created the Vassar College Messaging Layer. This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 20.436613495843037,
+        "bleu": 42.354888216929545,
+        "fkgl": 12.380000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of rewriting each application for a new device, we created a layer that makes it easy to adapt Cybiko applications to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 36.5697103169867,
+        "bleu": 28.04646192184414,
+        "fkgl": 11.606901098901098,
+        "in_tokens": 6374,
+        "out_tokens": 489
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 27.975074814230194,
+        "bleu": 71.62328717397851,
+        "fkgl": 13.751301859799717,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have previously grown stronger due to exercise can grow faster again when they are exercised again, because they have a 'memory' of their previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 30.720531502033428,
+        "bleu": 64.34353718873545,
+        "fkgl": 13.346151645207442,
+        "in_tokens": 8048,
+        "out_tokens": 837
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if the muscle is severely weakened, the muscle cells remember the number of myonuclei they had before, and these nuclei help protect them from damage. Fibres that have previously grown stronger due to exercise can grow faster again when they are exercised again, because they have a 'memory' of their previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 39.191339927765746,
+        "bleu": 59.14315346184239,
+        "fkgl": 12.352280701754385,
+        "in_tokens": 25210,
+        "out_tokens": 1661
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review explains how muscle cells remember how to grow stronger after they have been large before. A new cell biological model based on the literature can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if the muscle is severely weakened, the muscle cells remember the number of myonuclei they had before, and these nuclei help protect them from damage. Fibres that have previously grown stronger due to exercise can grow faster again when they are exercised again, because they have a 'memory' of their previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 41.88817662226904,
+        "bleu": 47.42275310611568,
+        "fkgl": 10.690000000000001,
+        "in_tokens": 51182,
+        "out_tokens": 2405
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+      "metrics": {
+        "sari": 26.269310590431285,
+        "bleu": 64.87066897882097,
+        "fkgl": 16.99,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 24.896934149679172,
+        "bleu": 59.072926651991324,
+        "fkgl": 10.455193798449613,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles adds an extra layer of complexity, as they can cause the robot to need to replan its path to avoid collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 29.140837776986874,
+        "bleu": 52.87428132657538,
+        "fkgl": 10.03147113594041,
+        "in_tokens": 7262,
+        "out_tokens": 725
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles adds an extra layer of complexity, as they can cause the robot to need to replan its path to avoid collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 29.140837776986874,
+        "bleu": 52.87428132657538,
+        "fkgl": 10.03147113594041,
+        "in_tokens": 22481,
+        "out_tokens": 1394
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough since they can step over objects and need height information. Considering dynamic obstacles adds an extra layer of complexity, as they can cause the robot to need to replan its path to avoid collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 43.304074796935815,
+        "bleu": 56.78936207427972,
+        "fkgl": 8.702781186094072,
+        "in_tokens": 45580,
+        "out_tokens": 2064
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough since they can step over objects and need height information. Considering dynamic obstacles adds an extra layer of complexity, as they can cause the robot to need to replan its path to avoid collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 43.304074796935815,
+        "bleu": 56.78936207427972,
+        "fkgl": 8.702781186094072,
+        "in_tokens": 76350,
+        "out_tokens": 2709
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough since they can step over objects and need height information. Considering dynamic obstacles adds an extra layer of complexity, as they can cause the robot to need to replan its path to avoid collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 43.304074796935815,
+        "bleu": 56.78936207427972,
+        "fkgl": 8.702781186094072,
+        "in_tokens": 114806,
+        "out_tokens": 3381
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough since they can step over objects and need height information. Considering dynamic obstacles adds complexity, as they can cause the robot to replan its path and avoid collisions. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 45.769922929904794,
+        "bleu": 60.23164089788009,
+        "fkgl": 8.400216450216451,
+        "in_tokens": 161068,
+        "out_tokens": 4025
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough since they can step over objects and need height information. Considering dynamic obstacles adds complexity, as they can cause the robot to replan its path and avoid collisions. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create prediction maps that allow for efficient path planning. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 43.124261714232055,
+        "bleu": 50.874820455678915,
+        "fkgl": 8.512629107981223,
+        "in_tokens": 214711,
+        "out_tokens": 4604
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough since they can step over objects and need height information. Considering dynamic obstacles adds complexity, as they can cause the robot to replan its path and avoid collisions. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create prediction maps that allow for efficient path planning. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 43.124261714232055,
+        "bleu": 50.874820455678915,
+        "fkgl": 8.512629107981223,
+        "in_tokens": 275251,
+        "out_tokens": 5164
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network (DNN) for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 22.47133546024932,
+        "bleu": 48.040146358704284,
+        "fkgl": 17.126278538812787,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. When learning the features, we use the motor on/off state as an extra piece of information to help the first neural network. For this, we consider the features that have been successfully applied to speech recognition systems. Then, the second neural network employs these features and the original audio features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that our algorithm achieves a significant improvement over the conventional systems.",
+      "metrics": {
+        "sari": 35.355504934282116,
+        "bleu": 38.5823021500309,
+        "fkgl": 14.456279069767444,
+        "in_tokens": 7755,
+        "out_tokens": 742
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 19.73230473230473,
+        "bleu": 41.641869490617296,
+        "fkgl": 22.241739130434784,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Differences were found between the properties of drug molecules and those of compounds used in high-throughput screening. It is suggested that the analysis of these properties could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 25.529964102514167,
+        "bleu": 28.15145627585844,
+        "fkgl": 19.211313131313137,
+        "in_tokens": 6687,
+        "out_tokens": 558
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 25.061986582455273,
+        "bleu": 58.98876071190637,
+        "fkgl": 12.905644329896909,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations could align with public health goals, and if successful, benefit both individuals and communities, and might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 35.80001542243344,
+        "bleu": 58.72429912009227,
+        "fkgl": 12.915813492063496,
+        "in_tokens": 8089,
+        "out_tokens": 838
+      }
+    },
+    {
+      "prediction": "The connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations could align with public health goals, and if successful, benefit both individuals and communities, and might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 35.80001542243344,
+        "bleu": 58.72429912009227,
+        "fkgl": 12.915813492063496,
+        "in_tokens": 25152,
+        "out_tokens": 1681
+      }
+    },
+    {
+      "prediction": "The connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations could align with public health goals, and if successful, benefit both individuals and communities, and might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 35.17332013781706,
+        "bleu": 57.0645864656292,
+        "fkgl": 12.781382978723403,
+        "in_tokens": 51322,
+        "out_tokens": 2498
+      }
+    },
+    {
+      "prediction": "The connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations could align with public health goals, and if successful, benefit both individuals and communities, and might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. There is a need to clarify the role of women in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario. Future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 40.01942266969744,
+        "bleu": 56.238987586127344,
+        "fkgl": 12.552500000000006,
+        "in_tokens": 86554,
+        "out_tokens": 3322
+      }
+    },
+    {
+      "prediction": "The connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations could align with public health goals, and if successful, benefit both individuals and communities, and might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. There is a need to clarify the role of women in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario. Future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 40.01942266969744,
+        "bleu": 56.238987586127344,
+        "fkgl": 12.552500000000006,
+        "in_tokens": 130841,
+        "out_tokens": 4143
+      }
+    },
+    {
+      "prediction": "The connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations could align with public health goals, and if successful, benefit both individuals and communities, and might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Future generations will be gendered, unless the artificial womb is developed. There is a need to clarify the role of women in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 39.80029653506491,
+        "bleu": 55.776368837537255,
+        "fkgl": 12.552500000000006,
+        "in_tokens": 184101,
+        "out_tokens": 4958
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+      "metrics": {
+        "sari": 14.357550351824012,
+        "bleu": 23.04235981581216,
+        "fkgl": 12.643679775280898,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. The system breaks down a web page into smaller sections based on the screen size and the page's layout and content. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+      "metrics": {
+        "sari": 18.854713466109075,
+        "bleu": 21.644016843281705,
+        "fkgl": 11.861025641025645,
+        "in_tokens": 6980,
+        "out_tokens": 679
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 15.951150570868881,
+        "bleu": 24.676863694756616,
+        "fkgl": 9.80903846153846,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It includes a game, a learning platform, and a tutoring system. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented.",
+      "metrics": {
+        "sari": 28.40392973110204,
+        "bleu": 23.705646481462413,
+        "fkgl": 8.952426470588236,
+        "in_tokens": 6571,
+        "out_tokens": 538
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to dexterously manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 20.909041069689867,
+        "bleu": 43.935253530076054,
+        "fkgl": 8.713433734939759,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 18.818898027256463,
+        "bleu": 37.75747267675955,
+        "fkgl": 13.988691910499146,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles, creating significant challenges for autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 33.51274337676293,
+        "bleu": 40.251420783225164,
+        "fkgl": 13.90230158730159,
+        "in_tokens": 7102,
+        "out_tokens": 654
+      }
+    }
+  ]
+]

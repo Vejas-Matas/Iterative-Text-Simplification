@@ -1,0 +1,456 @@
+[
+  {
+    "source": "The ingestion of \u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+    "prediction": "The ingestion of \u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+    "comparison": {
+      "preservations": [
+        "The ingestion of 20\u201325 g of protein is recommended.",
+        "The protein should be of high quality.",
+        "Ingestion should occur soon after exercise.",
+        "Ingestion should be repeated every 4 hours.",
+        "This approach maximises the anabolic response in skeletal muscle."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "However, a second finding was that even when protein was consumed in amounts shown to be optimally effective to stimulate MPS [8] during post-exercise recovery, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+    "prediction": "When protein was consumed in optimal amounts to stimulate muscle protein synthesis after exercise, the intake of alcohol reduced muscle protein synthesis by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+    "comparison": {
+      "preservations": [
+        "Consuming protein in optimal amounts is necessary for muscle protein synthesis after exercise (implied in the original, explicitly stated in the simplified version).",
+        "The reduction in muscle protein synthesis is approximately 24%.",
+        "The reduction is a partial 'rescue' of the anabolic response."
+      ],
+      "oversimplifications": [
+        "Protein stimulates muscle protein synthesis after exercise (the original states that protein is consumed in amounts that are optimally effective to stimulate MPS, implying that protein alone may not be sufficient).",
+        "The anabolic response is compared to protein alone (the original states that the reduction in MPS is compared to protein alone, implying that the comparison is not the only factor)."
+      ],
+      "deletions": [
+        "A second finding was made (the original states that a second finding was made, but this is not present in the simplified version).",
+        "The optimal amount of protein to stimulate MPS is known (this information is not present in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a custom data set consisting of 17,992 phishing attacks targeting 159 different brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+    "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, file matching algorithms are used to identify phishing websites based on their content, a dataset containing thousands of phishing attacks on many brands. Experiments show that some approaches can achieve a high detection rate with few false positives.",
+    "comparison": {
+      "preservations": [
+        "Phishers alter the source code of web pages.",
+        "Phishers mimic legitimate websites.",
+        "Phishers spoof organizations.",
+        "Phishers avoid detection by countermeasures.",
+        "Source code changes can be subtle.",
+        "Source code changes can be apparent.",
+        "Content can be added to web pages.",
+        "Content can be removed from web pages.",
+        "File matching algorithms are used to identify phishing websites.",
+        "A dataset contains attacks on many brands."
+      ],
+      "oversimplifications": [
+        "The dataset contains thousands of phishing attacks (original mentions 17,992, which is a specific number, while the simplified version is vague).",
+        "The dataset contains attacks on many brands (original mentions 159 specific brands, while the simplified version is vague)."
+      ],
+      "deletions": [
+        "Experiments were conducted (the original passage mentions that experiments were conducted, but the simplified version does not).",
+        "Different content-based approaches were used (the original passage mentions that different content-based approaches were used, but the simplified version does not).",
+        "Some approaches achieve a detection rate of over 90% (the original passage mentions a specific detection rate, while the simplified version does not).",
+        "Some approaches maintain a low false positive rate (the original passage mentions a specific false positive rate, while the simplified version does not)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+    "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. This analysis found that the results were mainly due to one study, which raises doubts about the effectiveness of more frequent meals. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+    "comparison": {
+      "preservations": [
+        "Eating small, frequent meals enhances fat loss.",
+        "Eating small, frequent meals helps achieve better weight maintenance.",
+        "There is an inverse relationship between eating frequency and adiposity.",
+        "The purpose of this narrative review is to present and discuss a meta-analysis.",
+        "The meta-analysis evaluated experimental research on meal frequency.",
+        "The meta-analysis evaluated changes in fat mass and lean mass.",
+        "Feeding frequency is positively associated with reductions in fat mass.",
+        "Feeding frequency is positively associated with reductions in body fat percentage.",
+        "Feeding frequency is positively associated with an increase in fat-free mass."
+      ],
+      "oversimplifications": [
+        "The results of the meta-analysis were mainly due to one study (the original states \"The positive findings were the product of a single study\", which implies that the results were entirely due to one study, not just \"mainly\").",
+        "The results of the meta-analysis raise doubts about the effectiveness of more frequent meals (the original states \"casting doubt as to whether more frequent meals confer beneficial effects\", which is a more nuanced statement)."
+      ],
+      "deletions": [
+        "Sensitivity analysis of the data showed that the positive findings were the product of a single study (this is a crucial detail that was omitted in the simplified version).",
+        "The initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition (this is a more specific and detailed statement than the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Subjects ingested the beverages within 5 min every 30 min.",
+    "prediction": "Subjects ingested the beverages within 5 min every 30 min.",
+    "comparison": {
+      "preservations": [
+        "The ingestion occurred within 5 minutes.",
+        "The ingestion occurred every 30 minutes."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances to homeostasis and physiological function and for promoting adaptations to training [1].",
+    "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the effects of exercise on the body and for promoting adaptations to training [1].",
+    "comparison": {
+      "preservations": [
+        "The post-exercise period is 1\u20138 hours long.",
+        "The post-exercise period is critical for promoting adaptations to training.",
+        "The post-exercise period is critical for reversing exercise effects on the body (implied in the original, explicitly stated in the simplified version)."
+      ],
+      "oversimplifications": [
+        "The focus of the early post-exercise period is to enhance physiological processes (the original mentions reversing exercise-induced disturbances to homeostasis and physiological function, which is more specific).",
+        "The post-exercise period is critical for reversing exercise effects on the body (the original mentions reversing exercise-induced disturbances to homeostasis and physiological function, which is more specific)."
+      ],
+      "deletions": [
+        "Physiological processes are critical for reversing exercise-induced disturbances to homeostasis.",
+        "Physiological processes are critical for reversing exercise-induced disturbances to physiological function."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+    "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We tested the Google Home Smart Speaker with 20 people, including those who speak English as a first language and those who don't. The findings show that native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+    "comparison": {
+      "preservations": [
+        "Amazon's Echo and Apple's Siri have drawn attention from different user groups.",
+        "Commercial VUIs support limited language options.",
+        "Users include native English speakers and non-native English speakers.",
+        "Native English speakers had better user experiences.",
+        "Native English speakers had more positive user experiences.",
+        "English language proficiency affects user experiences with VUIs.",
+        "VUI designers can create insights from this study.",
+        "VUI designers can implement multiple language options.",
+        "VUI designers can improve voice recognition algorithms."
+      ],
+      "oversimplifications": [
+        "The study had 20 people (the original mentioned \"participants\", which is a more general term).",
+        "The test included users who speak English as a first language (the original mentioned \"native English speakers\", which is a more specific term).",
+        "The test included users who don't speak English as a first language (the original mentioned \"non-native English speakers\", which is a more specific term)."
+      ],
+      "deletions": [
+        "A usability study of the Google Home Smart Speaker was conducted (this information was completely lost in the simplified version).",
+        "The study can inform the development of better voice recognition algorithms in VUIs (this information was partially lost, as the simplified version only mentions \"better voice recognition algorithms\" without specifying that it's for VUIs).",
+        "The study can help VUIs cater to different user groups worldwide (this information was partially lost, as the simplified version only mentions \"different user groups across the world\" without specifying that it's for VUIs)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other APIu0027s and networking protocols, we created the Vassar College Messaging Layer. This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code alteration.",
+    "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of rewriting each application for a new device, we created a layer that makes it easy to adapt Cybiko applications to other platforms with minimal code alteration.",
+    "comparison": {
+      "preservations": [
+        "Applications have been developed for wired and wireless networking (same as original).",
+        "The Cybiko is a personal digital assistant (same as original).",
+        "The Cybiko is an inexpensive alternative to other hardware (same as original).",
+        "The Cybiko PDA was discontinued (same as original).",
+        "Applications had to be ported to other platforms (same as original)."
+      ],
+      "oversimplifications": [
+        "The Cybiko applications were ported to other platforms (original stated that \"these applications\" were ported, not \"Cybiko applications\").",
+        "A layer was created to adapt Cybiko applications (original stated that a layer was created to abstract the Cybiko networking structure and interface).",
+        "Minimal code alteration was required (original stated that minimal code alteration is required to port applications)."
+      ],
+      "deletions": [
+        "The Cybiko PDA was an inexpensive alternative to other hardware (this is a combination of two original facts).",
+        "The Vassar College Messaging Layer was created (this is a specific name for the layer, which was not mentioned in the simplified version).",
+        "The layer abstracts the Cybiko networking structure and interface (this is a specific detail that was not mentioned in the simplified version).",
+        "Rewriting each application for a new device was considered (this is an important detail that was not mentioned in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+    "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review explains how muscle cells remember how to grow stronger after they have been large before. A new cell biological model based on the literature can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if the muscle is severely weakened, the muscle cells remember the number of myonuclei they had before, and these nuclei help protect them from damage. Fibres that have previously grown stronger due to exercise can grow faster again when they are exercised again, because they have a 'memory' of their previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+    "comparison": {
+      "preservations": [
+        "Memory is a process.",
+        "Information is encoded in memory.",
+        "Information is stored in memory.",
+        "Information is retrieved from memory.",
+        "Muscle cells remember how to grow stronger.",
+        "Satellite cells are activated to recruit myonuclei.",
+        "Myonuclei are stable for at least 15 years.",
+        "Myonuclei might be permanent.",
+        "Early strength training is a public health advice."
+      ],
+      "oversimplifications": [
+        "Muscle cells remember their previous size (original passage mentions \"how to grow stronger after they have been large before\", which is a more specific and accurate description).",
+        "Myonuclei help protect muscle cells from damage (original passage mentions that myonuclei are \"protected against the elevated apoptotic activity observed in atrophying muscle tissue\", which is a more specific and accurate description)."
+      ],
+      "deletions": [
+        "Vertebrates have memory in the brain (this is a key point in the original passage, but is oversimplified or omitted in the simplified passage).",
+        "A new cell biological model explains cellular memory in skeletal muscle (this is a key point in the original passage, but is oversimplified or omitted in the simplified passage).",
+        "Myonuclei are retained after hypertrophic growth (this is a specific detail in the original passage, but is not mentioned in the simplified passage).",
+        "Myonuclei represent a 'memory' of previous strength (this is a specific detail in the original passage, but is not mentioned in the simplified passage)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+    "prediction": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+    "comparison": {
+      "preservations": [
+        "Moral responsibility is a major concern.",
+        "Automated decision-making has applications.",
+        "Self-driving cars are an application of automated decision-making.",
+        "Kidney exchanges are an application of automated decision-making."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+    "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map isn't enough since they can step over objects and need height information. Considering dynamic obstacles adds complexity, as they can cause the robot to replan its path and avoid collisions. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create prediction maps that allow for efficient path planning. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+    "comparison": {
+      "preservations": [
+        "Perception of the local environment is a precondition for mobile robots.",
+        "Mobile robots navigate safely in dynamic environments.",
+        "Most robots rely on planar regions.",
+        "Humanoids can step over objects.",
+        "Humanoids need height information.",
+        "A 2D map is not enough for humanoids.",
+        "Dynamic obstacles add complexity to navigation.",
+        "Dynamic obstacles cause the robot to replan its path.",
+        "Dynamic obstacles cause the robot to avoid collisions.",
+        "The framework extracts planar regions in height maps.",
+        "The framework detects dynamic obstacles.",
+        "The system uses information to create prediction maps.",
+        "Prediction maps allow for efficient path planning.",
+        "The framework keeps run times under 10ms.",
+        "The framework allows for foresighted real-time 3D footstep planning."
+      ],
+      "oversimplifications": [
+        "Humanoids can step over objects (original states that they can step over and onto objects).",
+        "Dynamic obstacles cause the robot to replan its path (original states that they can lead to necessary replanning or collisions at later stages).",
+        "Dynamic obstacles cause the robot to avoid collisions (original states that they can lead to necessary replanning or collisions at later stages)."
+      ],
+      "deletions": [
+        "A 2D occupancy map is insufficient for humanoids (original statement was more specific and detailed).",
+        "Considering dynamic obstacles introduces another level of complexity (original statement was more specific and detailed).",
+        "Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost (original statement was more specific and detailed)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network (DNN) for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+    "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. When learning the features, we use the motor on/off state as an extra piece of information to help the first neural network. For this, we consider the features that have been successfully applied to speech recognition systems. Then, the second neural network employs these features and the original audio features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that our algorithm achieves a significant improvement over the conventional systems.",
+    "comparison": {
+      "preservations": [
+        "Internal noise is generated by motors, fans, and mechanical components.",
+        "Internal noise degrades speech recognition accuracy.",
+        "A novel speech recognition system is proposed for humanoid robots.",
+        "The system is robust to ego-noise.",
+        "The motor on/off state is used as auxiliary information.",
+        "The proposed method is evaluated on the TIMIT database.",
+        "The proposed method achieves a significant improvement over conventional systems."
+      ],
+      "oversimplifications": [
+        "The motor on/off state is used to find relevant input features (the original text implies this, but the simplified text states it more directly).",
+        "The motor on/off state is used to help the first neural network (this is a simplification of the original text, which states that the motor on/off state is used as supplementary information in addition to the acoustic features)."
+      ],
+      "deletions": [
+        "Bottleneck features are used in deep neural network based ASR systems.",
+        "Bottleneck features are successfully applied to DNN based ASR systems.",
+        "Motor on/off state data is used as supplementary information.",
+        "Acoustic features are used as input for the first DNN.",
+        "The first DNN is used for preliminary acoustic modeling.",
+        "The second DNN employs bottleneck features and acoustic features."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+    "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Differences were found between the properties of drug molecules and those of compounds used in high-throughput screening. It is suggested that the analysis of these properties could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+    "comparison": {
+      "preservations": [
+        "A pharmacophore analysis approach was used.",
+        "The approach investigated different classes of compounds.",
+        "The classes of compounds include drug molecules.",
+        "The classes of compounds include compounds in high throughput screening libraries.",
+        "The classes of compounds include combinatorial chemistry building blocks.",
+        "The classes of compounds include nondrug molecules.",
+        "Differences were found between drug molecules and high-throughput screening compounds.",
+        "The analysis of properties can be used for compound selection.",
+        "The analysis of properties can be used for library design.",
+        "The analysis of properties can improve lead discovery projects."
+      ],
+      "oversimplifications": [
+        "The properties of drug molecules were compared (the original mentions pharmacophore profiles, not just properties).",
+        "The properties of high-throughput screening compounds were compared (the original mentions pharmacophore profiles, not just properties)."
+      ],
+      "deletions": [
+        "The differences were related to nondrug pharmacophore distribution (this information is not present in the simplified version).",
+        "It is suggested that the analysis of pharmacophore profiles could be used as an additional tool (pharmacophore profiles are replaced with properties)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+    "prediction": "The connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations could align with public health goals, and if successful, benefit both individuals and communities, and might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Future generations will be gendered, unless the artificial womb is developed. There is a need to clarify the role of women in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario. These are challenging issues that require a wider perspective, of both women and men.",
+    "comparison": {
+      "preservations": [
+        "Gene editing can solve health care allocation issues.",
+        "Improving future generations' health aligns with public health goals.",
+        "Gene editing can benefit individuals and communities.",
+        "Gene editing is considered a public good.",
+        "In Vitro Fertilisation is required for gene editing.",
+        "Pre-implantation Genetic Diagnosis is required for gene editing.",
+        "Women might be morally required to reproduce with IVF.",
+        "An artificial womb is needed to avoid gendering future generations."
+      ],
+      "oversimplifications": [
+        "Gene editing can benefit individuals and communities (original stated it can improve their health).",
+        "Gene editing is considered a public good (original stated it might be seen as a public good).",
+        "Women's role in gene editing discussions needs clarification (original stated there is an urgent need to clarify the role of women).",
+        "Men's perspective is also necessary in gene editing discussions (not mentioned in the original)."
+      ],
+      "deletions": [
+        "Gene editing can improve individuals' health.",
+        "Gene editing can improve communities' health.",
+        "The present discourse implies women might be required, morally, if not legally, to reproduce with IVF (the original stated this, but the simplified version only mentions moral requirement).",
+        "There is a need to clarify the role of women in the discussions about the merits and risks of human genome modification (the original stated this, but the simplified version only mentions clarifying the role of women)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+    "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. The system breaks down a web page into smaller sections based on the screen size and the page's layout and content. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+    "comparison": {
+      "preservations": [
+        "Limitation in display size and resolution is an obstacle for web applications.",
+        "Web pages are too large for a PDA screen.",
+        "Web pages are too large for WebTV.",
+        "Manual reconstruction of web pages is a possible solution.",
+        "Web page designers must customize web pages for each display device.",
+        "The system divides a web document into logical segments.",
+        "The system divides a web document based on screen size.",
+        "The system divides a web document based on structure.",
+        "The system divides a web document based on content.",
+        "The system extracts overviews.",
+        "The system extracts summaries.",
+        "The system facilitates navigation.",
+        "The system presents web document segments.",
+        "The system presents structural information.",
+        "The system makes full use of the screen for information finding."
+      ],
+      "oversimplifications": [
+        "The system breaks down a web page into smaller sections (omits the detail of dividing based on layout and content).",
+        "The system divides a web page based on screen size (omits the detail of dividing based on document structure and content)."
+      ],
+      "deletions": [
+        "The system divides a web page into segments based on the screen size and the structure and content of the document (omitted the detail of dividing based on document structure and content).",
+        "Additional information is also extracted to facilitate navigation (omitted the detail of what kind of information is extracted)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+    "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It includes a game, a learning platform, and a tutoring system. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented.",
+    "comparison": {
+      "preservations": [
+        "M-CALL is a mobile computer-assisted language learning courseware.",
+        "M-CALL is for Korean language learners.",
+        "Conventional computer-assisted language learning is often boring.",
+        "M-CALL exploits a cyber pet game.",
+        "M-CALL increases learner's interest.",
+        "M-CALL runs on a personal digital assistant.",
+        "M-CALL uses public wireless LAN.",
+        "M-CALL is for mobile learning.",
+        "M-CALL grows a cyber pet.",
+        "M-CALL solves Korean language learning problems.",
+        "Korean Proficiency Test (KPT) is a nationally certified Korean language test.",
+        "KPT is used as problem sets.",
+        "M-CALL provides various functions for Korean language learning.",
+        "The prototype M-CALL was designed.",
+        "The prototype M-CALL was partly implemented."
+      ],
+      "oversimplifications": [
+        "M-CALL includes a game (the original passage mentions a cyber pet game, which is a specific type of game).",
+        "M-CALL includes a learning platform (the original passage mentions mobile learning courseware, which is a more specific term).",
+        "M-CALL includes a tutoring system (the original passage mentions mobile tutoring, which is a more specific term)."
+      ],
+      "deletions": [],
+      "hallucinations": [
+        "M-CALL includes a game, a learning platform, and a tutoring system (the original passage mentions a cyber pet game, mobile learning courseware, and mobile tutoring, but the simplified passage combines these into a single list)."
+      ]
+    }
+  },
+  {
+    "source": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to dexterously manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+    "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to dexterously manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+    "comparison": {
+      "preservations": [
+        "A lab automation drone notional concept is introduced.",
+        "A robotic limb is attached to a robotic rotorcraft.",
+        "The limb's gripper allows the unmanned aerial vehicle to manipulate objects.",
+        "The objects that can be manipulated include micro-arrays and test tubes.",
+        "The objects are often used in high throughput systems.",
+        "The resulting drone could augment existing HTS operations.",
+        "The arm and gripper design are presented."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "The arm has 6 degrees of freedom (this information is not present in the simplified passage, but it is implied that the arm has 6 degrees of freedom because the simplified passage does not contradict this fact)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+    "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles, creating significant challenges for autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+    "comparison": {
+      "preservations": [
+        "Self-driving vehicles are vulnerable to different attacks.",
+        "The type of communication systems used in self-driving vehicles is a factor in their vulnerability.",
+        "Self-driving vehicles rely on external communication via VANETs.",
+        "VANETs add new threats to self-driving vehicles.",
+        "Autonomous systems face significant challenges due to VANETs.",
+        "Self-driving vehicles are vulnerable to malicious attacks.",
+        "The proposed system is designed to secure external communications for self-driving and semi self-driving cars.",
+        "The proposed system is an intelligent security system.",
+        "The proposed system relies on Back Propagation neural networks.",
+        "The proposed system detects Denial-of-Service (DoS) attacks.",
+        "The proposed system is called BP-IDS.",
+        "The proposed system has been tested experimentally.",
+        "The experimental results are positive for the proposed system."
+      ],
+      "oversimplifications": [
+        "The proposed system is capable of identifying malicious vehicles (original mentions \"identifying malicious vehicles in self-driving and semi self-driving vehicles\", which is more specific).",
+        "The proposed system is capable of detecting a common type of attack in VANETs (original mentions \"detect a common type of attack in VANETs: Denial-of-Service (DoS)\", which is more specific)."
+      ],
+      "deletions": [
+        "Emerging self-driving vehicles are vulnerable to attacks due to the principle (the principle is not specified in the simplified version).",
+        "These vehicles are increasingly relying on external communication via VANETs (the word \"increasingly\" is not present in the simplified version).",
+        "These communication systems render self-driving vehicles vulnerable to many types of malicious attacks (the word \"many\" is not present in the simplified version).",
+        "The proposed system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS) (the word \"common\" is not present in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  }
+]

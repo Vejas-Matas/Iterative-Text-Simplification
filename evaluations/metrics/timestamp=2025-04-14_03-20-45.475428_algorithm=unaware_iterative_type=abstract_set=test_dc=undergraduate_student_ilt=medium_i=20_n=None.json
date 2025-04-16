@@ -1,0 +1,1448 @@
+[
+  [
+    {
+      "prediction": "The ingestion of \u223c20\u201325 g of high quality protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 12.558643926452982,
+        "bleu": 20.672497713717185,
+        "fkgl": 12.55714285714286,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The ingestion of 20-25 grams of protein soon after exercise [7], repeated every 4 h [8] has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 21.619572958124508,
+        "bleu": 17.1535694002225,
+        "fkgl": 11.545714285714286,
+        "in_tokens": 5381,
+        "out_tokens": 286
+      }
+    },
+    {
+      "prediction": "The ingestion of 20-25 grams of protein every 4 hours soon after exercise has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 33.64112503987651,
+        "bleu": 12.398127904283074,
+        "fkgl": 11.547407407407409,
+        "in_tokens": 11072,
+        "out_tokens": 584
+      }
+    },
+    {
+      "prediction": "The ingestion of 20-25 grams of protein every 1-2 hours soon after exercise has been shown to maximise the anabolic response in skeletal muscle.",
+      "metrics": {
+        "sari": 32.00011927234395,
+        "bleu": 11.68442593427425,
+        "fkgl": 11.182068965517242,
+        "in_tokens": 16356,
+        "out_tokens": 861
+      }
+    },
+    {
+      "prediction": "The ingestion of 20-25 grams of protein every 1-2 hours soon after exercise has been shown to maximise the muscle growth response.",
+      "metrics": {
+        "sari": 35.08858764455079,
+        "bleu": 10.80926890295311,
+        "fkgl": 8.488148148148152,
+        "in_tokens": 21642,
+        "out_tokens": 1154
+      }
+    },
+    {
+      "prediction": "The ingestion of 20-25 grams of protein every 2 hours after exercise has been shown to maximise the muscle growth response.",
+      "metrics": {
+        "sari": 36.263294856194726,
+        "bleu": 10.615582934610348,
+        "fkgl": 8.52,
+        "in_tokens": 26880,
+        "out_tokens": 1432
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be optimally effective to stimulate MPS [8] during post-exercise recovery, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 7.8093891567151035,
+        "bleu": 9.202435575026604,
+        "fkgl": 23.55924528301887,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be effective to stimulate muscle protein synthesis compared to those that are optimal, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 25.133306411434308,
+        "bleu": 9.544965216186192,
+        "fkgl": 24.04407407407408,
+        "in_tokens": 5844,
+        "out_tokens": 332
+      }
+    },
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be effective to stimulate muscle protein synthesis compared to the optimal amount, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 25.40086292899083,
+        "bleu": 9.730390930696272,
+        "fkgl": 24.004528301886797,
+        "in_tokens": 11566,
+        "out_tokens": 646
+      }
+    },
+    {
+      "prediction": "However, a second finding was that even when protein was consumed in amounts shown to be effective to stimulate muscle growth compared to the optimal amount, the intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 22.523878802006703,
+        "bleu": 9.384750543036047,
+        "fkgl": 23.070769230769233,
+        "in_tokens": 17589,
+        "out_tokens": 1014
+      }
+    },
+    {
+      "prediction": "However, a second finding was that even when protein is consumed, it is only partially effective at stimulating muscle growth compared to when it is consumed alone. The intake of alcohol reduced MPS by \u223c24%, representing only a partial \u2018rescue\u2019 of the anabolic response compared with protein alone.",
+      "metrics": {
+        "sari": 31.588376408706168,
+        "bleu": 9.027070761435276,
+        "fkgl": 13.732592592592596,
+        "in_tokens": 23403,
+        "out_tokens": 1364
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a custom data set consisting of 17,992 phishing attacks targeting 159 different brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 27.67689579545748,
+        "bleu": 68.14319862721,
+        "fkgl": 16.54896825396826,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a large dataset of 17,992 phishing attacks targeting 159 brands. The results of the experiments using a variety of different content-based approaches demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 30.565779733815273,
+        "bleu": 63.675898291026876,
+        "fkgl": 16.069166666666668,
+        "in_tokens": 7497,
+        "out_tokens": 533
+      }
+    },
+    {
+      "prediction": "Phishers continue to alter the source code of the web pages used in their attacks to mimic changes to legitimate websites of spoofed organizations and to avoid detection by phishing countermeasures. Manipulations can be as subtle as source code changes or as apparent as adding or removing significant content. To appropriately respond to these changes to phishing campaigns, a cadre of file matching algorithms is implemented to detect phishing websites based on their content, employing a large dataset of 17,992 phishing attacks targeting 159 brands. The results of the experiments using various content-based methods demonstrate that some can achieve a detection rate of greater than 90% while maintaining a low false positive rate.",
+      "metrics": {
+        "sari": 38.38217909431733,
+        "bleu": 62.63792535554761,
+        "fkgl": 15.580000000000002,
+        "in_tokens": 15127,
+        "out_tokens": 1081
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 22.53691605257005,
+        "bleu": 50.58459724999643,
+        "fkgl": 15.956626506024097,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this narrative review is to present and discuss a meta-analysis with regression that evaluated experimental research on meal frequency with respect to changes in fat mass and lean mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 22.53691605257005,
+        "bleu": 50.58459724999643,
+        "fkgl": 15.956626506024097,
+        "in_tokens": 8705,
+        "out_tokens": 697
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. Feeding frequency was positively associated with reductions in fat mass and body fat percentage as well as an increase in fat-free mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 33.32499118766727,
+        "bleu": 48.578089351328785,
+        "fkgl": 14.801818181818184,
+        "in_tokens": 17208,
+        "out_tokens": 1343
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. Eating more frequently was linked to lower body fat and higher muscle mass. However, sensitivity analysis of the data showed that the positive findings were the product of a single study, casting doubt as to whether more frequent meals confer beneficial effects on body composition. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 36.78859547801824,
+        "bleu": 45.08426291897489,
+        "fkgl": 14.017068965517243,
+        "in_tokens": 25620,
+        "out_tokens": 1993
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. Eating more frequently was linked to lower body fat and higher muscle mass. This finding may be due to one study, so its results should be treated with caution. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with circumspection.",
+      "metrics": {
+        "sari": 41.15088453445012,
+        "bleu": 34.57310454119601,
+        "fkgl": 10.559782608695656,
+        "in_tokens": 34065,
+        "out_tokens": 2626
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. Eating more frequently was linked to lower body fat and higher muscle mass. These results should be carefully considered. In conclusion, although the initial results of this meta-analysis suggest a potential benefit of increased feeding frequencies for enhancing body composition, these findings need to be interpreted with caution.",
+      "metrics": {
+        "sari": 42.56431114978563,
+        "bleu": 33.59368049192194,
+        "fkgl": 10.798846153846153,
+        "in_tokens": 41743,
+        "out_tokens": 3113
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. Eating more frequently was linked to lower body fat and higher muscle mass. These findings need to be carefully considered. In conclusion, although the initial results suggest a potential benefit of increased feeding frequencies, these findings need to be carefully considered.",
+      "metrics": {
+        "sari": 43.900858209030254,
+        "bleu": 30.843436958898593,
+        "fkgl": 9.813969072164948,
+        "in_tokens": 49769,
+        "out_tokens": 3658
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. These initial results suggest that eating more often may help with weight loss. In conclusion, these findings need to be carefully considered.",
+      "metrics": {
+        "sari": 39.307645771268284,
+        "bleu": 19.913909503927396,
+        "fkgl": 8.503789473684211,
+        "in_tokens": 57228,
+        "out_tokens": 4168
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. These initial results suggest that eating more often may help with weight loss. In conclusion, these findings need to be carefully considered.",
+      "metrics": {
+        "sari": 39.307645771268284,
+        "bleu": 19.913909503927396,
+        "fkgl": 8.503789473684211,
+        "in_tokens": 64510,
+        "out_tokens": 4646
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. Eating more often may help with weight loss. In conclusion, these findings need to be carefully considered.",
+      "metrics": {
+        "sari": 39.07898168955615,
+        "bleu": 18.52549436141523,
+        "fkgl": 7.897295774647887,
+        "in_tokens": 71899,
+        "out_tokens": 5115
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. The purpose of this review is to discuss a study that analyzed how eating frequency affects fat and muscle mass. Eating more often may help with weight loss. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 35.81385478631817,
+        "bleu": 13.558236121475773,
+        "fkgl": 7.776298507462688,
+        "in_tokens": 79316,
+        "out_tokens": 5543
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. This review looks at a study on how often eating affects body fat and muscle. Eating more often may help with weight loss. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 36.20467602620872,
+        "bleu": 12.429107386745,
+        "fkgl": 6.9460000000000015,
+        "in_tokens": 86350,
+        "out_tokens": 5935
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. This review examines the relationship between eating frequency and body fat. Eating more often may help with weight loss. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 36.50466664865322,
+        "bleu": 11.530273990244321,
+        "fkgl": 8.261586206896556,
+        "in_tokens": 92963,
+        "out_tokens": 6219
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. This review examines the relationship between eating frequency and body fat. Eating more often may aid weight loss. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 36.42491023839288,
+        "bleu": 11.224214966160806,
+        "fkgl": 8.31564912280702,
+        "in_tokens": 99732,
+        "out_tokens": 6572
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. This review examines the relationship between eating frequency and body fat. Eating more often can help you lose weight. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 36.286500315568404,
+        "bleu": 11.464195201071524,
+        "fkgl": 8.261586206896556,
+        "in_tokens": 106567,
+        "out_tokens": 6953
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. This review examines the relationship between eating frequency and body fat. Eating more often can help you lose fat. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 36.208089141053414,
+        "bleu": 11.464195201071524,
+        "fkgl": 8.261586206896556,
+        "in_tokens": 113232,
+        "out_tokens": 7276
+      }
+    },
+    {
+      "prediction": "It has been hypothesized that eating small, frequent meals enhances fat loss and helps to achieve better weight maintenance. Several observational studies lend support to this hypothesis. This review examines the relationship between eating frequency and body fat. Eating more often can help you lose fat. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 36.208089141053414,
+        "bleu": 11.464195201071524,
+        "fkgl": 8.261586206896556,
+        "in_tokens": 120000,
+        "out_tokens": 7622
+      }
+    },
+    {
+      "prediction": "It is thought that eating small meals often can help with weight loss. Several observational studies lend support to this idea. This review examines the relationship between eating frequency and body fat. Eating more often can help you lose fat. These findings should be carefully considered.",
+      "metrics": {
+        "sari": 27.323085147693167,
+        "bleu": 1.6937626046080958,
+        "fkgl": 6.203686274509803,
+        "in_tokens": 126593,
+        "out_tokens": 7896
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Subjects ingested the beverages within 5 min every 30 min.",
+      "metrics": {
+        "sari": 7.397504456327986,
+        "bleu": 9.864703138979419,
+        "fkgl": 6.936363636363637,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "They ingested the beverages at 5-minute intervals.",
+      "metrics": {
+        "sari": 32.1301247771836,
+        "bleu": 4.996872151825361,
+        "fkgl": 6.010000000000002,
+        "in_tokens": 4815,
+        "out_tokens": 187
+      }
+    },
+    {
+      "prediction": "They drank the drinks at 5-minute intervals.",
+      "metrics": {
+        "sari": 38.96829291566134,
+        "bleu": 9.030367376343264,
+        "fkgl": 0.11000000000000121,
+        "in_tokens": 9619,
+        "out_tokens": 402
+      }
+    },
+    {
+      "prediction": "They drank the drinks at 5-minute intervals.",
+      "metrics": {
+        "sari": 38.96829291566134,
+        "bleu": 9.030367376343264,
+        "fkgl": 0.11000000000000121,
+        "in_tokens": 14371,
+        "out_tokens": 588
+      }
+    },
+    {
+      "prediction": "They drank the drinks every 30 minutes.",
+      "metrics": {
+        "sari": 57.948717948717956,
+        "bleu": 28.256772704628215,
+        "fkgl": 2.280000000000001,
+        "in_tokens": 19301,
+        "out_tokens": 842
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances to homeostasis and physiological function and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 4.763729246487867,
+        "bleu": 3.219425957071092,
+        "fkgl": 10.243636363636366,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances caused by exercise and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 16.745158727007666,
+        "bleu": 3.804006018007904,
+        "fkgl": 8.693809523809527,
+        "in_tokens": 5548,
+        "out_tokens": 297
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced disturbances caused by exercise and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 16.745158727007666,
+        "bleu": 3.804006018007904,
+        "fkgl": 8.693809523809527,
+        "in_tokens": 11236,
+        "out_tokens": 594
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the exercise-induced problems and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 16.23937246963563,
+        "bleu": 3.6490423520669975,
+        "fkgl": 7.331282051282052,
+        "in_tokens": 16630,
+        "out_tokens": 877
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for reversing the effects of exercise and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 22.67850383396602,
+        "bleu": 6.534878510818802,
+        "fkgl": 6.129999999999999,
+        "in_tokens": 22110,
+        "out_tokens": 1167
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for recovering from exercise and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 21.170920714681618,
+        "bleu": 4.149070930703815,
+        "fkgl": 6.118421052631579,
+        "in_tokens": 27699,
+        "out_tokens": 1451
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for recovering from exercise and for promoting adaptations to training [1].",
+      "metrics": {
+        "sari": 21.170920714681618,
+        "bleu": 4.149070930703815,
+        "fkgl": 6.118421052631579,
+        "in_tokens": 32989,
+        "out_tokens": 1679
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period (i.e., 1\u20138 h) is to enhance physiological processes that are critical for recovering from exercise and for promoting adaptations to training reversing the effects of exercise on the body [1].",
+      "metrics": {
+        "sari": 24.241239903004608,
+        "bleu": 5.822108023201898,
+        "fkgl": 7.8334782608695654,
+        "in_tokens": 38832,
+        "out_tokens": 2049
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period is to enhance physiological processes that are critical for recovering from exercise and for helping the body adapt to exercise [1].",
+      "metrics": {
+        "sari": 33.68457586739647,
+        "bleu": 5.040619446201417,
+        "fkgl": 17.054838709677416,
+        "in_tokens": 44592,
+        "out_tokens": 2375
+      }
+    },
+    {
+      "prediction": "The focus of the early post-exercise period is to enhance processes that help the body recover from and adapt to exercise [1].",
+      "metrics": {
+        "sari": 38.069115338852185,
+        "bleu": 5.175607259144082,
+        "fkgl": 11.624000000000002,
+        "in_tokens": 49939,
+        "out_tokens": 2664
+      }
+    },
+    {
+      "prediction": "The focus of the after exercise period is to enhance processes that help the body recover from and adapt to exercise [1].",
+      "metrics": {
+        "sari": 41.83642285420306,
+        "bleu": 5.952793612126117,
+        "fkgl": 11.152000000000001,
+        "in_tokens": 54903,
+        "out_tokens": 2828
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. we conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. The findings show that compared with their counterparts, the native English speakers had better and more positive user experiences in interacting with the device. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 13.883152974234898,
+        "bleu": 23.718278212376354,
+        "fkgl": 15.718388888888892,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a more positive experience using the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 25.974641144633406,
+        "bleu": 24.058545745988134,
+        "fkgl": 15.305925925925926,
+        "in_tokens": 8248,
+        "out_tokens": 641
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a more positive experience using the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. The findings from this study can create insights for VUI designers and developers for implementing multiple language options and better voice recognition algorithms in VUIs for different user groups across the world.",
+      "metrics": {
+        "sari": 25.974641144633406,
+        "bleu": 24.058545745988134,
+        "fkgl": 15.305925925925926,
+        "in_tokens": 16150,
+        "out_tokens": 1209
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a more positive experience using the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. This study provides valuable insights for VUI designers to improve voice recognition and support multiple languages.",
+      "metrics": {
+        "sari": 35.85696117886217,
+        "bleu": 24.878784983774164,
+        "fkgl": 14.515529411764707,
+        "in_tokens": 23923,
+        "out_tokens": 1708
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a more positive experience using the device compared to non-native English speakers. It also shows that users' English language proficiency plays an important role in interacting with VUIs. This study provides insights for improving voice recognition and language support.",
+      "metrics": {
+        "sari": 37.681540777604894,
+        "bleu": 26.290237105964557,
+        "fkgl": 13.90024561403509,
+        "in_tokens": 31892,
+        "out_tokens": 2287
+      }
+    },
+    {
+      "prediction": "Amazon's Echo, and Apple's Siri have drawn attention from different user groups; however, these existing commercial VUIs support limited language options for users including native English speakers and non-native English speakers. We conducted a usability study of the Google Home Smart Speaker with 20 participants including native English and non-native English speakers to understand their differences in using the Google Home Smart Speaker. Native English speakers had a more positive experience using the device compared to non-native English speakers. It also shows that users' language skills are crucial for interacting with these devices. This study provides insights for improving voice recognition and language support.",
+      "metrics": {
+        "sari": 42.196047181719806,
+        "bleu": 26.364651018713392,
+        "fkgl": 13.585285714285714,
+        "in_tokens": 39563,
+        "out_tokens": 2817
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other APIu0027s and networking protocols, we created the Vassar College Messaging Layer. This layer abstracts the Cybiko networking structure and interface, allowing Cybiko applications to be ported to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 20.436613495843037,
+        "bleu": 42.354888216929545,
+        "fkgl": 12.380000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other API's and networking protocols, we created the Vassar College Messaging Layer. This layer simplifies the Cybiko networking code, making it easy to transfer the applications to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 33.23951244750283,
+        "bleu": 41.91439650363896,
+        "fkgl": 11.98423076923077,
+        "in_tokens": 7800,
+        "out_tokens": 581
+      }
+    },
+    {
+      "prediction": "In recent years, we have developed applications for teaching both wired and wireless networking. These applications have been written for the Cybiko personal digital assistant, an inexpensive alternative to other hardware. Unfortunately, the Cybiko PDA was recently discontinued. As a result, these applications had to be ported to other platforms to remain useful. Instead of porting each application to individual platforms, which would prove to be extremely time consuming because of other API's and networking protocols, we created the Messaging Layer. This layer simplifies the Cybiko networking code, making it easy to transfer the applications to other platforms with minimal code alteration.",
+      "metrics": {
+        "sari": 32.465575026882306,
+        "bleu": 39.25879166728144,
+        "fkgl": 11.791086956521742,
+        "in_tokens": 14788,
+        "out_tokens": 1007
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 27.975074814230194,
+        "bleu": 71.62328717397851,
+        "fkgl": 13.751301859799717,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. According to this model, previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 27.975074814230194,
+        "bleu": 71.62328717397851,
+        "fkgl": 13.751301859799717,
+        "in_tokens": 10411,
+        "out_tokens": 840
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 28.19403418157168,
+        "bleu": 68.58399640235685,
+        "fkgl": 13.59438596491228,
+        "in_tokens": 20664,
+        "out_tokens": 1656
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. myonuclei are protected in muscle tissue that is shrinking. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 42.78265503364241,
+        "bleu": 57.314679769687245,
+        "fkgl": 11.009858156028368,
+        "in_tokens": 31040,
+        "out_tokens": 2415
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. myonuclei are protected in muscle tissue that is shrinking. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 41.19451331625931,
+        "bleu": 54.1297921798524,
+        "fkgl": 10.84601092896175,
+        "in_tokens": 40898,
+        "out_tokens": 3152
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. myonuclei are protected in muscle tissue that is shrinking. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. Muscle cells have a harder time recruiting new nuclei in older people. This means they may not respond as well to strength training, so it's a good idea for older people to start training early in life. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years.",
+      "metrics": {
+        "sari": 37.308780019465566,
+        "bleu": 43.68821031793545,
+        "fkgl": 9.51221693121693,
+        "in_tokens": 50934,
+        "out_tokens": 3962
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. myonuclei are protected in muscle tissue that is shrinking. Fibres with more myonuclei grow faster when exercised heavily, thus the nuclei represent a 'memory' of previous strength. Muscle cells have a harder time recruiting new nuclei in older people. This means they may not respond as well to strength training, so it's a good idea for older people to start training early in life. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years.",
+      "metrics": {
+        "sari": 35.972401289001105,
+        "bleu": 37.64766898023506,
+        "fkgl": 8.802222222222223,
+        "in_tokens": 60497,
+        "out_tokens": 4633
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Muscle nuclei are protected in shrinking muscle. Fibres with more myonuclei grow faster when exercised heavily, thus the nuclei represent a 'memory' of previous strength. Muscle cells have a harder time recruiting new nuclei in older people. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 42.22409658958191,
+        "bleu": 51.81904329733437,
+        "fkgl": 9.706315789473685,
+        "in_tokens": 69899,
+        "out_tokens": 5309
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Muscle nuclei are protected in shrinking muscle. Fibres with more myonuclei grow faster when exercised heavily, thus the nuclei represent a 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. Muscle cells have a harder time recruiting new nuclei in older people. This memory might be very long lasting in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 40.446418616020004,
+        "bleu": 44.824299924743855,
+        "fkgl": 9.052000000000003,
+        "in_tokens": 79668,
+        "out_tokens": 6049
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Muscle nuclei are protected in shrinking muscle. Fibres with more myonuclei grow faster when exercised heavily, thus the nuclei represent a 'memory' of previous strength. This memory can last for a long time in humans, possibly even a lifetime. Muscle cells have a harder time recruiting new nuclei in older people. This memory might be very long lasting in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 36.80387628300513,
+        "bleu": 38.03997536303368,
+        "fkgl": 9.015201183431952,
+        "in_tokens": 89358,
+        "out_tokens": 6749
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Fibres that have acquired a higher number of myonuclei grow faster when subjected to overload exercise, thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 31.809395679165153,
+        "bleu": 68.81966602942137,
+        "fkgl": 13.365280235988202,
+        "in_tokens": 98413,
+        "out_tokens": 7411
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 31.788710815473355,
+        "bleu": 62.59008372742166,
+        "fkgl": 12.735323854660347,
+        "in_tokens": 108455,
+        "out_tokens": 8169
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains this phenomenon, relying on the most accurate methods for identifying myonuclei. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and the myonuclei seem to be protected against the elevated apoptotic activity observed in atrophying muscle tissue. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 34.760390691309475,
+        "bleu": 59.122328161437046,
+        "fkgl": 12.525987055016184,
+        "in_tokens": 118406,
+        "out_tokens": 8961
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains this phenomenon, relying on the most accurate methods for identifying myonuclei. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei seem to be resistant to cell death during muscle atrophy. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 41.22514753653185,
+        "bleu": 57.27852243388037,
+        "fkgl": 11.788656716417908,
+        "in_tokens": 128195,
+        "out_tokens": 9703
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains this phenomenon, relying on the most accurate methods for identifying myonuclei. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei appear to be protected from cell death during muscle atrophy. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 41.23985848217328,
+        "bleu": 56.93189042125534,
+        "fkgl": 11.847363184079601,
+        "in_tokens": 137920,
+        "out_tokens": 10464
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains this phenomenon, relying on the most accurate methods for identifying myonuclei. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei seem to be protected from damage when the muscle is atrophied. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 39.374815156815394,
+        "bleu": 57.3839043048016,
+        "fkgl": 11.797986798679872,
+        "in_tokens": 148028,
+        "out_tokens": 11318
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains how muscle cells remember their previous growth. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei seem to be protected from damage when the muscle is atrophied. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 38.91248830293434,
+        "bleu": 55.85632364517373,
+        "fkgl": 11.335499153976311,
+        "in_tokens": 158058,
+        "out_tokens": 12131
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains how muscle cells remember their previous growth. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei are protected from damage when the muscle is atrophied. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, as myonuclei are stable for at least 15 years and might even be permanent. However, myonuclei are harder to recruit in the elderly, and if the long-lasting muscle memory also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 38.22600958383513,
+        "bleu": 54.49266430261324,
+        "fkgl": 11.376923076923081,
+        "in_tokens": 167634,
+        "out_tokens": 12857
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains how muscle cells remember their previous growth. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei are protected from damage when the muscle is atrophied. myonuclei remain stable in the body for at least 15 years. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, and if it also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 35.016057414244266,
+        "bleu": 43.535265952739934,
+        "fkgl": 10.618838951310863,
+        "in_tokens": 177585,
+        "out_tokens": 13569
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains how muscle cells remember their previous growth. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei are protected from damage when muscles shrink. myonuclei remain stable in the body for at least 15 years. Thus the nuclei represent a functionally important 'memory' of previous strength. This memory might be very long lasting in humans, and if it also exists in humans, one should consider early strength training as a public health advice.",
+      "metrics": {
+        "sari": 35.54641179232008,
+        "bleu": 43.305101391659825,
+        "fkgl": 10.541212121212123,
+        "in_tokens": 186969,
+        "out_tokens": 14218
+      }
+    },
+    {
+      "prediction": "Memory is a process in which information is encoded, stored, and retrieved. For vertebrates, the modern view has been that it occurs only in the brain. This review describes a cellular memory in skeletal muscle in which hypertrophy is 'remembered' such that a fibre that has previously been large, but subsequently lost its mass, can regain mass faster than naive fibres. A new cell biological model explains how muscle cells remember their previous growth. Previously untrained fibres recruit myonuclei from activated satellite cells before hypertrophic growth. Even if subsequently subjected to grave atrophy, the higher number of myonuclei is retained, and myonuclei remain stable in the body for at least 15 years. If this memory exists in humans, early strength training might be a good public health advice.",
+      "metrics": {
+        "sari": 28.308667950578524,
+        "bleu": 27.864800872668173,
+        "fkgl": 10.696023976023977,
+        "in_tokens": 196050,
+        "out_tokens": 14775
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Moral responsibility is a major concern in automated decision-making, with applications ranging from self-driving cars to kidney exchanges.",
+      "metrics": {
+        "sari": 26.269310590431285,
+        "bleu": 64.87066897882097,
+        "fkgl": 16.99,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. In this paper, we present a framework that first extracts planar regions in height maps and detects dynamic obstacles. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 24.896934149679172,
+        "bleu": 59.072926651991324,
+        "fkgl": 10.455193798449613,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create maps that help plan paths quickly and efficiently. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 28.887903401461255,
+        "bleu": 46.27467758892202,
+        "fkgl": 10.376630434782609,
+        "in_tokens": 8655,
+        "out_tokens": 648
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create maps that help plan paths quickly and efficiently. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 28.887903401461255,
+        "bleu": 46.27467758892202,
+        "fkgl": 10.376630434782609,
+        "in_tokens": 16969,
+        "out_tokens": 1217
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create maps that help plan paths quickly and efficiently. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 28.887903401461255,
+        "bleu": 46.27467758892202,
+        "fkgl": 10.376630434782609,
+        "in_tokens": 25114,
+        "out_tokens": 1788
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create maps that help plan paths quickly and efficiently. Our framework can process information in under 10ms and plan 3D footstep movements in real-time. We show in simulation and real-world experiments that our framework allows for safe and efficient navigation.",
+      "metrics": {
+        "sari": 28.854993196776586,
+        "bleu": 39.941979217321894,
+        "fkgl": 10.163310023310022,
+        "in_tokens": 33488,
+        "out_tokens": 2417
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, i.e., humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create maps that help plan paths quickly and efficiently. Our framework can process information in under 10ms and plan 3D footstep movements in real-time. We show in simulation and real-world experiments that our framework allows for safe and efficient navigation.",
+      "metrics": {
+        "sari": 28.854993196776586,
+        "bleu": 39.941979217321894,
+        "fkgl": 10.163310023310022,
+        "in_tokens": 42491,
+        "out_tokens": 3112
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create maps that help plan paths quickly and efficiently. Our framework can process information in under 10ms and plan 3D footstep movements in real-time. We show in simulation and real-world experiments that our framework allows for safe and efficient navigation.",
+      "metrics": {
+        "sari": 31.706734276734796,
+        "bleu": 39.756636548200305,
+        "fkgl": 12.278281573498965,
+        "in_tokens": 50493,
+        "out_tokens": 3642
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create maps that help plan paths quickly and efficiently. Our framework can process information in under 10ms and plan 3D footstep movements in real-time. We show in simulation and real-world experiments that our framework allows for safe and efficient navigation.",
+      "metrics": {
+        "sari": 31.706734276734796,
+        "bleu": 39.756636548200305,
+        "fkgl": 12.278281573498965,
+        "in_tokens": 58749,
+        "out_tokens": 4222
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 29.53191502943847,
+        "bleu": 55.374532610688796,
+        "fkgl": 13.2972602739726,
+        "in_tokens": 66869,
+        "out_tokens": 4788
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. Our system then uses this information to create a set of prediction maps, in which paths can be efficiently planned in real time at low CPU cost. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 29.53191502943847,
+        "bleu": 55.374532610688796,
+        "fkgl": 13.2972602739726,
+        "in_tokens": 75322,
+        "out_tokens": 5425
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a simple 2D occupancy map as environment representation on which a path is planned is hereby not sufficient since they can step over and onto objects and therefore need height information. Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 27.057160043641062,
+        "bleu": 38.32634019682464,
+        "fkgl": 14.009504273504273,
+        "in_tokens": 83797,
+        "out_tokens": 6032
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map is not enough because they can step over objects and need to know the height of the environment. We show in simulation and real-world experiments that our framework keeps run times well under 10ms for one computation cycle and allows for foresighted real-time 3D footstep planning.",
+      "metrics": {
+        "sari": 40.678800810544395,
+        "bleu": 26.903202232593447,
+        "fkgl": 11.022205882352946,
+        "in_tokens": 91933,
+        "out_tokens": 6568
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map is not enough because they can step over objects and need to know the height of the environment. We tested our framework in simulations and real-world experiments and found that it can plan 3D footstep paths in under 10 milliseconds.",
+      "metrics": {
+        "sari": 36.57424427316349,
+        "bleu": 16.842562651598577,
+        "fkgl": 10.036550632911396,
+        "in_tokens": 99500,
+        "out_tokens": 7021
+      }
+    },
+    {
+      "prediction": "Perception of the local environment is a precondition for mobile robots to navigate safely in dynamic environments. Most robots, humanoids and smaller wheeled robots rely on planar regions. For humanoids, a 2D map is not enough because they can step over objects because they need height information. We tested our framework in simulations and real-world experiments and found that it can plan 3D footstep paths in under 10 milliseconds.",
+      "metrics": {
+        "sari": 37.90090795826588,
+        "bleu": 17.108052857017157,
+        "fkgl": 10.130500000000001,
+        "in_tokens": 107051,
+        "out_tokens": 7475
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network (DNN) for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 22.47133546024932,
+        "bleu": 48.040146358704284,
+        "fkgl": 17.126278538812787,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to deep neural network-based speech recognition system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 24.590613515529554,
+        "bleu": 45.6903871251225,
+        "fkgl": 17.105,
+        "in_tokens": 9175,
+        "out_tokens": 696
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to neural network-based speech recognition system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network for preliminary acoustic modeling. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 25.16292677763376,
+        "bleu": 45.716908910850734,
+        "fkgl": 17.07562801932367,
+        "in_tokens": 18127,
+        "out_tokens": 1372
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to neural network-based speech recognition system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network for preliminary acoustic modeling. The second DNN uses the features extracted from the first DNN and acoustic data. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 35.500495698681895,
+        "bleu": 47.779238548568316,
+        "fkgl": 16.41030303030303,
+        "in_tokens": 27261,
+        "out_tokens": 2080
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to neural network-based speech recognition system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network for preliminary acoustic modeling. The second DNN for primary acoustic modeling employs both the features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 29.691965385525737,
+        "bleu": 47.799141417920374,
+        "fkgl": 16.931764705882355,
+        "in_tokens": 36499,
+        "out_tokens": 2774
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to neural network-based speech recognition system. When learning the bottleneck features to catch, we first exploit the motor on/off state data as supplementary information in addition to the acoustic features as the input of the first deep neural network for preliminary acoustic modeling. The second DNN uses the features from the first DNN and the original acoustic features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 34.51407267370565,
+        "bleu": 47.53731058063897,
+        "fkgl": 16.557060301507537,
+        "in_tokens": 45529,
+        "out_tokens": 3440
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to neural network-based speech recognition system. We use the robot's motor status (on or off) to improve the initial speech recognition. The second DNN uses the features from the first DNN and the original acoustic features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 39.529130265106176,
+        "bleu": 46.1583802617612,
+        "fkgl": 14.488636363636363,
+        "in_tokens": 54628,
+        "out_tokens": 4105
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. For this, we consider the bottleneck features, which have been successfully applied to neural network-based speech recognition system. We use the robot's motor status (on or off) to improve the initial speech recognition. The second DNN uses the features from the first DNN and the original sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 39.33272989316206,
+        "bleu": 45.931332004771456,
+        "fkgl": 14.354545454545455,
+        "in_tokens": 63612,
+        "out_tokens": 4885
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second neural network uses the information from the first network and the original sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.75076524430994,
+        "bleu": 44.01108961339136,
+        "fkgl": 15.33697435897436,
+        "in_tokens": 72626,
+        "out_tokens": 5557
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second neural network uses the information from the first network and the original sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.75076524430994,
+        "bleu": 44.01108961339136,
+        "fkgl": 15.33697435897436,
+        "in_tokens": 81207,
+        "out_tokens": 6169
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second neural network uses the information from the first network and the original sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.75076524430994,
+        "bleu": 44.01108961339136,
+        "fkgl": 15.33697435897436,
+        "in_tokens": 89644,
+        "out_tokens": 6764
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second neural network uses the information from the first network and the sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.82541199926676,
+        "bleu": 43.99475105502815,
+        "fkgl": 15.075483870967744,
+        "in_tokens": 97828,
+        "out_tokens": 7273
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second network uses the information from the first network and the sound features to improve speech recognition. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.89642230522242,
+        "bleu": 43.89598516019357,
+        "fkgl": 15.40488607594937,
+        "in_tokens": 106696,
+        "out_tokens": 7930
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second network uses the sound features to improve speech recognition. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 41.02872459911888,
+        "bleu": 43.01065532077829,
+        "fkgl": 14.864821192052982,
+        "in_tokens": 115310,
+        "out_tokens": 8526
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second network improves speech recognition by using sound data. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.03408726314104,
+        "bleu": 42.78557509969313,
+        "fkgl": 14.832666666666672,
+        "in_tokens": 123752,
+        "out_tokens": 9071
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. Then, the second DNN for primary acoustic modeling employs both the bottleneck features tossed from the first DNN and the acoustics features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 37.1955352474863,
+        "bleu": 47.12967646638096,
+        "fkgl": 15.656515337423318,
+        "in_tokens": 131871,
+        "out_tokens": 9563
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. Then, the second DNN uses a combination of the key features from the first DNN and the acoustic features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 40.40410466854965,
+        "bleu": 45.43400656145477,
+        "fkgl": 15.106250000000003,
+        "in_tokens": 140939,
+        "out_tokens": 10262
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second DNN combines the key features with the acoustic features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 39.93290132026444,
+        "bleu": 43.68246932112759,
+        "fkgl": 14.78667549668874,
+        "in_tokens": 149643,
+        "out_tokens": 10860
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second model combines the important features with the sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 39.58679215005182,
+        "bleu": 42.81198647527889,
+        "fkgl": 14.942966887417217,
+        "in_tokens": 158011,
+        "out_tokens": 11417
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. We use the robot's motor status (on or off) to improve the initial speech recognition. The second model combines the most important sound information with the robot's sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 39.403401833043795,
+        "bleu": 42.777705350104895,
+        "fkgl": 15.194727272727274,
+        "in_tokens": 166568,
+        "out_tokens": 12012
+      }
+    },
+    {
+      "prediction": "As for the humanoid robots, the internal noise, which is generated by motors, fans and mechanical components when the robot is moving or shaking its body, severely degrades the performance of the speech recognition accuracy. In this paper, a novel speech recognition system robust to ego-noise for humanoid robots is proposed, in which on/off state of the motor is employed as auxiliary information for finding the relevant input features. The robot's motor status helps improve speech recognition. The second model combines the most important sound information with the robot's sound features. When the proposed method is evaluated in terms of phoneme error rate (PER) on TIMIT database, the experimental results show that achieve obvious improvement (11% relative) is achieved by our algorithm over the conventional systems.",
+      "metrics": {
+        "sari": 39.34600167445189,
+        "bleu": 42.251477767362516,
+        "fkgl": 15.006896551724136,
+        "in_tokens": 175116,
+        "out_tokens": 12615
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the property-based optimization of compound selection and library design processes, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 19.73230473230473,
+        "bleu": 41.641869490617296,
+        "fkgl": 22.241739130434784,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. It is suggested that the analysis of pharmacophore profiles could be used as an additional tool for the optimization of compound selection and library design, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 27.09905212863843,
+        "bleu": 43.062387546639094,
+        "fkgl": 21.55132743362832,
+        "in_tokens": 6862,
+        "out_tokens": 392
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). Significant differences were observed between the pharmacophore profiles obtained for the drug molecules and those obtained for the high-throughput screening compounds, which appear to be closely related to the nondrug pharmacophore distribution. Pharmacophore analysis can be used to optimize compound selection, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 21.526635389370853,
+        "bleu": 30.427643284827223,
+        "fkgl": 19.646804123711345,
+        "in_tokens": 14098,
+        "out_tokens": 879
+      }
+    },
+    {
+      "prediction": "A pharmacophore analysis approach was used to investigate and compare different classes of compounds relevant to the drug discovery process (specifically, drug molecules, compounds in high throughput screening libraries, combinatorial chemistry building blocks and nondrug molecules). The profiles for drug molecules and high-throughput screening compounds are similar to those of nondrug molecules. Pharmacophore analysis can be used to optimize compound selection, thus improving the odds of success in lead discovery projects.",
+      "metrics": {
+        "sari": 18.393103030744786,
+        "bleu": 8.624406577958867,
+        "fkgl": 16.935,
+        "in_tokens": 21702,
+        "out_tokens": 1428
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Remarkably, the necessary involvement of women in an enhancing scenario has not been discussed by its proponents. The present discourse on moral obligations of future generations, although not referring to women, seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 25.061986582455273,
+        "bleu": 58.98876071190637,
+        "fkgl": 12.905644329896909,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations seems to suggest that women might be morally obligated to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. These are challenging issues that require a wider perspective, of both women and men. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 41.41353499188861,
+        "bleu": 60.34613655748404,
+        "fkgl": 12.257160940325502,
+        "in_tokens": 9004,
+        "out_tokens": 646
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations seems to suggest that women might be morally obligated to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 41.45153136641776,
+        "bleu": 59.79622832087951,
+        "fkgl": 12.257160940325502,
+        "in_tokens": 17803,
+        "out_tokens": 1313
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations suggests that women might be required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 41.49833479163531,
+        "bleu": 61.024848682488106,
+        "fkgl": 12.001843317972352,
+        "in_tokens": 26377,
+        "out_tokens": 1934
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations suggests that women might be required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. The lack of a clear agreement among experts on the ethics of gene editing requires a re-evaluation of women's roles in this process. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 40.54201518609809,
+        "bleu": 53.2425784526765,
+        "fkgl": 11.356163836163837,
+        "in_tokens": 34999,
+        "out_tokens": 2565
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations suggests that women might be required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. A lack of agreement among experts on gene editing means we need to rethink the roles of women in this process. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 41.81662575247707,
+        "bleu": 54.85101260951354,
+        "fkgl": 10.760749746707194,
+        "in_tokens": 43770,
+        "out_tokens": 3220
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations seems to imply that women might be required, morally, if not legally, to reproduce with IVF. The current discussion on future generations suggests that women might be required to use IVF. Enhancing future generations will be gendered, unless the artificial womb is developed. A lack of agreement among experts on gene editing means we need to rethink the roles of women in this process. These are challenging issues that require a wider perspective, of both women and men.",
+      "metrics": {
+        "sari": 41.12521234481037,
+        "bleu": 51.39021166988914,
+        "fkgl": 10.85184880239521,
+        "in_tokens": 51868,
+        "out_tokens": 3819
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion on future generations seems to imply that women might be required, morally, if not legally, to reproduce with IVF. Experts disagree on gene editing, so we need to rethink the role of women in this process. Enhancing future generations will be gendered, unless the artificial womb is developed.",
+      "metrics": {
+        "sari": 37.84561521058665,
+        "bleu": 49.67198436318294,
+        "fkgl": 11.315757575757576,
+        "in_tokens": 60729,
+        "out_tokens": 4482
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion suggests that women might be expected to carry edited embryos. Experts disagree on gene editing, so we need to rethink the role of women in this process. Enhancing future generations will be gendered, unless the artificial womb is developed.",
+      "metrics": {
+        "sari": 36.973468902583406,
+        "bleu": 42.61271400761353,
+        "fkgl": 10.893333333333334,
+        "in_tokens": 69074,
+        "out_tokens": 5043
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. The current discussion suggests that women might be expected to carry edited embryos. Future generations will be gendered, but only if an artificial womb is not developed. Experts disagree on gene editing, so we need to rethink the role of women in this process.",
+      "metrics": {
+        "sari": 34.745255674942776,
+        "bleu": 37.221072772835996,
+        "fkgl": 10.71704918032787,
+        "in_tokens": 77063,
+        "out_tokens": 5566
+      }
+    },
+    {
+      "prediction": "The hidden connection between these reports is that gene editing could be used to solve issues related to health care allocation. Improving the health of future generations might coincide with public health goals; it might improve the health of individuals and communities, and, if successful, might be seen as a public good. However, enhancing future generations will require In Vitro Fertilisation and Pre-implantation Genetic Diagnosis. Women may be expected to carry edited embryos. Future generations will be gendered, but only if an artificial womb is not developed. Experts disagree on gene editing, so we need to rethink the role of women in this process.",
+      "metrics": {
+        "sari": 33.842275616327086,
+        "bleu": 35.01564874086589,
+        "fkgl": 10.269700854700858,
+        "in_tokens": 84979,
+        "out_tokens": 6052
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation and presentation system. The system automatically divides a web document into a number of logical segments based on the screen size and the structure and content of the document. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+      "metrics": {
+        "sari": 14.357550351824012,
+        "bleu": 23.04235981581216,
+        "fkgl": 12.643679775280898,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Limitation in display size and resolution on mobile devices is one of the main obstacles for wide-spread use of web applications in a wireless environment. Web pages are often too large for a PDA (Personal Digital Assistant) screen to present. The same problem exists for devices with low resolution such as WebTV. Manual reconstruction of web pages for these devices would ease the problem; however, the large variation of display capabilities will greatly increase the burden of web page designers since they have to customize a web page for each possible display device. In this paper, we propose a document segmentation system. The system automatically divides a web document into a number of segments based on the screen size and the document content. Additional information such as overviews and summaries is also extracted to facilitate navigation. The system presents the segments and structural information of a web document to make full use of the screen for information finding.",
+      "metrics": {
+        "sari": 20.005255207645174,
+        "bleu": 23.602144590394477,
+        "fkgl": 12.205899122807018,
+        "in_tokens": 8002,
+        "out_tokens": 547
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a cyber pet by solving problems of Korean language learning. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 15.951150570868881,
+        "bleu": 24.676863694756616,
+        "fkgl": 9.80903846153846,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a virtual pet by completing language learning tasks. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 22.42876411738499,
+        "bleu": 24.92460564194984,
+        "fkgl": 9.732812500000005,
+        "in_tokens": 7576,
+        "out_tokens": 547
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a virtual pet when you complete language learning tasks. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 22.96977040967627,
+        "bleu": 24.947218160759714,
+        "fkgl": 9.633633720930234,
+        "in_tokens": 15394,
+        "out_tokens": 1123
+      }
+    },
+    {
+      "prediction": "This paper presents M-CALL, a mobile computer-assisted language learning courseware for Korean language learners. Since conventional computer-assisted language learning is often boring, it exploits a cyber pet game to increase the learner\u2019s interest. M-CALL runs on a personal digital assistant with public wireless LAN for mobile learning. It grows a virtual pet as you learn Korean. Korean Proficiency Test (KPT), a nationally certified Korean language test, was used as problem sets. It consists of cyber pet game, mobile learning courseware, mobile learning system, and mobile tutoring. It provides various functions for Korean language learning. Currently, the prototype M-CALL was designed and partly implemented between mobile PDA and personal computer.",
+      "metrics": {
+        "sari": 23.71218258951153,
+        "bleu": 25.03436388307122,
+        "fkgl": 9.462667322834648,
+        "in_tokens": 22936,
+        "out_tokens": 1639
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to dexterously manipulate objects such as micro-arrays and test tubes often used in high throughput systems (HTS). The resulting drone could augment existing HTS operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 20.909041069689867,
+        "bleu": 43.935253530076054,
+        "fkgl": 8.713433734939759,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In this paper, a lab automation drone notional concept is introduced. Here, a robotic limb is attached to a robotic rotorcraft. The limb's gripper allows the unmanned aerial vehicle to manipulate small laboratory objects such as micro-arrays and test tubes. The resulting drone could augment existing laboratory operations. The 6 degree-of-freedom (DOF) arm and gripper design are presented. Test-and-evaluation approach and results are also given.",
+      "metrics": {
+        "sari": 33.3329752019894,
+        "bleu": 39.96863275088212,
+        "fkgl": 9.738333333333337,
+        "in_tokens": 6689,
+        "out_tokens": 409
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 18.818898027256463,
+        "bleu": 37.75747267675955,
+        "fkgl": 13.988691910499146,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The hybrid detection system relies on the Back Propagation neural networks (BP), to detect a common type of attack in VANETs: Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 18.818898027256463,
+        "bleu": 37.75747267675955,
+        "fkgl": 13.988691910499146,
+        "in_tokens": 8723,
+        "out_tokens": 668
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems render self-driving vehicles vulnerable to many types of malicious attacks, such as Sybil attacks, Denial of Service (DoS), black hole, grey hole and wormhole attacks. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a neural network to detect a common type of attack in VANETs, known as Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 30.58562639757835,
+        "bleu": 39.32068127606534,
+        "fkgl": 13.825804132973946,
+        "in_tokens": 17604,
+        "out_tokens": 1358
+      }
+    },
+    {
+      "prediction": "Emerging self-driving vehicles are vulnerable to different attacks due to the principle and the type of communication systems that are used in these vehicles. These vehicles are increasingly relying on external communication via vehicular ad hoc networks (VANETs). VANETs add new threats to self-driving vehicles that contribute to substantial challenges in autonomous systems. These communication systems make self-driving vehicles vulnerable to various types of cyber attacks, including Denial of Service (DoS) and other malicious threats. In this paper, we propose an intelligent security system designed to secure external communications for self-driving and semi self-driving cars. The system uses a neural network to detect a common type of attack in VANETs, known as Denial-of-Service (DoS). The experimental results show that the proposed BP-IDS is capable of identifying malicious vehicles in self-driving and semi self-driving vehicles.",
+      "metrics": {
+        "sari": 40.050513992108286,
+        "bleu": 39.054586901811014,
+        "fkgl": 14.085809523809527,
+        "in_tokens": 26397,
+        "out_tokens": 2042
+      }
+    }
+  ]
+]

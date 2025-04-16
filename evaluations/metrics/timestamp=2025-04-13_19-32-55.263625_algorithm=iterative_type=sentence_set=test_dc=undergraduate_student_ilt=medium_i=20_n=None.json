@@ -1,0 +1,3214 @@
+[
+  [
+    {
+      "prediction": "Controlling for baseline performance, intervention participants prescribed more safely than controls after receiving the CDSS (0.23 vs. 0.45 [F = 4.24, p u003c 0.05]).",
+      "metrics": {
+        "sari": 11.502273361855904,
+        "bleu": 7.819251081507231,
+        "fkgl": 3.1875000000000036,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Controlling for baseline performance, intervention participants prescribed more safely than controls after receiving the CDSS (0.23 vs. 0.45 [F = 4.24, p < 0.05])",
+      "metrics": {
+        "sari": 21.31818161976847,
+        "bleu": 10.730078651095772,
+        "fkgl": 3.0162903225806446,
+        "in_tokens": 5125,
+        "out_tokens": 289
+      }
+    },
+    {
+      "prediction": "Controlling for baseline performance, intervention participants prescribed more safely than controls with the CDSS (0.23 vs. 0.45 [F = 4.24, p < 0.05])",
+      "metrics": {
+        "sari": 27.81374597769887,
+        "bleu": 10.45806464867791,
+        "fkgl": 1.6666666666666679,
+        "in_tokens": 14940,
+        "out_tokens": 563
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate translation initiation signaling and decrease rates of MPS.",
+      "metrics": {
+        "sari": 5.775142731664471,
+        "bleu": 4.92467473444436,
+        "fkgl": 17.493043478260876,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate translation initiation signaling and decrease rates of MPS.",
+      "metrics": {
+        "sari": 5.775142731664471,
+        "bleu": 4.92467473444436,
+        "fkgl": 17.493043478260876,
+        "in_tokens": 4827,
+        "out_tokens": 282
+      }
+    },
+    {
+      "prediction": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate translation initiation signaling and decrease rates of MPS.",
+      "metrics": {
+        "sari": 5.775142731664471,
+        "bleu": 4.92467473444436,
+        "fkgl": 17.493043478260876,
+        "in_tokens": 14251,
+        "out_tokens": 503
+      }
+    },
+    {
+      "prediction": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate translation initiation signaling and decrease rates of muscle protein synthesis.",
+      "metrics": {
+        "sari": 15.838966790053746,
+        "bleu": 8.77491027594595,
+        "fkgl": 19.176000000000005,
+        "in_tokens": 27923,
+        "out_tokens": 740
+      }
+    },
+    {
+      "prediction": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate protein production signaling and decrease rates of muscle protein synthesis.",
+      "metrics": {
+        "sari": 24.558523266856596,
+        "bleu": 8.952270804289075,
+        "fkgl": 18.232000000000003,
+        "in_tokens": 45805,
+        "out_tokens": 986
+      }
+    },
+    {
+      "prediction": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate protein production processes and decrease rates of muscle protein synthesis.",
+      "metrics": {
+        "sari": 26.77087284288096,
+        "bleu": 8.952270804289075,
+        "fkgl": 18.232000000000003,
+        "in_tokens": 67955,
+        "out_tokens": 1198
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Based on user and tweets characteristics, we build a misinformation detection model that identifies suspicious behavioral patterns and exploits supervised learning techniques to detect misinformation.",
+      "metrics": {
+        "sari": 21.145983645983645,
+        "bleu": 42.26469376227502,
+        "fkgl": 20.725185185185186,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Based on user and tweets characteristics, we build a model to detect misinformation by identifying suspicious behavior.",
+      "metrics": {
+        "sari": 21.854755226073596,
+        "bleu": 6.809398432036521,
+        "fkgl": 14.177894736842106,
+        "in_tokens": 5016,
+        "out_tokens": 270
+      }
+    },
+    {
+      "prediction": "Based on user characteristics and tweets, we build a model to detect misinformation by identifying suspicious behavior.",
+      "metrics": {
+        "sari": 27.633482959385372,
+        "bleu": 6.809398432036521,
+        "fkgl": 14.177894736842106,
+        "in_tokens": 14335,
+        "out_tokens": 491
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "We carried on experiments two times using the system.",
+      "metrics": {
+        "sari": 16.446078431372552,
+        "bleu": 30.213753973567687,
+        "fkgl": 6.010000000000002,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We ran experiments twice using the system.",
+      "metrics": {
+        "sari": 64.83516483516483,
+        "bleu": 38.260294162784454,
+        "fkgl": 3.7550000000000026,
+        "in_tokens": 4570,
+        "out_tokens": 216
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Summary form only given, as follows.",
+      "metrics": {
+        "sari": 3.3333333333333335,
+        "bleu": 6.567274736060395,
+        "fkgl": 3.7550000000000026,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "No passage to revert.",
+      "metrics": {
+        "sari": 38.24786324786324,
+        "bleu": 8.745825313180626,
+        "fkgl": 0.5199999999999996,
+        "in_tokens": 4546,
+        "out_tokens": 198
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "a Bayesian framework for genotype estimation for mixtures of multiple bacteria, named as Genetic Polymorphisms Assignments (GPA) has reduced the false discovery rate (FDR) and mean absolute error (MAE) in single nucleotide variant (SNV) identification.",
+      "metrics": {
+        "sari": 6.6080876795162515,
+        "bleu": 6.767364701766784,
+        "fkgl": 21.102222222222228,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "a Bayesian framework for genotype estimation for mixtures of multiple bacteria has reduced the false discovery rate (FDR) and mean absolute error (MAE) in single nucleotide variant (SNV) identification.",
+      "metrics": {
+        "sari": 18.6419867092136,
+        "bleu": 5.303946372062951,
+        "fkgl": 17.788888888888888,
+        "in_tokens": 5057,
+        "out_tokens": 273
+      }
+    },
+    {
+      "prediction": "a Bayesian framework for genotype estimation for mixtures of multiple bacteria has reduced the false discovery rate (FDR) and mean absolute error (MAE) in single nucleotide variation detection.",
+      "metrics": {
+        "sari": 26.083307457686058,
+        "bleu": 5.336230689753963,
+        "fkgl": 17.66181818181818,
+        "in_tokens": 14738,
+        "out_tokens": 542
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The developed method not only streamlines the internal business process of digital marketing tool selection, but it also increases the practitioner's effectiveness of achieving the pre-defined strategic marketing objectives.",
+      "metrics": {
+        "sari": 17.869679769834566,
+        "bleu": 31.98541489182186,
+        "fkgl": 23.14516129032258,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The developed method not only streamlines the internal business process of digital marketing tool selection, but it also increases the practitioner's effectiveness of achieving the pre-defined marketing goals.",
+      "metrics": {
+        "sari": 19.930805655595574,
+        "bleu": 26.116807896416294,
+        "fkgl": 21.283333333333335,
+        "in_tokens": 4829,
+        "out_tokens": 235
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Based on the responses of 282 respondents from the Netherlands and Germany, a discrete choice model is estimated as a Mixed Logit model including attitudes towards trust in self-driving vehicles and interest in technology.",
+      "metrics": {
+        "sari": 13.485388595144693,
+        "bleu": 24.281076515541944,
+        "fkgl": 19.755555555555556,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A model is used to understand how people feel about self-driving cars and technology.",
+      "metrics": {
+        "sari": 32.83810108953531,
+        "bleu": 5.117379575399021,
+        "fkgl": 9.92666666666667,
+        "in_tokens": 5147,
+        "out_tokens": 256
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "We introduce a stylized social learning model where most participants in a network update their beliefs unbiasedly based on the arrival of new information, while a fraction of participants display confirmation bias, enabling them to reject news that are incongruent with their pre-existing beliefs.",
+      "metrics": {
+        "sari": 18.758609103494845,
+        "bleu": 37.88671284349504,
+        "fkgl": 23.82936170212766,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We introduce a stylized social learning model where most participants in a network update their beliefs unbiasedly based on the arrival of new information, while some participants display confirmation bias, rejecting news that disagree with what they already believe.",
+      "metrics": {
+        "sari": 45.79931125344575,
+        "bleu": 39.694080214383014,
+        "fkgl": 21.861428571428572,
+        "in_tokens": 5358,
+        "out_tokens": 345
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "According to this view, established technological communities attempt to impose their own definitions of key problems and solutions on new mobile technology, thereby forcing newer players to provide a \"total system\" that completely redefines a new application area.",
+      "metrics": {
+        "sari": 8.91061046511628,
+        "bleu": 8.573133708989621,
+        "fkgl": 22.584651162790696,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Established communities try to impose their own definitions on new mobile technology, forcing newer players to provide a complete system for a new application. According to this view, they attempt to impose their own definitions of key problems and solutions on new mobile technology, thereby forcing newer players to provide a \"total system\" that completely redefines a new application area.",
+      "metrics": {
+        "sari": 18.25562632653089,
+        "bleu": 5.727805740094205,
+        "fkgl": 17.200373134328363,
+        "in_tokens": 5171,
+        "out_tokens": 392
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Duration amounts to the sum total of the concentric, eccentric, and isometric components of a repetition, and is predicated on the tempo at which the repetition is performed.",
+      "metrics": {
+        "sari": 11.201923076923078,
+        "bleu": 11.704989338153728,
+        "fkgl": 16.433750000000007,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "We then evaluate the subsequent stock market reaction.",
+      "metrics": {
+        "sari": 25.21326712503183,
+        "bleu": 59.694917920196445,
+        "fkgl": 4.964444444444446,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market reaction.",
+      "metrics": {
+        "sari": 40.625,
+        "bleu": 50.000000000000014,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 4744,
+        "out_tokens": 242
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market reaction.",
+      "metrics": {
+        "sari": 40.625,
+        "bleu": 50.000000000000014,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 13849,
+        "out_tokens": 493
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 27395,
+        "out_tokens": 736
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 45334,
+        "out_tokens": 998
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market reaction.",
+      "metrics": {
+        "sari": 40.625,
+        "bleu": 50.000000000000014,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 67753,
+        "out_tokens": 1240
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 94469,
+        "out_tokens": 1481
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 125530,
+        "out_tokens": 1734
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 161087,
+        "out_tokens": 1987
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 201140,
+        "out_tokens": 2240
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 245689,
+        "out_tokens": 2493
+      }
+    },
+    {
+      "prediction": "We then evaluate the subsequent market response.",
+      "metrics": {
+        "sari": 34.38492063492064,
+        "bleu": 38.260294162784454,
+        "fkgl": 5.230000000000004,
+        "in_tokens": 294734,
+        "out_tokens": 2746
+      }
+    },
+    {
+      "prediction": "We then check the market response.",
+      "metrics": {
+        "sari": 27.494912494912498,
+        "bleu": 14.31720073264775,
+        "fkgl": 0,
+        "in_tokens": 348260,
+        "out_tokens": 2997
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "By adopting marketing as a set-of-skills approach, the study provides new insights into the existing tourism literature on e-marketing.",
+      "metrics": {
+        "sari": 11.717171717171716,
+        "bleu": 13.520459769143477,
+        "fkgl": 15.638095238095236,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for the use of city maps, route planning, navigation, or traffic information.",
+      "metrics": {
+        "sari": 18.156018388216534,
+        "bleu": 36.46631235926789,
+        "fkgl": 11.995862068965518,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for the use of city maps, route planning, navigation, or traffic information.",
+      "metrics": {
+        "sari": 18.156018388216534,
+        "bleu": 36.46631235926789,
+        "fkgl": 11.995862068965518,
+        "in_tokens": 5010,
+        "out_tokens": 267
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for navigation and traffic information, and city maps.",
+      "metrics": {
+        "sari": 17.48951884435755,
+        "bleu": 5.704212259993485,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 14747,
+        "out_tokens": 583
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for navigation and traffic information, and city maps.",
+      "metrics": {
+        "sari": 17.48951884435755,
+        "bleu": 5.704212259993485,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 29571,
+        "out_tokens": 919
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for navigation and traffic information, and city maps.",
+      "metrics": {
+        "sari": 17.48951884435755,
+        "bleu": 5.704212259993485,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 49707,
+        "out_tokens": 1276
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for navigation and traffic information, and city maps.",
+      "metrics": {
+        "sari": 17.48951884435755,
+        "bleu": 5.704212259993485,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 75231,
+        "out_tokens": 1657
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for navigation and traffic information, and city maps.",
+      "metrics": {
+        "sari": 17.48951884435755,
+        "bleu": 5.704212259993485,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 106283,
+        "out_tokens": 2048
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for navigation and traffic information, and city maps.",
+      "metrics": {
+        "sari": 17.48951884435755,
+        "bleu": 5.704212259993485,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 142935,
+        "out_tokens": 2439
+      }
+    },
+    {
+      "prediction": "These services are to be accessed by users with a mobile end device for maps, navigation, and traffic information, and city maps.",
+      "metrics": {
+        "sari": 21.133468140047086,
+        "bleu": 9.356643117452581,
+        "fkgl": 10.888461538461542,
+        "in_tokens": 185208,
+        "out_tokens": 2839
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It also refers to specific physiological processes or states occurring after exercise that are distinct from the physiology of either the exercising or the resting states.",
+      "metrics": {
+        "sari": 14.352888863525033,
+        "bleu": 26.61039908366136,
+        "fkgl": 18.540000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It also refers to physiological processes that occur after exercise, which are different from the body's state during exercise and rest.",
+      "metrics": {
+        "sari": 49.11680849410347,
+        "bleu": 14.345334371446105,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 4928,
+        "out_tokens": 284
+      }
+    },
+    {
+      "prediction": "It also refers to physiological processes that occur after exercise, which are different from the body's state during exercise and rest.",
+      "metrics": {
+        "sari": 49.11680849410347,
+        "bleu": 14.345334371446105,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 14382,
+        "out_tokens": 547
+      }
+    },
+    {
+      "prediction": "It also refers to physiological processes that occur after exercise, which are different from the body's state during exercise and rest.",
+      "metrics": {
+        "sari": 49.11680849410347,
+        "bleu": 14.345334371446105,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 28451,
+        "out_tokens": 831
+      }
+    },
+    {
+      "prediction": "It also refers to physiological processes that occur after exercise, which are different from the body's state during exercise and rest.",
+      "metrics": {
+        "sari": 49.11680849410347,
+        "bleu": 14.345334371446105,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 47239,
+        "out_tokens": 1098
+      }
+    },
+    {
+      "prediction": "It also refers to processes that happen after exercise, which differ from rest.",
+      "metrics": {
+        "sari": 49.26708949964763,
+        "bleu": 21.023693683267553,
+        "fkgl": 7.566666666666666,
+        "in_tokens": 70635,
+        "out_tokens": 1367
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon.",
+      "metrics": {
+        "sari": 24.004719004719004,
+        "bleu": 55.925988689124864,
+        "fkgl": 14.911666666666669,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.",
+      "metrics": {
+        "sari": 16.983418367346935,
+        "bleu": 32.03856431582204,
+        "fkgl": 17.743333333333336,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "There are some existing datasets for common problems like item recognition and classification, however, it is very limited for the industrial robotics field.",
+      "metrics": {
+        "sari": 25.854134251059254,
+        "bleu": 16.279348731624783,
+        "fkgl": 15.880769230769232,
+        "in_tokens": 4729,
+        "out_tokens": 207
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This means a company's intellectual property and sensitive data is at risk of sabotage or just good old-fashioned theft.",
+      "metrics": {
+        "sari": 28.896397870094134,
+        "bleu": 76.47860170437232,
+        "fkgl": 12.270000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Also discussed is a model for transmission, storage and processing of patient related data, which ensures periodic logging of patient data without saturating communication networks.",
+      "metrics": {
+        "sari": 10.918145035792094,
+        "bleu": 12.286996020967836,
+        "fkgl": 18.508571428571432,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Also discussed is a model for transmission, storage and processing of patient related data, which ensures periodic logging of patient data without saturating communication networks.",
+      "metrics": {
+        "sari": 10.918145035792094,
+        "bleu": 12.286996020967836,
+        "fkgl": 18.508571428571432,
+        "in_tokens": 4574,
+        "out_tokens": 182
+      }
+    },
+    {
+      "prediction": "Also discussed is a model for transmission, storage and processing of patient related data, which ensures periodic logging of patient data.",
+      "metrics": {
+        "sari": 16.235617963376036,
+        "bleu": 9.638345058806832,
+        "fkgl": 14.420000000000002,
+        "in_tokens": 13056,
+        "out_tokens": 354
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The barriers to screening identified through focus groups included a lack of time, knowledge, intervention protocol, referral resources, PDA usability issues, preceptor motivation and comfort, as well as perceived or real cultural barriers.",
+      "metrics": {
+        "sari": 26.03409203357252,
+        "bleu": 62.09265660913771,
+        "fkgl": 19.775000000000002,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The barriers to screening identified through focus groups included a lack of time, knowledge, intervention protocol, referral resources, PDA usability issues, preceptor motivation and comfort, as well as cultural barriers.",
+      "metrics": {
+        "sari": 44.7013418270534,
+        "bleu": 67.34493290339738,
+        "fkgl": 18.612972972972972,
+        "in_tokens": 4903,
+        "out_tokens": 261
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In addition, wireless and mobile computing technologies allows Personal Digital Assistant to connect directly to networks or the Internet.",
+      "metrics": {
+        "sari": 24.64819533785051,
+        "bleu": 53.007145129171796,
+        "fkgl": 16.2,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In addition, modern computing technologies allow Personal Digital Assistant to connect directly to networks or the Internet.",
+      "metrics": {
+        "sari": 40.916721928073834,
+        "bleu": 49.220883869700565,
+        "fkgl": 15.420000000000002,
+        "in_tokens": 4724,
+        "out_tokens": 241
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Vandal is both fast and robust, successfully analysing over 95\\% of all 141k unique contracts with an average runtime of 4.15 seconds; outperforming the current state of the art tools---Oyente, EthIR, Mythril, and Rattle---under equivalent conditions.",
+      "metrics": {
+        "sari": 12.978888625654797,
+        "bleu": 21.593899129024457,
+        "fkgl": 18.733636363636368,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Vandal is both fast and robust, analysing more than 95% of over 141,000 unique contracts with an average runtime of 4.15 seconds; outperforming the current state of the art tools---Oyente, EthIR, Mythril, and Rattle---under equivalent conditions.",
+      "metrics": {
+        "sari": 29.215284342832803,
+        "bleu": 22.351161214583158,
+        "fkgl": 17.91953488372093,
+        "in_tokens": 5415,
+        "out_tokens": 383
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The combined human factors methods of cognitive work analysis during the requirements-gathering phase and ecological interface design during the design phase were used to develop the DST.",
+      "metrics": {
+        "sari": 12.96906796906797,
+        "bleu": 17.966302274629626,
+        "fkgl": 18.508571428571432,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The combined human factors methods of understanding how people work during the requirements-gathering phase and ecological interface design during the design phase were used to develop the DST.",
+      "metrics": {
+        "sari": 19.12483777143964,
+        "bleu": 14.50029540270094,
+        "fkgl": 17.69241379310345,
+        "in_tokens": 5177,
+        "out_tokens": 308
+      }
+    },
+    {
+      "prediction": "The combined human factors methods of understanding how people work during getting requirements and ecological interface design during the design phase were used to develop the DST.",
+      "metrics": {
+        "sari": 25.38387607133654,
+        "bleu": 12.753431387594826,
+        "fkgl": 16.822857142857142,
+        "in_tokens": 15000,
+        "out_tokens": 571
+      }
+    },
+    {
+      "prediction": "The combined human factors of understanding how people work during getting requirements and ecological interface design during the design phase were used to develop the DST.",
+      "metrics": {
+        "sari": 27.918533964760076,
+        "bleu": 12.519536194725916,
+        "fkgl": 16.35481481481482,
+        "in_tokens": 29255,
+        "out_tokens": 837
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "These models are incompatible with ROS-based systems.",
+      "metrics": {
+        "sari": 24.155844155844154,
+        "bleu": 34.1077254951379,
+        "fkgl": 9.655000000000001,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Currently, a SES employee visits each health establishment to collect this information by hand, process it and type it into an electronic medical record system  this :[81],\"paper, we describe the development and implementation of a personal digital assistant (PDA)-based electronic system to collect, verify and upload monthly bacteriology data into the PIH-EMR.",
+      "metrics": {
+        "sari": 17.576342031261188,
+        "bleu": 29.397942315823126,
+        "fkgl": 28.922727272727276,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A SES employee visits each health establishment to collect this information by hand, process it and type it into an electronic medical record system. We describe the development and implementation of a personal digital assistant (PDA)-based electronic system to collect, verify and upload monthly bacteriology data into the PIH-EMR.",
+      "metrics": {
+        "sari": 32.96280488237439,
+        "bleu": 27.798849513525685,
+        "fkgl": 16.19071428571429,
+        "in_tokens": 5656,
+        "out_tokens": 389
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.",
+      "metrics": {
+        "sari": 23.144995225640386,
+        "bleu": 52.710174649255045,
+        "fkgl": 11.704761904761906,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A conventional neural network for steering control is designed to map a single front-facing camera image to a steering command.",
+      "metrics": {
+        "sari": 45.98341222760727,
+        "bleu": 49.17574775266128,
+        "fkgl": 12.828571428571426,
+        "in_tokens": 5043,
+        "out_tokens": 275
+      }
+    },
+    {
+      "prediction": "A conventional neural network for steering control is designed to map a camera view to a steering direction.",
+      "metrics": {
+        "sari": 38.851776878092664,
+        "bleu": 24.941747177008256,
+        "fkgl": 11.693684210526317,
+        "in_tokens": 14354,
+        "out_tokens": 517
+      }
+    },
+    {
+      "prediction": "A standard neural network for steering is designed to map a camera view to a steering direction.",
+      "metrics": {
+        "sari": 38.85782292602412,
+        "bleu": 23.909453161355017,
+        "fkgl": 9.785555555555558,
+        "in_tokens": 27865,
+        "out_tokens": 732
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Therefore, when an error message is reported, it is vital that the smart speaker gives an effective and proper response.",
+      "metrics": {
+        "sari": 22.97114126415202,
+        "bleu": 51.94247346787362,
+        "fkgl": 10.310434782608699,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Therefore, when an error message is reported, it is vital that the voice assistant gives an effective and proper response.",
+      "metrics": {
+        "sari": 18.689637604111287,
+        "bleu": 33.57306484097324,
+        "fkgl": 10.823478260869567,
+        "in_tokens": 4835,
+        "out_tokens": 244
+      }
+    },
+    {
+      "prediction": "Therefore, when an error message is reported, it is vital that the voice assistant gives a clear response.",
+      "metrics": {
+        "sari": 12.342212979467883,
+        "bleu": 13.988521776260258,
+        "fkgl": 8.895238095238096,
+        "in_tokens": 13977,
+        "out_tokens": 482
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The alcohol ingestion protocol (1.5 g\u00b7kg\u22121 BM; 12\u00b12 standard drinks) began 1 h post-exercise and was consumed in 6 equal volumes of 1 part vodka (\u223c60 mL) to four parts orange juice (\u223c240 mL, 1.8 g CHO\u00b7kg\u22121 BM) during a 3 h period.",
+      "metrics": {
+        "sari": 5.318401405357927,
+        "bleu": 3.381970619593248,
+        "fkgl": 15.355384615384619,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The alcohol ingestion protocol (1.5 g\u00b7kg\u22121 BM; 12\u00b12 standard drinks) began 1 h post-exercise and was consumed in 6 equal volumes of 1 part vodka to 4 parts orange juice during a 3 h period.",
+      "metrics": {
+        "sari": 25.684261192341854,
+        "bleu": 4.555296229987366,
+        "fkgl": 13.235384615384614,
+        "in_tokens": 5503,
+        "out_tokens": 335
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "There is no need for any information interchange between issuing parties or global data (especially keys), except unique identifiers for each user and each device of the system.",
+      "metrics": {
+        "sari": 18.41766258432925,
+        "bleu": 36.15192026985418,
+        "fkgl": 15.696250000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "There is no need for any interchange between users and devices, except unique identifiers for each user and each device of the system.",
+      "metrics": {
+        "sari": 33.307890939469885,
+        "bleu": 27.748702735605818,
+        "fkgl": 12.568000000000001,
+        "in_tokens": 4932,
+        "out_tokens": 247
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Our results yield findings that benefit managers, investors and policy-makers by indicating how regulatory filings should be structured and the topics most likely to precede changes in stock valuations.",
+      "metrics": {
+        "sari": 12.313843926385921,
+        "bleu": 19.189570068047395,
+        "fkgl": 17.816129032258065,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Our results yield findings that benefit managers, investors and policy-makers by indicating how filings should be structured and the topics most likely to precede changes in stock valuations.",
+      "metrics": {
+        "sari": 16.88217780609085,
+        "bleu": 18.904254678403266,
+        "fkgl": 16.170000000000005,
+        "in_tokens": 4916,
+        "out_tokens": 276
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The management of this condition is given the highest priority in disease control, and the importance of lifestyle changes for the prevention and treatment of hypertension has been recognized in Japan.",
+      "metrics": {
+        "sari": 24.46130258630259,
+        "bleu": 57.782586818540814,
+        "fkgl": 18.01939393939394,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Based on this technology, a new form of parasitic computing, widely called cryptojacking or drive-by mining, has gained momentum in the web. A cryptojacking site abuses the computing resources of its visitors to covertly mine for cryptocurrencies.",
+      "metrics": {
+        "sari": 4.7145877378435515,
+        "bleu": 3.316510708273502,
+        "fkgl": 13.390476190476189,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A new form of cryptojacking or drive-by mining has gained momentum in the web. A cryptojacking site abuses the computing resources of its visitors to covertly mine for cryptocurrencies using a type of malware.",
+      "metrics": {
+        "sari": 20.218128645088203,
+        "bleu": 2.9000744656730446,
+        "fkgl": 11.752222222222223,
+        "in_tokens": 5068,
+        "out_tokens": 292
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "However, the importance - and even the existence - of a post-exercise \u2018window\u2019 can vary according to a number of factors.",
+      "metrics": {
+        "sari": 33.333333333333336,
+        "bleu": 100.00000000000004,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The importance - and even the existence - of a post-exercise \u2018window\u2019 can vary according to a number of factors.",
+      "metrics": {
+        "sari": 31.70245689982532,
+        "bleu": 86.23747408226909,
+        "fkgl": 10.580952380952379,
+        "in_tokens": 4904,
+        "out_tokens": 264
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "As the robot needs time to reach the possible search locations, we take this time as well as the visibility constraints into account when computing effective search locations.",
+      "metrics": {
+        "sari": 14.410767120126726,
+        "bleu": 22.8721960134706,
+        "fkgl": 13.810000000000006,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "As the robot needs time to reach the possible search locations, we take this time as well as the visibility constraints into account when computing effective search locations.",
+      "metrics": {
+        "sari": 14.410767120126726,
+        "bleu": 22.8721960134706,
+        "fkgl": 13.810000000000006,
+        "in_tokens": 5202,
+        "out_tokens": 339
+      }
+    },
+    {
+      "prediction": "As the robot needs time to reach the possible search locations, we take this time as well as the visibility constraints into account when computing effective search locations.",
+      "metrics": {
+        "sari": 14.410767120126726,
+        "bleu": 22.8721960134706,
+        "fkgl": 13.810000000000006,
+        "in_tokens": 15477,
+        "out_tokens": 693
+      }
+    },
+    {
+      "prediction": "As the robot needs time to reach the possible search locations, we take this time as well as the visibility factors into account when computing effective search locations.",
+      "metrics": {
+        "sari": 22.41095581181788,
+        "bleu": 22.8721960134706,
+        "fkgl": 13.810000000000006,
+        "in_tokens": 30833,
+        "out_tokens": 1006
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Safety outcomes were assessed from the prescriptions given to the SPs.",
+      "metrics": {
+        "sari": 17.98756798756799,
+        "bleu": 24.70918283591955,
+        "fkgl": 7.773333333333333,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Many large health care organizations manage clinical appointment scheduling via enterprise resource scheduling systems which are poorly accessible by clinicians.",
+      "metrics": {
+        "sari": 15.961399711399713,
+        "bleu": 24.786025393734292,
+        "fkgl": 18.447619047619053,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Many large health care organizations manage clinical appointment scheduling via computer systems that manage scheduling are hard for clinicians to use.",
+      "metrics": {
+        "sari": 26.209524364682082,
+        "bleu": 7.932540359883352,
+        "fkgl": 16.053636363636368,
+        "in_tokens": 4538,
+        "out_tokens": 189
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "One approach to the development of self-driving systems is the utilization of ROS which is an open-source middleware framework used in the development of robot applications.",
+      "metrics": {
+        "sari": 26.945590933304118,
+        "bleu": 65.27978713937651,
+        "fkgl": 17.228888888888893,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "One approach to the development of self-driving systems is the utilization of ROS which is a software framework used for developing robot applications.",
+      "metrics": {
+        "sari": 44.39859160447395,
+        "bleu": 47.34032737178338,
+        "fkgl": 15.895,
+        "in_tokens": 4965,
+        "out_tokens": 267
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Construction of BSE was motivated by the fact that most of the world\u2019s major financial markets have automated, with trading activity that previously was the responsibility of human traders now being performed by high-speed autonomous automated trading systems.",
+      "metrics": {
+        "sari": 5.03896251404557,
+        "bleu": 5.35230244729667,
+        "fkgl": 21.840000000000007,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Construction of BSE was motivated by the fact that most of the world\u2019s major financial markets have automated, with trading is now done by computers.",
+      "metrics": {
+        "sari": 31.004045862201888,
+        "bleu": 8.085298080223225,
+        "fkgl": 11.984444444444446,
+        "in_tokens": 4890,
+        "out_tokens": 243
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In many situations, users walk on typical paths between specific destinations at which the service of a mobile robot is needed.",
+      "metrics": {
+        "sari": 33.333333333333336,
+        "bleu": 100.00000000000004,
+        "fkgl": 12.362608695652174,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Users walk on typical paths between specific destinations where it needs to provide service.",
+      "metrics": {
+        "sari": 16.110530593289216,
+        "bleu": 24.997480710054276,
+        "fkgl": 9.92666666666667,
+        "in_tokens": 4972,
+        "out_tokens": 257
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "They have shown a positive impact on patient safety, health care efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 12.413793103448278,
+        "bleu": 17.636478563502965,
+        "fkgl": 11.693684210526317,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 5165,
+        "out_tokens": 289
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 15033,
+        "out_tokens": 581
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 29804,
+        "out_tokens": 907
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 49637,
+        "out_tokens": 1227
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 74475,
+        "out_tokens": 1536
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 104153,
+        "out_tokens": 1845
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, health care efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 12.413793103448278,
+        "bleu": 17.636478563502965,
+        "fkgl": 11.693684210526317,
+        "in_tokens": 138613,
+        "out_tokens": 2142
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, health care efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 12.413793103448278,
+        "bleu": 17.636478563502965,
+        "fkgl": 11.693684210526317,
+        "in_tokens": 177870,
+        "out_tokens": 2455
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 222046,
+        "out_tokens": 2748
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 271039,
+        "out_tokens": 3072
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, healthcare efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 42.21926992760326,
+        "bleu": 41.180376356915765,
+        "fkgl": 12.407777777777778,
+        "in_tokens": 325096,
+        "out_tokens": 3396
+      }
+    },
+    {
+      "prediction": "They have shown a positive impact on patient safety, health care efficiency, and ultimately patient satisfaction.",
+      "metrics": {
+        "sari": 12.413793103448278,
+        "bleu": 17.636478563502965,
+        "fkgl": 11.693684210526317,
+        "in_tokens": 384118,
+        "out_tokens": 3694
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It has also been shown to promote many health benefits.",
+      "metrics": {
+        "sari": 33.333333333333336,
+        "bleu": 100.00000000000004,
+        "fkgl": 4.790909090909089,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It has also been shown to promote many health benefits.",
+      "metrics": {
+        "sari": 33.333333333333336,
+        "bleu": 100.00000000000004,
+        "fkgl": 4.790909090909089,
+        "in_tokens": 4657,
+        "out_tokens": 204
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.",
+      "metrics": {
+        "sari": 26.41767957769065,
+        "bleu": 63.27067557304968,
+        "fkgl": 15.104864864864865,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The case study of New York shows that the current taxi demand in Manhattan can be met with around 8,000 robotic taxis, roughly equal to 70% of the current taxi fleet operating in Manhattan.",
+      "metrics": {
+        "sari": 28.193674038012926,
+        "bleu": 42.08534593816981,
+        "fkgl": 14.785945945945944,
+        "in_tokens": 4947,
+        "out_tokens": 265
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Four kinds of monitor units were specially designed for a wireless communication, including a control center , a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor).",
+      "metrics": {
+        "sari": 20.770190261715687,
+        "bleu": 39.90830382222739,
+        "fkgl": 19.52888888888889,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Four types of devices were designed for wireless communication: a control center, a local monitor, mobile devices, and a Web page for both patients and doctors.",
+      "metrics": {
+        "sari": 65.6123660623099,
+        "bleu": 40.133498239149255,
+        "fkgl": 14.390322580645162,
+        "in_tokens": 5179,
+        "out_tokens": 297
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management.",
+      "metrics": {
+        "sari": 19.728780114200415,
+        "bleu": 41.29194317917966,
+        "fkgl": 22.44,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages.",
+      "metrics": {
+        "sari": 21.24782818532819,
+        "bleu": 44.23193362467972,
+        "fkgl": 17.12636363636364,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A large multi-channel corpus, including mobile phone, personal digital assistant (PDA), telephone and microphone, is collected to evaluate the system performance.",
+      "metrics": {
+        "sari": 6.984805318138651,
+        "bleu": 7.61223519170024,
+        "fkgl": 14.294285714285717,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A single channel corpus, including mobile phone, personal digital assistant (PDA), telephone and microphone, is collected to evaluate the system performance.",
+      "metrics": {
+        "sari": 14.678917639443952,
+        "bleu": 7.61223519170024,
+        "fkgl": 13.451428571428576,
+        "in_tokens": 4756,
+        "out_tokens": 235
+      }
+    },
+    {
+      "prediction": "A single channel corpus, including mobile phone, personal digital assistant, telephone and microphone, is collected to evaluate the system performance.",
+      "metrics": {
+        "sari": 24.446751283059736,
+        "bleu": 8.586092130733784,
+        "fkgl": 13.984000000000002,
+        "in_tokens": 13581,
+        "out_tokens": 432
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The proposed approach was tested on a manually labeled data set in urban environments.",
+      "metrics": {
+        "sari": 17.969187675070028,
+        "bleu": 34.79159475128446,
+        "fkgl": 11.500000000000004,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in urban environments.",
+      "metrics": {
+        "sari": 38.846168513687694,
+        "bleu": 36.6192636299943,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 5067,
+        "out_tokens": 288
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 14830,
+        "out_tokens": 592
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 29384,
+        "out_tokens": 892
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 48754,
+        "out_tokens": 1184
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 72932,
+        "out_tokens": 1476
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 101918,
+        "out_tokens": 1768
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 135712,
+        "out_tokens": 2060
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 174314,
+        "out_tokens": 2352
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 217724,
+        "out_tokens": 2644
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 265931,
+        "out_tokens": 2936
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 318957,
+        "out_tokens": 3228
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 376791,
+        "out_tokens": 3520
+      }
+    },
+    {
+      "prediction": "The proposed approach was tested on a manually labeled dataset in city environments.",
+      "metrics": {
+        "sari": 31.20095182595183,
+        "bleu": 22.718709780542323,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 439416,
+        "out_tokens": 3808
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The proposed framework has been implemented on an especially built simulator.",
+      "metrics": {
+        "sari": 6.290849673202614,
+        "bleu": 8.516593018819643,
+        "fkgl": 12.690000000000001,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The proposed framework has been implemented on a custom-built simulator.",
+      "metrics": {
+        "sari": 29.226190476190478,
+        "bleu": 8.913765521398126,
+        "fkgl": 12.3,
+        "in_tokens": 5003,
+        "out_tokens": 267
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This study compared text entry performance of two stylus-driven soft keyboards for use in hand-held computing devices: the QWERTY and the T9.",
+      "metrics": {
+        "sari": 17.214066127109607,
+        "bleu": 30.336688657626635,
+        "fkgl": 11.96166666666667,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This study compared text entry performance of two stylus-driven soft keyboards for use in hand-held computing devices: the QWERTY and the T9.",
+      "metrics": {
+        "sari": 17.214066127109607,
+        "bleu": 30.336688657626635,
+        "fkgl": 11.96166666666667,
+        "in_tokens": 4900,
+        "out_tokens": 268
+      }
+    },
+    {
+      "prediction": "This study compared text entry performance of two stylus-driven soft keyboards for use in portable computers: the QWERTY and the T9.",
+      "metrics": {
+        "sari": 25.727317767532952,
+        "bleu": 27.412292653919486,
+        "fkgl": 11.336521739130436,
+        "in_tokens": 14446,
+        "out_tokens": 536
+      }
+    },
+    {
+      "prediction": "This study compared text entry performance of two touchscreen keyboards for use in portable computers: the QWERTY and the T9.",
+      "metrics": {
+        "sari": 37.690118716434505,
+        "bleu": 28.75338096125627,
+        "fkgl": 10.153636363636362,
+        "in_tokens": 28476,
+        "out_tokens": 792
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The use of various monitor units is created to fulfill different medical personnel requirements and wishes.",
+      "metrics": {
+        "sari": 7.964912280701753,
+        "bleu": 8.513012360883545,
+        "fkgl": 13.945882352941176,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The use of various monitor units is created to meet the needs of various medical staff.",
+      "metrics": {
+        "sari": 25.717609790836338,
+        "bleu": 5.751391809950023,
+        "fkgl": 9.08705882352941,
+        "in_tokens": 4823,
+        "out_tokens": 255
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Second, we emphasize the subject of the content by the logotype of the keyword.",
+      "metrics": {
+        "sari": 12.782581453634085,
+        "bleu": 20.14941615706457,
+        "fkgl": 6.137499999999999,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Suggestions for educational, research, and interventions to integrate clinical based PDA-based screening are discussed.",
+      "metrics": {
+        "sari": 15.954184704184705,
+        "bleu": 23.932595221309676,
+        "fkgl": 14.64,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Suggestions for integrating PDA-based screening in clinical settings are discussed.",
+      "metrics": {
+        "sari": 41.00001363159257,
+        "bleu": 12.547112659387805,
+        "fkgl": 13.372727272727271,
+        "in_tokens": 5084,
+        "out_tokens": 289
+      }
+    },
+    {
+      "prediction": "Suggestions for integrating PDA-based screening in clinical settings are discussed.",
+      "metrics": {
+        "sari": 41.00001363159257,
+        "bleu": 12.547112659387805,
+        "fkgl": 13.372727272727271,
+        "in_tokens": 14508,
+        "out_tokens": 511
+      }
+    },
+    {
+      "prediction": "Suggestions for integrating screening in clinical settings using PDAs are discussed.",
+      "metrics": {
+        "sari": 34.02886163755729,
+        "bleu": 4.7525582267211846,
+        "fkgl": 11.706666666666667,
+        "in_tokens": 28230,
+        "out_tokens": 760
+      }
+    },
+    {
+      "prediction": "Suggestions for integrating screening with PDAs in clinical settings are discussed.",
+      "metrics": {
+        "sari": 34.02886163755729,
+        "bleu": 4.7525582267211846,
+        "fkgl": 10.723333333333333,
+        "in_tokens": 46327,
+        "out_tokens": 1010
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It also shows that users' English language proficiency plays an important role in interacting with VUIs.",
+      "metrics": {
+        "sari": 13.626373626373626,
+        "bleu": 22.048872820716333,
+        "fkgl": 10.47529411764706,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "With the developing of the technology on self-driving, more and more L3 driverless vehicles are launched in market, people get opportunities to experience the self-driving cars in their daily life.",
+      "metrics": {
+        "sari": 17.162975912975917,
+        "bleu": 33.01225271497063,
+        "fkgl": 15.873939393939395,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "With the developing of the technology on self-driving, more and more self-driving cars are being released in market, people get opportunities to experience the self-driving cars in their daily life.",
+      "metrics": {
+        "sari": 19.911576102025283,
+        "bleu": 20.690996611611386,
+        "fkgl": 15.873939393939395,
+        "in_tokens": 5245,
+        "out_tokens": 317
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more and more self-driving cars are being released in market, people get opportunities to experience the self-driving cars in their daily life.",
+      "metrics": {
+        "sari": 33.821326039067976,
+        "bleu": 21.71788734284663,
+        "fkgl": 15.532258064516128,
+        "in_tokens": 15381,
+        "out_tokens": 623
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more and more self-driving cars are being released in market, people can experience self-driving cars in their daily lives.",
+      "metrics": {
+        "sari": 39.74597234684721,
+        "bleu": 14.772199911861211,
+        "fkgl": 13.872857142857146,
+        "in_tokens": 30399,
+        "out_tokens": 949
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more and more self-driving cars are being released in market, people can experience self-driving cars in their daily lives.",
+      "metrics": {
+        "sari": 39.74597234684721,
+        "bleu": 14.772199911861211,
+        "fkgl": 13.872857142857146,
+        "in_tokens": 50037,
+        "out_tokens": 1211
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more self-driving cars are being released in market, people can experience self-driving cars in their daily lives.",
+      "metrics": {
+        "sari": 33.38826917956085,
+        "bleu": 8.84896671676809,
+        "fkgl": 13.611538461538462,
+        "in_tokens": 74200,
+        "out_tokens": 1465
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more self-driving cars are being released in market, people can experience self-driving cars in their daily life.",
+      "metrics": {
+        "sari": 40.86646725719719,
+        "bleu": 18.627639656696825,
+        "fkgl": 13.157692307692308,
+        "in_tokens": 102722,
+        "out_tokens": 1707
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more self-driving cars are being released in market, people can experience self-driving cars in their daily life.",
+      "metrics": {
+        "sari": 40.86646725719719,
+        "bleu": 18.627639656696825,
+        "fkgl": 13.157692307692308,
+        "in_tokens": 135528,
+        "out_tokens": 1945
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more self-driving cars are being released into the market, people can experience self-driving cars in their daily life.",
+      "metrics": {
+        "sari": 39.97642389131751,
+        "bleu": 16.730402692499975,
+        "fkgl": 13.732592592592596,
+        "in_tokens": 172696,
+        "out_tokens": 2198
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, more self-driving cars are being released into the market, people can experience self-driving cars daily.",
+      "metrics": {
+        "sari": 28.909611610904893,
+        "bleu": 4.449945957170704,
+        "fkgl": 13.436666666666667,
+        "in_tokens": 214319,
+        "out_tokens": 2461
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, self-driving cars are being released into the market, people can experience self-driving cars daily.",
+      "metrics": {
+        "sari": 27.34634640548619,
+        "bleu": 2.678425460878287,
+        "fkgl": 13.388695652173912,
+        "in_tokens": 260395,
+        "out_tokens": 2722
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, self-driving cars are being released into the market, people can experience self-driving cars daily.",
+      "metrics": {
+        "sari": 27.34634640548619,
+        "bleu": 2.678425460878287,
+        "fkgl": 13.388695652173912,
+        "in_tokens": 310925,
+        "out_tokens": 2974
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, self-driving cars are being released into the market, people can experience self-driving cars daily.",
+      "metrics": {
+        "sari": 27.34634640548619,
+        "bleu": 2.678425460878287,
+        "fkgl": 13.388695652173912,
+        "in_tokens": 365962,
+        "out_tokens": 3238
+      }
+    },
+    {
+      "prediction": "With the development of self-driving technology, self-driving cars are being released into the market, people can experience self-driving cars daily.",
+      "metrics": {
+        "sari": 27.34634640548619,
+        "bleu": 2.678425460878287,
+        "fkgl": 13.388695652173912,
+        "in_tokens": 425564,
+        "out_tokens": 3490
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "I also model the entropy using a dynamic factor model and derive a common factor behind the entropy movements in these four markets.",
+      "metrics": {
+        "sari": 26.744035464965695,
+        "bleu": 66.89604664235208,
+        "fkgl": 13.928333333333335,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "I also model the movement of entropy using a dynamic model. I derive a common factor behind the entropy movements in these four markets.",
+      "metrics": {
+        "sari": 48.484555489329644,
+        "bleu": 54.81799462606963,
+        "fkgl": 8.995384615384616,
+        "in_tokens": 5173,
+        "out_tokens": 314
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Therefore, the purpose of this review is to discuss the effects of cycle training on muscle size and strength of the lower extremity and the possible mechanisms for increasing muscle size with cycle training.",
+      "metrics": {
+        "sari": 28.62857786792878,
+        "bleu": 75.17852247240286,
+        "fkgl": 15.494444444444444,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Therefore, the purpose of this review is to discuss the effects of cycle training on muscle size and the ways in which cycle training can increase muscle size.",
+      "metrics": {
+        "sari": 38.25957169496843,
+        "bleu": 48.27082595499423,
+        "fkgl": 10.663333333333338,
+        "in_tokens": 5004,
+        "out_tokens": 267
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It gives the information about the processing history of an image, and also can expose forgeries present in an image.",
+      "metrics": {
+        "sari": 12.593303021691769,
+        "bleu": 18.325671805686518,
+        "fkgl": 12.29909090909091,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 4864,
+        "out_tokens": 292
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 14239,
+        "out_tokens": 589
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 28466,
+        "out_tokens": 888
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 47607,
+        "out_tokens": 1212
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 71808,
+        "out_tokens": 1534
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 101045,
+        "out_tokens": 1853
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 135322,
+        "out_tokens": 2177
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 174663,
+        "out_tokens": 2501
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 219068,
+        "out_tokens": 2825
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 268537,
+        "out_tokens": 3149
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 323070,
+        "out_tokens": 3473
+      }
+    },
+    {
+      "prediction": "It gives the information about the processing history of an image, and also reveals the history of an image and detects forgeries",
+      "metrics": {
+        "sari": 24.645098196822335,
+        "bleu": 11.856660123276004,
+        "fkgl": 13.901739130434787,
+        "in_tokens": 382685,
+        "out_tokens": 3803
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Therefore, this decision support system might be a useful tool for district nurses.",
+      "metrics": {
+        "sari": 13.00507865725257,
+        "bleu": 21.023693683267553,
+        "fkgl": 8.353333333333339,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+      "metrics": {
+        "sari": 17.811462336915316,
+        "bleu": 33.93590750784184,
+        "fkgl": 18.444444444444446,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This application was developed to improve mobility for patients and healthcare workers, which will also improve both the quality of healthcare and lifestyle of the patient.",
+      "metrics": {
+        "sari": 40.74986717714461,
+        "bleu": 19.758841780328325,
+        "fkgl": 15.137142857142859,
+        "in_tokens": 5117,
+        "out_tokens": 252
+      }
+    },
+    {
+      "prediction": "This application was developed to improve mobility for patients and healthcare workers, will improve the quality of healthcare and patient lifestyle.",
+      "metrics": {
+        "sari": 43.19485918895714,
+        "bleu": 16.2329025662852,
+        "fkgl": 14.414782608695656,
+        "in_tokens": 14363,
+        "out_tokens": 457
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system.",
+      "metrics": {
+        "sari": 18.133267195767196,
+        "bleu": 34.31535116220621,
+        "fkgl": 12.236666666666668,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Bottleneck features, which have been successfully applied to speech recognition systems.",
+      "metrics": {
+        "sari": 44.54532341621111,
+        "bleu": 18.060168470274125,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 5110,
+        "out_tokens": 274
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Next-generation sequencing (NGS) technology has provided a powerful tool in identifying the genetic variation and constructing the correlations between genotype and phenotype in humans and other species.",
+      "metrics": {
+        "sari": 31.54434850863422,
+        "bleu": 56.31170993210186,
+        "fkgl": 20.103333333333335,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Next-generation sequencing (NGS) technology has provided a powerful tool in studying the relationship between genetic makeup and physical traits in humans and other species.",
+      "metrics": {
+        "sari": 36.75701773872989,
+        "bleu": 32.97786309087206,
+        "fkgl": 16.791851851851856,
+        "in_tokens": 5021,
+        "out_tokens": 289
+      }
+    },
+    {
+      "prediction": "Next-generation sequencing (NGS) technology has provided a powerful tool in studying the relationship between genetic makeup and physical traits in humans and other species.",
+      "metrics": {
+        "sari": 36.75701773872989,
+        "bleu": 32.97786309087206,
+        "fkgl": 16.791851851851856,
+        "in_tokens": 14634,
+        "out_tokens": 534
+      }
+    },
+    {
+      "prediction": "New DNA sequencing technology has provided a powerful tool in studying the relationship between genetic makeup and physical traits in humans and other species.",
+      "metrics": {
+        "sari": 28.732031369824313,
+        "bleu": 21.341869542235514,
+        "fkgl": 16.344,
+        "in_tokens": 28863,
+        "out_tokens": 830
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The results showed that participants were more satisfied and perceived higher sincerity when smart speaker apologized in both error scenarios.",
+      "metrics": {
+        "sari": 30.93553242863256,
+        "bleu": 86.56030552541704,
+        "fkgl": 16.2,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The results showed that participants were more satisfied when the speaker apologized for the errors.",
+      "metrics": {
+        "sari": 12.725240768003923,
+        "bleu": 18.983601756374185,
+        "fkgl": 11.3,
+        "in_tokens": 4891,
+        "out_tokens": 230
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The results show that transcription rates were higher for the QWERTY keyboard than for the T9, despite the T9 keyboard\u2019s apparent superior physical characteristics.",
+      "metrics": {
+        "sari": 8.798850574712645,
+        "bleu": 9.39888637243536,
+        "fkgl": 13.611538461538462,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The results show that transcription rates were higher for the QWERTY keyboard than for the T9, despite the T9 keyboard's better design.",
+      "metrics": {
+        "sari": 27.22667786796713,
+        "bleu": 9.581728117191185,
+        "fkgl": 9.011666666666667,
+        "in_tokens": 5157,
+        "out_tokens": 314
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In this paper, we introduce an approach to efficient robot navigation through cluttered indoor environments.",
+      "metrics": {
+        "sari": 26.40817901234568,
+        "bleu": 65.31441986620497,
+        "fkgl": 11.863529411764706,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "In this paper, we introduce a method for navigating robots in cluttered spaces.",
+      "metrics": {
+        "sari": 43.819444030441474,
+        "bleu": 31.358590637077448,
+        "fkgl": 8.353333333333339,
+        "in_tokens": 4826,
+        "out_tokens": 236
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Therefore, it is necessary to collect and integrate data on various types of anti-CRISPRs.",
+      "metrics": {
+        "sari": 30.847069597069595,
+        "bleu": 79.16963878457499,
+        "fkgl": 11.3,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The use of mobile phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 33.333333333333336,
+        "bleu": 100.00000000000004,
+        "fkgl": 10.941428571428574,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 4843,
+        "out_tokens": 260
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 14166,
+        "out_tokens": 530
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 28085,
+        "out_tokens": 793
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 46559,
+        "out_tokens": 1046
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 69550,
+        "out_tokens": 1309
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 97117,
+        "out_tokens": 1572
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 129239,
+        "out_tokens": 1825
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 165878,
+        "out_tokens": 2088
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 207072,
+        "out_tokens": 2341
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 252783,
+        "out_tokens": 2604
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 303070,
+        "out_tokens": 2867
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 357912,
+        "out_tokens": 3120
+      }
+    },
+    {
+      "prediction": "The use of phone forensics to investigate fraudulent activity is nothing new.",
+      "metrics": {
+        "sari": 29.287918871252206,
+        "bleu": 78.81929718099911,
+        "fkgl": 10.356923076923078,
+        "in_tokens": 417271,
+        "out_tokens": 3383
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper provides a holistic study of how stock prices vary in their response to financial disclosures across different topics.",
+      "metrics": {
+        "sari": 10.797827903091061,
+        "bleu": 15.821285888349262,
+        "fkgl": 13.952380952380953,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A study of how stock prices change after financial announcements across different topics.",
+      "metrics": {
+        "sari": 34.10414630172695,
+        "bleu": 12.011055432195764,
+        "fkgl": 10.941428571428574,
+        "in_tokens": 5160,
+        "out_tokens": 327
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "One transmission channel for these itinerant agents is email.",
+      "metrics": {
+        "sari": 16.446078431372552,
+        "bleu": 26.305014340253436,
+        "fkgl": 8.370000000000001,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity.",
+      "metrics": {
+        "sari": 17.823887201698295,
+        "bleu": 35.17636208847486,
+        "fkgl": 16.59,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "An often overlooked variable that also may impact muscle growth is repetition duration.",
+      "metrics": {
+        "sari": 28.740111147433804,
+        "bleu": 75.77395672414198,
+        "fkgl": 12.62714285714286,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "An often overlooked factor that affects muscle growth is repetition duration.",
+      "metrics": {
+        "sari": 29.49551537786832,
+        "bleu": 39.89486553351906,
+        "fkgl": 10.723333333333333,
+        "in_tokens": 4711,
+        "out_tokens": 234
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Advancement of wireless and mobile technology has enabled additional platforms to support learning in a single learning space.",
+      "metrics": {
+        "sari": 12.46907763868324,
+        "bleu": 12.109013026441868,
+        "fkgl": 14.177894736842106,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.).",
+      "metrics": {
+        "sari": 16.615433016165863,
+        "bleu": 29.812596600642408,
+        "fkgl": 13.436666666666667,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.).",
+      "metrics": {
+        "sari": 16.615433016165863,
+        "bleu": 29.812596600642408,
+        "fkgl": 13.436666666666667,
+        "in_tokens": 5227,
+        "out_tokens": 329
+      }
+    },
+    {
+      "prediction": "Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and information on fire management sites.",
+      "metrics": {
+        "sari": 21.273276971531917,
+        "bleu": 11.102819078262918,
+        "fkgl": 18.288571428571426,
+        "in_tokens": 15539,
+        "out_tokens": 636
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Meta-regression analysis of non-volume-equated studies showed a significant effect favoring higher frequencies, although the overall difference in magnitude of effect between frequencies of 1 and 3+ days per week was modest.",
+      "metrics": {
+        "sari": 20.366447576813428,
+        "bleu": 42.19451621880537,
+        "fkgl": 20.575882352941175,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Meta-regression analysis of non-volume-equated studies showed a significant effect favoring greater frequency of exercise, although the difference between 1 and 3+ days per week was small.",
+      "metrics": {
+        "sari": 49.646265378363296,
+        "bleu": 43.96773361677841,
+        "fkgl": 18.09931034482759,
+        "in_tokens": 5323,
+        "out_tokens": 331
+      }
+    },
+    {
+      "prediction": "Meta-regression analysis of non-volume-equated studies showed a significant effect favoring more exercise, although 3+ days per week had a bigger effect.",
+      "metrics": {
+        "sari": 30.149953278173324,
+        "bleu": 14.770989899668267,
+        "fkgl": 16.878333333333334,
+        "in_tokens": 15560,
+        "out_tokens": 660
+      }
+    },
+    {
+      "prediction": "analysis of studies that controlled for volume showed a significant effect favoring more exercise, although 3+ days per week had a bigger effect.",
+      "metrics": {
+        "sari": 38.86419860410502,
+        "bleu": 15.971411246360317,
+        "fkgl": 13.157692307692308,
+        "in_tokens": 30838,
+        "out_tokens": 988
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "They help to design ROS-based self-driving systems using MATLAB/Simulink.",
+      "metrics": {
+        "sari": 24.710780574624966,
+        "bleu": 35.018063965685016,
+        "fkgl": 8.756666666666668,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space.",
+      "metrics": {
+        "sari": 12.445609945609945,
+        "bleu": 15.58541437598383,
+        "fkgl": 15.895,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Colour information is extracted from the input image and categorised according to how people group colours.",
+      "metrics": {
+        "sari": 35.98182288539996,
+        "bleu": 12.047095198675272,
+        "fkgl": 12.55764705882353,
+        "in_tokens": 4630,
+        "out_tokens": 206
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The increasing prevalence of Internet of Things (IoT) devices has made it inevitable that their pertinence to digital forensic investigations will increase into the foreseeable future.",
+      "metrics": {
+        "sari": 15.232505232505233,
+        "bleu": 26.526948571997163,
+        "fkgl": 18.506206896551728,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The growing number of IoT devices has made them increasingly relevant to digital forensic investigations.",
+      "metrics": {
+        "sari": 36.535390179865125,
+        "bleu": 4.84946877878621,
+        "fkgl": 14.9875,
+        "in_tokens": 5140,
+        "out_tokens": 305
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Furthermore, the model results in states where unbiased agents behave \"as if\" they were biased, due to their biased neighbours effectively functioning as gatekeepers, restricting their access to free and diverse information.",
+      "metrics": {
+        "sari": 8.141045982743249,
+        "bleu": 8.579833140151857,
+        "fkgl": 18.1721052631579,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Furthermore, the model results in states where unbiased agents behave \"as if\" they were biased, due to their biased neighbours effectively functioning as gatekeepers, restricting their access to free and diverse information.",
+      "metrics": {
+        "sari": 8.141045982743249,
+        "bleu": 8.579833140151857,
+        "fkgl": 18.1721052631579,
+        "in_tokens": 5821,
+        "out_tokens": 431
+      }
+    },
+    {
+      "prediction": "Furthermore, the model results in states where unbiased agents behave \"as if\" they were biased, due to their biased neighbours effectively functioning as gatekeepers, restricting their access to free and diverse information.",
+      "metrics": {
+        "sari": 8.141045982743249,
+        "bleu": 8.579833140151857,
+        "fkgl": 18.1721052631579,
+        "in_tokens": 17352,
+        "out_tokens": 830
+      }
+    },
+    {
+      "prediction": "Furthermore, the model results in states where unbiased agents behave \"as if\" they were biased, due to their neighbours being biased and controlling access to information, restricting their access to free and diverse information.",
+      "metrics": {
+        "sari": 20.538634854424327,
+        "bleu": 7.771324020744104,
+        "fkgl": 18.005,
+        "in_tokens": 34310,
+        "out_tokens": 1200
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology.",
+      "metrics": {
+        "sari": 13.744673622403594,
+        "bleu": 23.28994939039375,
+        "fkgl": 24.12769230769231,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This paper proposes a wireless patient monitoring system which integrates an ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology.",
+      "metrics": {
+        "sari": 27.206331030204804,
+        "bleu": 23.947278594671733,
+        "fkgl": 20.845405405405405,
+        "in_tokens": 4806,
+        "out_tokens": 266
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The prevalence and rapid development of the Internet and mobile technology in recent decades has revamped our living styles and daily habits.",
+      "metrics": {
+        "sari": 27.47389306599833,
+        "bleu": 70.01575310229896,
+        "fkgl": 15.440869565217394,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Wireless and mobile computing technologies is only beginning to take its first step in improving patient care and education.",
+      "metrics": {
+        "sari": 20.06168831168831,
+        "bleu": 42.461633178803446,
+        "fkgl": 13.450000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+      "metrics": {
+        "sari": 25.169072183199887,
+        "bleu": 59.22111127396989,
+        "fkgl": 17.461111111111112,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "There is an urgent need to clarify the role of women in this scenario. a clear understanding of women's role in human genome modification discussions",
+      "metrics": {
+        "sari": 47.91705659773445,
+        "bleu": 44.11350995350556,
+        "fkgl": 9.44923076923077,
+        "in_tokens": 5312,
+        "out_tokens": 327
+      }
+    },
+    {
+      "prediction": "There is an urgent need to clarify the role of women in this scenario. a clear understanding of women's role in genome modification talks",
+      "metrics": {
+        "sari": 47.198176439917766,
+        "bleu": 41.5451575003517,
+        "fkgl": 8.165000000000003,
+        "in_tokens": 15372,
+        "out_tokens": 614
+      }
+    },
+    {
+      "prediction": "There is an urgent need to clarify the role of women in this scenario. women's role in genome modification talks",
+      "metrics": {
+        "sari": 47.3830989510814,
+        "bleu": 38.69777326311495,
+        "fkgl": 7.0478571428571435,
+        "in_tokens": 30027,
+        "out_tokens": 889
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "We propose our data is of paramount interest to athletes and coaches.",
+      "metrics": {
+        "sari": 14.079254079254083,
+        "bleu": 23.90108882452814,
+        "fkgl": 7.633846153846157,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "We propose our data is of very important interest to athletes and coaches.",
+      "metrics": {
+        "sari": 31.62569886254097,
+        "bleu": 21.97281387499715,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 4581,
+        "out_tokens": 224
+      }
+    },
+    {
+      "prediction": "We propose the data is of very important interest to athletes and coaches.",
+      "metrics": {
+        "sari": 38.85912698412699,
+        "bleu": 19.67497981115564,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 13326,
+        "out_tokens": 445
+      }
+    },
+    {
+      "prediction": "We propose the data is of very important interest to athletes and coaches.",
+      "metrics": {
+        "sari": 38.85912698412699,
+        "bleu": 19.67497981115564,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 26164,
+        "out_tokens": 652
+      }
+    },
+    {
+      "prediction": "We propose the data is of extremely important interest to athletes and coaches.",
+      "metrics": {
+        "sari": 38.85912698412699,
+        "bleu": 19.67497981115564,
+        "fkgl": 9.255714285714287,
+        "in_tokens": 43151,
+        "out_tokens": 871
+      }
+    },
+    {
+      "prediction": "We propose the data is of very important interest to athletes and coaches.",
+      "metrics": {
+        "sari": 38.85912698412699,
+        "bleu": 19.67497981115564,
+        "fkgl": 8.412857142857145,
+        "in_tokens": 64259,
+        "out_tokens": 1089
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "The mechanistic target of rapamycin complex 1 (mTORC1) is a central node for integrating nutrient (i.e. amino acid) and exercise/contraction signal transduction [31], [32].",
+      "metrics": {
+        "sari": 3.2642298599745403,
+        "bleu": 2.5802625919834825,
+        "fkgl": 3.0953846153846136,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "The mechanistic target of rapamycin complex 1 (mTORC1) is a central node for translating nutrient and exercise signals [31], [32].",
+      "metrics": {
+        "sari": 24.947596105337507,
+        "bleu": 2.172054551709621,
+        "fkgl": 8.815714285714286,
+        "in_tokens": 5244,
+        "out_tokens": 290
+      }
+    },
+    {
+      "prediction": "The mechanistic target of rapamycin complex 1 is a central node for translating nutrient and exercise signals [31], [32].",
+      "metrics": {
+        "sari": 27.11481332503222,
+        "bleu": 2.252278368576829,
+        "fkgl": 8.792000000000002,
+        "in_tokens": 14962,
+        "out_tokens": 541
+      }
+    },
+    {
+      "prediction": "The mechanistic target of rapamycin complex 1 is a key part for translating nutrient and exercise signals [31], [32].",
+      "metrics": {
+        "sari": 29.033805092918396,
+        "bleu": 2.252278368576829,
+        "fkgl": 8.32,
+        "in_tokens": 29069,
+        "out_tokens": 789
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Next generation sequencing (NGS) produces massive datasets consisting of billions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 24.43559001998204,
+        "bleu": 57.286689958163855,
+        "fkgl": 10.580952380952379,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 4808,
+        "out_tokens": 258
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 14012,
+        "out_tokens": 498
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 27749,
+        "out_tokens": 801
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 46350,
+        "out_tokens": 1098
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 69799,
+        "out_tokens": 1395
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 98123,
+        "out_tokens": 1698
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 131316,
+        "out_tokens": 1995
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 169357,
+        "out_tokens": 2292
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 212231,
+        "out_tokens": 2582
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 259939,
+        "out_tokens": 2885
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 312516,
+        "out_tokens": 3182
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 369968,
+        "out_tokens": 3485
+      }
+    },
+    {
+      "prediction": "Next generation sequencing (NGS) produces large amounts of data made up of millions of reads and up to thousands of samples.",
+      "metrics": {
+        "sari": 44.87199450112246,
+        "bleu": 40.10889714538992,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 432316,
+        "out_tokens": 3788
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Blood flow restriction (BFR) is an effective clinical intervention used to increase strength in healthy individuals.",
+      "metrics": {
+        "sari": 26.889807535917594,
+        "bleu": 61.652552921243704,
+        "fkgl": 10.451578947368422,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Blood flow restriction (BFR) is an effective way to increase strength in healthy individuals.",
+      "metrics": {
+        "sari": 51.98653258740362,
+        "bleu": 63.019085559238604,
+        "fkgl": 6.310588235294119,
+        "in_tokens": 4779,
+        "out_tokens": 252
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Several researchers have made reference to an anabolic \u201cwindow of opportunity\u201d whereby a limited time exists after training to optimize training-related muscular adaptations.",
+      "metrics": {
+        "sari": 24.30796164915947,
+        "bleu": 51.981601535894555,
+        "fkgl": 20.81166666666667,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Several researchers have made reference to an anabolic \u201cwindow of opportunity\u201d whereby a limited time exists after training to optimize training-related muscular adaptations.",
+      "metrics": {
+        "sari": 24.30796164915947,
+        "bleu": 51.981601535894555,
+        "fkgl": 20.81166666666667,
+        "in_tokens": 4919,
+        "out_tokens": 275
+      }
+    },
+    {
+      "prediction": "Several researchers have made reference to an anabolic \u201cwindow of opportunity\u201d whereby a limited time exists after training to optimize training-related muscular adaptations.",
+      "metrics": {
+        "sari": 24.30796164915947,
+        "bleu": 51.981601535894555,
+        "fkgl": 20.81166666666667,
+        "in_tokens": 14457,
+        "out_tokens": 522
+      }
+    },
+    {
+      "prediction": "Several researchers have made reference to an anabolic \u201cwindow of opportunity\u201d whereby a limited time exists after training to optimize muscle growth.",
+      "metrics": {
+        "sari": 40.74862280207849,
+        "bleu": 51.94247346787362,
+        "fkgl": 16.46695652173913,
+        "in_tokens": 28364,
+        "out_tokens": 754
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It was also able to reduce the frequency of discrepancy from 10.1% to 2.8% (pu003c0.0001) and receive positive feedback from the users.",
+      "metrics": {
+        "sari": 13.967864923747278,
+        "bleu": 24.180681260144148,
+        "fkgl": 9.362222222222226,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours.",
+      "metrics": {
+        "sari": 4.166666666666667,
+        "bleu": 4.814971807094068,
+        "fkgl": 14.040000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "A significative percentage of the human population suffer from problems with their colour vision.",
+      "metrics": {
+        "sari": 30.765371282612666,
+        "bleu": 6.250381527944883,
+        "fkgl": 12.286666666666669,
+        "in_tokens": 4695,
+        "out_tokens": 235
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Such a configuration occurs even in the consumption of news online, and considering that 63% of users access news directly form social media, one hypothesis is that more polarization allows for further spreading of misinformation.",
+      "metrics": {
+        "sari": 10.488400488400488,
+        "bleu": 16.806683918252787,
+        "fkgl": 19.891794871794875,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Such a configuration occurs even in the consumption of news online, and considering that many users access news from social media, one hypothesis is that more polarization allows for further spreading of misinformation.",
+      "metrics": {
+        "sari": 23.789029237245554,
+        "bleu": 18.566774805101346,
+        "fkgl": 19.755555555555556,
+        "in_tokens": 5141,
+        "out_tokens": 308
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "This review recommends safe and effective whole-body aerobic exercise at moderate intensity (i.e., 50-65% of maximum oxygen intake, 30-60 min per session, 3-4 times a week) that primarily focuses on the major muscle groups for the prevention and treatment of hypertension.",
+      "metrics": {
+        "sari": 25.77482461615769,
+        "bleu": 62.934082492940334,
+        "fkgl": 7.553333333333335,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "This review recommends safe and effective whole-body aerobic exercise at moderate intensity that primarily focuses on the major muscle groups for the prevention and treatment of hypertension. 30-60 minutes, 3-4 times a week.",
+      "metrics": {
+        "sari": 22.353274748926236,
+        "bleu": 33.53480227967525,
+        "fkgl": 11.385000000000002,
+        "in_tokens": 5314,
+        "out_tokens": 331
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "At the same time, blockchain-based cryptocurrency is becoming a nonnegligible type of currency and the total value of all types of cryptocurrency has reached USD 200 billion.",
+      "metrics": {
+        "sari": 20.461105876370382,
+        "bleu": 41.334724289458286,
+        "fkgl": 16.0648275862069,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "At the same time, blockchain-based cryptocurrency is becoming a significant type of currency and the total value of all types of cryptocurrency has reached USD 200 billion.",
+      "metrics": {
+        "sari": 30.839435905225372,
+        "bleu": 41.334724289458286,
+        "fkgl": 15.657931034482761,
+        "in_tokens": 4705,
+        "out_tokens": 244
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Asserting that a smartcard can act as a trusted machine gives new opportunities for designers of user-centric  that smartcards are :[257],\"here to stay, finding ways to apply them in constructive manners is prudent.",
+      "metrics": {
+        "sari": 9.564576995689658,
+        "bleu": 10.656428237371495,
+        "fkgl": 16.229268292682928,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Smartcards can be trusted gives new opportunities for designers of user-centric systems that smartcards are :[257],\"here to stay, finding ways to apply them in constructive manners is prudent.",
+      "metrics": {
+        "sari": 27.751103363009673,
+        "bleu": 10.239345905587689,
+        "fkgl": 13.855555555555558,
+        "in_tokens": 4994,
+        "out_tokens": 270
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Intriguingly, in these studies, the stretching was carried out with an apparatus that aided in its performance, or with an external overload.",
+      "metrics": {
+        "sari": 13.5234604274278,
+        "bleu": 20.22202784230022,
+        "fkgl": 11.342307692307696,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "Intriguingly, in these studies, the stretching was carried out with equipment that assisted the process, or with an external overload.",
+      "metrics": {
+        "sari": 41.23781886979866,
+        "bleu": 22.55489037266198,
+        "fkgl": 10.486666666666668,
+        "in_tokens": 4795,
+        "out_tokens": 220
+      }
+    },
+    {
+      "prediction": "Intriguingly, in these studies, the stretching was carried out with equipment that assisted the process, or with an external load.",
+      "metrics": {
+        "sari": 48.244066561805234,
+        "bleu": 24.12588049712987,
+        "fkgl": 9.503333333333334,
+        "in_tokens": 13395,
+        "out_tokens": 389
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "It is widely acknowledged that information such as web content should be adapted for mobile platforms to account for restrictions in mobile environments.",
+      "metrics": {
+        "sari": 17.87784679089027,
+        "bleu": 29.212739041552176,
+        "fkgl": 13.928333333333335,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    },
+    {
+      "prediction": "It is widely acknowledged that information such as web content should be adapted for mobile platforms to account for mobile limitations.",
+      "metrics": {
+        "sari": 33.85441551202421,
+        "bleu": 26.530723908538217,
+        "fkgl": 12.83545454545455,
+        "in_tokens": 4756,
+        "out_tokens": 244
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "A key problem for autonomous car navigation is the understanding, at an object level, of the current driving situation.",
+      "metrics": {
+        "sari": 21.106909816587233,
+        "bleu": 45.96980088392873,
+        "fkgl": 11.762727272727272,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ],
+  [
+    {
+      "prediction": "Objective: To determine the effectiveness of adding BFR to resistance exercise for pain relief and improvement of function in patients with knee pain.",
+      "metrics": {
+        "sari": 29.89648571724952,
+        "bleu": 73.10230112323231,
+        "fkgl": 13.040000000000003,
+        "in_tokens": 0,
+        "out_tokens": 0
+      }
+    }
+  ]
+]
