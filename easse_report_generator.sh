@@ -4,8 +4,11 @@ DATA_TYPE="test"
 
 for PASSAGE_TYPE in "sentence" "abstract"
 do
-    # Loop over files in current directory that contain 'type=<type>' in the filename
-    for FILE in ./predictions/*type=${type}*
+    echo "Printing ${PASSAGE_TYPE}s..."
+
+    for FILE in ./predictions/*type=${PASSAGE_TYPE}_set=${DATA_TYPE}*
+    # for FILE in ./predictions/*
+
     do
         if [[ -e "$FILE" ]]; then
             echo "$FILE"
