@@ -1,0 +1,1704 @@
+[
+  {
+    "source": "Controlling for baseline performance, intervention participants prescribed more safely than controls after receiving the CDSS (0.23 vs. 0.45 [F = 4.24, p u003c 0.05]).",
+    "prediction": "Controlling for baseline performance, intervention participants prescribed more safely than controls after receiving the CDSS (0.23 vs. 0.45 [F = 4.24, p u003c 0.05]).",
+    "comparison": {
+      "preservations": [
+        "Baseline performance was controlled.",
+        "Intervention participants were prescribed more safely.",
+        "The difference in safety was 0.23.",
+        "The difference in safety for controls was 0.45.",
+        "The F value was 4.24.",
+        "The p value was less than 0.05."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate translation initiation signaling and decrease rates of MPS.",
+    "prediction": "We hypothesized that compared to post-exercise protein intake, co-ingestion of alcohol would down-regulate protein production and decrease rates of MPS.",
+    "comparison": {
+      "preservations": [
+        "We hypothesized a relationship between alcohol and protein production (the original and simplified versions use different wording, but convey the same idea).",
+        "Co-ingestion of alcohol is compared to post-exercise protein intake (the simplified version omits the original's specificity, but the comparison is still present).",
+        "Co-ingestion of alcohol down-regulates protein production (the original and simplified versions use different wording, but convey the same idea).",
+        "Co-ingestion of alcohol decreases rates of MPS (the original and simplified versions use different wording, but convey the same idea)."
+      ],
+      "oversimplifications": [
+        "The relationship is between post-exercise protein intake and co-ingestion of alcohol (the original version specifies that co-ingestion of alcohol is the variable being compared, while the simplified version reverses this relationship).",
+        "We hypothesized a relationship (the original version specifies that the relationship is between post-exercise protein intake and co-ingestion of alcohol, while the simplified version is more vague)."
+      ],
+      "deletions": [
+        "Translation initiation signaling (the original version mentions that co-ingestion of alcohol down-regulates translation initiation signaling, but this is not mentioned in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Based on user and tweets characteristics, we build a misinformation detection model that identifies suspicious behavioral patterns and exploits supervised learning techniques to detect misinformation.",
+    "prediction": "we build an information detector that identifies problematic behavior and uses machine learning techniques to detect misinformation.",
+    "comparison": {
+      "preservations": [
+        "The detector detects misinformation.",
+        "The detector identifies problematic behavior."
+      ],
+      "oversimplifications": [
+        "An information detector is built (\"A model is built\" in the original passage is more specific and accurate).",
+        "The detector uses machine learning techniques (\"exploits supervised learning techniques\" in the original passage is more specific and accurate)."
+      ],
+      "deletions": [
+        "A model is built based on user and tweets characteristics.",
+        "The model identifies suspicious behavioral patterns.",
+        "The model exploits supervised learning techniques."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "We carried on experiments two times using the system.",
+    "prediction": "We twice using the system",
+    "comparison": {
+      "preservations": [
+        "The action was done twice (same meaning as \"experiments were done twice\")."
+      ],
+      "oversimplifications": [
+        "The action was using the system (vague, original statement was more specific and clear)."
+      ],
+      "deletions": [
+        "Experiments were carried out (the original statement was more specific and clear).",
+        "The experiments were done twice (this information is completely lost in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Summary form only given, as follows.",
+    "prediction": "Summary form only given, as follows.",
+    "comparison": {
+      "preservations": [
+        "The topic is a type of computer program.",
+        "A neural network is a computer program.",
+        "It learns from data.",
+        "It learns patterns from data.",
+        "It is used to make predictions.",
+        "It is used to create images."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "The passage is about a topic (topic is not specified in the simplified passage).",
+        "It is called a neural network (this is preserved, but the simplified passage does not add any new information).",
+        "Machine learning is a type of artificial intelligence (this is not mentioned in the original passage, but it is in the simplified passage)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "a Bayesian framework for genotype estimation for mixtures of multiple bacteria, named as Genetic Polymorphisms Assignments (GPA) has reduced the false discovery rate (FDR) and mean absolute error (MAE) in single nucleotide variant (SNV) identification.",
+    "prediction": "Using a statistical method to estimate the genetic makeup of mixed bacterial samples named as Genetic variation analyzer (GPA) has reduced the false discovery rate (FDR) and mean absolute error (MAE) in single nucleotide change identification.",
+    "comparison": {
+      "preservations": [
+        "GPA reduces the false discovery rate (FDR).",
+        "GPA reduces the mean absolute error (MAE).",
+        "GPA is used in single nucleotide change identification (SNV is replaced with \"single nucleotide change\", but the meaning is clear)."
+      ],
+      "oversimplifications": [
+        "The method is named Genetic variation analyzer (GPA) (the original name is Genetic Polymorphisms Assignments, which is a more specific term).",
+        "The method is used to estimate the genetic makeup of mixed bacterial samples (the original passage is more specific, mentioning genotype estimation for mixtures of multiple bacteria)."
+      ],
+      "deletions": [
+        "The method is a Bayesian framework (the type of framework used is lost in the simplified version).",
+        "The method is used in SNV identification (SNV is a more specific term than \"single nucleotide change\").",
+        "GPA stands for Genetic Polymorphisms Assignments (the original name is more specific)."
+      ],
+      "hallucinations": [
+        "The method is used to estimate the genetic makeup of mixed bacterial samples (this is not mentioned in the original passage, which is more specific).",
+        "The method is named Genetic variation analyzer (GPA) (this is not mentioned in the original passage, which names it as Genetic Polymorphisms Assignments)."
+      ]
+    }
+  },
+  {
+    "source": "The developed method not only streamlines the internal business process of digital marketing tool selection, but it also increases the practitioner's effectiveness of achieving the pre-defined strategic marketing objectives.",
+    "prediction": "The developed method not only streamlines the internal business process of digital marketing tool selection, but it also increases the practitioner's effectiveness of achieving the pre-defined strategic marketing objectives.",
+    "comparison": {
+      "preservations": [
+        "The developed method streamlines internal business processes.",
+        "The developed method is for digital marketing tool selection.",
+        "The developed method increases effectiveness.",
+        "The developed method increases the practitioner's effectiveness.",
+        "The developed method helps achieve strategic marketing objectives."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Based on the responses of 282 respondents from the Netherlands and Germany, a discrete choice model is estimated as a Mixed Logit model including attitudes towards trust in self-driving vehicles and interest in technology.",
+    "prediction": "Based on the responses of 282 respondents from the Netherlands and Germany, a choice model is used to understand how people make choices including attitudes towards trust in self-driving vehicles and interest in technology.",
+    "comparison": {
+      "preservations": [
+        "The study involved 282 respondents.",
+        "The respondents were from the Netherlands and Germany.",
+        "The choice model is used to understand attitudes.",
+        "The choice model is used to understand trust in self-driving vehicles.",
+        "The choice model is used to understand interest in technology."
+      ],
+      "oversimplifications": [
+        "The choice model is a Mixed Logit model (changed to a general \"choice model\").",
+        "The model includes attitudes towards trust in self-driving vehicles and interest in technology (the original model is a Mixed Logit model, but the simplified version does not specify the type of model)."
+      ],
+      "deletions": [
+        "The model is a Mixed Logit model (specific type of model is lost).",
+        "The model includes attitudes towards trust in self-driving vehicles and interest in technology (the original model includes these factors, but the simplified version does not specify the type of model)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "We introduce a stylized social learning model where most participants in a network update their beliefs unbiasedly based on the arrival of new information, while a fraction of participants display confirmation bias, enabling them to reject news that are incongruent with their pre-existing beliefs.",
+    "prediction": "We introduce a simple learning model where most people update their views. They tend to keep their old views.",
+    "comparison": {
+      "preservations": [
+        "A simple learning model is introduced (the term \"stylized\" is replaced with \"simple\", but the overall concept is preserved).",
+        "Most people update their views."
+      ],
+      "oversimplifications": [
+        "People tend to keep their old views (this statement is a simplification of the original, as it implies a fixed tendency, whereas the original states that a fraction of participants display confirmation bias, enabling them to reject news that are incongruent with their pre-existing beliefs)."
+      ],
+      "deletions": [
+        "The model is introduced in a social network context.",
+        "Participants update their beliefs based on new information.",
+        "New information arrives.",
+        "Confirmation bias enables rejection of news that are incongruent with pre-existing beliefs."
+      ],
+      "hallucinations": [
+        "They tend to keep their old views (this statement is not present in the original passage, and the original implies that a fraction of participants display confirmation bias, which is not the same as a general tendency to keep old views)."
+      ]
+    }
+  },
+  {
+    "source": "According to this view, established technological communities attempt to impose their own definitions of key problems and solutions on new mobile technology, thereby forcing newer players to provide a \"total system\" that completely redefines a new application area.",
+    "prediction": "Established communities try to change how new technology is used, thereby forcing newer players to provide a 'total system'.",
+    "comparison": {
+      "preservations": [
+        "Newer players are forced to provide a total system."
+      ],
+      "oversimplifications": [
+        "Established communities try to change how new technology is used (\"impose their own definitions of key problems and solutions\" changed to \"try to change how new technology is used\", losing the specific actions of imposing definitions)."
+      ],
+      "deletions": [
+        "Established technological communities impose their own definitions.",
+        "Established technological communities define key problems.",
+        "Established technological communities define solutions.",
+        "Newer players are forced to redefine a new application area."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Duration amounts to the sum total of the concentric, eccentric, and isometric components of a repetition, and is predicated on the tempo at which the repetition is performed.",
+    "prediction": "Duration amounts to the parts of the movement, and is based on the tempo.",
+    "comparison": {
+      "preservations": [
+        "Duration is based on tempo."
+      ],
+      "oversimplifications": [
+        "Duration is measured in parts of the movement (omits the three distinct components of a repetition: concentric, eccentric, and isometric)."
+      ],
+      "deletions": [
+        "Duration is the sum total of the concentric, eccentric, and isometric components of a repetition."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "We then evaluate the subsequent stock market reaction.",
+    "prediction": "We then evaluate the next stock market reaction.",
+    "comparison": {
+      "preservations": [
+        "We evaluate the stock market reaction (the simplified version is a rephrased version of the original)."
+      ],
+      "oversimplifications": [
+        "The stock market has a reaction (the original statement is more specific, mentioning a subsequent reaction, while the simplified version is more general)."
+      ],
+      "deletions": [
+        "The word \"subsequent\" (important detail about the timing of the reaction).",
+        "The word \"next\" (important detail about the timing of the reaction)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "By adopting marketing as a set-of-skills approach, the study provides new insights into the existing tourism literature on e-marketing.",
+    "prediction": "By adopting marketing strategy, the study provides insights into tourism.",
+    "comparison": {
+      "preservations": [
+        "The study provides insights into tourism."
+      ],
+      "oversimplifications": [
+        "The study adopts a marketing strategy (\"set-of-skills approach\" changed to \"marketing strategy\", which is a simplification and loss of nuance)."
+      ],
+      "deletions": [
+        "The study adopts a set-of-skills approach.",
+        "The study provides new insights.",
+        "The study is related to the existing tourism literature.",
+        "The study is related to e-marketing."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "These services are to be accessed by users with a mobile end device for the use of city maps, route planning, navigation, or traffic information.",
+    "prediction": "These services are to be accessed by people on phones for city maps.",
+    "comparison": {
+      "preservations": [
+        "These services are accessed by people (implied in the original as \"users\" which is a general term for people).",
+        "These services are accessed on phones (mobile end devices in the original)."
+      ],
+      "oversimplifications": [
+        "The services are used for city maps (the original lists multiple uses, while the simplified only mentions one).",
+        "The services are accessed by people (the original mentions \"users with a mobile end device\", which is more specific)."
+      ],
+      "deletions": [
+        "The services are used for route planning.",
+        "The services are used for navigation.",
+        "The services are used for traffic information."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "It also refers to specific physiological processes or states occurring after exercise that are distinct from the physiology of either the exercising or the resting states.",
+    "prediction": "It also refers to specific physiological processes or states occurring after exercise that are distinct from the resting state.",
+    "comparison": {
+      "preservations": [
+        "The passage refers to physiological processes.",
+        "Physiological processes occur after exercise.",
+        "The resting state is a physiological state."
+      ],
+      "oversimplifications": [
+        "The processes are distinct from the physiology of exercising (omitted, but implied in the original passage).",
+        "The processes are distinct from the physiology of resting (omitted, but implied in the original passage)."
+      ],
+      "deletions": [
+        "The processes are distinct from the physiology of exercising.",
+        "The processes are distinct from the physiology of resting."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "A new cell biological model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon.",
+    "prediction": "A new cell model based on the literature, with the most reliable methods for identifying myonuclei, can explain this phenomenon.",
+    "comparison": {
+      "preservations": [
+        "A new cell model is being developed.",
+        "The new cell model is based on literature.",
+        "The new cell model uses reliable methods."
+      ],
+      "oversimplifications": [
+        "Reliable methods are used to identify myonuclei (\"for identifying myonuclei\" changed to \"to identify myonuclei\", which is a minor change, but the original phrase implies a more specific context)."
+      ],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.",
+    "prediction": "There are some datasets available for the popular problems like item recognition and classification for self-driving cars, however, it is very limited for the industrial robotics field.",
+    "comparison": {
+      "preservations": [
+        "Datasets are available for item recognition.",
+        "Datasets are available for classification.",
+        "The problems include self-driving cars.",
+        "The problems include item recognition.",
+        "The problems include classification.",
+        "Datasets are limited for industrial robotics."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "Industrial robotics is a field (this information is present in the original passage, but not in the simplified one)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This means a company's intellectual property and sensitive data is at risk of sabotage or just good old-fashioned theft.",
+    "prediction": "This means a company's intellectual property and data are at risk of theft.",
+    "comparison": {
+      "preservations": [
+        "A company's intellectual property is at risk.",
+        "A company's data is at risk.",
+        "Theft is a risk to a company's intellectual property and data (the simplified version explicitly states \"theft\", which is implied in the original version)."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "Sabotage is a risk to a company's intellectual property (this information is present in the original passage but not in the simplified one)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Also discussed is a model for transmission, storage and processing of patient related data, which ensures periodic logging of patient data without saturating communication networks.",
+    "prediction": "Also discussed is a model for transmission, storage and processing of patient related data, which ensures periodic logging of patient data without saturating communication networks.",
+    "comparison": {
+      "preservations": [
+        "A model for transmission, storage, and processing of patient-related data exists.",
+        "The model ensures periodic logging of patient data."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "The model prevents communication network saturation (the original stated \"without saturating\" which is a more precise and nuanced description)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The barriers to screening identified through focus groups included a lack of time, knowledge, intervention protocol, referral resources, PDA usability issues, preceptor motivation and comfort, as well as perceived or real cultural barriers.",
+    "prediction": "The barriers to screening included a lack of time, knowledge, lack of motivation, referral resources, phone usability issues, as well as cultural barriers.",
+    "comparison": {
+      "preservations": [
+        "Time is a barrier to screening.",
+        "Knowledge is a barrier to screening.",
+        "Referral resources are a barrier to screening.",
+        "Cultural barriers exist.\n\nOVERSIMIFICATIONS:",
+        "Lack of motivation is a barrier to screening (original mentioned \"preceptor motivation and comfort\", which is more specific).",
+        "Phone usability is a barrier to screening (original mentioned \"PDA usability issues\", which is more specific)."
+      ],
+      "deletions": [
+        "Preceptor motivation and comfort are barriers to screening.",
+        "PDA usability issues are barriers to screening."
+      ],
+      "hallucinations": [
+        "Lack of knowledge is a barrier to screening (original mentioned \"lack of knowledge\", but in the context of screening, it was not explicitly stated, it was part of the list of barriers).",
+        "Phone usability issues are more specific than PDA usability issues, but \"phone\" is not present in the original text, so it is a hallucination."
+      ]
+    }
+  },
+  {
+    "source": "In addition, wireless and mobile computing technologies allows Personal Digital Assistant to connect directly to networks or the Internet.",
+    "prediction": "In addition, wireless and mobile technology allows Personal Digital Assistant to connect directly to networks or the Internet.",
+    "comparison": {
+      "preservations": [
+        "Personal Digital Assistants can connect to networks.",
+        "Personal Digital Assistants can connect to the Internet."
+      ],
+      "oversimplifications": [
+        "Wireless and mobile technology exists (the original passage mentions \"wireless and mobile computing technologies\", which is a more specific and accurate description)."
+      ],
+      "deletions": [
+        "Wireless and mobile computing technologies (the original passage mentions a specific type of technology, while the simplified passage generalizes it)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Vandal is both fast and robust, successfully analysing over 95\\% of all 141k unique contracts with an average runtime of 4.15 seconds; outperforming the current state of the art tools---Oyente, EthIR, Mythril, and Rattle---under equivalent conditions.",
+    "prediction": "Vandal is both fast and robust, successfully analysing over 95\\% of all 141k unique contracts with an average runtime of 4.15 seconds; outperforming the current state of the art tools---Oyente, EthIR, Mythril, and Rattle---under equivalent conditions.",
+    "comparison": {
+      "preservations": [
+        "Vandal is fast.",
+        "Vandal is robust.",
+        "Vandal analyses over 95% of all unique contracts.",
+        "The number of unique contracts is 141k.",
+        "The average runtime of Vandal is 4.15 seconds.",
+        "Vandal outperforms Oyente.",
+        "Vandal outperforms EthIR.",
+        "Vandal outperforms Mythril.",
+        "Vandal outperforms Rattle."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The combined human factors methods of cognitive work analysis during the requirements-gathering phase and ecological interface design during the design phase were used to develop the DST.",
+    "prediction": "The combined human factors methods of cognitive work analysis during the requirements-gathering phase and ecological interface design during the design phase were used to develop the DST.",
+    "comparison": {
+      "preservations": [
+        "The combined human factors methods were used.",
+        "The methods were used during the requirements-gathering phase.",
+        "The methods were used during the design phase.",
+        "The DST was developed."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "These models are incompatible with ROS-based systems.",
+    "prediction": "They don't work with ROS.",
+    "comparison": {
+      "preservations": [
+        "They do not work with ROS (matches the original statement \"They do not work with ROS\" and the original implication of incompatibility)."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "These models are incompatible (the original statement is more specific and informative).",
+        "The models are incompatible with ROS-based systems (the original statement provides more context)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Currently, a SES employee visits each health establishment to collect this information by hand, process it and type it into an electronic medical record system  this :[81],\"paper, we describe the development and implementation of a personal digital assistant (PDA)-based electronic system to collect, verify and upload monthly bacteriology data into the PIH-EMR.",
+    "prediction": "Currently, a SES employee visits each health establishment to collect this information by hand, process it and type it into a computer system this :[81],\"paper, we describe the development and implementation of a personal digital assistant (PDA)-based electronic system to collect, verify and upload monthly bacteriology data into the PIH-EMR.",
+    "comparison": {
+      "preservations": [
+        "A SES employee visits health establishments.",
+        "The employee collects information by hand.",
+        "The employee processes the information.",
+        "The employee types the information into a computer system.",
+        "A PDA-based electronic system is being developed.",
+        "The system is used to collect bacteriology data.",
+        "The system is used to verify bacteriology data.",
+        "The system is used to upload bacteriology data.",
+        "The system is used to upload data into the PIH-EMR."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "The employee types the information into an electronic medical record system (changed to \"a computer system\", which is partially true but omits the specific type of system)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.",
+    "prediction": "A conventional CNN for the end-to-end control is designed to map a single front-facing camera image to a steering command.",
+    "comparison": {
+      "preservations": [
+        "A conventional CNN is designed for end-to-end control.",
+        "A CNN maps a single image to a steering command.",
+        "The image is from a front-facing camera."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Therefore, when an error message is reported, it is vital that the smart speaker gives an effective and proper response.",
+    "prediction": "Therefore, when an error message is reported, it is vital that the smart speaker gives an effective and proper response.",
+    "comparison": {
+      "preservations": [
+        "An error message is reported.",
+        "A smart speaker is involved.",
+        "A smart speaker should give a response.",
+        "The response should be effective.",
+        "The response should be proper."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The alcohol ingestion protocol (1.5 g\u00b7kg\u22121 BM; 12\u00b12 standard drinks) began 1 h post-exercise and was consumed in 6 equal volumes of 1 part vodka (\u223c60 mL) to four parts orange juice (\u223c240 mL, 1.8 g CHO\u00b7kg\u22121 BM) during a 3 h period.",
+    "prediction": "The alcohol ingestion protocol 1.5 grams per kilogram; 12 drinks \u00b1 2 began 1 hour post-exercise and was consumed in 6 equal volumes of 1 part vodka (\u223c60 mL) to four parts orange juice (\u223c240 mL, 1.8 g CHO\u00b7kg\u22121 BM) during a 3 h period.",
+    "comparison": {
+      "preservations": [
+        "The alcohol ingestion protocol is 1.5 grams per kilogram.",
+        "The alcohol ingestion began 1 hour post-exercise.",
+        "The alcohol was consumed in 6 equal volumes.",
+        "Each volume is 1 part vodka.",
+        "The vodka is approximately 60 mL in volume.",
+        "The orange juice is approximately 240 mL in volume.",
+        "The orange juice contains 1.8 grams of CHO per kilogram of body mass.",
+        "The alcohol ingestion period is 3 hours."
+      ],
+      "oversimplifications": [
+        "The drinks are \u00b1 2 in number (the original stated \"12\u00b12 standard drinks\", which is a more specific and accurate measurement).",
+        "The alcohol ingestion protocol is 1.5 grams per kilogram (the original stated \"1.5 g\u00b7kg\u22121 BM\", which is a more precise measurement)."
+      ],
+      "deletions": [
+        "The alcohol ingestion protocol is 12\u00b12 standard drinks (the original provided a more specific measurement).",
+        "The alcohol ingestion protocol is consumed with 4 parts orange juice (the simplified version only mentions the ratio of vodka to orange juice, but not the number of parts)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "There is no need for any information interchange between issuing parties or global data (especially keys), except unique identifiers for each user and each device of the system.",
+    "prediction": "There is no need for any information interchange between issuing parties or global data (especially keys), except unique identifiers for each user and each device of the system.",
+    "comparison": {
+      "preservations": [
+        "There is no need for information interchange between issuing parties.",
+        "There is no need for global data.",
+        "Unique identifiers are needed for each user.",
+        "Unique identifiers are needed for each device."
+      ],
+      "oversimplifications": [
+        "Keys are not needed (omits the fact that keys are not mentioned as being used, but does not provide the full context of why they are not needed)."
+      ],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Our results yield findings that benefit managers, investors and policy-makers by indicating how regulatory filings should be structured and the topics most likely to precede changes in stock valuations.",
+    "prediction": "Our results yield findings that benefit managers, investors and policy-makers by indicating how regulatory filings should be structured and the topics most likely to precede changes in stock valuations.",
+    "comparison": {
+      "preservations": [
+        "The results benefit managers.",
+        "The results benefit investors.",
+        "The results benefit policy-makers.",
+        "The results indicate how regulatory filings should be structured.",
+        "The results indicate topics that precede changes in stock valuations."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The management of this condition is given the highest priority in disease control, and the importance of lifestyle changes for the prevention and treatment of hypertension has been recognized in Japan.",
+    "prediction": "The management of this condition is given the highest priority in disease control, and the importance of lifestyle changes for the prevention and treatment of hypertension has been recognized in Japan.",
+    "comparison": {
+      "preservations": [
+        "The management of this condition is given the highest priority.",
+        "Disease control is a priority.",
+        "Lifestyle changes are important for the prevention of hypertension.",
+        "Lifestyle changes are important for the treatment of hypertension.",
+        "The importance of lifestyle changes has been recognized in Japan."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Based on this technology, a new form of parasitic computing, widely called cryptojacking or drive-by mining, has gained momentum in the web. A cryptojacking site abuses the computing resources of its visitors to covertly mine for cryptocurrencies.",
+    "prediction": "Based on this technology, a new form of parasitic computing, widely called cryptojacking or drive-by mining, has gained momentum in the web. A cryptojacking site abuses the computing resources of its visitors to covertly mine for cryptocurrencies.",
+    "comparison": {
+      "preservations": [
+        "A new form of parasitic computing has gained momentum.",
+        "This form of computing is called cryptojacking or drive-by mining.",
+        "Cryptojacking involves abusing computing resources.",
+        "Cryptojacking involves covertly mining for cryptocurrencies."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "Cryptojacking sites target visitors (this information is not present in the simplified passage, but it can be implied that they target visitors, as it is a common understanding of how cryptojacking works)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "However, the importance - and even the existence - of a post-exercise \u2018window\u2019 can vary according to a number of factors.",
+    "prediction": "However, the importance - and even the existence - of a post-exercise \u2018window\u2019 can vary according to a number of factors.",
+    "comparison": {
+      "preservations": [
+        "The importance of a post-exercise window varies.",
+        "The existence of a post-exercise window can vary."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "As the robot needs time to reach the possible search locations, we take this time as well as the visibility constraints into account when computing effective search locations.",
+    "prediction": "As the robot needs time to reach the possible search locations, we take this time as well as the visibility constraints into account when computing effective search locations.",
+    "comparison": {
+      "preservations": [
+        "The robot needs time to reach possible search locations.",
+        "Time is a factor in computing effective search locations.",
+        "Visibility constraints are a factor in computing effective search locations."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Safety outcomes were assessed from the prescriptions given to the SPs.",
+    "prediction": "Safety results were assessed from the prescriptions given to the subjects.",
+    "comparison": {
+      "preservations": [
+        "Safety outcomes were assessed (original and simplified use the same verb and action).",
+        "Assessments were based on prescriptions (both versions mention prescriptions as the basis for the assessment)."
+      ],
+      "oversimplifications": [
+        "Safety outcomes were assessed (original uses \"safety outcomes\" which is a more specific term, while simplified uses \"safety results\").",
+        "Prescriptions were given to subjects (original uses \"SPs\" which is an abbreviation, while simplified uses \"subjects\" which is a more general term)."
+      ],
+      "deletions": [
+        "Prescriptions were given to SPs (original uses a specific term \"SPs\" which is not present in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Many large health care organizations manage clinical appointment scheduling via enterprise resource scheduling systems which are poorly accessible by clinicians.",
+    "prediction": "Many large health care organizations manage clinical appointment scheduling via enterprise resource scheduling systems which are poorly accessible by clinicians.",
+    "comparison": {
+      "preservations": [
+        "Many large health care organizations manage clinical appointment scheduling.",
+        "Clinical appointment scheduling is managed via enterprise resource scheduling systems.",
+        "Enterprise resource scheduling systems are poorly accessible by clinicians."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "One approach to the development of self-driving systems is the utilization of ROS which is an open-source middleware framework used in the development of robot applications.",
+    "prediction": "One approach to the development of self-driving systems is the utilization of ROS used in robot development.",
+    "comparison": {
+      "preservations": [
+        "One approach to the development of self-driving systems exists."
+      ],
+      "oversimplifications": [
+        "ROS is used in robot development (\"used in the development of robot applications\" changed to \"used in robot development\", losing the context of application development)."
+      ],
+      "deletions": [
+        "ROS is an open-source middleware framework."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Construction of BSE was motivated by the fact that most of the world\u2019s major financial markets have automated, with trading activity that previously was the responsibility of human traders now being performed by high-speed autonomous automated trading systems.",
+    "prediction": "Construction of BSE was motivated by the fact that most of the world\u2019s major financial markets have automated, with trading activity that previously was the responsibility of human traders now being performed by automated trading systems.",
+    "comparison": {
+      "preservations": [
+        "The construction of BSE was motivated by a fact.",
+        "Most of the world's major financial markets have automated.",
+        "Trading activity was previously the responsibility of human traders."
+      ],
+      "oversimplifications": [
+        "Automated trading systems perform trading activity (\"high-speed autonomous\" is lost, which is an important detail).",
+        "Automated trading systems (the original mentioned \"automated trading systems\" and \"high-speed autonomous\", the simplified only mentions \"automated trading systems\")."
+      ],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "In many situations, users walk on typical paths between specific destinations at which the service of a mobile robot is needed.",
+    "prediction": "Users walk on normal paths between locations where a robot is needed.",
+    "comparison": {
+      "preservations": [
+        "Users walk on normal paths (\"typical paths\" in the original passage).",
+        "Users walk between locations (\"specific destinations\" in the original passage)."
+      ],
+      "oversimplifications": [
+        "Users walk on normal paths (\"typical paths\" is more specific and implies a common or usual route).",
+        "A robot is needed at these locations (\"the service of a mobile robot is needed\" is more specific and implies a specific type of service)."
+      ],
+      "deletions": [
+        "Users walk between specific destinations (lost specificity).",
+        "Mobile robots provide a service (lost detail about the type of service)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "They have shown a positive impact on patient safety, health care efficiency, and ultimately patient satisfaction.",
+    "prediction": "They have shown a positive impact on safety, efficiency, and satisfaction.",
+    "comparison": {
+      "preservations": [
+        "They have shown a positive impact."
+      ],
+      "oversimplifications": [
+        "The impact is on safety, efficiency, and satisfaction (the original passage mentions patient safety, health care efficiency, and patient satisfaction, which are more specific and detailed than the simplified version)."
+      ],
+      "deletions": [
+        "The impact is on patient safety.",
+        "The impact is on health care efficiency.",
+        "The impact is on patient satisfaction."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "It has also been shown to promote many health benefits.",
+    "prediction": "It has also was found to promote general health benefits.",
+    "comparison": {
+      "preservations": [
+        "It has been shown/promoted to promote health benefits (the simplified version uses \"found\" instead of \"shown\", but the meaning is preserved)."
+      ],
+      "oversimplifications": [
+        "General health benefits (the original passage mentions \"many health benefits\", which is a more specific and detailed description)."
+      ],
+      "deletions": [
+        "Many (the original passage mentions \"many\" health benefits, which is not present in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.",
+    "prediction": "The case study of New York shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles roughly 70% of the size of the current taxi fleet operating in Manhattan.",
+    "comparison": {
+      "preservations": [
+        "A case study of New York was conducted.",
+        "The study was about taxi demand in Manhattan.",
+        "The current taxi demand in Manhattan exists.",
+        "The demand can be met with 8,000 robotic vehicles.",
+        "The robotic vehicles are 70% the size of the current taxi fleet.",
+        "The current taxi fleet operates in Manhattan."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Four kinds of monitor units were specially designed for a wireless communication, including a control center , a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor).",
+    "prediction": "Four kinds of monitor units were specially designed for a wireless communication, including a control center , a local monitor unit, mobile devices (personal digital assistant; PDA), and a Web page (for both patient and doctor).",
+    "comparison": {
+      "preservations": [
+        "Four kinds of monitor units were designed.",
+        "The monitor units are for wireless communication.",
+        "A control center is one of the monitor units.",
+        "A local monitor unit is one of the monitor units.",
+        "Mobile devices are one of the monitor units.",
+        "A Web page is one of the monitor units."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management.",
+    "prediction": "This work describes an innovative mobile application for wildfire information management that operates on Windows Phone devices and acts as a complementary tool to the web-based version of the AEGIS platform for wildfire prevention and management.",
+    "comparison": {
+      "preservations": [
+        "The work is for a mobile application.",
+        "The application is for wildfire information management.",
+        "The application operates on Windows Phone devices.",
+        "The application is a complementary tool.",
+        "The AEGIS platform is for wildfire prevention and management."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Considering dynamic obstacles introduces another level of complexity, since they can lead to necessary replanning or collisions at later stages.",
+    "prediction": "Considering dynamic obstacles introduces another level of complexity, since they can lead to collisions.",
+    "comparison": {
+      "preservations": [
+        "Dynamic obstacles exist."
+      ],
+      "oversimplifications": [
+        "Dynamic obstacles can lead to collisions (the original statement mentions \"collisions at later stages\", implying that the obstacle's impact is not immediate, but the simplified version does not convey this nuance)."
+      ],
+      "deletions": [
+        "Dynamic obstacles can cause replanning."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "A large multi-channel corpus, including mobile phone, personal digital assistant (PDA), telephone and microphone, is collected to evaluate the system performance.",
+    "prediction": "A large dataset, including mobile phone, personal digital assistant (PDA), telephone and microphone, is collected to evaluate the system performance.",
+    "comparison": {
+      "preservations": [
+        "A large dataset is collected (similar to \"A large multi-channel corpus\" in the original).",
+        "The dataset includes mobile phones (similar to \"mobile phone\" in the original).",
+        "The dataset includes personal digital assistants (similar to \"personal digital assistant (PDA)\" in the original).",
+        "The dataset includes telephones (similar to \"telephone\" in the original).",
+        "The dataset includes microphones (similar to \"microphone\" in the original)."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "The corpus is collected (changed to \"dataset\", which is a more common term but loses some nuance).",
+        "The original phrase \"multi-channel\" is lost, which implies a collection of different types of data."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The proposed approach was tested on a manually labeled data set in urban environments.",
+    "prediction": "The approach was tested on labeled dataset in urban environments.",
+    "comparison": {
+      "preservations": [
+        "The approach was tested.",
+        "The dataset is located in urban environments."
+      ],
+      "oversimplifications": [
+        "The dataset is labeled (the original passage mentions \"manually labeled\", which implies a level of human involvement, whereas the simplified version is more general).",
+        "The testing was done on a dataset (the original passage mentions \"manually labeled data set\", which implies a specific type of dataset, whereas the simplified version is more general)."
+      ],
+      "deletions": [
+        "The testing was done on a manually labeled data set (the level of human involvement is lost in the simplified version).",
+        "The proposed approach was tested (the original passage mentions \"the proposed approach\", which implies a specific approach, whereas the simplified version is more general)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The proposed framework has been implemented on an especially built simulator.",
+    "prediction": "The proposed framework has been implemented on an especially built simulator.",
+    "comparison": {
+      "preservations": [
+        "A framework has been proposed.",
+        "The framework has been implemented.",
+        "The implementation was done on a simulator.",
+        "The simulator was built especially for this purpose."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This study compared text entry performance of two stylus-driven soft keyboards for use in hand-held computing devices: the QWERTY and the T9.",
+    "prediction": "This study compared text entry performance of two types of stylus keyboards for use in hand-held computing devices: the QWERTY and the T9.",
+    "comparison": {
+      "preservations": [
+        "A study was conducted.",
+        "The study compared text entry performance.",
+        "The study involved two types of keyboards.",
+        "The keyboards were for hand-held computing devices.\n\nOVERSIMPFICATIONS:",
+        "The keyboards were for hand-held computing devices (\"hand-held computing devices\" is a simplification of \"use in hand-held computing devices\", which implies a broader range of devices)."
+      ],
+      "deletions": [
+        "The keyboards were stylus-driven soft keyboards.",
+        "The QWERTY and the T9 were the specific keyboards involved."
+      ],
+      "hallucinations": [
+        "The T9 was the other keyboard (this is not mentioned in the original passage, only that the T9 was one of the keyboards)."
+      ]
+    }
+  },
+  {
+    "source": "The use of various monitor units is created to fulfill different medical personnel requirements and wishes.",
+    "prediction": "The use of different kinds of monitors is created to help doctors and nurses.",
+    "comparison": {
+      "preservations": [
+        "The purpose of these monitors is to help medical personnel (implied in the original as \"doctors and nurses\", which is a subset of medical personnel)."
+      ],
+      "oversimplifications": [
+        "Different kinds of monitors are created (the original mentions \"monitor units\", which is a more specific term).",
+        "The purpose of these monitors is to help doctors and nurses (the original mentions \"fulfill medical personnel requirements and wishes\", which is a more general statement)."
+      ],
+      "deletions": [
+        "Monitor units are used in medicine (the original statement is more specific and informative).",
+        "Different types of monitor units exist (the original statement is more specific and informative).",
+        "Monitor units fulfill medical personnel requirements and wishes (the original statement is more specific and informative)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Second, we emphasize the subject of the content by the logotype of the keyword.",
+    "prediction": "Second, we emphasize the subject of the content by the logotype of the keyword.",
+    "comparison": {
+      "preservations": [
+        "The subject of the content is emphasized.",
+        "Emphasis is achieved by the logotype of the keyword."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Suggestions for educational, research, and interventions to integrate clinical based PDA-based screening are discussed.",
+    "prediction": "Suggestions for educational, research, and interventions to use mobile-based screening are discussed.",
+    "comparison": {
+      "preservations": [
+        "Suggestions for educational interventions are discussed.",
+        "Suggestions for research are discussed."
+      ],
+      "oversimplifications": [
+        "Suggestions for interventions are discussed (the original mentions \"clinical based PDA-based screening\" which is more specific than \"mobile-based screening\" in the simplified version).",
+        "Mobile-based screening is used (the original mentions \"PDA-based screening\" which is more specific than \"mobile-based screening\" in the simplified version)."
+      ],
+      "deletions": [
+        "PDA-based screening is integrated into clinical settings.",
+        "Clinical based is mentioned in the original passage."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "It also shows that users' English language proficiency plays an important role in interacting with VUIs.",
+    "prediction": "It also shows that their language skills play a big role in interacting with VUIs.",
+    "comparison": {
+      "preservations": [
+        "Language skills play a big role in interacting with VUIs. (Equivalent to \"users' English language proficiency\" in the original passage)"
+      ],
+      "oversimplifications": [
+        "Users interact with VUIs (Original passage mentions \"users\", simplified passage uses \"their\" which is a more general term, but the meaning is preserved).",
+        "Their language skills (Original passage mentions \"users' English language proficiency\", simplified passage uses \"their language skills\" which is a more general term, but the meaning is preserved)."
+      ],
+      "deletions": [
+        "Users' English language proficiency is important (important information about the role of language proficiency is lost).",
+        "Users (Original passage mentions \"users\", simplified passage uses \"their\" which is a more general term, but the meaning is partially lost)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "With the developing of the technology on self-driving, more and more L3 driverless vehicles are launched in market, people get opportunities to experience the self-driving cars in their daily life.",
+    "prediction": "With the developing of the technology on self-driving, more and more L3 driverless vehicles are launched in market, people get opportunities to experience the self-driving cars in their daily life.",
+    "comparison": {
+      "preservations": [
+        "Self-driving technology is developing.",
+        "L3 driverless vehicles are being launched in the market.",
+        "People are experiencing self-driving cars in their daily life."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "I also model the entropy using a dynamic factor model and derive a common factor behind the entropy movements in these four markets.",
+    "prediction": "I also model the entropy using an economic theory and find a general trend in the markets.",
+    "comparison": {
+      "preservations": [
+        "I model entropy (fact 1 from both versions).",
+        "I find a general trend in the markets (fact 3 from both versions)."
+      ],
+      "oversimplifications": [
+        "The model used is a dynamic factor model (changed to \"an economic theory\" in the simplified version).",
+        "The common factor is behind the entropy movements (changed to a general trend in the simplified version)."
+      ],
+      "deletions": [
+        "The common factor is derived from the model (fact 2 from the original version).",
+        "The entropy movements occur in four markets (fact 4 from the original version)."
+      ],
+      "hallucinations": [
+        "The model is used to find a general trend in the markets (fact 3 from the simplified version, but the original version does not imply that the model is used for this purpose).",
+        "The model is an economic theory (fact 2 from the simplified version, but the original version does not imply that the model is an economic theory)."
+      ]
+    }
+  },
+  {
+    "source": "Therefore, the purpose of this review is to discuss the effects of cycle training on muscle size and strength of the lower extremity and the possible mechanisms for increasing muscle size with cycle training.",
+    "prediction": "Therefore, the purpose of this review is to discuss the effects of cycle training on muscle size and strength of the lower extremity and the possible mechanisms for increasing muscle size with cycle training.",
+    "comparison": {
+      "preservations": [
+        "The purpose of this review is to discuss the effects of cycle training.",
+        "Cycle training affects muscle size.",
+        "Cycle training affects muscle strength.",
+        "The lower extremity is affected by cycle training.",
+        "Muscle size can be increased with cycle training."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "It gives the information about the processing history of an image, and also can expose forgeries present in an image.",
+    "prediction": "It gives the information about the image history, and also can expose manipulations in the image.",
+    "comparison": {
+      "preservations": [
+        "The tool provides information about the image history.",
+        "The tool exposes manipulations in the image."
+      ],
+      "oversimplifications": [
+        "It exposes manipulations in the image (\"forgeries\" changed to \"manipulations\", which is a broader term that still conveys the same meaning, but loses some specificity)."
+      ],
+      "deletions": [
+        "It gives the information about the processing history of an image (processing history is not mentioned in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Therefore, this decision support system might be a useful tool for district nurses.",
+    "prediction": "Therefore, this system might be a useful tool for local nurses.",
+    "comparison": {
+      "preservations": [
+        "The system might be useful (similar meaning, but \"decision support system\" is replaced with \"system\").",
+        "The system is for nurses (similar meaning, but \"district\" is replaced with \"local\")."
+      ],
+      "oversimplifications": [
+        "District nurses (the original passage specifies a specific type of nurse, while the simplified passage is more general).",
+        "The system is for local nurses (the original passage is more specific about the type of nurses, while the simplified passage is more general)."
+      ],
+      "deletions": [
+        "Decision support system (the original passage describes the type of system, while the simplified passage does not).",
+        "District (the original passage specifies the type of nurses, while the simplified passage does not)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+    "prediction": "This application was developed to promote the mobility and flexibility for the patients and also for the medical personnel, which further will improve both the quality of health care and lifestyle of the patient.",
+    "comparison": {
+      "preservations": [
+        "The application was developed to promote mobility.",
+        "The application was developed to promote flexibility.",
+        "The application is for patients.",
+        "The application is for medical personnel.",
+        "The application will improve health care quality.",
+        "The application will improve patient lifestyle."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "For this, we consider the bottleneck features, which have been successfully applied to deep neural network (DNN) based automatic speech recognition (ASR) system.",
+    "prediction": "For this, we consider the bottleneck features, which have been successfully applied to artificial neural network (ANN) based automatic speech recognition (ASR) system.",
+    "comparison": {
+      "preservations": [
+        "Bottleneck features are applied to neural networks (\"DNN\" and \"ANN\" refer to the same concept).",
+        "Bottleneck features are used in automatic speech recognition systems.",
+        "Bottleneck features are successfully applied (\"successfully applied\" is present in both versions)."
+      ],
+      "oversimplifications": [
+        "Artificial neural networks are used in automatic speech recognition systems (the original mentions DNN, which is a specific type of ANN).",
+        "The term \"artificial neural network\" is used instead of \"deep neural network\" (DNN is a more specific type of ANN)."
+      ],
+      "deletions": [
+        "Deep neural network based ASR systems exist (the original mentions DNN, which is not present in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Next-generation sequencing (NGS) technology has provided a powerful tool in identifying the genetic variation and constructing the correlations between genotype and phenotype in humans and other species.",
+    "prediction": "Next-generation sequencing (NGS) technology has provided a powerful tool in identifying the genetic variation and constructing the correlations between genotype and phenotype in humans and other species.",
+    "comparison": {
+      "preservations": [
+        "NGS stands for next-generation sequencing.",
+        "NGS technology is used to identify genetic variation.",
+        "NGS technology is used to construct correlations between genotype and phenotype.",
+        "The correlations are between genotype and phenotype.",
+        "The correlations are in humans and other species."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The results showed that participants were more satisfied and perceived higher sincerity when smart speaker apologized in both error scenarios.",
+    "prediction": "The results showed that they felt happy when the speaker apologized in both error scenarios.",
+    "comparison": {
+      "preservations": [
+        "The speaker apologized in both error scenarios (the simplified version still conveys the same information as the original, just in a different way).",
+        "The results showed that they felt happy (the original and simplified versions convey the same general idea, even if the original is more specific)."
+      ],
+      "oversimplifications": [
+        "The results showed that they felt happy (the original states that participants were \"more satisfied\" and \"perceived higher sincerity\", which is more nuanced than just \"felt happy\").",
+        "The results showed that they felt happy in both error scenarios (the original states that participants were more satisfied and perceived higher sincerity in both scenarios, but the simplified version only mentions happiness)."
+      ],
+      "deletions": [
+        "Participants were more satisfied.",
+        "Participants perceived higher sincerity."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The results show that transcription rates were higher for the QWERTY keyboard than for the T9, despite the T9 keyboard\u2019s apparent superior physical characteristics.",
+    "prediction": "The results show that transcription rates were higher for the QWERTY keyboard than for the T9, despite the T9 keyboard\u2019s apparent superior physical characteristics.",
+    "comparison": {
+      "preservations": [
+        "The results show that transcription rates were higher.",
+        "The results were for the QWERTY keyboard.",
+        "The results were for the T9 keyboard.",
+        "The T9 keyboard has superior physical characteristics."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "In this paper, we introduce an approach to efficient robot navigation through cluttered indoor environments.",
+    "prediction": "In this paper, we make it easier for robots to move around the kitchen.",
+    "comparison": {
+      "preservations": [
+        "The environment is cluttered (implied in the simplified version as \"kitchen\").",
+        "The environment is indoor (implied in the simplified version as \"kitchen\")."
+      ],
+      "oversimplifications": [
+        "This paper is about robots (the original is more specific, mentioning an approach to navigation).",
+        "Robots move around the kitchen (the original mentions cluttered indoor environments, which is a more specific and generalizable concept)."
+      ],
+      "deletions": [
+        "This paper introduces an approach.",
+        "The approach is for efficient robot navigation.",
+        "The environment is cluttered (this is partially preserved, but the original is more specific).",
+        "The environment is indoor (this is partially preserved, but the original is more specific)."
+      ],
+      "hallucinations": [
+        "Robots move around the kitchen (this is not mentioned or implied in the original, but is a reasonable inference).",
+        "Robots (this is not mentioned in the original, which specifically talks about an approach to navigation)."
+      ]
+    }
+  },
+  {
+    "source": "Therefore, it is necessary to collect and integrate data on various types of anti-CRISPRs.",
+    "prediction": "Therefore, it is necessary to find and collect the necessary data on different types of anti-CRISPRs.",
+    "comparison": {
+      "preservations": [
+        "It is necessary to collect data (implied in the original as \"collect and integrate\" but the meaning is clear).",
+        "The data is on different types of anti-CRISPRs (the simplified version uses \"different\" instead of \"various\", but the meaning is equivalent)."
+      ],
+      "oversimplifications": [
+        "It is necessary to find data (the original says \"collect\" which implies finding, but \"find\" is a more general term that might not convey the same level of specificity).",
+        "Collecting data is necessary (the original says \"it is necessary to collect and integrate\", which implies that both actions are necessary, but the simplified version only mentions collecting)."
+      ],
+      "deletions": [
+        "The data needs to be integrated (the original says \"integrate\" but the simplified version does not mention it)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The use of mobile phone forensics to investigate fraudulent activity is nothing new.",
+    "prediction": "The use of mobile phone forensics to investigate fraudulent activity is nothing new.",
+    "comparison": {
+      "preservations": [
+        "Mobile phone forensics is used to investigate fraudulent activity."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This paper provides a holistic study of how stock prices vary in their response to financial disclosures across different topics.",
+    "prediction": "This paper provides a thorough study of how stock prices vary in their response to financial disclosures across different topics.",
+    "comparison": {
+      "preservations": [
+        "Stock prices vary in response to financial disclosures.",
+        "The variations occur across different topics."
+      ],
+      "oversimplifications": [
+        "The study is thorough (\"holistic\" changed to \"thorough\", which is a more common synonym, but loses some nuance).",
+        "The study is a study (\"holistic study\" changed to \"study\", which is a simplification)."
+      ],
+      "deletions": [
+        "This paper provides a holistic study (the original phrase is more specific and informative).",
+        "The study is of stock prices (the original phrase is more specific and informative)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "One transmission channel for these itinerant agents is email.",
+    "prediction": "One transmission channel for these itinerant agents is email.",
+    "comparison": {
+      "preservations": [
+        "There is a transmission channel for itinerant agents.",
+        "The transmission channel is email."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Several observational studies lend support to this hypothesis, with an inverse relationship noted between the frequency of eating and adiposity.",
+    "prediction": "Studies show support for this idea, with a link between eating frequency and weight.",
+    "comparison": {
+      "preservations": [
+        "There is a link between eating frequency and weight (the simplified version explicitly states the relationship, while the original implies it)."
+      ],
+      "oversimplifications": [
+        "The relationship is described as an \"inverse relationship\" in the original, while the simplified version only mentions a \"link\", which is a more general term."
+      ],
+      "deletions": [
+        "Several observational studies support the hypothesis (the original mentions the type of studies that support the hypothesis, while the simplified version does not).",
+        "Adiposity (a measure of body fat) is replaced with \"weight\" in the simplified version, which is a more general term."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "An often overlooked variable that also may impact muscle growth is repetition duration.",
+    "prediction": "an it affects muscle growth is repetition duration.",
+    "comparison": {
+      "preservations": [
+        "Muscle growth is affected by repetition duration."
+      ],
+      "oversimplifications": [
+        "Repetition duration is an often overlooked variable (changed to \"an it\" which is grammatically incorrect and loses the nuance of the original statement)."
+      ],
+      "deletions": [
+        "Repetition duration is an often overlooked variable."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Advancement of wireless and mobile technology has enabled additional platforms to support learning in a single learning space.",
+    "prediction": "Advancements in wireless and mobile tech has enabled additional platforms to support learning in a single learning space.",
+    "comparison": {
+      "preservations": [
+        "Advancements have been made in wireless technology (implied in the original, explicitly stated in the simplified).",
+        "Advancements have been made in mobile technology (implied in the original, explicitly stated in the simplified).",
+        "Additional platforms are now available (implied in the original, explicitly stated in the simplified).\n\nOVERSIMPLICATIONS:",
+        "None"
+      ],
+      "deletions": [
+        "A single learning space exists (became \"a single space\" in the simplified, losing the specificity of \"space\").",
+        "Learning occurs in a single space (became \"these platforms support learning\" in the simplified, losing the spatial context)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Several tasks can be accomplished from the AEGIS App, such as routing, spatial search for closest facilities and firefighting support infrastructures, access to weather data and visualization of fire management data (water sources, gas refill stations, evacuation sites etc.).",
+    "prediction": "Several tasks can be accomplished from the AEGIS App, such as routing, find nearby and viewing fire data.",
+    "comparison": {
+      "preservations": [
+        "Routing is one of the tasks that can be accomplished (similar to \"routing\" in the original passage).",
+        "Viewing fire data is one of the tasks that can be accomplished (similar to \"viewing fire data\" in the original passage)."
+      ],
+      "oversimplifications": [
+        "Finding nearby locations is one of the tasks that can be accomplished (the original passage mentions \"spatial search for closest facilities\" and \"evacuation sites\", which implies finding nearby locations, but the simplified passage is more vague).",
+        "The AEGIS App can be used for several tasks (the original passage mentions \"several tasks\" but the simplified passage is more general)."
+      ],
+      "deletions": [
+        "The AEGIS App can be used for spatial search.",
+        "The AEGIS App can be used to find closest facilities.",
+        "The AEGIS App can be used to find firefighting support infrastructures.",
+        "The AEGIS App provides access to weather data.",
+        "Fire management data includes water sources.",
+        "Fire management data includes gas refill stations.",
+        "Fire management data includes evacuation sites."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Meta-regression analysis of non-volume-equated studies showed a significant effect favoring higher frequencies, although the overall difference in magnitude of effect between frequencies of 1 and 3+ days per week was modest.",
+    "prediction": "Meta-regression analysis of non-volume-equated studies showed a significant effect favoring higher frequencies, although the difference in effect between 1 and 3+ days a week was small.",
+    "comparison": {
+      "preservations": [
+        "Meta-regression analysis was performed.",
+        "The analysis included non-volume-equated studies.",
+        "There was a significant effect.",
+        "The effect favored higher frequencies."
+      ],
+      "oversimplifications": [
+        "The difference in effect between 1 and 3+ days a week was small (\"small\" is a vague term, the original text specified \"modest\" which implies a specific degree of smallness)."
+      ],
+      "deletions": [
+        "The effect favored frequencies of 1 day per week.",
+        "The effect favored frequencies of 3 days per week.",
+        "The effect favored frequencies of 3+ days per week."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "They help to design ROS-based self-driving systems using MATLAB/Simulink.",
+    "prediction": "They help to design self-driving systems using MATLAB/Simulink.",
+    "comparison": {
+      "preservations": [
+        "They help to design systems.",
+        "The systems are self-driving."
+      ],
+      "oversimplifications": [
+        "The systems are self-driving (the original passage specifies ROS-based self-driving systems, which is more specific than just self-driving).",
+        "MATLAB/Simulink is used for design (the original passage specifies that MATLAB/Simulink is used for designing ROS-based self-driving systems, which is more specific than just design)."
+      ],
+      "deletions": [
+        "The systems are ROS-based."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "In this implementation, colour information is extracted from the input image and categorised according to how human observers segment the colour space.",
+    "prediction": "In this implementation, colour information is extracted from the input image and categorised by people.",
+    "comparison": {
+      "preservations": [
+        "Colour information is extracted from the input image.",
+        "Colour information is categorised."
+      ],
+      "oversimplifications": [
+        "Colour information is categorised by people (original states \"by human observers\", which is more specific and accurate)."
+      ],
+      "deletions": [
+        "Colour space is segmented by human observers (this information is not present in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The increasing prevalence of Internet of Things (IoT) devices has made it inevitable that their pertinence to digital forensic investigations will increase into the foreseeable future.",
+    "prediction": "The increasing prevalence of Internet of Things (IoT) devices has made it inevitable that their pertinence to digital forensic investigations will increase into the foreseeable future.",
+    "comparison": {
+      "preservations": [
+        "The prevalence of IoT devices is increasing.",
+        "IoT devices are relevant to digital forensic investigations.",
+        "The relevance of IoT devices to digital forensic investigations will increase in the future."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Furthermore, the model results in states where unbiased agents behave \"as if\" they were biased, due to their biased neighbours effectively functioning as gatekeepers, restricting their access to free and diverse information.",
+    "prediction": "They seem biased, due to the people around them",
+    "comparison": {
+      "preservations": [
+        "People can be biased (similar to \"agents behave as if they were biased\" in the original passage).",
+        "Bias is influenced by the people around an individual (similar to \"agents behave as if they were biased due to their neighbours\" in the original passage)."
+      ],
+      "oversimplifications": [
+        "The original passage implies that the neighbours' influence is a kind of bias, while the simplified passage implies that the people around are biased themselves."
+      ],
+      "deletions": [
+        "The model results in states where agents behave as if they were biased.",
+        "Neighbours function as gatekeepers.",
+        "Neighbours restrict access to information.",
+        "The information is free.",
+        "The information is diverse."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology.",
+    "prediction": "This paper proposes an electrophysiological wireless patient monitoring system which integrates a Wireless ECG signal transmitter, GPS device and a mobile phone to acquire physiological signals and transmit them to a local server via Bluetooth wireless technology.",
+    "comparison": {
+      "preservations": [
+        "The system proposed is an electrophysiological wireless patient monitoring system.",
+        "The system integrates a Wireless ECG signal transmitter.",
+        "The system integrates a GPS device.",
+        "The system integrates a mobile phone.",
+        "The system acquires physiological signals.",
+        "The system transmits signals via Bluetooth wireless technology.",
+        "The signals are transmitted to a local server."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The prevalence and rapid development of the Internet and mobile technology in recent decades has revamped our living styles and daily habits.",
+    "prediction": "The growth of the Internet and mobile technology in recent decades has changed our daily lives.",
+    "comparison": {
+      "preservations": [
+        "The growth of the Internet has occurred in recent decades. (matches original unit 1)",
+        "Mobile technology has grown in recent decades. (matches original unit 2)",
+        "The Internet and mobile technology have changed daily lives. (matches original units 3 and 4)"
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "The Internet has revamped living styles. (original unit 3)",
+        "The Internet has revamped daily habits. (original unit 4)"
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Wireless and mobile computing technologies is only beginning to take its first step in improving patient care and education.",
+    "prediction": "Mobile technology is only beginning to take its start in helping patients",
+    "comparison": {
+      "preservations": [
+        "Mobile technology is being used to help patients (similar to \"Wireless and mobile computing technologies are improving patient care\" in the original passage)."
+      ],
+      "oversimplifications": [
+        "Mobile technology is in its early stages of helping patients (the original passage mentions that it is only beginning to take its first step, which implies a beginning but does not specify it is in its early stages)."
+      ],
+      "deletions": [
+        "Wireless and mobile computing technologies are improving education (this information is completely lost in the simplified passage).",
+        "Wireless and mobile computing technologies are improving patient care (this information is partially preserved, but the scope is reduced to only patients, not patient care)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of human genome modification, there is an urgent need to clarify the role of women in this scenario.",
+    "prediction": "Despite the lack of a unified feminist conclusion in the discussions about the merits and risks of genomic engineering, there is an urgent need to clarify the role of women in this scenario.",
+    "comparison": {
+      "preservations": [
+        "There is a lack of a unified feminist conclusion.",
+        "There is an urgent need to clarify the role of women.",
+        "Women are involved in discussions about genomic engineering (implied in the original, explicitly stated in the simplified).\n\nOVERSIMPFICATIONS:",
+        "Genomic engineering has merits and risks (the original mentions \"merits and risks of human genome modification\", which is a more specific and nuanced concept).",
+        "Discussions are about genomic engineering (the original mentions \"discussions about the merits and risks of human genome modification\", which is a more specific and nuanced concept)."
+      ],
+      "deletions": [
+        "The original mentions human genome modification, which is a more specific and nuanced concept than genomic engineering.",
+        "The original mentions the scenario of human genome modification, which is not present in the simplified version."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "We propose our data is of paramount interest to athletes and coaches.",
+    "prediction": "We propose our data is of paramount interest to athletes and coaches.",
+    "comparison": {
+      "preservations": [
+        "The data is of interest to athletes.",
+        "The data is of interest to coaches."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "The mechanistic target of rapamycin complex 1 (mTORC1) is a central node for integrating nutrient (i.e. amino acid) and exercise/contraction signal transduction [31], [32].",
+    "prediction": "The rapamycin complex 1 is a central node for integrating nutrient (i.e. amino acid) and exercise/contraction signal transduction [31], [32].",
+    "comparison": {
+      "preservations": [
+        "The rapamycin complex 1 is a central node.",
+        "It integrates nutrient signals.",
+        "It integrates amino acid signals (implied in the original as \"nutrient (i.e. amino acid)\" and explicitly stated in the simplified).",
+        "It integrates exercise signals.",
+        "It integrates contraction signals."
+      ],
+      "oversimplifications": [
+        "The signals it integrates are related to amino acids (the original is more specific, stating that it integrates amino acid signals, not just related to amino acids).",
+        "The signals it integrates are related to exercise (the original is more specific, stating that it integrates exercise signals, not just related to exercise).",
+        "The signals it integrates are related to contraction (the original is more specific, stating that it integrates contraction signals, not just related to contraction)."
+      ],
+      "deletions": [
+        "mTORC1 is mentioned in the original passage, but \"mTORC1\" is replaced with \"rapamycin complex 1\" in the simplified passage."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Next generation sequencing (NGS) produces massive datasets consisting of billions of reads and up to thousands of samples.",
+    "prediction": "It's a lot.",
+    "comparison": {
+      "preservations": [
+        "The word \"a lot\" is an idiomatic expression.",
+        "The idiomatic expression \"a lot\" means a large quantity."
+      ],
+      "oversimplifications": [
+        "The datasets consist of billions of reads (the original passage specified \"billions of reads\" but the simplified passage does not).",
+        "The datasets consist of thousands of samples (the original passage specified \"up to thousands of samples\" but the simplified passage does not)."
+      ],
+      "deletions": [
+        "NGS produces massive datasets (the simplified passage does not mention this fact).",
+        "The datasets consist of billions of reads.",
+        "The datasets consist of thousands of samples.",
+        "The original passage specified that the datasets consist of billions of reads and up to thousands of samples (the simplified passage does not convey this nuance)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Blood flow restriction (BFR) is an effective clinical intervention used to increase strength in healthy individuals.",
+    "prediction": "Blood flow restriction helps increase strength.",
+    "comparison": {
+      "preservations": [
+        "Blood flow restriction helps increase strength (fact is preserved in both versions, although the original is more specific about the population it is used for)."
+      ],
+      "oversimplifications": [],
+      "deletions": [
+        "BFR is a clinical intervention.",
+        "BFR is used in healthy individuals."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Several researchers have made reference to an anabolic \u201cwindow of opportunity\u201d whereby a limited time exists after training to optimize training-related muscular adaptations.",
+    "prediction": "Several researchers have made reference to a training \"window of opportunity\" whereby a limited time exists after training to optimize muscular adaptations.",
+    "comparison": {
+      "preservations": [
+        "Researchers have made reference to a training window of opportunity (the term \"anabolic\" is replaced with \"training\", but the meaning is preserved).",
+        "A limited time exists after training (the original phrase \"after training\" is preserved in the simplified version).",
+        "This time is used to optimize muscular adaptations (the original phrase \"to optimize training-related muscular adaptations\" is preserved in the simplified version)."
+      ],
+      "oversimplifications": [
+        "The window of opportunity is related to training (the original phrase \"training-related\" is lost, which could imply a broader scope of activities).",
+        "The time is limited (the original phrase \"limited time\" is preserved, but the context implies that the time is limited in a specific way, which is not explicitly stated in the simplified version)."
+      ],
+      "deletions": [
+        "The window of opportunity is anabolic (the original term is lost, which implies a specific type of metabolic process).",
+        "The time is used to optimize training-related muscular adaptations (the original phrase is lost, which provides more context and specificity)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "It was also able to reduce the frequency of discrepancy from 10.1% to 2.8% (pu003c0.0001) and receive positive feedback from the users.",
+    "prediction": "It was also able to lower the number of mistakes from 10% to 3% and receive positive feedback from the users.",
+    "comparison": {
+      "preservations": [
+        "The number of mistakes was reduced.",
+        "Users provided positive feedback.\n\nOVERSIMIFICATIONS:",
+        "The number of mistakes was reduced from 10% to 3% (the original passage mentioned a discrepancy frequency, not just mistakes, and the reduction was statistically significant)."
+      ],
+      "deletions": [
+        "The initial discrepancy frequency was 10.1% (this information was completely lost in the simplified passage).",
+        "The discrepancy reduction was statistically significant (the p-value was less than 0.0001, which was not mentioned in the simplified passage)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours.",
+    "prediction": "A significative percentage of the human population suffer from impairments in their capacity to distinguish or even see colours.",
+    "comparison": {
+      "preservations": [
+        "A significant percentage of the human population suffer from impairments.",
+        "The impairments affect the capacity to distinguish colours."
+      ],
+      "oversimplifications": [],
+      "deletions": [],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Such a configuration occurs even in the consumption of news online, and considering that 63% of users access news directly form social media, one hypothesis is that more polarization allows for further spreading of misinformation.",
+    "prediction": "Such a configuration occurs even in the consumption of news online, and considering that 63% of users access news directly form social media, more polarization can spread misinformation.",
+    "comparison": {
+      "preservations": [
+        "A configuration occurs in the consumption of news online.",
+        "63% of users access news directly from social media."
+      ],
+      "oversimplifications": [
+        "Misinformation can spread due to polarization (the original statement is more specific, stating that more polarization allows for the spreading of misinformation)."
+      ],
+      "deletions": [
+        "A hypothesis is that more polarization allows for the spreading of misinformation (the original statement explicitly states a hypothesis, while the simplified version does not)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "This review recommends safe and effective whole-body aerobic exercise at moderate intensity (i.e., 50-65% of maximum oxygen intake, 30-60 min per session, 3-4 times a week) that primarily focuses on the major muscle groups for the prevention and treatment of hypertension.",
+    "prediction": "This review recommends safe and effective whole-body aerobic exercise at moderate intensity (about 50-60% of your maximum effort) that primarily focuses on the major muscle groups for the prevention and treatment of hypertension.",
+    "comparison": {
+      "preservations": [
+        "The review recommends exercise.",
+        "The exercise is whole-body aerobic.",
+        "The exercise is at moderate intensity.",
+        "The exercise primarily focuses on major muscle groups.",
+        "The exercise is for the prevention of hypertension.",
+        "The exercise is for the treatment of hypertension."
+      ],
+      "oversimplifications": [
+        "The intensity is about 50-60% of maximum effort (original specified 50-65% of maximum oxygen intake, which is a more specific and accurate measure).",
+        "The exercise duration is not mentioned in the simplified version (30-60 minutes per session was lost)."
+      ],
+      "deletions": [
+        "The exercise duration is 30-60 minutes (specific duration range was lost).",
+        "The intensity is 50-65% of maximum oxygen intake (more specific and accurate measure was lost)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "At the same time, blockchain-based cryptocurrency is becoming a nonnegligible type of currency and the total value of all types of cryptocurrency has reached USD 200 billion.",
+    "prediction": "At the same time, digital cryptocurrency is becoming a nonnegligible type of currency and the total value of all types of cryptocurrency has reached USD 200 billion.",
+    "comparison": {
+      "preservations": [
+        "The total value of all types of cryptocurrency has reached USD 200 billion."
+      ],
+      "oversimplifications": [
+        "Digital cryptocurrency is becoming a nonnegligible type of currency (\"blockchain-based\" changed to \"digital\", which is a simplification)."
+      ],
+      "deletions": [
+        "Blockchain-based cryptocurrency is becoming a nonnegligible type of currency."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Asserting that a smartcard can act as a trusted machine gives new opportunities for designers of user-centric  that smartcards are :[257],\"here to stay, finding ways to apply them in constructive manners is prudent.",
+    "prediction": "trust a smartcard gives new benefits for users smartcards will be used, use them properly",
+    "comparison": {
+      "preservations": [
+        "Smartcards will be used (similar to \"Smartcards are here to stay\" in the original passage, implying a similar idea)."
+      ],
+      "oversimplifications": [
+        "A smartcard gives new benefits (the original passage mentions that a smartcard can act as a trusted machine, which implies new opportunities, but the simplified passage does not capture this nuance).",
+        "It is prudent to apply smartcards in constructive manners is not present, but the idea of using smartcards properly is a vague and simplified version of the original idea."
+      ],
+      "deletions": [
+        "A smartcard can act as a trusted machine.",
+        "Smartcards are here to stay.",
+        "It is prudent to apply smartcards in constructive manners."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Intriguingly, in these studies, the stretching was carried out with an apparatus that aided in its performance, or with an external overload.",
+    "prediction": "Intriguingly, in these studies, the stretching was carried out with tools, or with an external load.",
+    "comparison": {
+      "preservations": [
+        "Stretching was carried out with an external load (the simplified version uses \"load\" instead of \"overload\", but the meaning is preserved).",
+        "Stretching was carried out with tools (the simplified version uses \"tools\" instead of \"apparatus\", but the meaning is preserved)."
+      ],
+      "oversimplifications": [
+        "The stretching was carried out with tools (the simplified version omits the detail that the apparatus aided in its performance).",
+        "The stretching was carried out with an external load (the simplified version omits the detail that the load was external, implying it could be internal)."
+      ],
+      "deletions": [
+        "The apparatus aided in its performance."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "It is widely acknowledged that information such as web content should be adapted for mobile platforms to account for restrictions in mobile environments.",
+    "prediction": "It is widely acknowledged that information such as web content should be adapted for mobile platforms to account for mobile limitations.",
+    "comparison": {
+      "preservations": [
+        "Information should be adapted for mobile platforms.",
+        "Mobile platforms have limitations (implied in the original as \"restrictions\", but the meaning is the same)."
+      ],
+      "oversimplifications": [
+        "Mobile platforms have limitations (the original mentions \"restrictions in mobile environments\", which is a more specific and detailed description)."
+      ],
+      "deletions": [
+        "Mobile environments have restrictions (this information is not present in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "A key problem for autonomous car navigation is the understanding, at an object level, of the current driving situation.",
+    "prediction": "A key problem for driverless cars is the understanding, generally, of the current driving situation.",
+    "comparison": {
+      "preservations": [
+        "The problem is understanding the current driving situation."
+      ],
+      "oversimplifications": [
+        "The problem is understood at an object level (changed to \"generally\", which is a vague term and does not convey the same level of specificity as \"object level\")."
+      ],
+      "deletions": [
+        "Autonomous car navigation is a problem (the original statement is more specific and accurate).",
+        "The driving situation is understood at an object level (this detail is lost in the simplified version)."
+      ],
+      "hallucinations": []
+    }
+  },
+  {
+    "source": "Objective: To determine the effectiveness of adding BFR to resistance exercise for pain relief and improvement of function in patients with knee pain.",
+    "prediction": "To see if adding weights helps relieve pain and improve knee function in patients with knee pain.",
+    "comparison": {
+      "preservations": [
+        "The patients have knee pain."
+      ],
+      "oversimplifications": [
+        "Adding weights is being tested to relieve pain (\"adding BFR to resistance exercise\" changed to \"adding weights\", which is partially true but omits the specific intervention of BFR).",
+        "Adding weights is being tested to improve knee function (\"improve function\" is a vague term compared to \"pain relief and improvement of function\")."
+      ],
+      "deletions": [
+        "The objective is to determine the effectiveness of adding BFR to resistance exercise.",
+        "BFR is added to resistance exercise for pain relief.",
+        "The goal is to improve function in patients with knee pain."
+      ],
+      "hallucinations": []
+    }
+  }
+]
